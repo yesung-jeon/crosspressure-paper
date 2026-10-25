@@ -1,0 +1,34 @@
+{
+ "_doc": "Single run configuration for Path A (PLAN v0.2 §4.1-4.2, §9.2-9.3). Values that can change model outputs (precision, revisions, batches) are fixed before any output is seen and must be identical between the first bf16 run (P4) and the clean run (P6). Process count (shards) never changes outputs: batch-1 steps are row-independent.",
+ "precision": "bf16",
+ "models": {
+  "qwen": {"id": "Qwen/Qwen2.5-7B-Instruct", "revision": "a09a35458c702b33eeacc393d103063234e8bc28"},
+  "llama": {"id": "meta-llama/Llama-3.1-8B-Instruct", "revision": "0e9e39f249a16976918f6564b8830bc894c89659"}
+ },
+ "judge": "llama",
+ "batch": {
+  "_doc": "Design defaults (first-attempt values of each script; PLAN §9.2). v4 and n2_yesno stay at batch 1 by protocol. Entries marked P3 may be raised once, from P3 memory measurements, before P4.",
+  "s1_generate": 64,
+  "s1_hidden": 16,
+  "s2_steer_rows": 100,
+  "s2_judge": 16,
+  "s3_project": 64,
+  "s5_yesno": 32,
+  "s5_project": 64,
+  "s5_generate": 64,
+  "l_score_final": 48,
+  "l_lens": 32,
+  "l_project": 48,
+  "v4": 1,
+  "n2_yesno": 1,
+  "m_x5_layers": 1,
+  "m_x6": 16
+ },
+ "gpu_gb_per_process": 26,
+ "gpu_gb": {"_doc": "per-step VRAM budget in GB (caps only; outputs unchanged): batch-1 scoring = light, batched/generation = heavy", "light": 17, "heavy": 26, "total": 135},
+ "gpu_processes": 8,
+ "cpu_processes": 3,
+ "shards": {"_doc": "process count for batch-1 GPU steps; never changes outputs (P3 parity)", "v4": 4, "n2_yesno": 4},
+ "ram_guard_gb": 40,
+ "on_oom": "stop"
+}

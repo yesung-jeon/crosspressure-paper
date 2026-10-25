@@ -1,0 +1,28 @@
+{
+ "no_drift": {
+  "Democrat": {
+   "within": 0.0,
+   "replacement": -0.1499999999999997,
+   "total": -0.1499999999999997
+  },
+  "Republican": {
+   "within": 0.0,
+   "replacement": 0.0,
+   "total": 0.0
+  }
+ },
+ "drift": {
+  "Democrat": {
+   "within": -0.16000000000000014,
+   "replacement": -0.18000000000000038,
+   "total": -0.3400000000000005
+  },
+  "Republican": {
+   "within": -0.15999999999999992,
+   "replacement": -0.03000000000000025,
+   "total": -0.19000000000000017
+  }
+ },
+ "fast_agrees": true,
+ "pass": true
+}

@@ -1,0 +1,17 @@
+{
+  "tag": "Q3__H__pcc__member__all__qwen",
+  "outcome": "H",
+  "rhs": "map_crossed",
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "map_crossed": 0.016967557287328131
+  },
+  "covariance": [
+    [8.6871359613469563e-06]
+  ]
+}

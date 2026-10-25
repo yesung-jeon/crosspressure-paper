@@ -1,0 +1,1850 @@
+{
+ "AP_RC_VOTEVIEW": {
+  "value": "60,215",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_PAP_MATCH": {
+  "value": "0.982",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_RC_AB": {
+  "value": "344",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_RC_AB_CONTESTED": {
+  "value": "333",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_SCALES_AB": {
+  "value": "40",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_RC_ECON": {
+  "value": "10,817",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_RC_ECON_CONTESTED": {
+  "value": "8,815",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_SCALES_ECON": {
+  "value": "78",
+  "source": [
+   "01_rollcall_scales/out/data/data_report.json"
+  ]
+ },
+ "AP_GUN_CANDIDATES": {
+  "value": "234",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_INCLUDED": {
+  "value": "128",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_AUTHOR": {
+  "value": "88",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_AGREED": {
+  "value": "146",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_CELLS": {
+  "value": "20",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_CELLS_PASSED": {
+  "value": "13",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_CP_SHARE": {
+  "value": "0.193",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_CORR_AB": {
+  "value": "0.650",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_GUN_SAME_LABEL": {
+  "value": "0.737",
+  "source": [
+   "05_gun_scale/out/g0/report.json"
+  ]
+ },
+ "AP_N_MC": {
+  "value": "21,288",
+  "source": [
+   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+  ]
+ },
+ "AP_N_HOUSE": {
+  "value": "17,318",
+  "source": [
+   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+  ]
+ },
+ "AP_N_SENATE": {
+  "value": "3,970",
+  "source": [
+   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+  ]
+ },
+ "AP_N_MEMBERS": {
+  "value": "3,637",
+  "source": [
+   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+  ]
+ },
+ "AP_RECOG_Q": {
+  "value": "0.811",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_R_X_DW1_80_Q": {
+  "value": "0.315",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_R_X_DW1_118_Q": {
+  "value": "0.792",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_BEST_ECON_Q": {
+  "value": "19",
+  "source": [
+   "02_ideology_map/out/qwen/rule.json"
+  ]
+ },
+ "AP_BEST_SOC_Q": {
+  "value": "16",
+  "source": [
+   "02_ideology_map/out/qwen/rule.json"
+  ]
+ },
+ "AP_J1_ECON_Q": {
+  "value": "0.977",
+  "source": [
+   "02_ideology_map/out/qwen/s2/J1_economic.json"
+  ]
+ },
+ "AP_J1_SOC_Q": {
+  "value": "0.909",
+  "source": [
+   "02_ideology_map/out/qwen/s2/J1_social.json"
+  ]
+ },
+ "AP_RECOG_L": {
+  "value": "0.921",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_R_X_DW1_80_L": {
+  "value": "0.511",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_R_X_DW1_118_L": {
+  "value": "0.963",
+  "source": [
+   "02_ideology_map/out/s4/anchors.json"
+  ]
+ },
+ "AP_BEST_ECON_L": {
+  "value": "16",
+  "source": [
+   "02_ideology_map/out/llama/rule.json"
+  ]
+ },
+ "AP_BEST_SOC_L": {
+  "value": "15",
+  "source": [
+   "02_ideology_map/out/llama/rule.json"
+  ]
+ },
+ "AP_J1_ECON_L": {
+  "value": "0.971",
+  "source": [
+   "02_ideology_map/out/llama/s2/J1_economic.json"
+  ]
+ },
+ "AP_J1_SOC_L": {
+  "value": "0.975",
+  "source": [
+   "02_ideology_map/out/llama/s2/J1_social.json"
+  ]
+ },
+ "AP_QN_AB": {
+  "value": "10,444",
+  "source": [
+   "02_ideology_map/out/s4/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ELSP_AB": {
+  "value": "4,321",
+  "source": [
+   "02_ideology_map/out/s4/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ELST_AB": {
+  "value": "909",
+  "source": [
+   "02_ideology_map/out/s4/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ERSP_AB": {
+  "value": "1,340",
+  "source": [
+   "02_ideology_map/out/s4/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ERST_AB": {
+  "value": "3,874",
+  "source": [
+   "02_ideology_map/out/s4/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_GUN": {
+  "value": "2,064",
+  "source": [
+   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ELSP_GUN": {
+  "value": "895",
+  "source": [
+   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ELST_GUN": {
+  "value": "139",
+  "source": [
+   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ERSP_GUN": {
+  "value": "231",
+  "source": [
+   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+  ]
+ },
+ "AP_QN_ERST_GUN": {
+  "value": "799",
+  "source": [
+   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+  ]
+ },
+ "AP_DW_DGAP": {
+  "value": "0.903",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_DW_DGAP_CI": {
+  "value": "[0.799, 1.016]",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_DW_CHANGE_D": {
+  "value": "−0.322",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_DW_CHANGE_D_CI": {
+  "value": "[−0.400, −0.247]",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_DW_CHANGE_R": {
+  "value": "0.581",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_DW_CHANGE_R_CI": {
+  "value": "[0.506, 0.660]",
+  "source": [
+   "10_polarization_history/out/t0/contrasts.json"
+  ]
+ },
+ "AP_CH_HOUSE_DIFF_Q": {
+  "value": "1.378",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_DIFF_Q_CI": {
+  "value": "[1.222, 1.540]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_SHARE_D_Q": {
+  "value": "0.582",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_SHARE_D_DW": {
+  "value": "0.355",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_EARLY_Q": {
+  "value": "−0.040",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_EARLY_Q_CI": {
+  "value": "[−0.132, 0.057]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_DIFF_Q": {
+  "value": "1.063",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_DIFF_Q_CI": {
+  "value": "[0.768, 1.360]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_SHARE_D_Q": {
+  "value": "0.764",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_SHARE_D_DW": {
+  "value": "0.359",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_EARLY_Q": {
+  "value": "0.364",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_EARLY_Q_CI": {
+  "value": "[0.165, 0.538]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_DIFF_L": {
+  "value": "1.520",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_DIFF_L_CI": {
+  "value": "[1.432, 1.612]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_SHARE_D_L": {
+  "value": "0.719",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_EARLY_L": {
+  "value": "0.479",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_HOUSE_EARLY_L_CI": {
+  "value": "[0.411, 0.543]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_DIFF_L": {
+  "value": "0.973",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_DIFF_L_CI": {
+  "value": "[0.784, 1.166]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_SHARE_D_L": {
+  "value": "0.744",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_EARLY_L": {
+  "value": "0.739",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_CH_SENATE_EARLY_L_CI": {
+  "value": "[0.625, 0.832]",
+  "source": [
+   "10_polarization_history/out/t0/subgroups.csv"
+  ]
+ },
+ "AP_N1_DEMOCRAT_86_113_Q": {
+  "value": "−0.294",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_DEMOCRAT_86_113_Q_CI": {
+  "value": "[−0.394, −0.180]",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_REPUBLICAN_86_113_Q": {
+  "value": "0.071",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_REPUBLICAN_86_113_Q_CI": {
+  "value": "[−0.065, 0.200]",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_DEMOCRAT_86_113_L": {
+  "value": "−0.786",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_DEMOCRAT_86_113_L_CI": {
+  "value": "[−0.887, −0.686]",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_REPUBLICAN_86_113_L": {
+  "value": "−0.099",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_REPUBLICAN_86_113_L_CI": {
+  "value": "[−0.237, 0.044]",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_N1_ROWS": {
+  "value": "21,204",
+  "source": [
+   "11_nominate_benchmarks/out/n1.json"
+  ]
+ },
+ "AP_ERA_AB_1970_ALIGNED_Q": {
+  "value": "0.495",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1970_CROSS_Q": {
+  "value": "0.184",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1970_NCROSS": {
+  "value": "657",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1980_ALIGNED_Q": {
+  "value": "0.577",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1980_CROSS_Q": {
+  "value": "0.226",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1980_NCROSS": {
+  "value": "567",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1990_ALIGNED_Q": {
+  "value": "0.683",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1990_CROSS_Q": {
+  "value": "0.239",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1990_NCROSS": {
+  "value": "452",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2000_ALIGNED_Q": {
+  "value": "0.762",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2000_CROSS_Q": {
+  "value": "0.163",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2000_NCROSS": {
+  "value": "270",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2010_ALIGNED_Q": {
+  "value": "0.825",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2010_CROSS_Q": {
+  "value": "0.096",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2010_NCROSS": {
+  "value": "303",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1970_ALIGNED_L": {
+  "value": "0.793",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1970_CROSS_L": {
+  "value": "0.110",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1980_ALIGNED_L": {
+  "value": "0.843",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1980_CROSS_L": {
+  "value": "0.171",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1990_ALIGNED_L": {
+  "value": "0.902",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_1990_CROSS_L": {
+  "value": "0.230",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2000_ALIGNED_L": {
+  "value": "0.930",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2000_CROSS_L": {
+  "value": "0.200",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2010_ALIGNED_L": {
+  "value": "0.914",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_AB_2010_CROSS_L": {
+  "value": "0.109",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era.json"
+  ]
+ },
+ "AP_ERA_GUN_1980_ALIGNED_Q": {
+  "value": "0.583",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1980_CROSS_Q": {
+  "value": "0.171",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1980_NCROSS": {
+  "value": "193",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1990_ALIGNED_Q": {
+  "value": "0.696",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1990_CROSS_Q": {
+  "value": "0.210",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1990_NCROSS": {
+  "value": "124",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2000_ALIGNED_Q": {
+  "value": "0.824",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2000_CROSS_Q": {
+  "value": "0.083",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2000_NCROSS": {
+  "value": "36",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2010_ALIGNED_Q": {
+  "value": "0.821",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2010_CROSS_Q": {
+  "value": "0.118",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2010_NCROSS": {
+  "value": "17",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1980_ALIGNED_L": {
+  "value": "0.844",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1980_CROSS_L": {
+  "value": "0.119",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1990_ALIGNED_L": {
+  "value": "0.895",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_1990_CROSS_L": {
+  "value": "0.145",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2000_ALIGNED_L": {
+  "value": "0.938",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2000_CROSS_L": {
+  "value": "0.139",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2010_ALIGNED_L": {
+  "value": "0.972",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_ERA_GUN_2010_CROSS_L": {
+  "value": "0.118",
+  "source": [
+   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_OBS_Q": {
+  "value": "0.191",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_Q": {
+  "value": "0.419",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_Q_CI": {
+  "value": "[0.402, 0.438]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_MATCHED_Q": {
+  "value": "0.349",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_MATCHED_Q_CI": {
+  "value": "[0.330, 0.368]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_OBS_Q": {
+  "value": "0.673",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_Q": {
+  "value": "0.564",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_Q_CI": {
+  "value": "[0.554, 0.574]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_MATCHED_Q": {
+  "value": "0.635",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_MATCHED_Q_CI": {
+  "value": "[0.624, 0.645]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_OBS_Q": {
+  "value": "0.622",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_Q": {
+  "value": "0.489",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_Q_CI": {
+  "value": "[0.465, 0.515]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_MATCHED_Q": {
+  "value": "0.545",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_MATCHED_Q_CI": {
+  "value": "[0.520, 0.570]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_OBS_L": {
+  "value": "0.160",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_L": {
+  "value": "0.540",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_L_CI": {
+  "value": "[0.522, 0.558]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_MATCHED_L": {
+  "value": "0.494",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_CROSS_MATCHED_L_CI": {
+  "value": "[0.478, 0.510]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_OBS_L": {
+  "value": "0.880",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_L": {
+  "value": "0.768",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_L_CI": {
+  "value": "[0.760, 0.776]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_MATCHED_L": {
+  "value": "0.808",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_ALIGNED_MATCHED_L_CI": {
+  "value": "[0.801, 0.816]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_OBS_L": {
+  "value": "0.776",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_L": {
+  "value": "0.645",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_L_CI": {
+  "value": "[0.622, 0.668]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_MATCHED_L": {
+  "value": "0.676",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_AB_DEST_MATCHED_L_CI": {
+  "value": "[0.657, 0.698]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_DRAWS": {
+  "value": "500",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_OBS_Q": {
+  "value": "0.173",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_Q": {
+  "value": "0.451",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_Q_CI": {
+  "value": "[0.403, 0.497]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_MATCHED_Q": {
+  "value": "0.382",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_MATCHED_Q_CI": {
+  "value": "[0.335, 0.426]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_OBS_Q": {
+  "value": "0.724",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_Q": {
+  "value": "0.601",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_Q_CI": {
+  "value": "[0.578, 0.622]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_MATCHED_Q": {
+  "value": "0.666",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_MATCHED_Q_CI": {
+  "value": "[0.643, 0.688]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_OBS_Q": {
+  "value": "0.565",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_Q": {
+  "value": "0.502",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_Q_CI": {
+  "value": "[0.440, 0.570]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_MATCHED_Q": {
+  "value": "0.555",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_MATCHED_Q_CI": {
+  "value": "[0.505, 0.610]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_OBS_L": {
+  "value": "0.130",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_L": {
+  "value": "0.572",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_L_CI": {
+  "value": "[0.527, 0.618]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_MATCHED_L": {
+  "value": "0.537",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_CROSS_MATCHED_L_CI": {
+  "value": "[0.495, 0.576]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_OBS_L": {
+  "value": "0.912",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_L": {
+  "value": "0.786",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_L_CI": {
+  "value": "[0.769, 0.804]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_MATCHED_L": {
+  "value": "0.817",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_ALIGNED_MATCHED_L_CI": {
+  "value": "[0.800, 0.834]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_OBS_L": {
+  "value": "0.730",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_L": {
+  "value": "0.636",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_L_CI": {
+  "value": "[0.568, 0.703]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_MATCHED_L": {
+  "value": "0.667",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_NOISE_GUN_DEST_MATCHED_L_CI": {
+  "value": "[0.610, 0.722]",
+  "source": [
+   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+  ]
+ },
+ "AP_RECOG_ALIGNED_AB_Q": {
+  "value": "0.866",
+  "source": [
+   "16_supplementary_checks/benchmark/benchmark_recall.json"
+  ]
+ },
+ "AP_RECOG_CROSS_AB_Q": {
+  "value": "0.772",
+  "source": [
+   "16_supplementary_checks/benchmark/benchmark_recall.json"
+  ]
+ },
+ "AP_RECOG_ALIGNED_AB_L": {
+  "value": "0.939",
+  "source": [
+   "16_supplementary_checks/benchmark/benchmark_recall.json"
+  ]
+ },
+ "AP_RECOG_CROSS_AB_L": {
+  "value": "0.916",
+  "source": [
+   "16_supplementary_checks/benchmark/benchmark_recall.json"
+  ]
+ },
+ "AP_NOPERSONA_Q": {
+  "value": "0.127",
+  "source": [
+   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+  ]
+ },
+ "AP_NOPERSONA_Q_CI": {
+  "value": "[−0.017, 0.272]",
+  "source": [
+   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+  ]
+ },
+ "AP_NOPERSONA_L": {
+  "value": "−0.029",
+  "source": [
+   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+  ]
+ },
+ "AP_NOPERSONA_L_CI": {
+  "value": "[−0.125, 0.061]",
+  "source": [
+   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+  ]
+ },
+ "AP_BUNDLE_MASS_Q": {
+  "value": "1.000",
+  "source": [
+   "04_bundled_choices/out/qwen/RESULTS.json"
+  ]
+ },
+ "AP_STEER_P1_Q": {
+  "value": "0.076",
+  "source": [
+   "04_bundled_choices/out/qwen/RESULTS.json"
+  ]
+ },
+ "AP_STEER_P1_Q_CI": {
+  "value": "[−0.032, 0.182]",
+  "source": [
+   "04_bundled_choices/out/qwen/RESULTS.json"
+  ]
+ },
+ "AP_BUNDLE_MASS_L": {
+  "value": "0.816",
+  "source": [
+   "04_bundled_choices/out/llama/RESULTS.json"
+  ]
+ },
+ "AP_STEER_P1_L": {
+  "value": "0.362",
+  "source": [
+   "04_bundled_choices/out/llama/RESULTS.json"
+  ]
+ },
+ "AP_STEER_P1_L_CI": {
+  "value": "[0.266, 0.457]",
+  "source": [
+   "04_bundled_choices/out/llama/RESULTS.json"
+  ]
+ },
+ "AP_GUN_ORDER_CORR_Q": {
+  "value": "0.212",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_GUN_ACC_ALIGNED_Q_CI": {
+  "value": "[0.429, 0.526]",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_GUN_PRED_YEA_Q": {
+  "value": "0.287",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_GUN_PRED_RC": {
+  "value": "52",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_GUN_PRED_RC_SCALE": {
+  "value": "36",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_GUN_PRED_RC_OUTSIDE": {
+  "value": "16",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json (rollcalls minus gun_cp_loo.rollcalls)"
+  ]
+ },
+ "AP_LOO_CHANGED_Q": {
+  "value": "0.041",
+  "source": [
+   "06_vote_prediction/out/v6/loo_cp_qwen.json"
+  ]
+ },
+ "AP_ERRDIR_CP_AB_Q": {
+  "value": "0.572",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_qwen.json"
+  ]
+ },
+ "AP_ERRDIR_CP_AB_Q_CI": {
+  "value": "[0.541, 0.601]",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_qwen.json"
+  ]
+ },
+ "AP_ERRDIR_ALIGNED_AB_Q": {
+  "value": "0.138",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_qwen.json"
+  ]
+ },
+ "AP_ERRDIR_ALIGNED_AB_Q_CI": {
+  "value": "[0.127, 0.151]",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_qwen.json"
+  ]
+ },
+ "AP_GUN_ORDER_CORR_L": {
+  "value": "0.853",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_llama.json"
+  ]
+ },
+ "AP_GUN_ACC_ALIGNED_L_CI": {
+  "value": "[0.540, 0.695]",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_llama.json"
+  ]
+ },
+ "AP_GUN_PRED_YEA_L": {
+  "value": "0.484",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_llama.json"
+  ]
+ },
+ "AP_LOO_CHANGED_L": {
+  "value": "0.041",
+  "source": [
+   "06_vote_prediction/out/v6/loo_cp_llama.json"
+  ]
+ },
+ "AP_ERRDIR_CP_AB_L": {
+  "value": "0.702",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_llama.json"
+  ]
+ },
+ "AP_ERRDIR_CP_AB_L_CI": {
+  "value": "[0.671, 0.731]",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_llama.json"
+  ]
+ },
+ "AP_ERRDIR_ALIGNED_AB_L": {
+  "value": "0.180",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_llama.json"
+  ]
+ },
+ "AP_ERRDIR_ALIGNED_AB_L_CI": {
+  "value": "[0.164, 0.198]",
+  "source": [
+   "06_vote_prediction/out/v6/error_direction_llama.json"
+  ]
+ },
+ "AP_GUN_ACTUAL_YEA": {
+  "value": "0.531",
+  "source": [
+   "06_vote_prediction/out/g2/estimates_qwen.json"
+  ]
+ },
+ "AP_AUTHOR_READ_AB_ECON": {
+  "value": "20",
+  "source": [
+   "06_vote_prediction/out/v1/AUTHOR_CHECK.md"
+  ]
+ },
+ "AP_AUTHOR_READ_GUN": {
+  "value": "20",
+  "source": [
+   "06_vote_prediction/out/g2/AUTHOR_DESC_CHECK.csv"
+  ]
+ },
+ "AP_D3_SENATE_Q": {
+  "value": "−0.009",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D3_SENATE_Q_CI": {
+  "value": "[−0.037, 0.018]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_Q": {
+  "value": "−0.015",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_Q_CI": {
+  "value": "[−0.028, −0.001]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_SD_Q": {
+  "value": "−0.060",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_Q": {
+  "value": "−0.017",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_Q_CI": {
+  "value": "[−0.031, −0.002]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_SD_Q": {
+  "value": "−0.057",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D3_SENATE_L": {
+  "value": "−0.032",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D3_SENATE_L_CI": {
+  "value": "[−0.066, 0.002]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_L": {
+  "value": "−0.005",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_L_CI": {
+  "value": "[−0.010, 0.001]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_X_SD_L": {
+  "value": "−0.034",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_L": {
+  "value": "−0.007",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_L_CI": {
+  "value": "[−0.012, −0.001]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D2_Y_SD_L": {
+  "value": "−0.050",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D1_B": {
+  "value": "0.030",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D1_B_CI": {
+  "value": "[0.019, 0.042]",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D1_ROWS": {
+  "value": "9,501",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D1_CP": {
+  "value": "1,902",
+  "source": [
+   "12_speech_and_state/out/d/d.json (crosstab cp1_ccp0 + cp1_ccp1)"
+  ]
+ },
+ "AP_D1_OVERLAP": {
+  "value": "876",
+  "source": [
+   "12_speech_and_state/out/d/d.json"
+  ]
+ },
+ "AP_D1_CCP": {
+  "value": "3,816",
+  "source": [
+   "12_speech_and_state/out/d/d.json (crosstab cp0_ccp1 + cp1_ccp1)"
+  ]
+ },
+ "AP_GMP_CP": {
+  "value": "−0.040",
+  "source": [
+   "11_nominate_benchmarks/out/n2.json"
+  ]
+ },
+ "AP_GMP_CP_CI": {
+  "value": "[−0.045, −0.035]",
+  "source": [
+   "11_nominate_benchmarks/out/n2.json"
+  ]
+ },
+ "AP_NAMED_GUN_Q": {
+  "value": "0.008",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_Q_CI": {
+  "value": "[−0.000, 0.015]",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_ABDEF_Q": {
+  "value": "0.011",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_ABDEF_Q_CI": {
+  "value": "[0.002, 0.019]",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_L": {
+  "value": "0.044",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_L_CI": {
+  "value": "[0.030, 0.057]",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_ABDEF_L": {
+  "value": "0.062",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_ABDEF_L_CI": {
+  "value": "[0.048, 0.076]",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_FAIL_Q": {
+  "value": "0.020",
+  "source": [
+   "09_named_member_entropy/analysis/data/rows_qwen.parquet (mean of fail_share)"
+  ]
+ },
+ "AP_NAMED_FAIL_L": {
+  "value": "0.041",
+  "source": [
+   "09_named_member_entropy/analysis/data/rows_llama.parquet (mean of fail_share)"
+  ]
+ },
+ "AP_S1_SPEECH": {
+  "value": "−0.065",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S1_SPEECH_CI": {
+  "value": "[−0.130, −0.004]",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S1_DW": {
+  "value": "0.344",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S1_DW_CI": {
+  "value": "[0.222, 0.458]",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S2_ROWS": {
+  "value": "9,559",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_X1_D_Q": {
+  "value": "0.482",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_D_Q_CI": {
+  "value": "[0.386, 0.574]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_ECON_PULL_Q": {
+  "value": "0.143",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_ECON_PULL_Q_CI": {
+  "value": "[0.094, 0.195]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_PARTY_PULL_Q": {
+  "value": "0.126",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_PARTY_PULL_Q_CI": {
+  "value": "[0.071, 0.178]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X3_B_Q": {
+  "value": "0.040",
+  "source": [
+   "15_mechanism/out/x3/RESULTS.json"
+  ]
+ },
+ "AP_X3_B_Q_CI": {
+  "value": "[−0.061, 0.153]",
+  "source": [
+   "15_mechanism/out/x3/RESULTS.json"
+  ]
+ },
+ "AP_X4_B_Q": {
+  "value": "0.046",
+  "source": [
+   "15_mechanism/out/x4/RESULTS.json"
+  ]
+ },
+ "AP_X4_B_Q_CI": {
+  "value": "[−0.052, 0.175]",
+  "source": [
+   "15_mechanism/out/x4/RESULTS.json"
+  ]
+ },
+ "AP_X4_PAIRS": {
+  "value": "54",
+  "source": [
+   "15_mechanism/out/x4/RESULTS.json"
+  ]
+ },
+ "AP_X5_DEMOCRAT_Q": {
+  "value": "0.667",
+  "source": [
+   "15_mechanism/out/x5/RESULTS_stageA.json"
+  ]
+ },
+ "AP_X5_DEMOCRAT_Q_CI": {
+  "value": "[0.401, 1.061]",
+  "source": [
+   "15_mechanism/out/x5/RESULTS_stageA.json"
+  ]
+ },
+ "AP_X5_3W_DEMOCRAT_Q": {
+  "value": "0.667",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_DEMOCRAT_Q_CI": {
+  "value": "[0.397, 1.071]",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_REPUBLICAN_Q": {
+  "value": "0.358",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_REPUBLICAN_Q_CI": {
+  "value": "[0.176, 0.661]",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_S1_X_Q": {
+  "value": "0.360",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S1_X_Q_CI": {
+  "value": "[0.281, 0.449]",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S2B_Q": {
+  "value": "0.016",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2B_Q_CI": {
+  "value": "[−0.015, 0.046]",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2C_Q": {
+  "value": "0.027",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2C_Q_CI": {
+  "value": "[0.004, 0.049]",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_X1_D_L": {
+  "value": "0.473",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_D_L_CI": {
+  "value": "[0.385, 0.562]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_ECON_PULL_L": {
+  "value": "0.199",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_ECON_PULL_L_CI": {
+  "value": "[0.153, 0.245]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_PARTY_PULL_L": {
+  "value": "0.172",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X1_PARTY_PULL_L_CI": {
+  "value": "[0.125, 0.220]",
+  "source": [
+   "15_mechanism/out/x1/RESULTS.json"
+  ]
+ },
+ "AP_X3_B_L": {
+  "value": "0.117",
+  "source": [
+   "15_mechanism/out/x3/RESULTS.json"
+  ]
+ },
+ "AP_X3_B_L_CI": {
+  "value": "[−0.193, 0.574]",
+  "source": [
+   "15_mechanism/out/x3/RESULTS.json"
+  ]
+ },
+ "AP_X4_B_L": {
+  "value": "0.034",
+  "source": [
+   "15_mechanism/out/x4/RESULTS.json"
+  ]
+ },
+ "AP_X4_B_L_CI": {
+  "value": "[−0.062, 0.119]",
+  "source": [
+   "15_mechanism/out/x4/RESULTS.json"
+  ]
+ },
+ "AP_X5_DEMOCRAT_L": {
+  "value": "0.872",
+  "source": [
+   "15_mechanism/out/x5/RESULTS_stageA.json"
+  ]
+ },
+ "AP_X5_DEMOCRAT_L_CI": {
+  "value": "[0.492, 1.582]",
+  "source": [
+   "15_mechanism/out/x5/RESULTS_stageA.json"
+  ]
+ },
+ "AP_X5_3W_DEMOCRAT_L": {
+  "value": "0.872",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_DEMOCRAT_L_CI": {
+  "value": "[0.493, 1.569]",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_REPUBLICAN_L": {
+  "value": "0.440",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_X5_3W_REPUBLICAN_L_CI": {
+  "value": "[0.154, 0.993]",
+  "source": [
+   "15_mechanism/out/x5/SENS_threeway.json"
+  ]
+ },
+ "AP_S1_X_L": {
+  "value": "0.433",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S1_X_L_CI": {
+  "value": "[0.369, 0.492]",
+  "source": [
+   "12_speech_and_state/out/s1/s1.json"
+  ]
+ },
+ "AP_S2B_L": {
+  "value": "−0.005",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2B_L_CI": {
+  "value": "[−0.038, 0.028]",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2C_L": {
+  "value": "0.025",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ },
+ "AP_S2C_L_CI": {
+  "value": "[0.005, 0.045]",
+  "source": [
+   "12_speech_and_state/out/s2/s2.json"
+  ]
+ }
+}

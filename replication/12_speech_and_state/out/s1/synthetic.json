@@ -1,0 +1,9 @@
+{
+ "null_leave_out": 0.4996879599001298,
+ "null_plug_in": 0.5093721819075473,
+ "planted_leave_out": 0.63463891755419,
+ "planted_true": 0.6353626593112807,
+ "boot_mean_minus_point": -4.691665682199364e-05,
+ "boot_sd": 0.0010510271814867193,
+ "pass": true
+}

@@ -1,0 +1,39 @@
+{
+ "llama": {
+  "n": 10444,
+  "agreement": 0.7249138261202605,
+  "confusion_vote_rows_map_cols": {
+   "EL-SP": {
+    "EL-SP": 3808,
+    "EL-ST": 155,
+    "ER-SP": 85,
+    "ER-ST": 273
+   },
+   "EL-ST": {
+    "EL-SP": 573,
+    "EL-ST": 149,
+    "ER-SP": 30,
+    "ER-ST": 157
+   },
+   "ER-SP": {
+    "EL-SP": 170,
+    "EL-ST": 67,
+    "ER-SP": 211,
+    "ER-ST": 892
+   },
+   "ER-ST": {
+    "EL-SP": 190,
+    "EL-ST": 118,
+    "ER-SP": 163,
+    "ER-ST": 3403
+   }
+  },
+  "recall_by_vote_quadrant": {
+   "EL-SP": 0.881277482064337,
+   "EL-ST": 0.1639163916391639,
+   "ER-SP": 0.15746268656716417,
+   "ER-ST": 0.8784202374806401
+  },
+  "known_only_agreement": 0.743129614438064
+ }
+}

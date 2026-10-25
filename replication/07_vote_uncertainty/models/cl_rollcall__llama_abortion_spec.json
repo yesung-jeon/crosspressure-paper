@@ -1,0 +1,17 @@
+{
+  "tag": "cl_rollcall__llama_abortion",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": "key",
+  "n": 54086,
+  "fe_cells": 386,
+  "clusters": 193,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.028764453752164104
+  },
+  "covariance": [
+    [6.9714307729235769e-06]
+  ]
+}

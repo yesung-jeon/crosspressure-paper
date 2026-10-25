@@ -1,0 +1,80 @@
+{
+ "note": "post hoc; three-way bootstrap",
+ "B": 10000,
+ "stageA": {
+  "qwen": {
+   "Democrat": {
+    "r": 0.6674892841346667,
+    "ci95": [
+     0.39739125087214017,
+     1.0708447805427244
+    ],
+    "verdict": "equal weight not excluded"
+   },
+   "Republican": {
+    "r": 0.3581473658160439,
+    "ci95": [
+     0.17645979388547225,
+     0.6611747114386847
+    ],
+    "verdict": "social commitment down-weighted at the decision"
+   }
+  },
+  "llama": {
+   "Democrat": {
+    "r": 0.8722854619985063,
+    "ci95": [
+     0.49287868175809857,
+     1.5685440074961676
+    ],
+    "verdict": "equal weight not excluded"
+   },
+   "Republican": {
+    "r": 0.4398301456375296,
+    "ci95": [
+     0.1544844548975308,
+     0.9932511896334921
+    ],
+    "verdict": "social commitment down-weighted at the decision"
+   }
+  }
+ },
+ "stageB": {
+  "qwen": {
+   "Democrat": {
+    "delta_r": -0.04646690851316637,
+    "ci95": [
+     -0.08747383078127603,
+     0.018978897863652117
+    ],
+    "verdict": "no late suppression"
+   },
+   "Republican": {
+    "delta_r": -0.025412816065718102,
+    "ci95": [
+     -0.0644388859846002,
+     0.017351196208609445
+    ],
+    "verdict": "no late suppression"
+   }
+  },
+  "llama": {
+   "Democrat": {
+    "delta_r": 0.06218871299701878,
+    "ci95": [
+     -0.04159986963281569,
+     0.4080147749844401
+    ],
+    "verdict": "undetermined"
+   },
+   "Republican": {
+    "delta_r": 0.07743855828947022,
+    "ci95": [
+     -0.07116306379325198,
+     0.24515166807530783
+    ],
+    "verdict": "undetermined"
+   }
+  }
+ }
+}

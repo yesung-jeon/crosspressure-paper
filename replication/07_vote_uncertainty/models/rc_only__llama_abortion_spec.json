@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__llama_abortion",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 54086,
+  "fe_cells": 193,
+  "clusters": [2146, 193],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.030512818098187525,
+    "party_dem": 0.0735040893748201
+  },
+  "covariance": [
+    [2.4256948693707434e-05, -2.8224282186992311e-06],
+    [-2.822428218699232e-06, 0.00015128235695579059]
+  ]
+}

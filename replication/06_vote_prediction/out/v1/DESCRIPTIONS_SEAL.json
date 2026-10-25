@@ -1,0 +1,12 @@
+{
+  "code/WRITER_SPEC.md": "d700bd98123f854f47081f10ccc5c28499e4cf99a330439f38cce97f272c385c",
+  "code/overrides.json": "a9c7246a95c0db4994b1b960135fa6d1f7b414983aa5967d33df16733d6025f1",
+  "out/v1/AUTHOR_CHECK.md": "1b706b57acac3523c8112589b2106d4959f816c93d821be07bc678fd0f16424e",
+  "out/v1/descriptions.csv": "9f5691cba8ee52461c4b7ef59c44e645931f351faf892d6fb88ddb30356051f5",
+  "out/v1/written/batch_0.json": "9d97e11eb602d35e9e3b252d70b5df0dc03f88df048d4062f4af2fc823d3b050",
+  "out/v1/written/batch_1.json": "6db7640853dc01bd4698247611b11193e2dfd0a9005a35b1935bb1bf5f95c349",
+  "out/v1/written/batch_2.json": "99122b7039b9b081416ac634fbd7426a3c5d90c0ff8821ebd85c4e54eba595e8",
+  "out/v1/written/batch_3.json": "1246dd5e24b9258e2ec315bc93d63c5f8d94c7ba4af7b1fe9624d63d93534a34",
+  "out/v2/ADJUDICATION.md": "eb36002c8922ffe0ac43f7ef3c9c7d6549c83596c1f7a52dc08238a789c13dcc",
+  "out/v2/verify.csv": "2378c73c0d3e999c9d14e1b7717b89ee30fc8d08e581d0e5d9abbaca9f93be02"
+}

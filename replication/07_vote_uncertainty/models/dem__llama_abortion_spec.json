@@ -1,0 +1,17 @@
+{
+  "tag": "dem__llama_abortion",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 28994,
+  "fe_cells": 193,
+  "clusters": [1077, 193],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.012127172818341058
+  },
+  "covariance": [
+    [1.9852811272561929e-05]
+  ]
+}

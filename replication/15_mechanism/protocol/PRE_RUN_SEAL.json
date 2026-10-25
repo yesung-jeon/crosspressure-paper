@@ -1,0 +1,63 @@
+{
+ "sealed": "2026-10-18T16:42",
+ "purpose": "pre-run seal for Study M X1 (PLAN v0.1)",
+ "files": {
+  "signed_thesis_and_records": {
+   "manuscript/ARGUMENT_CROSSPRESSURE_v4_2026-10-18.md": "ea6a042dad1eb2f827acc2224504a50c769fe38e96e6e97a6ae5bc02cedc2ee4",
+   "manuscript/ARGUMENT_CROSSPRESSURE.md": "f8c1f4dfdc7ec45d43c4c4a461339d48911f1972ebddfff908bd658cdab493cf",
+   "manuscript/ARGUMENT_MAP_CROSSPRESSURE_2026-10-16.md": "f31321709431e1e7c3faa8df09ee7a272391c38919d23965f8c725e9a424420a",
+   "manuscript/ARGUMENT_CROSSPRESSURE_v3_2026-10-17.md": "c080b0bb86c9c08ad352d0ba707e0a0754a9407e6a66eadd5bb348c17ff3663a",
+   "manuscript/ARGUMENT_MAP_CROSSPRESSURE_2026-10-17.md": "c6c350128ec3aaf82c862b5c26a30353214b4d626b8df43db610234826713a0c",
+   "review/argument_redraw_2026-10-17/ROBUST_SELLING_MAP.md": "c18a2153886cf5509a0b3cb8b85757ba3df985ebaa804e4bd79bfa2c51955037",
+   "review/argument_redraw_2026-10-17/NO_PERSONA_INTERVAL.md": "ffc777c95aa6157aaeb78eb30f89e04bd7c848993e92ec0bc2fea2bf9b066432",
+   "review/argument_redraw_2026-10-17/MECHANISM_OPTIONS.md": "25f25478724ad62d1344ffff43400e254647459666c7e03ef4ccaafc62c0002d",
+   "review/article_argument_2026-10-16/FINDINGS_ATLAS.md": "745d0064814c5635f8fa9778e011ff4beee213ee2601c2103225a0f38524254b",
+   "review/correction_2026-10-16c/no_persona_package_effect.json": "8b7fdc6a6a4fbe783eff905265ed176f5e10b3a1c77111b6ec5e9519af558afb"
+  },
+  "study_m": {
+   "STUDY_M_mechanism/PLAN.md": "a7e34cbe4d41ba55ece9eaf5dbf846220feb8f82c4e9a90a5eb62871c9d19b80",
+   "STUDY_M_mechanism/PLAN_REVIEW.md": "09056e8ad7081a3ffc145fc6dec95a7f73f83340b7189d1f33ead4b41b843550",
+   "STUDY_M_mechanism/DEPENDENCIES.md": "adac6df271f1d9c9356cfcbf623c79fb3e263985e2e7152b4a7ec1852ed49fe7",
+   "STUDY_M_mechanism/synth_check.log": "9cf17bd8c761bcf0975569c1fa855d5abf83c17bd87c9a5bccebaaa9decece5e",
+   "STUDY_M_mechanism/code/pre_seal.py": "504f5975ebf44a17dce66a849239fc7c36dfd3cd44dbaf977da2e663b3b07f7c",
+   "STUDY_M_mechanism/code/synth_check.py": "0a6d49a012223b556b39e4663af2704ca51a29a6111ce4b3af5b019fae44ed02",
+   "STUDY_M_mechanism/code/x1_common.py": "b564153ddc790a1f697e847867efa9209974d6fa153c2ca181b5e8b99946d425",
+   "STUDY_M_mechanism/code/x1_where.py": "e67c5842ce904195eba277a70bbc981adaac37ab24101ed4cf629ff3b14e098d"
+  },
+  "x1_inputs": {
+   "STUDY_B_polarization/out/data/issue_scales.csv": "4b7fa619f5dba539ee1e077b2cb531f877d238a7233c7ded70ce396aacd6c698",
+   "STUDY_D_quadrant/out/qwen/s3/temporal_member_scores.csv": "90850099fe8035e76d744144207334697081f549863be316f85113b4e0b7fdc2",
+   "STUDY_D_quadrant/out/llama/s3/temporal_member_scores.csv": "080ab605f731a7dfa641ac30aa3d56b9fe5632c196e62dac8f89c96b636ecf27",
+   "STUDY_D_quadrant/out/olmo/s3/temporal_member_scores.csv": "e4b5d311cf073f976ab4791c25909a18fd82e0e48ab7b1eae3a217474042285a",
+   "STUDY_D_quadrant/out/s4/vote_vs_map.json": "5fc7250da39b7ba58681f1c05677f4aa914a8cccfe1b388da520dbde8dc353eb",
+   "STUDY_D_quadrant/out/s4_olmo/vote_vs_map.json": "16624ceb4f30cfcdad6b40912004ccd408242ac8f6ec5a2963f270111ffee496",
+   "STUDY_D_quadrant/out/s5/i4_members.csv": "2e46891fcbf90d3991603394119ebb21e3669b93276f32013a25152533ec9cfe",
+   "STUDY_D_quadrant/out/s5/s5_conditions_qwen.csv": "d1eb37cbfc7656d476b9a1541be41ba66d0a091797a4e0263441f1ac85868b6f",
+   "STUDY_D_quadrant/out/s5/s5_conditions_llama.csv": "a258f40419007037c3fc2097867e3f269ad8235bd21cfc069e970c969075ab52",
+   "STUDY_D_quadrant/out/s5_olmo/s5_conditions_olmo.csv": "f6e2cf05b8a397ba72fad74d50536d420b852f1925e581ea4ac231263ebb8a5c",
+   "STUDY_D_quadrant/code/s4_quadrant.py": "b048e22fb2bbc799a13e68716c2aa4b76cff51dc17bd96a44b5b64c6e489bb83",
+   "STUDY_D_quadrant/code/s5_analyze.py": "a30ad522c68ef709220b311d5c7a46d65f9b20cafa7498582931812b4af6ae60",
+   "STUDY_D_quadrant/code/dcommon.py": "e315c07e104c3d75140d8ccf5dd24fd69c6f52b6809a8a99e25a33920626723c"
+  },
+  "existing_releases": {
+   "STUDY_D_quadrant/RELEASE.json": "291c56b8c3a030f71eababb73f3228622b2435ecd44b5e73be1a14d6efb9325a",
+   "STUDY_F_steer/RELEASE.json": "54b871a076bfdf23e8509d2014d8f65a693e13ff7a791f9886767e1d2dfe6e57",
+   "STUDY_G_steer_behavioral/RELEASE.json": "7afbef2f8bd067aab93407264242aeea6b69f45b9949d764c6a514457345ca00",
+   "STUDY_I_conflict_side/RELEASE.json": "8f6c4559c2845fed8a11c4c976ee0d2ddad744e16cf9cb57d5670a96ff2bd30c",
+   "STUDY_J_social_topics/RELEASE.json": "ba9e5465fb5ab1911b24ba8202e4fc7310b4809a2b17094c0cad571ae4eeaf55",
+   "STUDY_K_separation/RELEASE.json": "49f43bde4f746ae59b4ea3474a5212bbc337777910fd94f91ffa2eba028ca2e6",
+   "STUDY_L_battery/RELEASE.json": "ef38fd9ca423e10057e21350cd05dcb78403cb3be2ab84fd57737799681d8810",
+   "REANALYSIS_blockB/RELEASE.json": "45ba8d499bfaf5eadd49ae547404ec69428b4a1e9567976ffe871f05b0ea3a92"
+  }
+ },
+ "verify_seals_output": [
+  "STUDY_D_quadrant 2026-10-17T15:31 89 files; OK",
+  "STUDY_F_steer 2026-10-17T15:43 64 files; OK",
+  "STUDY_G_steer_behavioral 2026-10-17T13:59 32 files; OK",
+  "STUDY_I_conflict_side 2026-10-17T15:31 32 files; OK",
+  "STUDY_J_social_topics 2026-10-17T15:33 30 files; OK",
+  "STUDY_K_separation 2026-10-17T15:33 25 files; OK",
+  "STUDY_L_battery 2026-10-17T15:31 50 files; OK",
+  "REANALYSIS_blockB 2026-10-17T13:59 5 files; OK"
+ ]
+}

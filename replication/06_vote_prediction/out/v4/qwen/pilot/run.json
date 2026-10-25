@@ -1,0 +1,34 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+ "token_ids": {
+  "YEA": 56,
+  "YEA_any": [
+   56,
+   379,
+   809,
+   9011
+  ],
+  "NAY": 45,
+  "NAY_any": [
+   45,
+   77,
+   308,
+   451,
+   98073
+  ]
+ },
+ "decoded": {
+  "YEA": "Y",
+  "NAY": "N"
+ },
+ "torch": "2.11.0+cu128",
+ "prompts_sha256": "e7d6a0d8ef4fdfe3fa33982b995123441486cbc18854683f4e6a9fb33a37b301",
+ "gpu": "NVIDIA H200 MIG 7g.141gb",
+ "select": "pilot",
+ "n": 54086,
+ "parts": 28,
+ "finished": "2026-10-24T00:49:56",
+ "precision": "bf16",
+ "batch": 1
+}

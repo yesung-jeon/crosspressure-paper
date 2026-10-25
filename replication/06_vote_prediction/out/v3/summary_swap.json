@@ -1,0 +1,10 @@
+{
+ "rows": 102285,
+ "by_issue": {
+  "abortion": 54086,
+  "economic": 48199
+ },
+ "checked_against_V2": 25972,
+ "identical": 25972,
+ "text_sha256": "6964810e760a1a297dae45957a41da573aaaf1bdedec88cb2e720f478909eaf5"
+}

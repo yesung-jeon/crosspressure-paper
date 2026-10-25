@@ -1,0 +1,17 @@
+{
+  "tag": "nf__qwen_economic",
+  "outcome": "H_nf",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 48199,
+  "fe_cells": 360,
+  "clusters": [2111, 180],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": -0.009829702143365298
+  },
+  "covariance": [
+    [8.0748955461117187e-06]
+  ]
+}

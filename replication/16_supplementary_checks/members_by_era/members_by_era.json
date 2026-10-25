@@ -1,0 +1,251 @@
+{
+ "note": "descriptive follow-up added 2026-10-19 after the sealed results; no tests",
+ "members": {
+  "cross_placed_by_k_models": {
+   "0": 22,
+   "1": 7,
+   "2": 1,
+   "3": 0
+  },
+  "aligned_placed_by_k_models": {
+   "0": 0,
+   "1": 10,
+   "2": 20,
+   "3": 0
+  },
+  "cross_party_by_quadrant": {
+   "EL-ST": {
+    "Democrat": 15
+   },
+   "ER-SP": {
+    "Republican": 15
+   }
+  },
+  "cross_first_decade": {
+   "1970": 20,
+   "1980": 2,
+   "1990": 6,
+   "2000": 1,
+   "2010": 1
+  },
+  "misplaced_destination": {
+   "qwen": {
+    "EL-ST": {
+     "EL-SP": 6,
+     "ER-SP": 4
+    },
+    "ER-SP": {
+     "ER-ST": 10,
+     "EL-SP": 3,
+     "EL-ST": 1
+    }
+   },
+   "llama": {
+    "EL-ST": {
+     "EL-SP": 12,
+     "ER-ST": 2
+    },
+    "ER-SP": {
+     "ER-ST": 11,
+     "EL-SP": 2
+    }
+   }
+  },
+  "no_position": {
+   "qwen": 0,
+   "llama": 0
+  },
+  "senators_cross": [
+   {
+    "name": "Thomas Eagleton",
+    "party": "Democrat",
+    "state": "MO",
+    "first": 1973,
+    "last": 1985,
+    "vote_q": "EL-ST",
+    "qwen": false,
+    "llama": false
+   },
+   {
+    "name": "John Melcher",
+    "party": "Democrat",
+    "state": "MT",
+    "first": 1973,
+    "last": 1987,
+    "vote_q": "EL-ST",
+    "qwen": false,
+    "llama": false
+   },
+   {
+    "name": "John Pastore",
+    "party": "Democrat",
+    "state": "RI",
+    "first": 1973,
+    "last": 1975,
+    "vote_q": "EL-ST",
+    "qwen": true,
+    "llama": false
+   },
+   {
+    "name": "Walter Huddleston",
+    "party": "Democrat",
+    "state": "KY",
+    "first": 1973,
+    "last": 1979,
+    "vote_q": "EL-ST",
+    "qwen": true,
+    "llama": false
+   },
+   {
+    "name": "Jennings Randolph",
+    "party": "Democrat",
+    "state": "WV",
+    "first": 1975,
+    "last": 1983,
+    "vote_q": "EL-ST",
+    "qwen": true,
+    "llama": true
+   },
+   {
+    "name": "Howell Heflin",
+    "party": "Democrat",
+    "state": "AL",
+    "first": 1979,
+    "last": 1995,
+    "vote_q": "EL-ST",
+    "qwen": true,
+    "llama": false
+   },
+   {
+    "name": "Hiram Fong",
+    "party": "Republican",
+    "state": "HI",
+    "first": 1973,
+    "last": 1975,
+    "vote_q": "ER-SP",
+    "qwen": false,
+    "llama": false
+   },
+   {
+    "name": "Robert Packwood",
+    "party": "Republican",
+    "state": "OR",
+    "first": 1973,
+    "last": 1995,
+    "vote_q": "ER-SP",
+    "qwen": false,
+    "llama": true
+   },
+   {
+    "name": "John Chafee",
+    "party": "Republican",
+    "state": "RI",
+    "first": 1977,
+    "last": 1999,
+    "vote_q": "ER-SP",
+    "qwen": false,
+    "llama": false
+   }
+  ]
+ },
+ "rows": {
+  "qwen": {
+   "by_decade": {
+    "1970": {
+     "rows": 2011,
+     "cross_share": 0.32670313276976626,
+     "recall_aligned": 0.4948301329394387,
+     "recall_cross": 0.1841704718417047,
+     "n_cross": 657
+    },
+    "1980": {
+     "rows": 2166,
+     "cross_share": 0.26177285318559557,
+     "recall_aligned": 0.5766103814884302,
+     "recall_cross": 0.2257495590828924,
+     "n_cross": 567
+    },
+    "1990": {
+     "rows": 2657,
+     "cross_share": 0.17011667293940536,
+     "recall_aligned": 0.6829931972789116,
+     "recall_cross": 0.23893805309734514,
+     "n_cross": 452
+    },
+    "2000": {
+     "rows": 1679,
+     "cross_share": 0.16081000595592615,
+     "recall_aligned": 0.7615330021291696,
+     "recall_cross": 0.16296296296296298,
+     "n_cross": 270
+    },
+    "2010": {
+     "rows": 1931,
+     "cross_share": 0.1569135163127913,
+     "recall_aligned": 0.8249385749385749,
+     "recall_cross": 0.09570957095709572,
+     "n_cross": 303
+    }
+   },
+   "cross_rows_party_by_quadrant": {
+    "EL-ST": {
+     "Democrat": 814,
+     "Republican": 95
+    },
+    "ER-SP": {
+     "Republican": 1086,
+     "Democrat": 254
+    }
+   }
+  },
+  "llama": {
+   "by_decade": {
+    "1970": {
+     "rows": 2011,
+     "cross_share": 0.32670313276976626,
+     "recall_aligned": 0.793205317577548,
+     "recall_cross": 0.1095890410958904,
+     "n_cross": 657
+    },
+    "1980": {
+     "rows": 2166,
+     "cross_share": 0.26177285318559557,
+     "recall_aligned": 0.8430268918073797,
+     "recall_cross": 0.1710758377425044,
+     "n_cross": 567
+    },
+    "1990": {
+     "rows": 2657,
+     "cross_share": 0.17011667293940536,
+     "recall_aligned": 0.9024943310657596,
+     "recall_cross": 0.23008849557522124,
+     "n_cross": 452
+    },
+    "2000": {
+     "rows": 1679,
+     "cross_share": 0.16081000595592615,
+     "recall_aligned": 0.9304471256210078,
+     "recall_cross": 0.2,
+     "n_cross": 270
+    },
+    "2010": {
+     "rows": 1931,
+     "cross_share": 0.1569135163127913,
+     "recall_aligned": 0.914004914004914,
+     "recall_cross": 0.10891089108910891,
+     "n_cross": 303
+    }
+   },
+   "cross_rows_party_by_quadrant": {
+    "EL-ST": {
+     "Democrat": 814,
+     "Republican": 95
+    },
+    "ER-SP": {
+     "Republican": 1086,
+     "Democrat": 254
+    }
+   }
+  }
+ }
+}

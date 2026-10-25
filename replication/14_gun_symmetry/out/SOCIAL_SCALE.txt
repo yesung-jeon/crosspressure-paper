@@ -1,0 +1,1 @@
+issue_scales_guns.csv: rows labelled 'abortion' hold the G0 gun score (social scale = guns), 13 Congress x chamber cells, 2274 member rows.

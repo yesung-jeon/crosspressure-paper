@@ -1,0 +1,3 @@
+# Keep every file byte-for-byte as committed: the sha256 checks (validation/SEAL.json and the figure and prompt hashes) compare exact
+# bytes, so no line-ending conversion on checkout.
+* -text

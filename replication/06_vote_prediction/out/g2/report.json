@@ -1,0 +1,17 @@
+{
+ "rollcalls": 105,
+ "by_motion": {
+  "content": 62,
+  "procedural": 37,
+  "unclassified": 6
+ },
+ "main_rollcalls": 62,
+ "by_chamber": {
+  "Senate": 39,
+  "House": 23
+ },
+ "member_votes": 17573,
+ "main_member_votes": 11934,
+ "cp_share_main": 0.2113289760348584,
+ "prompts_two_orders_main": 23868
+}

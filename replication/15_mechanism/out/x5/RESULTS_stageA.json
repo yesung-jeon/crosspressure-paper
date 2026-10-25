@@ -1,0 +1,185 @@
+{
+ "plan": "PLAN_X5.md v0.1 + A0",
+ "stage": "A (final layer, sealed Study L m_final)",
+ "run": "2026-10-24T10:37",
+ "B": 10000,
+ "seed": 20261021,
+ "models": {
+  "qwen": {
+   "Democrat": {
+    "primary": {
+     "r": 0.6674892841346667,
+     "ci95": [
+      0.40101300248649585,
+      1.0614267212341983
+     ],
+     "beta_e": 4.765390999228866,
+     "beta_s": 3.18084742669706,
+     "n_units": 540,
+     "verdict": "equal weight not excluded"
+    },
+    "S1_clip10": {
+     "r": 0.5414577779869678,
+     "ci95": [
+      0.24910509895874433,
+      1.0256553682642293
+     ],
+     "beta_e": 3.1673585918214586,
+     "beta_s": 1.7149909452155785,
+     "n_units": 540,
+     "verdict": "equal weight not excluded"
+    },
+    "S2_persona_bootstrap": {
+     "r": 0.6674892841346667,
+     "ci95": [
+      0.6499822009427964,
+      0.6851504295843381
+     ],
+     "beta_e": 4.765390999228866,
+     "beta_s": 3.18084742669706,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S3_order0": {
+     "r": 1.080804464537731
+    },
+    "S3_order1": {
+     "r": 0.4376241514582945
+    },
+    "S4_label_bias_mean": -2.7184016316025343,
+    "S4_label_bias_sd": 2.7103315192194914
+   },
+   "Republican": {
+    "primary": {
+     "r": 0.3581473658160439,
+     "ci95": [
+      0.18004567573170893,
+      0.6461653060657502
+     ],
+     "beta_e": 4.501468368812843,
+     "beta_s": 1.6121890385945639,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S1_clip10": {
+     "r": 0.3046871828815421,
+     "ci95": [
+      0.12369907036024769,
+      0.6117164407808461
+     ],
+     "beta_e": 3.364604942886918,
+     "beta_s": 1.0251520015575268,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S2_persona_bootstrap": {
+     "r": 0.3581473658160439,
+     "ci95": [
+      0.3311766975233894,
+      0.37975188184847
+     ],
+     "beta_e": 4.501468368812843,
+     "beta_s": 1.6121890385945639,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S3_order0": {
+     "r": 0.2809632048207597
+    },
+    "S3_order1": {
+     "r": 0.48715114133442067
+    },
+    "S4_label_bias_mean": -2.262638247454608,
+    "S4_label_bias_sd": 2.3345832621997045
+   }
+  },
+  "llama": {
+   "Democrat": {
+    "primary": {
+     "r": 0.8722854619985063,
+     "ci95": [
+      0.4917081979633453,
+      1.5817965310486588
+     ],
+     "beta_e": 1.3290559556749133,
+     "beta_s": 1.159316188317758,
+     "n_units": 540,
+     "verdict": "equal weight not excluded"
+    },
+    "S1_clip10": {
+     "r": 0.8675685705859992,
+     "ci95": [
+      0.4769207119697825,
+      1.603770227325348
+     ],
+     "beta_e": 1.2603059556749132,
+     "beta_s": 1.0934018364659062,
+     "n_units": 540,
+     "verdict": "equal weight not excluded"
+    },
+    "S2_persona_bootstrap": {
+     "r": 0.8722854619985063,
+     "ci95": [
+      0.8472983797283941,
+      0.9075314840621809
+     ],
+     "beta_e": 1.3290559556749133,
+     "beta_s": 1.159316188317758,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S3_order0": {
+     "r": 0.27912250796709404
+    },
+    "S3_order1": {
+     "r": -0.9861672266689114
+    },
+    "S4_label_bias_mean": 5.150337162724248,
+    "S4_label_bias_sd": 1.151304131332982
+   },
+   "Republican": {
+    "primary": {
+     "r": 0.4398301456375296,
+     "ci95": [
+      0.16496723739962604,
+      0.9916831125502098
+     ],
+     "beta_e": 1.4012354616765623,
+     "beta_s": 0.6163055971816734,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S1_clip10": {
+     "r": 0.42452228235548567,
+     "ci95": [
+      0.149905157060976,
+      0.9941537705853101
+     ],
+     "beta_e": 1.32041948945434,
+     "beta_s": 0.5605474953298215,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S2_persona_bootstrap": {
+     "r": 0.4398301456375296,
+     "ci95": [
+      0.3749648124028134,
+      0.49256495489206253
+     ],
+     "beta_e": 1.4012354616765623,
+     "beta_s": 0.6163055971816734,
+     "n_units": 540,
+     "verdict": "social commitment down-weighted at the decision"
+    },
+    "S3_order0": {
+     "r": -0.47261512700033304
+    },
+    "S3_order1": {
+     "r": 0.12002575141833985
+    },
+    "S4_label_bias_mean": 5.827042965535765,
+    "S4_label_bias_sd": 1.1850890613470348
+   }
+  }
+ }
+}

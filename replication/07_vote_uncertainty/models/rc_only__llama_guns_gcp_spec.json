@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__llama_guns_gcp",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 6573,
+  "fe_cells": 36,
+  "clusters": [830, 36],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.022737805397916911,
+    "party_dem": -0.062044095998592633
+  },
+  "covariance": [
+    [0.00018882415463209926, 9.1900490657243538e-05],
+    [9.1900490657243511e-05, 0.0010823420147826124]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+ "model": "llama",
+ "smoke": false,
+ "n": 4320,
+ "share_abs_dm_le_0.05": 0.36921296296296297,
+ "max_abs_dm": 0.625,
+ "sign_agreement": 0.9976851851851852,
+ "DL_agreement": 0.9643518518518519,
+ "pearson_r": 0.9994480496841738,
+ "sign_agreement_abs_mL_gt_3.5": 1.0,
+ "n_abs_mL_gt_3.5": 2918,
+ "pass_A2_pending_author": true,
+ "criterion": "A1: sign >= 0.995 and r >= 0.99",
+ "pass": true
+}

@@ -1,0 +1,81 @@
+{
+ "sealed": "2026-10-18T17:08",
+ "purpose": "pre-run seal for Study M X5 (PLAN_X5 v0.1 + A0)",
+ "files": {
+  "signed_thesis_and_records": {
+   "manuscript/ARGUMENT_CROSSPRESSURE_v4_2026-10-18.md": "ea6a042dad1eb2f827acc2224504a50c769fe38e96e6e97a6ae5bc02cedc2ee4",
+   "manuscript/ARGUMENT_CROSSPRESSURE.md": "f8c1f4dfdc7ec45d43c4c4a461339d48911f1972ebddfff908bd658cdab493cf",
+   "manuscript/ARGUMENT_MAP_CROSSPRESSURE_2026-10-16.md": "f31321709431e1e7c3faa8df09ee7a272391c38919d23965f8c725e9a424420a",
+   "manuscript/ARGUMENT_CROSSPRESSURE_v3_2026-10-17.md": "c080b0bb86c9c08ad352d0ba707e0a0754a9407e6a66eadd5bb348c17ff3663a",
+   "manuscript/ARGUMENT_MAP_CROSSPRESSURE_2026-10-17.md": "c6c350128ec3aaf82c862b5c26a30353214b4d626b8df43db610234826713a0c",
+   "review/argument_redraw_2026-10-17/ROBUST_SELLING_MAP.md": "c18a2153886cf5509a0b3cb8b85757ba3df985ebaa804e4bd79bfa2c51955037",
+   "review/argument_redraw_2026-10-17/NO_PERSONA_INTERVAL.md": "ffc777c95aa6157aaeb78eb30f89e04bd7c848993e92ec0bc2fea2bf9b066432",
+   "review/argument_redraw_2026-10-17/MECHANISM_OPTIONS.md": "25f25478724ad62d1344ffff43400e254647459666c7e03ef4ccaafc62c0002d",
+   "review/article_argument_2026-10-16/FINDINGS_ATLAS.md": "03f386b638e0e156254692a83920b1bd52a44d1c028ab3b961c5948889c23ae1",
+   "review/correction_2026-10-16c/no_persona_package_effect.json": "8b7fdc6a6a4fbe783eff905265ed176f5e10b3a1c77111b6ec5e9519af558afb"
+  },
+  "study_m": {
+   "STUDY_M_mechanism/PLAN_X5.md": "cc7baa058403297030a0e5e3838464b7a43abe1621566b331b5c0fdf62479028",
+   "STUDY_M_mechanism/PLAN_REVIEW_X5.md": "9f5827479643c57503a50eeb5ed83d915cc50b28a28c6ee9afed7b54d5abdff1",
+   "STUDY_M_mechanism/DEPENDENCIES.md": "cff4f61a541d10c358b0da13aedc2fbac9a0215354a3f813d572e18fe383c668",
+   "STUDY_M_mechanism/synth_check_x5.log": "e33449c759c41e98794e8d51978166807ca8d45a33c9e774a91452b909fa2183",
+   "STUDY_M_mechanism/synth_check_x5_before_A0.log": "33978a9891181a28b4c613b7fafbecff1c6d13ae0346d83fde485edad2c1b33a",
+   "STUDY_M_mechanism/x5_batch_diag.log": "6de483d473afabd6dd6446df48b0e97fb30c92e605cf893ccd4ba443b0dbc49b",
+   "STUDY_M_mechanism/RELEASE.json": "1d6f8a8b2643ce9394264c9e0f42e8bd01aa8e684c445fc0e7f417b32ffca2e9",
+   "STUDY_M_mechanism/code/build_edits_atlas.py": "98de85b37aa01b5d018d4a549ad2e5db216419e811c1eba58107acf0fa9aa69d",
+   "STUDY_M_mechanism/code/pre_seal.py": "230c38a4a30456cdf1cd7509d19c721aaa2eb3a688a89e9c632ff9e0efec82e4",
+   "STUDY_M_mechanism/code/seal.py": "f484aa3f06a573c26ddf73a498937335d9c692c8e094cc27dadfa492d0fd9a27",
+   "STUDY_M_mechanism/code/synth_check.py": "0a6d49a012223b556b39e4663af2704ca51a29a6111ce4b3af5b019fae44ed02",
+   "STUDY_M_mechanism/code/synth_check_x2.py": "bf83664fdce4b07bba8177a50c46d96dcaa30c025c296c5b133f6fe91ae9e6cc",
+   "STUDY_M_mechanism/code/synth_check_x3.py": "5afa4017f509b71f526c3fcfbe311a67f72c00dd7c3b0664edc45bf47d8365ca",
+   "STUDY_M_mechanism/code/synth_check_x5.py": "0a87fc7258f7d4c1ffef8d9db189eed380cce6930abc7d6a8fd147fa9b2395b3",
+   "STUDY_M_mechanism/code/x1_common.py": "b564153ddc790a1f697e847867efa9209974d6fa153c2ca181b5e8b99946d425",
+   "STUDY_M_mechanism/code/x1_where.py": "e67c5842ce904195eba277a70bbc981adaac37ab24101ed4cf629ff3b14e098d",
+   "STUDY_M_mechanism/code/x2_common.py": "ff9c88f35de208d77247a11e333f1bc96362c86439ef26f1b9cf4715c6008c08",
+   "STUDY_M_mechanism/code/x2_scale_spread.py": "d83f8c4ccee55c710e994f72ba087882dbb951024ce5a831bb4dd7588cb2b730",
+   "STUDY_M_mechanism/code/x2_within.py": "e84aa18d764ffb09f2a4da02db3847ef9b949179edf5712a0f699156e553bbbc",
+   "STUDY_M_mechanism/code/x3_common.py": "a852859a55fa04d7afbaf3e763b3a5efc2a139418e03fd7d52e4625a6c36f0a0",
+   "STUDY_M_mechanism/code/x3_strength.py": "8ef4661472a83d319c2bf516d825191afc0176e620dc96b337036213834cd095",
+   "STUDY_M_mechanism/code/x5_batch_diag.py": "fcae5fb721d03eb746e14b409d805de6cf7e5a7ff393a923ce4036fcd0649422",
+   "STUDY_M_mechanism/code/x5_common.py": "cf1e9f364d835626908491202ca86349ac149baa9c59b798cee6bf12b2852cb6",
+   "STUDY_M_mechanism/code/x5_final.py": "4a1fba7b3a91bea6d336799b2d7aecf29defbcbfc8771705c19f4cc0e911afc8",
+   "STUDY_M_mechanism/code/x5_layers.py": "961903379b84a2f2dfd6c40a678e7c394b55f5daaa2895b4aef9eca586fb8905",
+   "STUDY_M_mechanism/code/x5_reproduce.py": "a78e5895a8a635064e26c752eb303cf62ad666fac5068c15ce4726f4015e144a",
+   "STUDY_M_mechanism/out/x5/qwen/smoke/part_00.csv.gz": "e88dd246a6e88bc61b275c4d9416f8668c7b1136a4961a1184d1231d3d2decc1",
+   "STUDY_M_mechanism/out/x5/qwen/smoke/REPRODUCTION.json": "029e191156a0c57437c8b926bcd83a91fa3b4da72875914bdf4b9fb893abcf12"
+  },
+  "existing_releases": {
+   "STUDY_D_quadrant/RELEASE.json": "291c56b8c3a030f71eababb73f3228622b2435ecd44b5e73be1a14d6efb9325a",
+   "STUDY_F_steer/RELEASE.json": "54b871a076bfdf23e8509d2014d8f65a693e13ff7a791f9886767e1d2dfe6e57",
+   "STUDY_G_steer_behavioral/RELEASE.json": "7afbef2f8bd067aab93407264242aeea6b69f45b9949d764c6a514457345ca00",
+   "STUDY_I_conflict_side/RELEASE.json": "8f6c4559c2845fed8a11c4c976ee0d2ddad744e16cf9cb57d5670a96ff2bd30c",
+   "STUDY_J_social_topics/RELEASE.json": "ba9e5465fb5ab1911b24ba8202e4fc7310b4809a2b17094c0cad571ae4eeaf55",
+   "STUDY_K_separation/RELEASE.json": "49f43bde4f746ae59b4ea3474a5212bbc337777910fd94f91ffa2eba028ca2e6",
+   "STUDY_L_battery/RELEASE.json": "ef38fd9ca423e10057e21350cd05dcb78403cb3be2ab84fd57737799681d8810",
+   "REANALYSIS_blockB/RELEASE.json": "45ba8d499bfaf5eadd49ae547404ec69428b4a1e9567976ffe871f05b0ea3a92",
+   "STUDY_M_mechanism/RELEASE.json": "1d6f8a8b2643ce9394264c9e0f42e8bd01aa8e684c445fc0e7f417b32ffca2e9"
+  },
+  "x5_inputs": {
+   "STUDY_L_battery/out/qwen/main/part_00.csv.gz": "fcc175f4db2bf361f7967c0fe7d4a5b28c87c458f7b3b16f3766b5cd7356689f",
+   "STUDY_L_battery/out/qwen/main/part_01.csv.gz": "8a0dd06a3e832bc03ac8c8e38f88f6ced608cb49bad786e5b110d8206dfb0753",
+   "STUDY_L_battery/out/qwen/main/part_02.csv.gz": "4fd3a3734c1075133a01eaf2e62ebca3b41bb2de29692f6f15909b6392d69122",
+   "STUDY_L_battery/out/llama/main/part_00.csv.gz": "7bddbbff5c608099951bf6632d511329fb9dd9fd443270e7a80cdbeaeca5490a",
+   "STUDY_L_battery/out/llama/main/part_01.csv.gz": "d5246ecaff0e27317ca4cbe31dcde179f26b6aff6cbeb3a2a20036758282f534",
+   "STUDY_L_battery/out/llama/main/part_02.csv.gz": "5975fa1d0a530f012de0977a1e13c9ca975eb99088414e0d3b445e69af9cb7ae",
+   "STUDY_L_battery/out/olmo/main/part_00.csv.gz": "1f84df19790eddad8f99ef72b0baa0ed3f1d40667dc72b4674210aef978e921b",
+   "STUDY_L_battery/out/olmo/main/part_01.csv.gz": "5e4427fc30c6ff9a2257fead57d77c28133052f8e7f0877426c824e73514f14a",
+   "STUDY_L_battery/out/olmo/main/part_02.csv.gz": "3974b03ea7c28c174fc43b995501b83fc799113d8be73936a8c505e982fa15cc"
+  }
+ },
+ "verify_seals_output": [
+  "STUDY_D_quadrant 2026-10-17T15:31 89 files; OK",
+  "STUDY_F_steer 2026-10-17T15:43 64 files; OK",
+  "STUDY_G_steer_behavioral 2026-10-17T13:59 32 files; OK",
+  "STUDY_I_conflict_side 2026-10-17T15:31 32 files; OK",
+  "STUDY_J_social_topics 2026-10-17T15:33 30 files; OK",
+  "STUDY_K_separation 2026-10-17T15:33 25 files; OK",
+  "STUDY_L_battery 2026-10-17T15:31 50 files; OK",
+  "REANALYSIS_blockB 2026-10-17T13:59 5 files; OK",
+  "STUDY_M_mechanism 2026-10-18T17:08 52 files; OK"
+ ]
+}

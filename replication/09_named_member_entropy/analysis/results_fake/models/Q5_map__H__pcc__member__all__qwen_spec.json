@@ -1,0 +1,19 @@
+{
+  "tag": "Q5_map__H__pcc__member__all__qwen",
+  "outcome": "H",
+  "rhs": ["map_ELST", "map_ERSP"],
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "map_ELST": 0.0002687745453869016,
+    "map_ERSP": 0.0021985528593857079
+  },
+  "covariance": [
+    [3.2331797986191824e-06, 5.1230233916785076e-07],
+    [5.1230233916785076e-07, 3.0878434068005639e-06]
+  ]
+}

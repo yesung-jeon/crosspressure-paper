@@ -1,0 +1,21 @@
+{'yes': 18, 'no': 2}
+109|Senate|219 | ok=yes | Final passage는 표결의 종류를 뜻하며 실제 가결 결과를 밝히지 않음. S.397은 원자료 bill_number와 일치. 세 기준 충족.
+99|House|507 | ok=yes | 원문의 규제 완화 항목들을 보존함. NAY 설명은 해당 수정안 부결의 즉시 효과이며 모법·위원회 대체안의 최종 채택을 뜻하지 않음.
+108|Senate|483 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+109|Senate|207 | ok=no | YEA 설명의 every handgun transfer는 원문의 in connection with the transfer of a handgun보다 적용범위를 단정적으로 확대함. 원문만으로 모든 이전에 예외 없이 적용된다고 확인할 수 없음. yea_means 수정 제안: adopt the amendment, requiring a child safety lock to be provided in connection with the transfer of a handgun. description과 YEA/NAY의 찬반 방향, 결과·발의자 비노출은 적절함.
+102|Senate|113 | ok=yes | 원문에 있던 실제 부결 결과·수정안 발의자명을 제거했고 신원조회와 추가 의무징역형 두 내용을 보존함. 세 기준 충족.
+113|Senate|99 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+99|House|504 | ok=no | description의 in order to allow는 삭제 행위가 주간 운송을 허용하는 것처럼 읽힘. 원문은 주간 운송을 허용하기 위해 주·지방 법률을 배제하는 조항을 삭제하는 수정안임. description 수정 제안: An amendment to a substitute amendment to H.R. 4332 that would remove provisions that preempt state and local laws to allow the transportation of handguns between states. YEA/NAY 설명은 삭제·유지 방향을 올바르게 전달하며 결과·발의자도 노출하지 않음.
+113|Senate|103 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+103|Senate|385 | ok=yes | 원문에 있던 법안·수정안 발의자명과 실제 채택 결과를 제거함. YEA는 선점 조항 삭제, NAY는 유지로 올바름.
+109|Senate|217 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+103|House|596 | ok=yes | Adoption of the conference report는 표결 안건의 명칭이며 실제 채택 결과를 밝히지 않음. 발의자·공포일·법률번호도 제거함. 세 기준 충족.
+113|Senate|100 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+106|Senate|112 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+94|House|339 | ok=yes | 총기·탄약 전체가 아닌 labeling에 관한 관할이라는 원문의 범위를 보존함. 세 기준 충족.
+110|Senate|321 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+106|House|242 | ok=yes | Final passage는 본회의 법안 통과 여부에 대한 표결임을 뜻하며 실제 통과 결과는 밝히지 않음. 세 기준 충족.
+109|Senate|216 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.
+101|Senate|415 | ok=yes | YEA는 공격용 무기 금지 조항 삭제, NAY는 유지로 원문과 일치. 세 기준 충족.
+103|Senate|394 | ok=yes | 실제 상원 통과 결과·발의자·공포일·법률번호를 제거하고 대기기간·신원조회 내용을 보존함. 세 기준 충족.
+108|Senate|486 | ok=yes | 원문 내용과 YEA/NAY 의미가 일치하며 결과·발의자 노출 없음.

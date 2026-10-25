@@ -1,0 +1,8 @@
+{
+ "inputs_sha256": {
+  "out/v5/frame_v2_qwen_abortion_economic.parquet": "cbf54c5d198e3f3474b7ae6807bbb627b12b63305a45a6c152b02f0fbc830d2e",
+  "out/v5/frame_v2_llama_abortion_economic.parquet": "b31691f37b3a024d646960211522c3f4abf969d4412c5f2b7bff16e69ef44b01",
+  "out/g2/frame_qwen.parquet": "c81516f827651db29c6b5feafe9e4f45f6c5f74a1e1a22b143eb52d17a44a204",
+  "out/g2/frame_llama.parquet": "33ed455c2c04f431de6b1a56f27268ab78c0eae60b6d974624a545d3dbb7c342"
+ }
+}

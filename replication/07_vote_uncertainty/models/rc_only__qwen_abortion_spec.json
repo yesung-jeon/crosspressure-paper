@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__qwen_abortion",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 54086,
+  "fe_cells": 193,
+  "clusters": [2146, 193],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": -0.001744392695349212,
+    "party_dem": 0.01958505715298783
+  },
+  "covariance": [
+    [7.1577927628839908e-06, -5.1400897212048537e-06],
+    [-5.1400897212048537e-06, 3.8008286915052093e-05]
+  ]
+}

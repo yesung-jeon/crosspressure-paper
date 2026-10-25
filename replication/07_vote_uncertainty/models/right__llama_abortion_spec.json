@@ -1,0 +1,17 @@
+{
+  "tag": "right__llama_abortion",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 35706,
+  "fe_cells": 385,
+  "clusters": [2112, 193],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.02876078236014885
+  },
+  "covariance": [
+    [2.0616463904008592e-05]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+ "model": "gpt-4.1-mini-2025-04-14",
+ "n": 62,
+ "passed": 62,
+ "failed_by_check": {
+  "faithful": 0,
+  "no_added_facts": 0,
+  "no_outcome": 0,
+  "no_actor": 0,
+  "neutral": 0,
+  "yea_nay_correct": 0
+ }
+}

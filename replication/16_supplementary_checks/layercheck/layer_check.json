@@ -1,0 +1,17 @@
+{
+ "qwen": {
+  "layer_run1": 16,
+  "layer_run2": 16,
+  "same_layer": true,
+  "s1_diffs_identical": true,
+  "rank_sum_identical": true
+ },
+ "llama": {
+  "layer_run1": 15,
+  "layer_run2": 15,
+  "same_layer": true,
+  "s1_diffs_identical": true,
+  "rank_sum_identical": true
+ },
+ "pass": true
+}

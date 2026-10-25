@@ -1,0 +1,76 @@
+{
+ "qwen": {
+  "n": 10444,
+  "agreement": 0.5691306013021831,
+  "confusion_vote_rows_map_cols": {
+   "EL-SP": {
+    "EL-SP": 2918,
+    "EL-ST": 498,
+    "ER-SP": 451,
+    "ER-ST": 454
+   },
+   "EL-ST": {
+    "EL-SP": 406,
+    "EL-ST": 216,
+    "ER-SP": 115,
+    "ER-ST": 172
+   },
+   "ER-SP": {
+    "EL-SP": 241,
+    "EL-ST": 160,
+    "ER-SP": 214,
+    "ER-ST": 725
+   },
+   "ER-ST": {
+    "EL-SP": 398,
+    "EL-ST": 393,
+    "ER-SP": 487,
+    "ER-ST": 2596
+   }
+  },
+  "recall_by_vote_quadrant": {
+   "EL-SP": 0.6753066419810229,
+   "EL-ST": 0.2376237623762376,
+   "ER-SP": 0.15970149253731344,
+   "ER-ST": 0.6701084150748581
+  },
+  "known_only_agreement": 0.618832050701675
+ },
+ "llama": {
+  "n": 10444,
+  "agreement": 0.7249138261202605,
+  "confusion_vote_rows_map_cols": {
+   "EL-SP": {
+    "EL-SP": 3808,
+    "EL-ST": 155,
+    "ER-SP": 85,
+    "ER-ST": 273
+   },
+   "EL-ST": {
+    "EL-SP": 573,
+    "EL-ST": 149,
+    "ER-SP": 30,
+    "ER-ST": 157
+   },
+   "ER-SP": {
+    "EL-SP": 170,
+    "EL-ST": 67,
+    "ER-SP": 211,
+    "ER-ST": 892
+   },
+   "ER-ST": {
+    "EL-SP": 190,
+    "EL-ST": 118,
+    "ER-SP": 163,
+    "ER-ST": 3403
+   }
+  },
+  "recall_by_vote_quadrant": {
+   "EL-SP": 0.881277482064337,
+   "EL-ST": 0.1639163916391639,
+   "ER-SP": 0.15746268656716417,
+   "ER-ST": 0.8784202374806401
+  },
+  "known_only_agreement": 0.743129614438064
+ }
+}

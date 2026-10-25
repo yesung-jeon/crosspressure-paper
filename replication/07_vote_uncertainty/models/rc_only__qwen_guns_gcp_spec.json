@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__qwen_guns_gcp",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 6573,
+  "fe_cells": 36,
+  "clusters": [830, 36],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.0058746322522471896,
+    "party_dem": 0.0091208172214298274
+  },
+  "covariance": [
+    [5.6087122761558291e-05, 3.2558595032280314e-05],
+    [3.2558595032280314e-05, 0.00025003527316850568]
+  ]
+}

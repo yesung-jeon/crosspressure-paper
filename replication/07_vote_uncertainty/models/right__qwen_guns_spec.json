@@ -1,0 +1,17 @@
+{
+  "tag": "right__qwen_guns",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 5709,
+  "fe_cells": 100,
+  "clusters": [1414, 52],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.0061386013227379419
+  },
+  "covariance": [
+    [2.2884746015053921e-05]
+  ]
+}

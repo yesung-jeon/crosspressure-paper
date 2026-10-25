@@ -1,0 +1,17 @@
+{
+ "sealed": "2026-10-22T21:50:52",
+ "note": "A14 inputs sealed before any gun vote is scored (both models); after the author check of 20 descriptions (2 fixed as suggested, 1 same-phrase fix in 106|Senate|122)",
+ "sha256": {
+  "out/g2/rollcalls.csv": "65f472d64f6e0165133ff64e566d69557a2ebf947ff009a6862c885c88a9005a",
+  "out/g2/descriptions.csv": "8d53cde430e4689469a29600a9da6553d654ded23f062fd65c2f234e643489a8",
+  "out/g2/verify.csv": "eef875c7f7d79b211491677836c102d6e78992178de767be1e00ecaeab6d3ca2",
+  "out/g2/prompts.parquet": "b70e1dbd28421c9dc37567aea0fcbd71d8ec51ce6a8eb06a4eb873cf4774193a",
+  "out/g2/prompts_swap.parquet": "3321174e809f6bebf70bd1e7a5567063418745679da9ecbcaace0c300254c9af",
+  "out/g2/member_votes.csv.gz": "4f627d7dfc339070eb420faab4bc226231a77c73ed22f344b3c22b118747926f",
+  "out/g2/AUTHOR_DESC_CHECK.csv": "76a7a6a57b1a0e49f462d9ca1a447c19721d85494ec08cee88b82cb619b12a15",
+  "code/v4_run.py": "ab4f61dec3d6953b4d9be6fa75696fbdbef1bb1caf614247b335b77e3054b964",
+  "code/g2_prompts.py": "f80138497b6408d11ac3733dd529fac4aafa181c6a1fd15bacca8a2227c0879e",
+  "code/g2_descriptions.py": "63c48973915d81db22ec4b780d26f80f288859a7480123b6930b0b6126b715db",
+  "PROTOCOL_A14.md": "753c372cd6b87760589e95d371030f6c4df7be2466cfe847bd9bbb37a37f1cc6"
+ }
+}

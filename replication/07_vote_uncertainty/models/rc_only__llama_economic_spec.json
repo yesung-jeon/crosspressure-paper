@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__llama_economic",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 48198,
+  "fe_cells": 180,
+  "clusters": [2111, 180],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.01082146440491495,
+    "party_dem": -0.037309435986012572
+  },
+  "covariance": [
+    [1.4812923931871516e-05, -5.5781219833308915e-06],
+    [-5.5781219833308924e-06, 9.1892852220513919e-05]
+  ]
+}

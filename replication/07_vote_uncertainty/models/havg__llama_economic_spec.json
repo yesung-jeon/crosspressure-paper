@@ -1,0 +1,17 @@
+{
+  "tag": "havg__llama_economic",
+  "outcome": "H_avg",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 48198,
+  "fe_cells": 360,
+  "clusters": [2111, 180],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.0094107442435966745
+  },
+  "covariance": [
+    [7.8690182032930027e-06]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+ "qwen": {
+  "abortion": 0.1947,
+  "economic": 0.0185
+ },
+ "llama": {
+  "abortion": 0.8228,
+  "economic": 0.7762
+ }
+}

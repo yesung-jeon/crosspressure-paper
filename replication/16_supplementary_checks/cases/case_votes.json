@@ -1,0 +1,116 @@
+{
+ "Thomas Eagleton": {
+  "qwen": {
+   "abortion": {
+    "n": 26,
+    "accuracy": 0.4615,
+    "n_wrong": 14,
+    "wrong_with_party_share": 0.8571,
+    "cross_pressured_share": 1.0,
+    "against_party_share": 0.8462
+   },
+   "economic": {
+    "n": 26,
+    "accuracy": 0.5769,
+    "n_wrong": 11,
+    "wrong_with_party_share": 0.0909,
+    "cross_pressured_share": 1.0,
+    "against_party_share": 0.0769
+   }
+  },
+  "llama": {
+   "abortion": {
+    "n": 26,
+    "accuracy": 0.5,
+    "n_wrong": 13,
+    "wrong_with_party_share": 0.9231,
+    "cross_pressured_share": 1.0,
+    "against_party_share": 0.8462
+   },
+   "economic": {
+    "n": 26,
+    "accuracy": 0.6154,
+    "n_wrong": 10,
+    "wrong_with_party_share": 0.1,
+    "cross_pressured_share": 1.0,
+    "against_party_share": 0.0769
+   }
+  }
+ },
+ "Robert Packwood": {
+  "qwen": {
+   "abortion": {
+    "n": 39,
+    "accuracy": 0.641,
+    "n_wrong": 14,
+    "wrong_with_party_share": 0.7857,
+    "cross_pressured_share": 0.5897,
+    "against_party_share": 0.7692
+   },
+   "economic": {
+    "n": 43,
+    "accuracy": 0.6512,
+    "n_wrong": 15,
+    "wrong_with_party_share": 0.2,
+    "cross_pressured_share": 0.5349,
+    "against_party_share": 0.3488
+   }
+  },
+  "llama": {
+   "abortion": {
+    "n": 39,
+    "accuracy": 0.4615,
+    "n_wrong": 21,
+    "wrong_with_party_share": 0.7619,
+    "cross_pressured_share": 0.5897,
+    "against_party_share": 0.7692
+   },
+   "economic": {
+    "n": 43,
+    "accuracy": 0.6279,
+    "n_wrong": 16,
+    "wrong_with_party_share": 0.5,
+    "cross_pressured_share": 0.5349,
+    "against_party_share": 0.3488
+   }
+  }
+ },
+ "Olympia Snowe": {
+  "qwen": {
+   "abortion": {
+    "n": 64,
+    "accuracy": 0.5312,
+    "n_wrong": 30,
+    "wrong_with_party_share": 0.9667,
+    "cross_pressured_share": 0.6562,
+    "against_party_share": 0.9531
+   },
+   "economic": {
+    "n": 63,
+    "accuracy": 0.5556,
+    "n_wrong": 28,
+    "wrong_with_party_share": 0.1786,
+    "cross_pressured_share": 0.6508,
+    "against_party_share": 0.2381
+   }
+  },
+  "llama": {
+   "abortion": {
+    "n": 64,
+    "accuracy": 0.4844,
+    "n_wrong": 33,
+    "wrong_with_party_share": 1.0,
+    "cross_pressured_share": 0.6562,
+    "against_party_share": 0.9531
+   },
+   "economic": {
+    "n": 63,
+    "accuracy": 0.6508,
+    "n_wrong": 22,
+    "wrong_with_party_share": 0.1818,
+    "cross_pressured_share": 0.6508,
+    "against_party_share": 0.2381
+   }
+  }
+ }
+}

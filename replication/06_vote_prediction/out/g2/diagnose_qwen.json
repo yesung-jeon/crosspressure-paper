@@ -1,0 +1,46 @@
+{
+ "model": "qwen",
+ "gun_pred_yea": {
+  "yea_first": 0.5154,
+  "nay_first": 0.01,
+  "averaged": 0.283,
+  "actual": 0.5229
+ },
+ "gun_two_order_corr": 0.212,
+ "w1_pred_yea": {
+  "yea_first": 0.813,
+  "nay_first": 0.0212,
+  "averaged": 0.4208,
+  "actual": 0.5274
+ },
+ "by_direction_party": {
+  "Democrat|looser": {
+   "n": 2430,
+   "actual_yea": 0.4403,
+   "pred_yea": 0.0337,
+   "pred_yea_yea_first": 0.1934,
+   "accuracy": 0.5506
+  },
+  "Democrat|stricter": {
+   "n": 4010,
+   "actual_yea": 0.6012,
+   "pred_yea": 0.4978,
+   "pred_yea_yea_first": 0.712,
+   "accuracy": 0.5244
+  },
+  "Republican|looser": {
+   "n": 2130,
+   "actual_yea": 0.8695,
+   "pred_yea": 0.0479,
+   "pred_yea_yea_first": 0.3122,
+   "accuracy": 0.1746
+  },
+  "Republican|stricter": {
+   "n": 3364,
+   "actual_yea": 0.2696,
+   "pred_yea": 0.3558,
+   "pred_yea_yea_first": 0.6424,
+   "accuracy": 0.5636
+  }
+ }
+}

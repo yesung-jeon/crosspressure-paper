@@ -1,0 +1,19 @@
+{
+  "tag": "Q5_vote__H__pcc__member__all__llama",
+  "outcome": "H",
+  "rhs": ["vote_ELST", "vote_ERSP"],
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "vote_ELST": 0.071509097788589993,
+    "vote_ERSP": 0.036962299466097671
+  },
+  "covariance": [
+    [5.4631292154899942e-05, 4.9893399277946045e-06],
+    [4.9893399277946045e-06, 1.6568390236478366e-05]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+ "llama": {
+  "n_members": 2745,
+  "main": {
+   "EL-SP": 0,
+   "EL-ST": 2,
+   "ER-SP": 0,
+   "ER-ST": 2743
+  },
+  "median_origin": {
+   "EL-SP": 1134,
+   "EL-ST": 149,
+   "ER-SP": 138,
+   "ER-ST": 1324
+  },
+  "agreement_main_vs_median": 0.48233151183970857,
+  "main_by_party": {
+   "Democrat": {
+    "EL-ST": 2,
+    "ER-ST": 1347
+   },
+   "Republican": {
+    "EL-ST": 0,
+    "ER-ST": 1396
+   }
+  }
+ }
+}

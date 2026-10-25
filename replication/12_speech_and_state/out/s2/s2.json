@@ -1,0 +1,348 @@
+{
+ "ledger": {
+  "93": {
+   "edition": "bound",
+   "speakers": 539,
+   "linked": 534,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 10,
+   "dropped_duplicate_member": 0,
+   "kept": 524
+  },
+  "94": {
+   "edition": "bound",
+   "speakers": 535,
+   "linked": 530,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 10,
+   "dropped_duplicate_member": 0,
+   "kept": 520
+  },
+  "95": {
+   "edition": "bound",
+   "speakers": 542,
+   "linked": 537,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 5,
+   "dropped_duplicate_member": 0,
+   "kept": 532
+  },
+  "96": {
+   "edition": "bound",
+   "speakers": 536,
+   "linked": 534,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 8,
+   "dropped_duplicate_member": 0,
+   "kept": 526
+  },
+  "97": {
+   "edition": "bound",
+   "speakers": 538,
+   "linked": 535,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 18,
+   "dropped_duplicate_member": 0,
+   "kept": 517
+  },
+  "98": {
+   "edition": "bound",
+   "speakers": 538,
+   "linked": 535,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 4,
+   "dropped_duplicate_member": 0,
+   "kept": 531
+  },
+  "99": {
+   "edition": "bound",
+   "speakers": 538,
+   "linked": 534,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 7,
+   "dropped_duplicate_member": 0,
+   "kept": 527
+  },
+  "100": {
+   "edition": "bound",
+   "speakers": 540,
+   "linked": 537,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 10,
+   "dropped_duplicate_member": 0,
+   "kept": 527
+  },
+  "101": {
+   "edition": "bound",
+   "speakers": 545,
+   "linked": 538,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 7,
+   "dropped_duplicate_member": 0,
+   "kept": 531
+  },
+  "102": {
+   "edition": "bound",
+   "speakers": 543,
+   "linked": 539,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 8,
+   "dropped_duplicate_member": 0,
+   "kept": 531
+  },
+  "103": {
+   "edition": "bound",
+   "speakers": 542,
+   "linked": 534,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 12,
+   "dropped_duplicate_member": 0,
+   "kept": 522
+  },
+  "104": {
+   "edition": "bound",
+   "speakers": 540,
+   "linked": 529,
+   "dropped_multi_match": 5,
+   "dropped_low_tokens": 1,
+   "dropped_duplicate_member": 0,
+   "kept": 528
+  },
+  "105": {
+   "edition": "bound",
+   "speakers": 542,
+   "linked": 538,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 7,
+   "dropped_duplicate_member": 0,
+   "kept": 531
+  },
+  "106": {
+   "edition": "bound",
+   "speakers": 534,
+   "linked": 530,
+   "dropped_multi_match": 1,
+   "dropped_low_tokens": 5,
+   "dropped_duplicate_member": 0,
+   "kept": 525
+  },
+  "107": {
+   "edition": "bound",
+   "speakers": 535,
+   "linked": 532,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 9,
+   "dropped_duplicate_member": 0,
+   "kept": 523
+  },
+  "108": {
+   "edition": "bound",
+   "speakers": 534,
+   "linked": 529,
+   "dropped_multi_match": 1,
+   "dropped_low_tokens": 14,
+   "dropped_duplicate_member": 2,
+   "kept": 513
+  },
+  "109": {
+   "edition": "bound",
+   "speakers": 537,
+   "linked": 531,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 6,
+   "dropped_duplicate_member": 2,
+   "kept": 523
+  },
+  "110": {
+   "edition": "bound",
+   "speakers": 548,
+   "linked": 542,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 6,
+   "dropped_duplicate_member": 2,
+   "kept": 534
+  },
+  "111": {
+   "edition": "bound",
+   "speakers": 549,
+   "linked": 542,
+   "dropped_multi_match": 2,
+   "dropped_low_tokens": 13,
+   "dropped_duplicate_member": 2,
+   "kept": 527
+  },
+  "112": {
+   "edition": "daily",
+   "speakers": 539,
+   "linked": 534,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 13,
+   "dropped_duplicate_member": 2,
+   "kept": 519
+  },
+  "113": {
+   "edition": "daily",
+   "speakers": 545,
+   "linked": 539,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 16,
+   "dropped_duplicate_member": 2,
+   "kept": 521
+  },
+  "114": {
+   "edition": "daily",
+   "speakers": 535,
+   "linked": 530,
+   "dropped_multi_match": 0,
+   "dropped_low_tokens": 21,
+   "dropped_duplicate_member": 2,
+   "kept": 507
+  }
+ },
+ "ledger_totals": {
+  "speakers": 11874,
+  "linked": 11763,
+  "dropped_multi_match": 9,
+  "dropped_low_tokens": 210,
+  "dropped_duplicate_member": 14,
+  "kept": 11539
+ },
+ "qwen": {
+  "paper_rows_93_114": 9816,
+  "with_p": 9559,
+  "speech_party_agrees": 0.9994769327335495,
+  "S2a_p_on_cp": {
+   "b": -0.21822878209199864,
+   "ci95": [
+    -0.27368472070328637,
+    -0.16277284348071092
+   ],
+   "n": 9559
+  },
+  "p_mean_by_cp": {
+   "0.0": 0.5187978147745491,
+   "1.0": 0.5120994335177289
+  },
+  "S2b_cp_rows": {
+   "b": 0.015618284632593609,
+   "ci95": [
+    -0.014723166756526095,
+    0.04595973602171331
+   ],
+   "n": 2159
+  },
+  "S2b_aligned_rows": {
+   "b": -0.04969197082498926,
+   "ci95": [
+    -0.06828963015959566,
+    -0.03109431149038286
+   ],
+   "n": 7400
+  },
+  "S2b_interaction": {
+   "cp": {
+    "b": 0.39132516377037563,
+    "ci95": [
+     0.34217487363855675,
+     0.4404754539021945
+    ],
+    "n": 9559
+   },
+   "p_z": {
+    "b": -0.053322966830619524,
+    "ci95": [
+     -0.0711242655448948,
+     -0.035521668116344246
+    ],
+    "n": 9559
+   },
+   "cp_x_p": {
+    "b": 0.05950185894731256,
+    "ci95": [
+     0.028247216698904683,
+     0.09075650119572043
+    ],
+    "n": 9559
+   }
+  },
+  "reading_RS2": false,
+  "S2c_toward_party_on_p": {
+   "b": 0.02661357705642063,
+   "ci95": [
+    0.004049721783381477,
+    0.049177432329459786
+   ],
+   "n": 5972
+  },
+  "S2c_toward_share": 0.5803750837240456
+ },
+ "llama": {
+  "paper_rows_93_114": 9816,
+  "with_p": 9559,
+  "speech_party_agrees": 0.9994769327335495,
+  "S2a_p_on_cp": {
+   "b": -0.21822878209199864,
+   "ci95": [
+    -0.27368472070328637,
+    -0.16277284348071092
+   ],
+   "n": 9559
+  },
+  "p_mean_by_cp": {
+   "0.0": 0.5187978147745491,
+   "1.0": 0.5120994335177289
+  },
+  "S2b_cp_rows": {
+   "b": -0.005176237867864929,
+   "ci95": [
+    -0.03820661736848198,
+    0.027854141632752117
+   ],
+   "n": 2159
+  },
+  "S2b_aligned_rows": {
+   "b": -0.030855137504225486,
+   "ci95": [
+    -0.04321161582354761,
+    -0.018498659184903364
+   ],
+   "n": 7400
+  },
+  "S2b_interaction": {
+   "cp": {
+    "b": 0.656219889778192,
+    "ci95": [
+     0.6151482548071594,
+     0.6972915247492246
+    ],
+    "n": 9559
+   },
+   "p_z": {
+    "b": -0.028616547506765896,
+    "ci95": [
+     -0.04074058046351013,
+     -0.01649251455002166
+    ],
+    "n": 9559
+   },
+   "cp_x_p": {
+    "b": 0.008229961314190508,
+    "ci95": [
+     -0.023040846316920237,
+     0.03950076894530125
+    ],
+    "n": 9559
+   }
+  },
+  "reading_RS2": false,
+  "S2c_toward_party_on_p": {
+   "b": 0.02507068350399307,
+   "ci95": [
+    0.00521287402777474,
+    0.0449284929802114
+   ],
+   "n": 5091
+  },
+  "S2c_toward_share": 0.7032017285405617
+ }
+}

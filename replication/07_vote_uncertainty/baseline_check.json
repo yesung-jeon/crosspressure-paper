@@ -1,0 +1,46 @@
+{
+  "status": "reproduced",
+  "tolerance": 1e-06,
+  "cells": [
+    {
+      "model": "qwen",
+      "issue": "abortion",
+      "sealed_b": -0.04294441627504,
+      "refit_b": -0.04294441627504,
+      "sealed_se": 0.01587940216208,
+      "refit_se": 0.01587940216208,
+      "abs_diff_b": 4.857225732735e-17,
+      "abs_diff_se": 3.122502256758e-17
+    },
+    {
+      "model": "qwen",
+      "issue": "economic",
+      "sealed_b": 0.02028074736761,
+      "refit_b": 0.02028074736761,
+      "sealed_se": 0.009368375880809,
+      "refit_se": 0.009368375880808,
+      "abs_diff_b": 3.469446951954e-18,
+      "abs_diff_se": 5.724587470723e-17
+    },
+    {
+      "model": "llama",
+      "issue": "abortion",
+      "sealed_b": -0.1058248390356,
+      "refit_b": -0.1058248390356,
+      "sealed_se": 0.02380279039097,
+      "refit_se": 0.02380279039097,
+      "abs_diff_b": 1.665334536938e-16,
+      "abs_diff_se": 3.122502256758e-17
+    },
+    {
+      "model": "llama",
+      "issue": "economic",
+      "sealed_b": 0.01107528178033,
+      "refit_b": 0.01107528178033,
+      "sealed_se": 0.01015073031751,
+      "refit_se": 0.01015073031751,
+      "abs_diff_b": 5.724587470723e-17,
+      "abs_diff_se": 1.387778780781e-16
+    }
+  ]
+}

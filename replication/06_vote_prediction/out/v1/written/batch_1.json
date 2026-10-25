@@ -1,0 +1,1050 @@
+[
+ {
+  "key": "93|House|120",
+  "description": "An amendment to H.R. 7935 that would set the minimum wage for employees covered before 1966 at $1.90 per hour for the first year, $2.10 per hour for the second year, and $2.20 per hour thereafter.",
+  "yea_means": "adopt the amendment setting the minimum wage for employees covered before 1966 at $1.90, then $2.10, then $2.20 per hour",
+  "nay_means": "reject the amendment and keep the bill's existing minimum wage schedule for these employees",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "93|House|611",
+  "description": "An amendment to the committee amendment to H.R. 69, a bill to extend and amend the Elementary and Secondary Education Act of 1965. It would distribute Title I funds according to the number of children from families with incomes below $4,000 plus 100% of children from families with incomes over $4,000 receiving AFDC payments.",
+  "yea_means": "adopt the amendment changing the Title I funding formula to count children from families below $4,000 plus all children from families above $4,000 receiving AFDC",
+  "nay_means": "reject the amendment and keep the committee amendment's Title I distribution formula",
+  "insufficient": false,
+  "note": "Source reads 'ADFC'; written as AFDC."
+ },
+ {
+  "key": "93|House|968",
+  "description": "An amendment to a substitute for H.Res. 988 that would create a select committee to study and recommend legislation to resolve the controversy over the Supreme Court's decision on abortion.",
+  "yea_means": "adopt the amendment creating a select committee to study and recommend legislation on the Supreme Court's abortion decision",
+  "nay_means": "reject the amendment, so no such select committee is added to the substitute",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "93|Senate|975",
+  "description": "A motion to table an amendment to H.R. 15580, the fiscal 1975 appropriations bill for the Department of Labor and Health, Education and Welfare. The amendment would bar the use of funds to pay for or encourage the performance of abortions except when necessary to save the life of the mother.",
+  "yea_means": "table (set aside) the amendment barring the use of funds for abortions except to save the life of the mother",
+  "nay_means": "keep the amendment barring the use of funds for abortions except to save the life of the mother before the Senate for further consideration",
+  "insufficient": false,
+  "note": "Bill subject taken from same_bill_context."
+ },
+ {
+  "key": "94|House|885",
+  "description": "A vote on H.Res. 1279, the rule providing for House consideration of H.R. 14114, a bill to increase the temporary debt limit.",
+  "yea_means": "adopt the rule, allowing the House to take up the bill increasing the temporary debt limit",
+  "nay_means": "reject the rule, blocking House consideration of the debt limit bill under its terms",
+  "insufficient": false,
+  "note": "bill_number field is HR14261 but the text concerns H.Res. 1279 and H.R. 14114; description follows the text."
+ },
+ {
+  "key": "94|House|1182",
+  "description": "A conference motion on Senate amendment no. 68 to H.R. 14232. The House would recede from its disagreement and accept the Senate amendment with a further amendment that bans the use of federal funds to pay for abortions.",
+  "yea_means": "accept Senate amendment no. 68 with a House amendment banning the use of federal funds to pay for abortions",
+  "nay_means": "refuse this motion, leaving the abortion funding ban in amendment no. 68 unresolved between the chambers",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "94|Senate|595",
+  "description": "Final passage of H.R. 5559, a bill providing reciprocal tax exemptions for payments received by Canadian railroads for the temporary use of their rolling stock and extending for 6 months certain provisions of the Tax Reduction Act.",
+  "yea_means": "pass H.R. 5559, the tax bill on Canadian railroad rolling stock payments and a 6-month extension of Tax Reduction Act provisions",
+  "nay_means": "vote against passage of H.R. 5559",
+  "insufficient": false,
+  "note": "Bill subject taken from same_bill_context; the Senate bill also carried amendments not described here."
+ },
+ {
+  "key": "94|Senate|964",
+  "description": "A substitute for the Finance Committee amendment to H.R. 10612. The substitute would eliminate the committee's extension of the maximum tax ceiling to unearned income.",
+  "yea_means": "adopt the substitute, removing the extension of the maximum tax ceiling to unearned income",
+  "nay_means": "reject the substitute and keep the committee's extension of the maximum tax ceiling to unearned income",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "95|House|42",
+  "description": "A committee amendment to H.R. 3477, the Tax Reduction and Simplification Act of 1977. It would phase out the 1976 tax rebate for persons earning $25,000 or more a year and grant $50 payments to recipients of black lung benefits, Aid for Dependent Children, and veterans compensation.",
+  "yea_means": "adopt the committee amendment phasing out the 1976 rebate above $25,000 and granting $50 payments to black lung, dependent children aid, and veterans compensation recipients",
+  "nay_means": "reject the committee amendment, leaving the rebate without this phase-out and without the $50 payments",
+  "insufficient": false,
+  "note": "Short title from same_bill_context."
+ },
+ {
+  "key": "95|House|290",
+  "description": "A motion to modify an amendment to H.R. 10 by striking language regarding the legality of political activities of labor unions.",
+  "yea_means": "modify the amendment by striking its language on the legality of labor union political activities",
+  "nay_means": "keep the amendment's language on the legality of labor union political activities",
+  "insufficient": false,
+  "note": "Source does not state H.R. 10's subject or what the underlying amendment does."
+ },
+ {
+  "key": "95|House|582",
+  "description": "An amendment to a substitute for an amendment to H.R. 8410. It would require the National Labor Relations Board to order a union election within 20 days of the filing of a petition and to set a deadline of 28 to 90 days for conducting the election.",
+  "yea_means": "adopt the amendment requiring the NLRB to order a union election within 20 days of a petition and hold it within 28 to 90 days",
+  "nay_means": "reject the amendment and leave the substitute's union election procedures unchanged",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "95|House|643",
+  "description": "An amendment to H.R. 9346, a Social Security bill, that would slow the increase in the taxable wage base and at the same time raise the Social Security tax rate by 0.1% a year.",
+  "yea_means": "adopt the amendment slowing growth in the taxable wage base while raising the Social Security tax rate by 0.1% a year",
+  "nay_means": "reject the amendment and keep the bill's wage base and tax rate schedule",
+  "insufficient": false,
+  "note": "Social Security subject taken from the dtl_desc and same_bill_context."
+ },
+ {
+  "key": "95|House|701",
+  "description": "A motion to concur in Senate amendment no. 2 to H.J.Res. 662. The Senate amendment prohibits use of the supplemental HEW funds for abortion except when the woman's life would be endangered if the fetus were carried to term, when two physicians determine that severe and long-lasting physical health damage would result, and for certain medical procedures for victims of rape or incest who promptly reported the incident.",
+  "yea_means": "accept the Senate amendment limiting abortion funding to life endangerment, severe long-lasting physical health damage, and promptly reported rape or incest",
+  "nay_means": "refuse to accept the Senate amendment's abortion funding exceptions",
+  "insufficient": false,
+  "note": "Source text says H.J.Res. 622; bill_number and context say 662. Used 662."
+ },
+ {
+  "key": "95|House|987",
+  "description": "A vote on H.Res. 1176, the rule providing for House consideration of H.R. 12641, a bill providing for a temporary increase in the public debt limit.",
+  "yea_means": "adopt the rule, allowing the House to take up the temporary debt limit increase",
+  "nay_means": "reject the rule, blocking House consideration of the debt limit bill under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "95|House|1087",
+  "description": "An amendment to H.R. 12929, the fiscal 1979 appropriations bill for the Departments of Labor and of Health, Education, and Welfare. It would strike language prohibiting use of the funds for abortions except where the life of the woman would be endangered if the fetus were carried to term.",
+  "yea_means": "strike the bill's prohibition on using these funds for abortions except to protect the woman's life",
+  "nay_means": "keep the bill's prohibition on using these funds for abortions except to protect the woman's life",
+  "insufficient": false,
+  "note": "Bill subject taken from same_bill_context of the same bill."
+ },
+ {
+  "key": "95|House|1344",
+  "description": "An amendment to H.R. 12432, the bill authorizing appropriations for the Commission on Civil Rights for five more years. It would prohibit the Commission from studying and appraising abortion policies and abortion laws of the federal government or any other government.",
+  "yea_means": "adopt the amendment barring the Commission on Civil Rights from studying abortion policies and laws",
+  "nay_means": "reject the amendment, leaving the Commission free to study abortion policies and laws",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "95|House|1521",
+  "description": "A motion to concur in the modified Senate amendment to the conference report on H.R. 12929, fiscal 1979 appropriations for the Departments of Labor and of Health, Education, and Welfare. The amendment prohibits use of these funds for abortions except when the woman's life would be endangered, when severe and long-lasting physical health damage would occur, or when she is a victim of rape or incest who promptly reported it to a law enforcement agency.",
+  "yea_means": "accept the Senate language allowing abortion funding only for life endangerment, severe long-lasting physical health damage, or promptly reported rape or incest",
+  "nay_means": "refuse to accept the Senate's modified abortion funding language",
+  "insufficient": false,
+  "note": "Removed source reference to a prior House vote on the same amendment."
+ },
+ {
+  "key": "95|Senate|230",
+  "description": "An amendment to S. 717, a mine safety bill, that would delete the section explaining the Secretary of Labor's authority to inspect mines and to issue warnings and withdrawal notices to mine operators that have a \"pattern of violations.\"",
+  "yea_means": "delete the section on the Secretary of Labor's authority over mine operators with a \"pattern of violations\"",
+  "nay_means": "keep the section on the Secretary of Labor's authority over mine operators with a \"pattern of violations\"",
+  "insufficient": false,
+  "note": "'Mine safety' inferred from dtl_desc and context wording; no short title given."
+ },
+ {
+  "key": "95|Senate|337",
+  "description": "A motion that the Senate concur in the House amendment to Senate amendment no. 82 to H.R. 7555, the appropriations bill for the Departments of Labor and of Health, Education, and Welfare. Senate amendment no. 82 allows federal funds for abortions when \"medically necessary,\" when the woman's life is endangered, or in cases of rape or incest.",
+  "yea_means": "accept the House's change to Senate amendment no. 82 on federal funding of abortions",
+  "nay_means": "refuse the House's change and keep the Senate's position allowing abortion funding when medically necessary, for life endangerment, or for rape or incest",
+  "insufficient": false,
+  "note": "Source does not describe what the House amendment changes; YEA side stated generally. Worth a look."
+ },
+ {
+  "key": "95|Senate|536",
+  "description": "An amendment to an amendment to S. 1871, a minimum wage bill, that would phase in the increase in the minimum wage over three years instead of four.",
+  "yea_means": "adopt the amendment phasing in the minimum wage increase over three years",
+  "nay_means": "reject the amendment and keep the four-year phase-in",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "95|Senate|615",
+  "description": "An amendment to the modified House amendment to Senate amendment no. 82 to H.R. 7555, fiscal 1978 appropriations for the Departments of Labor and of Health, Education, and Welfare. It would authorize use of HEW funds for abortions only if the woman's life would be endangered by the pregnancy \"and\" if severe and long-lasting physical damage to her would result if the pregnancy were carried to term.",
+  "yea_means": "adopt the amendment allowing HEW abortion funding only when the pregnancy endangers the woman's life \"and\" would cause severe long-lasting physical damage",
+  "nay_means": "reject the amendment and keep the House amendment's wording on HEW abortion funding",
+  "insufficient": false,
+  "note": "Source stresses \"and\"; kept in quotation marks as given."
+ },
+ {
+  "key": "95|Senate|791",
+  "description": "An amendment to S.Res. 219, which establishes a two-week Senate senior citizen intern program. It would charge payments to the interns to the sponsoring senators' allowances for clerk-hire and travel.",
+  "yea_means": "adopt the amendment charging intern payments to sponsoring senators' clerk-hire and travel allowances",
+  "nay_means": "reject the amendment, leaving the intern payments funded as the resolution provides",
+  "insufficient": false,
+  "note": "bill_number empty; S.Res. 219 taken from the text."
+ },
+ {
+  "key": "95|Senate|1036",
+  "description": "Final passage of H.R. 2852, a bill extending the antirecession assistance program for two more years and establishing a supplemental fiscal assistance program for state and local governments that continue to have high unemployment.",
+  "yea_means": "pass H.R. 2852, extending antirecession assistance and creating supplemental fiscal assistance for high-unemployment state and local governments",
+  "nay_means": "vote against passage of H.R. 2852",
+  "insufficient": false,
+  "note": "Bill subject taken from same_bill_context."
+ },
+ {
+  "key": "96|House|270",
+  "description": "An amendment to H.R. 4389, fiscal 1980 appropriations for the Department of Labor and HEW, that would replace the bill's abortion language with the language restricting abortion funding in current law.",
+  "yea_means": "replace the bill's abortion language with the current-law language restricting abortion",
+  "nay_means": "keep the bill's own abortion language",
+  "insufficient": false,
+  "note": "Source says 'anti-abortion language'; neutralized. Source does not say how the bill's language differs."
+ },
+ {
+  "key": "96|House|312",
+  "description": "A substitute for an amendment to H.R. 4580, the District of Columbia appropriations bill. The substitute would prohibit using funds provided by the federal payment in the bill to perform abortions.",
+  "yea_means": "adopt the substitute prohibiting use of the federal payment funds to perform abortions",
+  "nay_means": "reject the substitute, leaving the underlying amendment as offered",
+  "insufficient": false,
+  "note": "Source does not say what the underlying amendment does."
+ },
+ {
+  "key": "96|House|550",
+  "description": "A motion to concur in Senate amendment no. 137 to H.R. 4389, fiscal 1980 Labor and HEW appropriations, with a House amendment. The Senate amendment permits federal funding of abortion where \"medically necessary\"; the House amendment would instead prohibit it except where the woman's life would be endangered if the fetus were carried to term, or for victims of reported rape or incest.",
+  "yea_means": "replace the Senate's \"medically necessary\" standard with a ban on federal abortion funding except for life endangerment or reported rape or incest",
+  "nay_means": "decline this House amendment to the Senate's abortion funding provision",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "96|House|868",
+  "description": "An amendment to H.Con.Res. 307, the first budget resolution, that would strike its reconciliation language instructing eight House and eight Senate authorizing committees to report legislation saving $9.1 billion in fiscal 1981 outlays.",
+  "yea_means": "strike the reconciliation instructions requiring committees to report $9.1 billion in fiscal 1981 outlay savings",
+  "nay_means": "keep the reconciliation instructions in the budget resolution",
+  "insufficient": false,
+  "note": "'First budget resolution' from same_bill_context."
+ },
+ {
+  "key": "96|House|1113",
+  "description": "An amendment to H.R. 7998, fiscal 1981 appropriations for Labor, Health and Human Services, and Education. It would bar the Department of Education from using funds, other than bilingual education funds, to enforce regulations requiring school agencies, as a condition of funding, to teach students of limited English ability in a language other than English.",
+  "yea_means": "bar the Department of Education from using these funds to enforce rules requiring instruction in a language other than English for limited-English students",
+  "nay_means": "reject the amendment, leaving the Department free to use the funds to enforce these rules",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "96|Senate|194",
+  "description": "An amendment to H.R. 4389 providing federal funding of abortions when the woman's life is endangered, when she is a victim of rape or incest, or when two physicians determine that severe physical health damage would result if the pregnancy were carried to term.",
+  "yea_means": "adopt the amendment funding abortions for life endangerment, rape or incest, or severe physical health damage certified by two physicians",
+  "nay_means": "reject the amendment and its list of cases for federal abortion funding",
+  "insufficient": false,
+  "note": "Bill subject not named in this line's source or context."
+ },
+ {
+  "key": "96|Senate|308",
+  "description": "A conference motion for the Senate to insist on its amendment no. 137 to H.R. 4389, which restricts Medicaid funding of abortions to cases where the woman's life is endangered or the abortion is medically necessary, or cases of rape or incest.",
+  "yea_means": "insist on the Senate amendment allowing Medicaid abortion funding for life endangerment, medical necessity, or rape or incest",
+  "nay_means": "decline to insist on the Senate's Medicaid abortion funding amendment",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "96|Senate|388",
+  "description": "An amendment to H.R. 5359, fiscal 1980 defense appropriations, providing that no funds be used for the performance of abortions except where the woman's life would be endangered.",
+  "yea_means": "adopt the amendment barring defense funds for abortions except to protect the woman's life",
+  "nay_means": "reject the amendment barring defense funds for abortions",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "96|Senate|667",
+  "description": "Final passage of H.R. 7471, a bill extending the present public debt limit through June 5, 1980.",
+  "yea_means": "pass the bill extending the present public debt limit through June 5, 1980",
+  "nay_means": "vote against extending the present public debt limit",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "96|Senate|965",
+  "description": "An amendment to H.J.Res. 610, making appropriations through December 15, 1980. It provides that states remain free not to fund abortions to the extent they deem appropriate, and addresses payments for drugs or devices to prevent implantation of the fertilized ovum and for procedures to end an ectopic pregnancy.",
+  "yea_means": "adopt the amendment leaving states free not to fund abortions and setting rules on payment for implantation-preventing drugs or devices and ectopic pregnancy procedures",
+  "nay_means": "reject the amendment",
+  "insufficient": false,
+  "note": "Source says the amendment 'prohibits' these payments; the direction may be garbled, so the description says 'addresses'. Worth a look."
+ },
+ {
+  "key": "97|House|78",
+  "description": "An amendment to H.R. 3480, the bill reauthorizing the Legal Services Corporation Act, that would prohibit giving legal advice about a client's rights and responsibilities regarding abortion.",
+  "yea_means": "adopt the amendment barring legal advice on clients' rights and responsibilities regarding abortion",
+  "nay_means": "reject the amendment, allowing such legal advice",
+  "insufficient": false,
+  "note": "Bill subject from same_bill_context."
+ },
+ {
+  "key": "97|House|630",
+  "description": "A vote on the conference report on H.R. 6955, the reconciliation bill carrying out S.Con.Res. 92, the first concurrent budget resolution for fiscal 1983.",
+  "yea_means": "approve the conference report on the fiscal 1983 reconciliation bill",
+  "nay_means": "vote against the conference report on the fiscal 1983 reconciliation bill",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "97|Senate|132",
+  "description": "A motion to table the Appropriations Committee amendment to H.R. 3512, a fiscal 1981 supplemental appropriations bill. The committee amendment would use federal funds to pay for abortions.",
+  "yea_means": "table (set aside) the committee amendment using federal funds to pay for abortions",
+  "nay_means": "keep the committee amendment using federal funds to pay for abortions before the Senate",
+  "insufficient": false,
+  "note": "Coded content but is a tabling motion. Committee amendment's exact terms not given."
+ },
+ {
+  "key": "97|Senate|840",
+  "description": "A cloture motion to close debate on an amendment to H.J.Res. 520. The amendment bans abortions.",
+  "yea_means": "close debate on the amendment banning abortions so it can come to a vote",
+  "nay_means": "keep debate open on the amendment banning abortions",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "98|House|170",
+  "description": "An amendment to H.R. 3191 that would prohibit using health benefit funds to pay for abortions unless the woman's life is endangered.",
+  "yea_means": "adopt the amendment barring health benefit funds for abortions except to protect the woman's life",
+  "nay_means": "reject the amendment barring health benefit funds for abortions",
+  "insufficient": false,
+  "note": "Source does not name the bill's subject."
+ },
+ {
+  "key": "98|House|404",
+  "description": "A Judiciary Committee amendment to H.R. 2867, a bill amending the Solid Waste Disposal Act to authorize appropriations for fiscal 1984 through 1986. The amendment strikes provisions empowering the EPA to litigate cases if the Justice Department fails to act within 150 days.",
+  "yea_means": "adopt the amendment removing the EPA's power to litigate when the Justice Department does not act within 150 days",
+  "nay_means": "keep the provisions letting the EPA litigate when the Justice Department does not act within 150 days",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "98|Senate|35",
+  "description": "An amendment to H.R. 1900 that would provide disability benefits to persons aged 62 and above who cannot continue in their current occupation or employment.",
+  "yea_means": "adopt the amendment granting disability benefits to persons 62 and older unable to continue their current occupation",
+  "nay_means": "reject the amendment granting these disability benefits",
+  "insufficient": false,
+  "note": "Source does not name the bill's subject."
+ },
+ {
+  "key": "98|Senate|339",
+  "description": "An amendment to H.J.Res. 413 that would strike funding language taken from H.R. 4139, the Treasury, Postal Service and General Government Appropriations Act, 1984, in its House version. That language related to using federal insurance to pay for abortions.",
+  "yea_means": "strike the House-version language from H.R. 4139 on using federal insurance to pay for abortions",
+  "nay_means": "keep the House-version language on using federal insurance to pay for abortions",
+  "insufficient": false,
+  "note": "Source does not say whether the struck language permits or restricts abortion coverage. Worth a look."
+ },
+ {
+  "key": "99|House|197",
+  "description": "A perfecting amendment to a substitute amendment on population planning in H.R. 1555, a foreign assistance bill. It would require nongovernmental foreign-based organizations receiving U.S. funds not to perform or actively promote abortion. The substitute being amended says population planning funds may not be used to pay for abortions as a method of family planning.",
+  "yea_means": "add to the substitute a requirement that foreign nongovernmental organizations receiving U.S. funds not perform or actively promote abortion",
+  "nay_means": "leave the substitute without this requirement on foreign nongovernmental organizations",
+  "insufficient": false,
+  "note": "'Foreign assistance' inferred from same_bill_context amendments (aid to Mozambique, El Salvador, Philippines). Source wording 'actually promote' read as 'actively promote'."
+ },
+ {
+  "key": "99|House|554",
+  "description": "An amendment in the nature of a substitute for H.Con.Res. 337, a budget resolution. It would fully fund most domestic programs such as Social Security and Medicare, decrease defense spending, and raise new revenue by increasing income taxes on selected corporate and individual taxpayers while reducing taxes for low and moderate income families.",
+  "yea_means": "adopt the substitute budget that fully funds most domestic programs, cuts defense, raises taxes on selected corporate and individual taxpayers, and lowers taxes for low and moderate income families",
+  "nay_means": "reject the substitute budget",
+  "insufficient": false,
+  "note": "'Budget resolution' inferred from the content; source does not name H.Con.Res. 337's title."
+ },
+ {
+  "key": "99|Senate|291",
+  "description": "A motion to table an amendment to H.R. 3067, the District of Columbia appropriations bill. The amendment would prohibit the use of funds to pay for an abortion except when the woman's life is threatened.",
+  "yea_means": "table (set aside) the amendment prohibiting funds for abortions except when the woman's life is threatened",
+  "nay_means": "keep the amendment prohibiting funds for abortions except when the woman's life is threatened before the Senate",
+  "insufficient": false,
+  "note": "Bill subject from same_bill_context."
+ },
+ {
+  "key": "100|House|193",
+  "description": "A vote on H.Res. 201, the rule providing for House floor consideration of H.Con.Res. 93, the budget resolution for fiscal 1988, which sets spending and revenue limits for the coming fiscal year.",
+  "yea_means": "adopt the rule, allowing the House to take up the fiscal 1988 budget resolution",
+  "nay_means": "reject the rule, blocking House consideration of the fiscal 1988 budget resolution under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "100|House|684",
+  "description": "An amendment to H.R. 4776, fiscal 1989 District of Columbia appropriations, that would bar the use of funds to perform abortions under any circumstances.",
+  "yea_means": "adopt the amendment barring use of the funds for abortions under any circumstances",
+  "nay_means": "reject the amendment barring use of the funds for abortions under any circumstances",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "100|Senate|216",
+  "description": "An amendment to H.J.Res. 324, the temporary debt limit increase, that would raise the ceiling on the federal debt to $2.8 trillion from $2.3 trillion until May 1, 1989.",
+  "yea_means": "adopt the amendment raising the federal debt ceiling to $2.8 trillion until May 1, 1989",
+  "nay_means": "reject the amendment raising the federal debt ceiling to $2.8 trillion",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "100|Senate|429",
+  "description": "An amendment to S. 557, the Civil Rights Restoration Act, providing that the act does not require any federally funded individual, program, or institution to perform or pay for an abortion.",
+  "yea_means": "adopt the amendment stating that the act does not require any federally funded individual, program, or institution to perform or pay for an abortion",
+  "nay_means": "reject the amendment, leaving the act without this abortion provision",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "100|Senate|686",
+  "description": "A motion to table an amendment to H.R. 4783, fiscal 1989 Labor-Health and Human Services-Education appropriations. The amendment would prohibit federal funding of programs at elementary and secondary schools that provide contraceptives, abortions, or counseling and help in obtaining contraceptives and abortions.",
+  "yea_means": "table (set aside) the amendment barring federal funds for school programs that provide contraceptives, abortions, or related counseling",
+  "nay_means": "keep the amendment barring federal funds for such school programs before the Senate",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "100|Senate|768",
+  "description": "A motion to table an amendment to H.R. 4776, fiscal 1989 District of Columbia appropriations. The amendment would have the Senate disagree with the House amendment providing that no funds in the bill be used for abortions except when the life of the woman is in danger.",
+  "yea_means": "table (set aside) the amendment to disagree with the House limit on abortion funding, leaving that House limit in place",
+  "nay_means": "keep alive the amendment to disagree with the House provision barring abortion funding except to save the woman's life",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "101|Senate|186",
+  "description": "A motion to table an amendment to H.R. 2939, foreign assistance appropriations. The amendment would stop United Nations Population Fund money from going to organizations in China involved in forced abortions or sterilizations, and would require certification that the Fund does not support or help manage a program of coercive abortion or involuntary sterilization in China.",
+  "yea_means": "table (set aside) the amendment requiring certification that UN Population Fund money does not support coercive abortion or sterilization in China",
+  "nay_means": "keep the amendment on UN Population Fund activities in China before the Senate",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "101|Senate|381",
+  "description": "A vote on whether an amendment to H.R. 4404, fiscal 1990 supplemental appropriations, is germane to the bill. The amendment would restrict use of federal funds to perform abortions in the District of Columbia except under certain circumstances.",
+  "yea_means": "hold the amendment restricting federal funding of abortions in the District of Columbia germane, keeping it in order",
+  "nay_means": "hold the amendment not germane, so it falls",
+  "insufficient": false,
+  "note": "vote_desc describes an unrelated early childhood study amendment; followed dtl_desc. Worth a look."
+ },
+ {
+  "key": "102|House|539",
+  "description": "En bloc amendments to H.R. 2039, the Legal Services Reauthorization Act. They would prohibit recipient agencies from using any federal, public, private, or IOLTA funds for litigation or proceedings about abortion, or for lobbying to pass or defeat legislation or regulations about abortion.",
+  "yea_means": "adopt the amendments barring legal services recipients from using any funds for abortion-related litigation or lobbying",
+  "nay_means": "reject the amendments barring abortion-related litigation and lobbying by legal services recipients",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "102|House|816",
+  "description": "An amendment to the motion to recede and concur in Senate amendment no. 37 to H.R. 5373, Energy and Water Development Appropriations for fiscal 1993. It would make the $94,800,000 for new energy, educational and medical facilities available to academic research facilities through competitive merit-review awards instead of earmarking it to specific institutions.",
+  "yea_means": "award the $94.8 million for facilities through competitive merit review instead of earmarks to specific institutions",
+  "nay_means": "keep the $94.8 million earmarked to specific institutions",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "102|Senate|185",
+  "description": "An amendment to a committee amendment to H.R. 2707 that would restrict the use of funds to perform an abortion on a minor under the age of 18.",
+  "yea_means": "adopt the amendment restricting use of funds for abortions on minors under 18",
+  "nay_means": "reject the amendment restricting use of funds for abortions on minors under 18",
+  "insufficient": false,
+  "note": "vote_desc purpose clause ('protect the health and well-being of young people...') omitted as non-descriptive. Bill subject not named."
+ },
+ {
+  "key": "102|Senate|402",
+  "description": "An amendment to S. 1985, the Bankruptcy Amendments of 1992 and National Bankruptcy Review Commission Act. It expresses the sense of the Senate that public officials and candidates make proposals and hold discussion on reducing the deficit, and that the presidential candidates agree to a formal discussion focused entirely on the federal budget deficit.",
+  "yea_means": "adopt the sense-of-the-Senate amendment calling for deficit reduction proposals and a presidential candidate discussion on the budget deficit",
+  "nay_means": "reject the sense-of-the-Senate amendment on deficit discussion",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "103|House|51",
+  "description": "A motion to agree to sections 1 through 6 of the Senate amendment to H.R. 920, the Emergency Unemployment Compensation Amendments of 1993, which extend the emergency unemployment compensation program.",
+  "yea_means": "agree to sections 1 through 6 of the Senate amendment extending emergency unemployment compensation",
+  "nay_means": "refuse to agree to sections 1 through 6 of the Senate amendment",
+  "insufficient": false,
+  "note": "Removed public law number and approval date (outcome signals)."
+ },
+ {
+  "key": "103|House|102",
+  "description": "A motion to recommit H.R. 670, the Family Planning Amendments Act of 1993, with instructions to add a parental notification amendment. Grants would go only to entities agreeing not to perform an abortion on an unemancipated minor under 18 until 48 hours after written notice to a parent or guardian, with exceptions for medical emergencies and for incest or abuse by a parent or guardian, and to follow state notification laws.",
+  "yea_means": "send the bill back to committee to add parental notification requirements for abortions on minors at grant recipients",
+  "nay_means": "keep the bill as it stands without the parental notification amendment",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "103|House|360",
+  "description": "An amendment to an amendment to H.R. 2010, the National and Community Service Trust Act of 1993. It would require participating states to enact laws protecting program participants and volunteers from personal liability for injury or damage if they acted in good faith in their duties and the harm was not willful.",
+  "yea_means": "require participating states to shield service participants and volunteers from personal liability for good-faith, non-willful harm",
+  "nay_means": "reject the liability protection requirement for participating states",
+  "insufficient": false,
+  "note": "Removed public law number and approval date."
+ },
+ {
+  "key": "103|Senate|204",
+  "description": "An amendment to S. 919 that would delay the effective date of titles I, II, and IV of the bill until the deficit increase resulting from fiscal 1993 emergency spending is eliminated.",
+  "yea_means": "delay titles I, II, and IV until the deficit increase from fiscal 1993 emergency spending is eliminated",
+  "nay_means": "keep the bill's effective dates for titles I, II, and IV",
+  "insufficient": false,
+  "note": "Bill subject not named in source (context mentions a national service educational benefit)."
+ },
+ {
+  "key": "103|Senate|371",
+  "description": "A motion to table amendment no. 1197 to a substitute amendment to S. 636. Amendment no. 1197 would clarify that nothing in the act affects state regulation of abortion.",
+  "yea_means": "table (set aside) the amendment stating that the act does not affect state regulation of abortion",
+  "nay_means": "keep the amendment stating that the act does not affect state regulation of abortion before the Senate",
+  "insufficient": false,
+  "note": "Bill subject not named in source."
+ },
+ {
+  "key": "104|House|69",
+  "description": "An amendment to H.R. 5, the Unfunded Mandate Reform Act. It would treat certain low-income entitlement programs as federal mandates, so legislation reducing their funding would be subject to a point of order as an unfunded mandate, even if the programs are later significantly changed, such as by being folded into a block grant in welfare reform.",
+  "yea_means": "treat certain low-income entitlement programs as federal mandates so that cuts to them face an unfunded-mandate point of order",
+  "nay_means": "leave low-income entitlement programs outside the bill's unfunded-mandate point of order",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|316",
+  "description": "An amendment to H.R. 961, the Clean Water Amendments of 1995, that would establish a national clean water trust fund.",
+  "yea_means": "adopt the amendment establishing a national clean water trust fund",
+  "nay_means": "reject the amendment establishing a national clean water trust fund",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|340",
+  "description": "An amendment to an amendment to H.R. 1561, the American Overseas Interests Act of 1995. It would provide that the underlying amendment's abortion prohibitions do not apply to medical treatment of injuries or illnesses caused by unsafe abortions.",
+  "yea_means": "exempt medical treatment of injuries or illnesses from unsafe abortions from the amendment's abortion prohibitions",
+  "nay_means": "apply the amendment's abortion prohibitions without this exemption",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|422",
+  "description": "An amendment to H.R. 1868, Foreign Operations Appropriations for fiscal 1996. It prohibits federal funding to any private, nongovernmental, or multilateral organization that directly or indirectly performs abortions in a foreign country, except in special cases, and prohibits funding to the United Nations Fund for Population Activities unless it ceases all activity in China.",
+  "yea_means": "bar funding to organizations performing abortions abroad and to the UN Fund for Population Activities unless it leaves China",
+  "nay_means": "reject these restrictions on foreign abortion providers and the UN Fund for Population Activities",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|561",
+  "description": "An amendment to H.R. 2076, Commerce, Justice, State and Judiciary Appropriations for fiscal 1996. It would strike language prohibiting use of funds to perform abortions in the federal prison system unless the woman's life would be endangered or in the case of rape.",
+  "yea_means": "strike the ban on funding abortions in federal prisons except for life endangerment or rape",
+  "nay_means": "keep the ban on funding abortions in federal prisons except for life endangerment or rape",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|628",
+  "description": "An amendment to H.R. 2126, Department of Defense Appropriations for fiscal 1996, prohibiting use of funds to perform abortions in military medical facilities except when the woman's life is in danger.",
+  "yea_means": "bar use of funds for abortions in military medical facilities except when the woman's life is in danger",
+  "nay_means": "reject the ban on abortions in military medical facilities",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|738",
+  "description": "A motion during consideration of H.R. 1833, the \"Partial-Birth Abortion Ban Act of 1995,\" to permit the use of certain exhibits on the floor in the Committee of the Whole.",
+  "yea_means": "permit the use of certain exhibits during floor debate on H.R. 1833",
+  "nay_means": "not permit the use of these exhibits during floor debate on H.R. 1833",
+  "insufficient": false,
+  "note": "Source does not describe the exhibits."
+ },
+ {
+  "key": "104|House|917",
+  "description": "An amendment to H.R. 3019, omnibus appropriations for fiscal 1996. It would delete provisions permitting states to decide whether to use Medicaid funds to pay for an abortion in the case of rape or incest.",
+  "yea_means": "delete the provisions letting states decide whether to use Medicaid funds for abortions in cases of rape or incest",
+  "nay_means": "keep the provisions letting states decide whether to use Medicaid funds for abortions in cases of rape or incest",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|House|968",
+  "description": "Final passage of H.R. 3136, a bill to enact the Senior Citizens' Right to Work Act of 1996, the Line Item Veto Act, and the Small Business Growth and Fairness Act of 1996, and to provide a permanent increase in the public debt limit.",
+  "yea_means": "pass H.R. 3136, enacting the three acts and permanently raising the public debt limit",
+  "nay_means": "vote against passage of H.R. 3136",
+  "insufficient": false,
+  "note": "Source header names an unrelated bill (H.R. 2869); followed the H.R. 3136 text."
+ },
+ {
+  "key": "104|House|1178",
+  "description": "An amendment to H.R. 3755, Labor, Health and Human Services, and Education Appropriations for fiscal 1997, that would apply a 1.9 percent reduction to all discretionary appropriations in the bill.",
+  "yea_means": "cut all discretionary appropriations in the bill by 1.9 percent",
+  "nay_means": "keep discretionary appropriations at the bill's levels",
+  "insufficient": false,
+  "note": "'In the bill' is implied, not stated."
+ },
+ {
+  "key": "104|House|1287",
+  "description": "A motion to discharge the Judiciary Committee from further consideration of H.R. 1833, the \"Partial-Birth Abortion Ban Act,\" and the President's veto message on it.",
+  "yea_means": "discharge the Judiciary Committee, bringing the bill and the veto message to the House floor",
+  "nay_means": "leave the bill and the veto message in the Judiciary Committee",
+  "insufficient": false,
+  "note": "Veto date removed."
+ },
+ {
+  "key": "104|Senate|185",
+  "description": "An amendment to S.Con.Res. 13 that would increase funding for mandatory spending in function 500 (education).",
+  "yea_means": "increase funding for mandatory education spending in function 500",
+  "nay_means": "keep function 500 mandatory spending at the resolution's level",
+  "insufficient": false,
+  "note": "Measure's title not given; budget function wording suggests a budget resolution."
+ },
+ {
+  "key": "104|Senate|371",
+  "description": "An amendment to a committee amendment to H.R. 2020 that would allow coverage of abortion under federal employees' health insurance policies when it is medically necessary.",
+  "yea_means": "allow federal employees' health insurance to cover medically necessary abortions",
+  "nay_means": "reject the amendment allowing coverage of medically necessary abortions",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "104|Senate|542",
+  "description": "A motion to instruct the Senate conferees on S. 1357, the fiscal 1996 budget reconciliation bill, to accept the House provision prohibiting federal funding for Medicaid abortions except to save the life of the woman or in cases of rape or incest.",
+  "yea_means": "instruct Senate conferees to accept the House ban on Medicaid abortion funding except for life endangerment, rape, or incest",
+  "nay_means": "decline to give conferees this instruction",
+  "insufficient": false,
+  "note": "motion coded unclassified; content is clear."
+ },
+ {
+  "key": "104|Senate|596",
+  "description": "Final passage of H.R. 1833, a bill to amend title 18 of the United States Code to ban \"partial-birth abortions.\"",
+  "yea_means": "pass the bill banning \"partial-birth abortions\"",
+  "nay_means": "vote against the bill banning \"partial-birth abortions\"",
+  "insufficient": false,
+  "note": "Statutory term kept in quotation marks."
+ },
+ {
+  "key": "104|Senate|897",
+  "description": "A motion to table a committee amendment to H.R. 3756, fiscal 1997 Treasury, Postal Service, and Executive Office appropriations. The committee amendment would strike language prohibiting funds for abortions or for administrative costs of any Federal Employees Health Benefit Program plan that covers abortions.",
+  "yea_means": "table (set aside) the committee amendment, keeping the ban on federal employee health plans covering abortions",
+  "nay_means": "keep alive the committee amendment that would strike the ban on federal employee health plans covering abortions",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|60",
+  "description": "A motion to order the previous question on H.Res. 100, the rule providing for consideration of H.R. 1122, the \"Partial-Birth Abortion Ban Act.\" This ends debate on the rule and moves to a vote on it.",
+  "yea_means": "end debate on the rule for H.R. 1122 and move to a vote on it",
+  "nay_means": "keep the rule open to debate and possible amendment",
+  "insufficient": false,
+  "note": "Source names no alternative rule."
+ },
+ {
+  "key": "105|House|64",
+  "description": "Final passage of H.R. 1122, the \"Partial-Birth Abortion Ban Act,\" a bill to amend title 18 of the United States Code to ban \"partial-birth abortions.\"",
+  "yea_means": "pass the bill banning \"partial-birth abortions\"",
+  "nay_means": "vote against the bill banning \"partial-birth abortions\"",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|192",
+  "description": "An amendment to H.R. 1757, the Foreign Relations Authorization Act for fiscal 1998-1999. It bars population planning aid to foreign organizations unless they certify they will not perform abortions abroad (except for life endangerment, rape or incest) or work to change foreign abortion laws, and bars funds to the UN Population Fund unless it has ended activities in China or there were no coerced abortions there in the prior 12 months.",
+  "yea_means": "adopt the certification requirements for foreign population planning grantees and the conditions on UN Population Fund money",
+  "nay_means": "reject these restrictions on foreign population planning aid",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|358",
+  "description": "An amendment to an amendment to H.R. 2159, Foreign Operations Appropriations for fiscal 1998. It keeps organizations eligible for funding if they do not promote abortion as family planning and use funds to prevent abortion, and bars money to the UN Fund for Population Activities unless it has stopped all activity in China, otherwise shifting the $25 million to AID for population assistance.",
+  "yea_means": "adopt the alternative keeping such organizations eligible and conditioning UN Fund for Population Activities money on leaving China",
+  "nay_means": "reject the alternative and leave the underlying amendment unchanged",
+  "insufficient": false,
+  "note": "Source does not describe the underlying amendment."
+ },
+ {
+  "key": "105|House|382",
+  "description": "An amendment to H.R. 2264, Labor, Health, and Human Services Appropriations for fiscal 1998. It updates current law to prohibit use of federal funds for abortions in managed care contracts and clarifies the exception for life-threatening conditions.",
+  "yea_means": "extend the federal abortion funding ban to managed care contracts and clarify the life-threatening exception",
+  "nay_means": "reject the amendment, leaving current-law abortion funding language unchanged",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|491",
+  "description": "Final passage of H.R. 629, the Texas Low-Level Radioactive Waste Disposal Compact Consent Act, granting congressional consent to the compact.",
+  "yea_means": "pass the bill granting congressional consent to the Texas Low-Level Radioactive Waste Disposal Compact",
+  "nay_means": "vote against consent to the compact",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|545",
+  "description": "An amendment to H.R. 1270, the Nuclear Waste Policy Act of 1997. It would require the governor of each state along nuclear waste routes to certify that emergency response teams exist and can manage any nuclear accident before transportation can begin.",
+  "yea_means": "require governors along nuclear waste routes to certify emergency response capacity before shipments begin",
+  "nay_means": "reject the governor certification requirement",
+  "insufficient": false,
+  "note": "Debate date removed."
+ },
+ {
+  "key": "105|House|750",
+  "description": "An amendment to H.R. 6, the Higher Education Amendments of 1998, that would prohibit use of Social Security numbers as the electronic personal identifier for students receiving assistance.",
+  "yea_means": "bar use of Social Security numbers as the electronic identifier for students receiving aid",
+  "nay_means": "allow continued use of Social Security numbers as the identifier",
+  "insufficient": false,
+  "note": "Debate date removed."
+ },
+ {
+  "key": "105|House|886",
+  "description": "An amendment to H.R. 4101, Agriculture, Rural Development, Food and Drug Administration appropriations for 1999, prohibiting the FDA from using funds for any drug for the chemical inducement of abortion.",
+  "yea_means": "bar the FDA from using funds for any drug for the chemical inducement of abortion",
+  "nay_means": "reject the restriction on FDA funds for abortion-inducing drugs",
+  "insufficient": false,
+  "note": "Source does not specify what FDA activity (testing, approval) is covered."
+ },
+ {
+  "key": "105|House|907",
+  "description": "An amendment in the nature of a substitute for H.R. 3267, the Salton Sea reclamation bill, which directs the Secretary of the Interior, through the Bureau of Reclamation, to conduct a feasibility study and build a project to reclaim the Salton Sea. The substitute would instead authorize a study of alternatives for restoring the Salton Sea.",
+  "yea_means": "replace the bill with a substitute authorizing only a study of alternatives for restoring the Salton Sea",
+  "nay_means": "keep the bill's feasibility study and reclamation project for the Salton Sea",
+  "insufficient": false,
+  "note": "Bill short title contains a legislator's name; shortened to 'Salton Sea reclamation bill'. 'Instead' inferred from the substitute form."
+ },
+ {
+  "key": "105|House|954",
+  "description": "An amendment to H.R. 4193, Interior Appropriations for fiscal 1999, that would increase the state-side grant program of the Land and Water Conservation Fund by $50 million.",
+  "yea_means": "add $50 million to the Land and Water Conservation Fund state-side grant program",
+  "nay_means": "keep the state-side grant program at the bill's level",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|House|1015",
+  "description": "An amendment to H.R. 4276, Commerce, Justice, State, Judiciary Appropriations for fiscal 1999. It would clarify that Alabama, Louisiana, and Mississippi each have exclusive fishery management authority over all fish in the Gulf of Mexico within 3 leagues of their coasts, effective July 1, 1999.",
+  "yea_means": "give Alabama, Louisiana, and Mississippi exclusive fishery management authority within 3 leagues of their Gulf coasts",
+  "nay_means": "reject the amendment on Gulf state fishery management authority",
+  "insufficient": false,
+  "note": "State names here are content, not member tags."
+ },
+ {
+  "key": "105|Senate|42",
+  "description": "Final passage of S. 104, a bill to amend the Nuclear Waste Policy Act of 1982.",
+  "yea_means": "pass the bill amending the Nuclear Waste Policy Act of 1982",
+  "nay_means": "vote against the bill amending the Nuclear Waste Policy Act of 1982",
+  "insufficient": false,
+  "note": "Source gives no detail on what the amendments to the act do."
+ },
+ {
+  "key": "105|Senate|96",
+  "description": "A vote on the conference report on H.Con.Res. 84, the congressional budget for fiscal 1998 setting budget levels for fiscal 1999 through 2002.",
+  "yea_means": "approve the conference agreement on the fiscal 1998 budget resolution",
+  "nay_means": "vote against the conference agreement on the fiscal 1998 budget resolution",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "105|Senate|215",
+  "description": "An amendment to S. 1061 that would prohibit the use of funds for research using human fetal tissue, cells, or organs obtained from a living or dead embryo or fetus during or after an induced abortion.",
+  "yea_means": "bar funding for research using fetal tissue obtained from induced abortions",
+  "nay_means": "reject the ban on funding research using fetal tissue from induced abortions",
+  "insufficient": false,
+  "note": "Bill subject not named in source."
+ },
+ {
+  "key": "105|Senate|489",
+  "description": "An amendment to S. 1882 that would expand educational opportunities for welfare recipients.",
+  "yea_means": "adopt the amendment expanding educational opportunities for welfare recipients",
+  "nay_means": "reject the amendment expanding educational opportunities for welfare recipients",
+  "insufficient": false,
+  "note": "Source does not say how opportunities are expanded; bill subject not named (context mentions student loans)."
+ },
+ {
+  "key": "105|Senate|570",
+  "description": "A motion to adjourn the Senate while S. 1645 was pending. S. 1645 would amend title 18 of the U.S. Code to prohibit taking minors across state lines to avoid laws requiring parental involvement in abortion decisions.",
+  "yea_means": "adjourn the Senate",
+  "nay_means": "keep the Senate in session",
+  "insufficient": false,
+  "note": "The vote is on adjourning, not on the bill; the bill is named only as context. Worth a look."
+ },
+ {
+  "key": "106|House|74",
+  "description": "A substitute amendment to H.Con.Res. 68, the congressional budget for fiscal 2000. The source does not describe what the substitute budget contains.",
+  "yea_means": "adopt the substitute budget for fiscal 2000 in place of the reported resolution",
+  "nay_means": "reject the substitute and keep the reported fiscal 2000 budget resolution",
+  "insufficient": true,
+  "note": "Source says only that this is a substitute budget; its content is not given."
+ },
+ {
+  "key": "106|House|463",
+  "description": "Final passage of H.R. 2436, the \"Unborn Victims of Violence Act.\"",
+  "yea_means": "pass the \"Unborn Victims of Violence Act\"",
+  "nay_means": "vote against the \"Unborn Victims of Violence Act\"",
+  "insufficient": false,
+  "note": "Source gives only the short title, kept in quotation marks."
+ },
+ {
+  "key": "106|House|712",
+  "description": "Final passage of H.R. 3660, the \"Partial-Birth Abortion Ban Act of 2000.\"",
+  "yea_means": "pass the \"Partial-Birth Abortion Ban Act of 2000\"",
+  "nay_means": "vote against the \"Partial-Birth Abortion Ban Act of 2000\"",
+  "insufficient": false,
+  "note": "Source gives only the short title."
+ },
+ {
+  "key": "106|Senate|197",
+  "description": "A motion to table an amendment to S. 1282. The amendment would prohibit use of funds to pay for an abortion or for administrative expenses of certain health plans that cover abortions.",
+  "yea_means": "table (set aside) the amendment barring funds for abortions and for health plans that cover abortions",
+  "nay_means": "keep the amendment barring funds for abortions and for health plans that cover abortions before the Senate",
+  "insufficient": false,
+  "note": "Bill subject not named in source."
+ },
+ {
+  "key": "106|Senate|340",
+  "description": "Final passage of S. 1692, a bill to amend title 18 of the United States Code to ban \"partial birth abortions.\"",
+  "yea_means": "pass the bill banning \"partial birth abortions\"",
+  "nay_means": "vote against the bill banning \"partial birth abortions\"",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "106|Senate|508",
+  "description": "A motion to table an amendment to S. 2549. The amendment would repeal the restriction on using Department of Defense facilities for privately funded abortions.",
+  "yea_means": "table (set aside) the amendment repealing the restriction on privately funded abortions at Defense facilities",
+  "nay_means": "keep the amendment repealing that restriction before the Senate",
+  "insufficient": false,
+  "note": "Bill subject not named in source."
+ },
+ {
+  "key": "106|Senate|622",
+  "description": "An amendment to H.R. 4444 that would require the Congressional-Executive Commission on the People's Republic of China to monitor China's cooperation on POW/MIA issues and improvement in the areas of forced abortions, slave labor, and organ harvesting.",
+  "yea_means": "require the commission to monitor China on POW/MIA cooperation, forced abortions, slave labor, and organ harvesting",
+  "nay_means": "reject the added monitoring requirements",
+  "insufficient": false,
+  "note": "Commission's full name from same_bill_context."
+ },
+ {
+  "key": "107|House|516",
+  "description": "A motion to suspend the rules and agree to H.Con.Res. 312, expressing the sense of the House that the scheduled tax relief in the Economic Growth and Tax Relief Reconciliation Act of 2001 should not be suspended or repealed.",
+  "yea_means": "agree to the resolution stating that the scheduled 2001 tax cuts should not be suspended or repealed",
+  "nay_means": "vote against the resolution on keeping the scheduled 2001 tax cuts",
+  "insufficient": false,
+  "note": "Removed 'passed by a bipartisan majority' phrase."
+ },
+ {
+  "key": "107|House|849",
+  "description": "Final passage of H.R. 4965, the \"Partial-Birth Abortion Ban Act.\"",
+  "yea_means": "pass the \"Partial-Birth Abortion Ban Act\"",
+  "nay_means": "vote against the \"Partial-Birth Abortion Ban Act\"",
+  "insufficient": false,
+  "note": "Source gives only the short title."
+ },
+ {
+  "key": "108|House|235",
+  "description": "A vote on H.Res. 257, the rule providing for consideration of H.R. 760, a bill to prohibit the procedure commonly known as partial-birth abortion.",
+  "yea_means": "adopt the rule, allowing the House to take up the bill banning the procedure known as partial-birth abortion",
+  "nay_means": "reject the rule, blocking consideration of the bill under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "108|House|704",
+  "description": "An amendment to H.R. 1997, the \"Unborn Victims of Violence Act.\" The source does not describe what the amendment would do.",
+  "yea_means": "adopt the amendment to H.R. 1997",
+  "nay_means": "reject the amendment to H.R. 1997",
+  "insufficient": true,
+  "note": "Only the bill title is given; amendment content unknown."
+ },
+ {
+  "key": "108|House|984",
+  "description": "An amendment to H.R. 4663. The source does not describe the bill or the amendment.",
+  "yea_means": "adopt the amendment to H.R. 4663",
+  "nay_means": "reject the amendment to H.R. 4663",
+  "insufficient": true,
+  "note": "No description and no context in source."
+ },
+ {
+  "key": "108|Senate|86",
+  "description": "An amendment to S.Con.Res. 23 that would raise after-school program funding to the levels in the No Child Left Behind Act, serving 1.6 million more children in fiscal 2004, raise Head Start funding to serve 80 percent of eligible 3- and 4-year-olds and more infants and toddlers, and provide for deficit reduction.",
+  "yea_means": "increase funding for after-school programs and Head Start and add deficit reduction",
+  "nay_means": "keep after-school and Head Start funding at the resolution's levels",
+  "insufficient": false,
+  "note": "'Promised by' changed to 'in'. Source does not say how the increase is paid for."
+ },
+ {
+  "key": "108|Senate|522",
+  "description": "Final passage of H.R. 1997, a bill to amend title 18 of the U.S. Code and the Uniform Code of Military Justice to protect a fetus from assault and murder.",
+  "yea_means": "pass the bill making assault and murder of a fetus covered offenses under title 18 and military law",
+  "nay_means": "vote against the bill",
+  "insufficient": false,
+  "note": "Source phrase 'unborn children' replaced with 'fetus' per spec rule 4."
+ },
+ {
+  "key": "109|House|143",
+  "description": "Final passage of H.R. 748, the \"Child Interstate Abortion Notification Act.\"",
+  "yea_means": "pass the \"Child Interstate Abortion Notification Act\"",
+  "nay_means": "vote against the \"Child Interstate Abortion Notification Act\"",
+  "insufficient": false,
+  "note": "Source gives only the short title."
+ },
+ {
+  "key": "109|House|1200",
+  "description": "A motion to amend the House amendment to the Senate amendment to H.R. 6111, the Tax Relief and Health Care Act. The source does not describe what the motion's amendment would do.",
+  "yea_means": "adopt the motion's amendment to the House amendment",
+  "nay_means": "reject the motion's amendment",
+  "insufficient": true,
+  "note": "Amendment content not given; bill title from same_bill_context."
+ },
+ {
+  "key": "109|Senate|582",
+  "description": "Final passage of S. 403, a bill to amend title 18 of the U.S. Code to prohibit taking minors across state lines to get around laws requiring parental involvement in abortion decisions.",
+  "yea_means": "pass the bill prohibiting taking minors across state lines to avoid parental involvement laws on abortion",
+  "nay_means": "vote against the bill",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "110|Senate|174",
+  "description": "An amendment to S. 1348, an immigration bill, that would strike the Y nonimmigrant guestworker program.",
+  "yea_means": "strike the Y nonimmigrant guestworker program from the bill",
+  "nay_means": "keep the Y nonimmigrant guestworker program in the bill",
+  "insufficient": false,
+  "note": "'Immigration bill' inferred from the amendment and context (family backlog)."
+ },
+ {
+  "key": "110|Senate|318",
+  "description": "An amendment to H.R. 2764 that would prohibit funding of organizations that support coercive abortion.",
+  "yea_means": "bar funding for organizations that support coercive abortion",
+  "nay_means": "reject the funding bar for organizations that support coercive abortion",
+  "insufficient": false,
+  "note": "Bill subject not named in source."
+ },
+ {
+  "key": "110|Senate|513",
+  "description": "An amendment to S.Con.Res. 70 that would increase Department of Justice funding, with an offset, to enforce a prohibition on taking minors across state lines to get around laws requiring parental involvement in abortion decisions, consistent with the Child Custody Protection Act.",
+  "yea_means": "add offset Justice Department funding to enforce the ban on taking minors across state lines to avoid parental involvement laws",
+  "nay_means": "reject the added enforcement funding",
+  "insufficient": false,
+  "note": "Removed Senate vote tally and 'bipartisan'; dropped 'vigorous'."
+ },
+ {
+  "key": "111|Senate|39",
+  "description": "An amendment to H.R. 1 aimed at keeping the bill, described as a $1 trillion spending bill, from expanding the federal government by adding new spending programs.",
+  "yea_means": "adopt the amendment limiting the bill from creating new spending programs",
+  "nay_means": "reject the amendment limiting new spending programs in the bill",
+  "insufficient": false,
+  "note": "Source gives purpose only, not the mechanism; framing softened."
+ },
+ {
+  "key": "111|Senate|408",
+  "description": "An amendment to H.J.Res. 45 that would set 5-year caps on discretionary spending to reduce the deficit.",
+  "yea_means": "establish 5-year discretionary spending caps",
+  "nay_means": "reject the 5-year discretionary spending caps",
+  "insufficient": false,
+  "note": "Measure's subject not named in source."
+ },
+ {
+  "key": "112|House|289",
+  "description": "A motion to recommit H.R. 3, the \"No Taxpayer Funding for Abortion Act,\" with instructions. The source does not say what the instructions would add.",
+  "yea_means": "send the bill back with the motion's instructions",
+  "nay_means": "keep the bill as it stands, without the motion's changes",
+  "insufficient": true,
+  "note": "Instructions not described in source."
+ },
+ {
+  "key": "112|House|782",
+  "description": "A vote on H.Res. 430, the rule providing for consideration of H.R. 358, a bill to amend the Patient Protection and Affordable Care Act to modify special rules on coverage of abortion services under the act.",
+  "yea_means": "adopt the rule, allowing the House to take up the bill changing the act's rules on abortion coverage",
+  "nay_means": "reject the rule, blocking consideration of the bill under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "113|House|100",
+  "description": "Final passage of H.R. 1120, the \"Preventing Greater Uncertainty in Labor-Management Relations Act.\"",
+  "yea_means": "pass H.R. 1120",
+  "nay_means": "vote against H.R. 1120",
+  "insufficient": false,
+  "note": "Source gives only the short title; bill content is otherwise unknown. Borderline insufficient."
+ },
+ {
+  "key": "113|House|250",
+  "description": "Final passage of H.R. 1797, the \"District of Columbia Pain-Capable Unborn Child Protection Act.\"",
+  "yea_means": "pass H.R. 1797",
+  "nay_means": "vote against H.R. 1797",
+  "insufficient": false,
+  "note": "Source gives only the short title, kept in quotation marks."
+ },
+ {
+  "key": "113|House|669",
+  "description": "Final passage of H.R. 7, a bill \"to prohibit taxpayer funded abortions.\"",
+  "yea_means": "pass the bill prohibiting federal funding of abortions",
+  "nay_means": "vote against the bill",
+  "insufficient": false,
+  "note": "Source wording quoted."
+ },
+ {
+  "key": "114|House|42",
+  "description": "A vote on H.Res. 42, the rule providing for consideration of H.R. 7, a bill \"to prohibit taxpayer funded abortions.\"",
+  "yea_means": "adopt the rule, allowing the House to take up the bill prohibiting federal funding of abortions",
+  "nay_means": "reject the rule, blocking consideration of the bill under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "114|House|221",
+  "description": "A motion to recommit H.R. 36, the \"Pain-Capable Unborn Child Protection Act,\" with instructions. The source does not say what the instructions would add.",
+  "yea_means": "send the bill back with the motion's instructions",
+  "nay_means": "keep the bill as it stands, without the motion's changes",
+  "insufficient": true,
+  "note": "Instructions not described in source."
+ },
+ {
+  "key": "114|House|501",
+  "description": "A vote on H.Res. 421, the rule providing for consideration of H.R. 3134, the \"Defund Planned Parenthood Act,\" and H.R. 3504, the \"Born-Alive Abortion Survivors Protection Act.\"",
+  "yea_means": "adopt the rule, allowing the House to take up both bills",
+  "nay_means": "reject the rule, blocking consideration of both bills under its terms",
+  "insufficient": false,
+  "note": ""
+ },
+ {
+  "key": "115|House|61",
+  "description": "A motion to order the previous question on H.Res. 55, the rule providing for consideration of H.R. 7, a bill \"to prohibit taxpayer funded abortions.\" This ends debate on the rule and moves to a vote on it.",
+  "yea_means": "end debate on the rule for H.R. 7 and move to a vote on it",
+  "nay_means": "keep the rule open to debate and possible amendment",
+  "insufficient": false,
+  "note": "Source names no alternative."
+ },
+ {
+  "key": "115|House|143",
+  "description": "An amendment to H.R. 985, the Fairness in Class Action Litigation Act. The source does not describe what the amendment would do.",
+  "yea_means": "adopt the amendment to H.R. 985",
+  "nay_means": "reject the amendment to H.R. 985",
+  "insufficient": true,
+  "note": "Amendment content not given; bill title from same_bill_context."
+ },
+ {
+  "key": "115|House|548",
+  "description": "Final passage of H.R. 36, the \"Pain-Capable Unborn Child Protection Act.\"",
+  "yea_means": "pass H.R. 36",
+  "nay_means": "vote against H.R. 36",
+  "insufficient": false,
+  "note": "Source gives only the short title."
+ },
+ {
+  "key": "115|House|744",
+  "description": "Final passage of H.R. 4712, the \"Born-Alive Abortion Survivors Protection Act.\"",
+  "yea_means": "pass H.R. 4712",
+  "nay_means": "vote against H.R. 4712",
+  "insufficient": false,
+  "note": "Source gives only the short title."
+ },
+ {
+  "key": "116|Senate|485",
+  "description": "A cloture motion to end debate on S. 3275, a bill to amend title 18 of the U.S. Code \"to protect pain-capable unborn children.\"",
+  "yea_means": "end debate on S. 3275 so it can move toward a vote",
+  "nay_means": "keep debate open on S. 3275",
+  "insufficient": false,
+  "note": "Statutory long-title phrase kept in quotation marks."
+ },
+ {
+  "key": "117|Senate|110",
+  "description": "Final passage of H.R. 1319, a budget reconciliation bill under title II of S.Con.Res. 5.",
+  "yea_means": "pass the reconciliation bill H.R. 1319",
+  "nay_means": "vote against the reconciliation bill H.R. 1319",
+  "insufficient": false,
+  "note": "Source gives no content beyond reconciliation; borderline."
+ },
+ {
+  "key": "117|Senate|357",
+  "description": "A vote on S.Con.Res. 14, the congressional budget for fiscal 2022 setting budget levels for fiscal 2023 through 2031.",
+  "yea_means": "adopt the fiscal 2022 budget resolution",
+  "nay_means": "vote against the fiscal 2022 budget resolution",
+  "insufficient": false,
+  "note": ""
+ }
+]

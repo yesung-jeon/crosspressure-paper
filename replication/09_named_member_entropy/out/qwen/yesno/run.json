@@ -1,0 +1,14 @@
+{
+ "model": "qwen",
+ "rows": 10444,
+ "prompts": 334208,
+ "seconds_this_run": 6642,
+ "prompts_this_run": 84608,
+ "sec_per_prompt": 0.0785,
+ "final_batch": 1,
+ "mass_below_0.5": 0.01965243201838376,
+ "token_ids": {
+  "Yes": 9454,
+  "No": 2753
+ }
+}

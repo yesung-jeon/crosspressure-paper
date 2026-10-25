@@ -1,0 +1,121 @@
+congress,icpsr,name,party,chamber,state,year,known_qwen,known_llama,abortion,economic,hi_economic,hi_abortion,vote_q,profile
+104,15060,Norman Sisisky,Democrat,House,VA,1995,True,True,-1.3789753817,-1.4408097135,False,False,EL-SP,EL-SP
+115,21752,Karen Handel,Republican,House,GA,2017,True,True,0.9362688776,3.5485813913,False,False,EL-SP,EL-SP
+109,14290,Ronald Paul,Republican,House,TX,2005,True,True,-0.1442177751,2.3804493668,False,False,EL-SP,EL-SP
+94,13001,Bella Abzug,Democrat,House,NY,1975,True,True,-1.1773812155,-4.112584546,False,False,EL-SP,EL-SP
+113,21374,Vance McAllister,Republican,House,LA,2013,True,True,0.6977477424,2.9050321964,False,False,EL-SP,EL-SP
+94,6685,Thomas Morgan,Democrat,House,PA,1975,True,True,-0.2549523142,-4.116582411,False,False,EL-SP,EL-SP
+109,40301,Mark Pryor,Democrat,Senate,AR,2005,True,True,0.10538252,-4.0864788246,False,False,EL-SP,EL-SP
+109,20341,Brad Miller,Democrat,House,NC,2005,True,True,-1.3122423575,-5.0197719941,False,False,EL-SP,EL-SP
+93,12009,William Clay Sr.,Democrat,House,MO,1973,True,True,-1.4141358813,-4.2813281891,False,False,EL-SP,EL-SP
+108,29317,Lucille Roybal-Allard,Democrat,House,CA,2003,True,True,-1.5423703813,-6.2327120318,False,False,EL-SP,EL-SP
+103,39313,Mike Kreidler,Democrat,House,WA,1993,True,True,-1.1327517728,-4.4240857354,False,False,EL-SP,EL-SP
+109,29721,Leonard Boswell,Democrat,House,IA,2005,True,True,-0.8770606067,-3.3360004212,False,False,EL-SP,EL-SP
+93,10813,Walter Mondale,Democrat,Senate,MN,1973,True,True,-0.7500578638,-4.2894850353,False,False,EL-SP,EL-SP
+95,10768,James Scheuer,Democrat,House,NY,1977,True,True,-2.2493624306,-5.0496822287,False,False,EL-SP,EL-SP
+104,15600,Thomas Campbell,Republican,House,CA,1995,True,True,-0.7647555454,1.4448739299,False,False,EL-SP,EL-SP
+113,31103,Donald Payne Jr.,Democrat,House,NJ,2013,True,True,-1.4273951649,-7.4446861239,False,False,EL-SP,EL-SP
+112,29931,David Wu,Democrat,House,OR,2011,True,True,-0.6611873328,-2.9112578536,False,False,EL-SP,EL-SP
+115,21754,Jimmy Gomez,Democrat,House,CA,2017,True,True,-1.1721139404,-4.0283739661,False,False,EL-SP,EL-SP
+96,9322,Frank Thompson Jr.,Democrat,House,NJ,1979,True,True,-1.1471410085,-4.6991718781,False,False,EL-SP,EL-SP
+116,41706,Tina Smith,Democrat,Senate,MN,2019,True,True,-1.1048115085,-1.4968927756,False,False,EL-SP,EL-SP
+99,13035,Charles Rangel,Democrat,House,NY,1985,True,True,-1.101192957,-3.4916183154,False,False,EL-SP,EL-SP
+108,29911,Janice Schakowsky,Democrat,House,IL,2003,True,True,-1.5423703813,-6.2117030697,False,False,EL-SP,EL-SP
+115,21329,Cheri Bustos,Democrat,House,IL,2017,True,True,-1.8487472061,-6.3435712933,False,False,EL-SP,EL-SP
+98,8883,John Stennis,Democrat,Senate,MS,1983,True,True,-0.0618766903,-2.2145706978,False,False,EL-SP,EL-SP
+112,21194,Kathleen Hochul,Democrat,House,NY,2011,True,True,-0.8795705246,-5.9608298923,False,False,EL-SP,EL-SP
+103,8672,Neal Smith,Democrat,House,IA,1993,True,True,-1.1327517728,-3.8891274515,False,False,EL-SP,EL-SP
+106,29906,Mark Udall,Democrat,House,CO,1999,True,True,-1.1295063307,-5.1457078122,False,False,EL-SP,EL-SP
+114,21507,Ted Lieu,Democrat,House,CA,2015,True,True,-1.9809414419,-7.1564137773,False,False,EL-SP,EL-SP
+96,14068,Cardiss Collins,Democrat,House,IL,1979,True,True,-1.5164421952,-3.9240332688,False,False,EL-SP,EL-SP
+96,14439,James Mattox,Democrat,House,TX,1979,True,True,-1.3415012543,-1.7637279056,False,False,EL-SP,EL-SP
+107,29773,Vito Fossella,Republican,House,NY,2001,True,True,1.130596348,4.4185741806,True,True,ER-ST,ER-ST
+95,13101,Lawton Chiles Jr.,Democrat,Senate,FL,1977,True,True,-0.4459897333,0.3629682351,True,True,ER-ST,ER-ST
+97,14707,Roger Jepsen,Republican,Senate,IA,1981,True,True,1.2816954023,4.6147199036,True,True,ER-ST,ER-ST
+96,14639,Kenneth Kramer,Republican,House,CO,1979,True,True,0.9940188622,6.7933692689,True,True,ER-ST,ER-ST
+115,21710,Liz Cheney,Republican,House,WY,2017,True,True,1.4678172909,5.6720830425,True,True,ER-ST,ER-ST
+105,15447,Curt Weldon,Republican,House,PA,1997,True,True,2.2543733787,2.8403901677,True,True,ER-ST,ER-ST
+107,29331,John Mica,Republican,House,FL,2001,True,True,1.130596348,4.8018201962,True,True,ER-ST,ER-ST
+94,2267,Carl Curtis,Republican,Senate,NE,1975,True,True,1.5302578098,6.5025691471,True,True,ER-ST,ER-ST
+104,29530,Dick Chrysler,Republican,House,MI,1995,True,True,2.0264284244,5.9017199628,True,True,ER-ST,ER-ST
+96,14662,Gerald Solomon,Republican,House,NY,1979,True,True,1.3065383574,5.7126157393,True,True,ER-ST,ER-ST
+109,29910,Michael Simpson,Republican,House,ID,2005,True,True,0.9227260346,4.1911017469,True,True,ER-ST,ER-ST
+96,10638,John Wydler,Republican,House,NY,1979,True,True,1.1470061544,4.4704755358,True,True,ER-ST,ER-ST
+112,20540,Jean Schmidt,Republican,House,OH,2011,True,True,1.1017886476,6.0587637836,True,True,ER-ST,ER-ST
+105,29364,Nick Smith,Republican,House,MI,1997,True,True,2.1651757555,4.0878781053,True,True,ER-ST,ER-ST
+113,21141,Dan Benishek,Republican,House,MI,2013,True,True,1.2183059111,5.9331005516,True,True,ER-ST,ER-ST
+112,21177,Kristi Noem,Republican,House,SD,2011,True,True,0.9659719803,6.5416059265,True,True,ER-ST,ER-ST
+116,29735,Roy Blunt,Republican,Senate,MO,2019,True,True,0.8950223719,0.807914605,True,True,ER-ST,ER-ST
+109,29124,David Camp,Republican,House,MI,2005,True,True,0.7627177562,4.105528205,True,True,ER-ST,ER-ST
+100,15115,Daniel Slaughter Jr.,Republican,House,VA,1987,True,True,0.9200452916,3.2111744559,True,True,ER-ST,ER-ST
+110,40302,Norm Coleman,Republican,Senate,MN,2007,True,True,1.2859316278,2.7458323526,True,True,ER-ST,ER-ST
+98,14820,Thomas Evans,Republican,House,IA,1983,True,True,0.9012156777,1.9356490767,True,True,ER-ST,ER-ST
+97,14447,Dan Quayle,Republican,Senate,IN,1981,True,True,1.2816954023,4.8299221221,True,True,ER-ST,ER-ST
+117,41900,Michael Braun,Republican,Senate,IN,2021,True,True,1.2141360956,4.7488421403,True,True,ER-ST,ER-ST
+109,20125,Denny Rehberg,Republican,House,MT,2005,True,True,0.9227260346,4.2568006644,True,True,ER-ST,ER-ST
+106,49706,Michael Enzi,Republican,Senate,WY,1999,True,True,1.1885945017,5.474332072,True,True,ER-ST,ER-ST
+104,15627,Clifford Stearns,Republican,House,FL,1995,True,True,2.0264284244,6.1159531483,True,True,ER-ST,ER-ST
+98,14627,Newton Gingrich,Republican,House,GA,1983,True,True,0.9012156777,4.7720331131,True,True,ER-ST,ER-ST
+108,20345,Jim Gerlach,Republican,House,PA,2003,True,True,0.9063495319,4.4467734117,True,True,ER-ST,ER-ST
+97,13018,Elwood Hillis,Republican,House,IN,1981,True,True,0.8527296242,3.7186081057,True,True,ER-ST,ER-ST
+105,29581,George Nethercutt Jr.,Republican,House,WA,1997,True,True,2.0583607171,4.7607743488,True,True,ER-ST,ER-ST
+116,40915,Joe Manchin III,Democrat,Senate,WV,2019,True,True,0.8950223719,-0.1574268598,False,True,EL-ST,EL-ST
+94,10540,Lucien Nedzi,Democrat,House,MI,1975,True,True,0.810923046,-3.8970996544,False,True,EL-ST,EL-ST
+97,1482,Howard Cannon,Democrat,Senate,NV,1981,True,True,0.570448501,-4.2996897723,False,True,EL-ST,EL-ST
+106,14664,Charles Stenholm,Democrat,House,TX,1999,True,True,0.9524626659,-2.2358944055,False,True,EL-ST,EL-ST
+100,15421,George Hochbrueckner,Democrat,House,NY,1987,True,True,0.9200452916,-2.8818331245,False,True,EL-ST,EL-ST
+108,20136,James Langevin,Democrat,House,RI,2003,True,True,0.9063495319,-5.8678020753,False,True,EL-ST,EL-ST
+113,21373,Jason Smith,Republican,House,MO,2013,True,True,1.2183059111,4.9075393726,False,True,EL-ST,EL-ST
+97,11021,Margaret Heckler,Republican,House,MA,1981,True,True,0.8527296242,-1.0446219697,False,True,EL-ST,EL-ST
+113,21187,Jaime Herrera Beutler,Republican,House,WA,2013,True,True,1.2183059111,4.3487259545,False,True,EL-ST,EL-ST
+94,1721,Frank Church,Democrat,Senate,ID,1975,True,True,-0.2821802403,-2.2080969872,False,True,EL-ST,EL-ST
+112,14066,Donald Young,Republican,House,AK,2011,True,True,1.1017886476,4.8760236426,False,True,EL-ST,EL-ST
+94,6442,Lee Metcalf,Democrat,Senate,MT,1975,True,True,-0.3176392924,-3.0699192278,False,True,EL-ST,EL-ST
+94,14206,James Blanchard,Democrat,House,MI,1975,True,True,0.810923046,-4.2609152602,False,True,EL-ST,EL-ST
+115,21716,John Faso,Republican,House,NY,2017,True,True,1.4678172909,3.4427841496,False,True,EL-ST,EL-ST
+95,14423,Albert Gore Jr.,Democrat,House,TN,1977,True,True,0.7229641523,-3.2642907409,False,True,EL-ST,EL-ST
+93,10607,Joseph McDade,Republican,House,PA,1973,True,True,0.3889468846,-2.0345252987,False,True,EL-ST,EL-ST
+102,14058,Ray Thornton Jr.,Democrat,House,AR,1991,True,True,0.6221031215,-2.7344131183,False,True,EL-ST,EL-ST
+99,10569,Mark Andrews,Republican,Senate,ND,1985,True,True,0.8615071914,-0.550000595,False,True,EL-ST,EL-ST
+94,14204,Edward Beard,Democrat,House,RI,1975,True,True,0.810923046,-4.3449742764,False,True,EL-ST,EL-ST
+93,12104,Thomas Eagleton,Democrat,Senate,MO,1973,True,True,0.3953705059,-2.7270205057,False,True,EL-ST,EL-ST
+93,789,John Blatnik,Democrat,House,MN,1973,True,True,0.2505639602,-3.1659928225,False,True,EL-ST,EL-ST
+93,5098,Joseph Karth,Democrat,House,MN,1973,True,True,0.4092760914,-4.1570669466,False,True,EL-ST,EL-ST
+93,10557,Richard Schweiker,Republican,Senate,PA,1973,True,True,0.9741764738,-2.9335751672,False,True,EL-ST,EL-ST
+109,29126,Jim Ramstad,Republican,House,MN,2005,True,True,0.9227260346,2.3638832161,False,True,EL-ST,EL-ST
+102,15029,Marcy Kaptur,Democrat,House,OH,1991,True,True,0.6221031215,-2.3236281766,False,True,EL-ST,EL-ST
+112,20536,David Reichert,Republican,House,WA,2011,True,True,1.1017886476,3.0579177325,False,True,EL-ST,EL-ST
+109,29546,Walter Jones Jr.,Republican,House,NC,2005,True,True,0.9227260346,2.0816722491,False,True,EL-ST,EL-ST
+100,660,Lloyd Bentsen Jr.,Democrat,Senate,TX,1987,True,True,-0.4687951837,-2.078480205,False,True,EL-ST,EL-ST
+93,12013,Hamilton Fish Jr.,Republican,House,NY,1973,True,True,0.3889468846,-0.6970545942,False,True,EL-ST,EL-ST
+105,15453,Jerry Costello,Democrat,House,IL,1997,True,True,2.1114329682,-4.8555770731,False,True,EL-ST,EL-ST
+114,20916,Brett Guthrie,Republican,House,KY,2015,True,True,1.4830852908,6.2825641074,True,False,ER-SP,ER-SP
+108,14809,Larry Craig,Republican,Senate,ID,2003,True,True,0.7352287281,5.1953905864,True,False,ER-SP,ER-SP
+97,12109,Ted Stevens,Republican,Senate,AK,1981,True,True,-1.3575403914,4.1939990724,True,False,ER-SP,ER-SP
+114,21360,Randy Weber,Republican,House,TX,2015,True,True,1.4830852908,6.3508046449,True,False,ER-SP,ER-SP
+114,20518,Jeff Fortenberry,Republican,House,NE,2015,True,True,1.3635680816,5.4200070347,True,False,ER-SP,ER-SP
+113,20110,Jeff Miller,Republican,House,FL,2013,True,True,0.5205581687,5.9816860954,True,False,ER-SP,ER-SP
+114,20346,Timothy Murphy,Republican,House,PA,2015,True,True,1.4830852908,5.7335829097,True,False,ER-SP,ER-SP
+114,21139,Andy Harris,Republican,House,MD,2015,True,True,1.2327015213,6.1839206141,True,False,ER-SP,ER-SP
+108,49904,Zell Miller,Democrat,Senate,GA,2003,True,True,0.7352287281,3.6386810196,True,False,ER-SP,ER-SP
+107,29397,James Greenwood,Republican,House,PA,2001,True,True,-1.5129334571,4.4637419725,True,False,ER-SP,ER-SP
+114,21500,Gary Palmer,Republican,House,AL,2015,True,True,1.4830852908,6.2432749202,True,False,ER-SP,ER-SP
+107,14290,Ronald Paul,Republican,House,TX,2001,True,True,0.7646357219,3.4138210427,True,False,ER-SP,ER-SP
+112,20123,W. Akin,Republican,House,MO,2011,True,True,0.8033924241,5.9859562589,True,False,ER-SP,ER-SP
+95,14419,Ronnie Flippo,Democrat,House,AL,1977,True,True,-1.6330068578,-0.4100758746,True,False,ER-SP,ER-SP
+97,14867,Edward Weber,Republican,House,OH,1981,True,True,0.3844688129,3.4083857295,True,False,ER-SP,ER-SP
+97,10719,John Duncan,Republican,House,TN,1981,True,True,0.3939473341,3.0040430166,True,False,ER-SP,ER-SP
+114,20514,Charles Boustany,Republican,House,LA,2015,True,True,1.4830852908,6.1342718891,True,False,ER-SP,ER-SP
+108,29912,Judy Biggert,Republican,House,IL,2003,True,True,0.0954618852,5.1914382726,True,False,ER-SP,ER-SP
+114,21133,Todd Young,Republican,House,IN,2015,True,True,1.4830852908,5.8004391319,True,False,ER-SP,ER-SP
+105,29773,Vito Fossella,Republican,House,NY,1997,True,True,0.772990568,2.0194363968,True,False,ER-SP,ER-SP
+93,10517,Paul Findley,Republican,House,IL,1973,True,True,-0.434398052,0.930419541,True,False,ER-SP,ER-SP
+109,40501,Mel Martinez,Republican,Senate,FL,2005,True,True,0.6932661453,3.9761942684,True,False,ER-SP,ER-SP
+114,21123,Austin Scott,Republican,House,GA,2015,True,True,1.4830852908,5.8824219048,True,False,ER-SP,ER-SP
+114,20111,Ander Crenshaw,Republican,House,FL,2015,True,True,1.4830852908,5.7334392918,True,False,ER-SP,ER-SP
+97,2525,Edward Derwinski,Republican,House,IL,1981,True,True,0.3939473341,3.0010963038,True,False,ER-SP,ER-SP
+109,29754,John Thune,Republican,Senate,SD,2005,True,True,0.6932661453,4.0791564675,True,False,ER-SP,ER-SP
+112,14813,David Dreier,Republican,House,CA,2011,True,True,0.769395225,6.22359055,True,False,ER-SP,ER-SP
+114,21170,Thomas Marino,Republican,House,PA,2015,True,True,1.4830852908,5.3754162685,True,False,ER-SP,ER-SP
+109,15633,Craig Thomas,Republican,Senate,WY,2005,True,True,0.6932661453,4.5767544149,True,False,ER-SP,ER-SP
+114,20336,Scott Garrett,Republican,House,NJ,2015,True,True,1.4830852908,5.9265207417,True,False,ER-SP,ER-SP

@@ -1,0 +1,19 @@
+{
+  "tag": "cont_conflict__H__pcc__member__all__llama",
+  "outcome": "H",
+  "rhs": ["conflict", "depth"],
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "conflict": 0.028402531561951379,
+    "depth": -0.16771276129419477
+  },
+  "covariance": [
+    [0.00073687366316987435, 1.3707399559597622e-05],
+    [1.3707399559597557e-05, 1.9449103333291579e-05]
+  ]
+}

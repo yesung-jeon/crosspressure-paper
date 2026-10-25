@@ -1,0 +1,15 @@
+{
+ "model": "qwen",
+ "smoke": false,
+ "n": 4320,
+ "share_abs_dm_le_0.05": 0.3104166666666667,
+ "max_abs_dm": 1.0,
+ "sign_agreement": 0.9958333333333333,
+ "DL_agreement": 0.9724537037037037,
+ "pearson_r": 0.9997806302718562,
+ "sign_agreement_abs_mL_gt_3.5": 1.0,
+ "n_abs_mL_gt_3.5": 3613,
+ "pass_A2_pending_author": true,
+ "criterion": "A1: sign >= 0.995 and r >= 0.99",
+ "pass": true
+}

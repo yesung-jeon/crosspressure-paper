@@ -1,0 +1,19 @@
+{
+  "tag": "joint__H__pcc__member__all__qwen",
+  "outcome": "H",
+  "rhs": ["vote_cp", "map_crossed"],
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "vote_cp": -0.0006069008810582607,
+    "map_crossed": 0.0012668758499482353
+  },
+  "covariance": [
+    [2.4061879620640951e-06, -2.2733188411241826e-07],
+    [-2.2733188411241826e-07, 1.8511885190911686e-06]
+  ]
+}

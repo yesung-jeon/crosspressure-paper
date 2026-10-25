@@ -1,0 +1,70 @@
+{
+ "s4b": {
+  "fixed_n": 30,
+  "reselected_n": 30,
+  "same_members": false,
+  "only_fixed": [
+   29395
+  ],
+  "only_reselected": [
+   14106
+  ]
+ },
+ "s4c": {
+  "fixed_n": 60,
+  "reselected_n": 60,
+  "same_members": false,
+  "only_fixed": [
+   3255,
+   10540,
+   12030,
+   12107,
+   14204,
+   14279,
+   14500,
+   14705,
+   14868,
+   15627,
+   20326,
+   20350,
+   20906,
+   21314,
+   21337,
+   21515,
+   29395,
+   29775,
+   41304
+  ],
+  "only_reselected": [
+   3034,
+   10545,
+   12007,
+   12031,
+   14101,
+   14216,
+   14278,
+   14419,
+   14872,
+   15008,
+   15634,
+   20328,
+   20523,
+   20910,
+   20949,
+   21342,
+   21345,
+   29544,
+   41500
+  ]
+ },
+ "qwen_fixed_members_recognized_share": {
+  "n_members": 60,
+  "never_recognized": [],
+  "mean_share": 0.9958333333333333
+ },
+ "llama_fixed_members_recognized_share": {
+  "n_members": 60,
+  "never_recognized": [],
+  "mean_share": 1.0
+ }
+}

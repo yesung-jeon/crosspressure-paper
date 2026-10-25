@@ -1,0 +1,17 @@
+{
+  "tag": "havg__qwen_guns_gcp",
+  "outcome": "H_avg",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 6573,
+  "fe_cells": 72,
+  "clusters": [830, 36],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.016116093302401688
+  },
+  "covariance": [
+    [0.00016024097940521597]
+  ]
+}

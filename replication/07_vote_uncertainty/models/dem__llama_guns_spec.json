@@ -1,0 +1,17 @@
+{
+  "tag": "dem__llama_guns",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 6440,
+  "fe_cells": 52,
+  "clusters": [952, 52],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.045376534591087356
+  },
+  "covariance": [
+    [9.9360175038047015e-05]
+  ]
+}

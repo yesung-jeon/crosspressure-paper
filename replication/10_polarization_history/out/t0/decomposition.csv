@@ -1,0 +1,65 @@
+model,var,party,span,weighting,within_members,replacement,total
+qwen,x,Democrat,81-118 (all transitions),equal,-0.6426475608811636,-0.9873693068679467,-1.6300168677491103
+qwen,x,Democrat,81-118 (all transitions),obs,-0.5059300432244945,-0.9075632873177748,-1.4134933305422694
+qwen,x,Democrat,86-113 (from the end of W0 to the start of W1),equal,-0.4195311951197329,-1.0020368630946355,-1.4215680582143684
+qwen,x,Democrat,86-113 (from the end of W0 to the start of W1),obs,-0.2978884825442774,-0.9470930869435793,-1.2449815694878568
+qwen,x,Republican,81-118 (all transitions),equal,0.16781750764754721,0.5064390203702791,0.6742565280178263
+qwen,x,Republican,81-118 (all transitions),obs,0.1876317119264766,0.4649517807529867,0.6525834926794634
+qwen,x,Republican,86-113 (from the end of W0 to the start of W1),equal,0.05246654454129418,0.6718128333335889,0.7242793778748831
+qwen,x,Republican,86-113 (from the end of W0 to the start of W1),obs,0.08039968867350672,0.8014981507876642,0.881897839461171
+qwen,y,Democrat,81-118 (all transitions),equal,-1.8590565744222605,-1.556196447768975,-3.4152530221912354
+qwen,y,Democrat,81-118 (all transitions),obs,-2.0106895108414533,-1.3350828442403448,-3.345772355081798
+qwen,y,Democrat,86-113 (from the end of W0 to the start of W1),equal,-1.1486221760344533,-1.2834521326891681,-2.4320743087236214
+qwen,y,Democrat,86-113 (from the end of W0 to the start of W1),obs,-1.2475120443910714,-1.0634831311537558,-2.3109951755448273
+qwen,y,Republican,81-118 (all transitions),equal,-1.4654440254515855,0.055497869754426166,-1.4099461556971593
+qwen,y,Republican,81-118 (all transitions),obs,-1.6371281707744154,-0.038503701668177015,-1.6756318724425925
+qwen,y,Republican,86-113 (from the end of W0 to the start of W1),equal,-0.9657864437281867,0.40215634511364584,-0.5636300986145408
+qwen,y,Republican,86-113 (from the end of W0 to the start of W1),obs,-1.0886022647774163,0.536197531254474,-0.5524047335229423
+qwen,dw1,Democrat,81-118 (all transitions),equal,0.0,-0.40316760632411236,-0.40316760632411236
+qwen,dw1,Democrat,81-118 (all transitions),obs,0.0,-0.39651383805440304,-0.39651383805440304
+qwen,dw1,Democrat,86-113 (from the end of W0 to the start of W1),equal,0.0,-0.2519698727127475,-0.2519698727127475
+qwen,dw1,Democrat,86-113 (from the end of W0 to the start of W1),obs,0.0,-0.2657822957099428,-0.2657822957099428
+qwen,dw1,Republican,81-118 (all transitions),equal,0.0,0.6287091958136096,0.6287091958136096
+qwen,dw1,Republican,81-118 (all transitions),obs,0.0,0.5964888906815167,0.5964888906815167
+qwen,dw1,Republican,86-113 (from the end of W0 to the start of W1),equal,0.0,0.5505671767373534,0.5505671767373534
+qwen,dw1,Republican,86-113 (from the end of W0 to the start of W1),obs,0.0,0.5532097405197124,0.5532097405197124
+qwen,dw2,Democrat,81-118 (all transitions),equal,0.0,-1.291680483452533,-1.291680483452533
+qwen,dw2,Democrat,81-118 (all transitions),obs,0.0,-1.2425433430479509,-1.2425433430479509
+qwen,dw2,Democrat,86-113 (from the end of W0 to the start of W1),equal,0.0,-1.234538005493363,-1.234538005493363
+qwen,dw2,Democrat,86-113 (from the end of W0 to the start of W1),obs,0.0,-1.2239087768450851,-1.2239087768450851
+qwen,dw2,Republican,81-118 (all transitions),equal,0.0,0.7164091270973516,0.7164091270973516
+qwen,dw2,Republican,81-118 (all transitions),obs,0.0,0.8117192757670308,0.8117192757670308
+qwen,dw2,Republican,86-113 (from the end of W0 to the start of W1),equal,0.0,0.6963701696008763,0.6963701696008763
+qwen,dw2,Republican,86-113 (from the end of W0 to the start of W1),obs,0.0,0.7091570543702556,0.7091570543702556
+llama,x,Democrat,81-118 (all transitions),equal,-1.155179156412748,-0.4993942716796036,-1.6545734280923516
+llama,x,Democrat,81-118 (all transitions),obs,-1.139990369573742,-0.5793226061275276,-1.7193129757012695
+llama,x,Democrat,86-113 (from the end of W0 to the start of W1),equal,-0.9101966570298805,-0.45918921850397837,-1.3693858755338588
+llama,x,Democrat,86-113 (from the end of W0 to the start of W1),obs,-0.9035972626572267,-0.54798567271255,-1.451582935369777
+llama,x,Republican,81-118 (all transitions),equal,0.050589131802577514,0.76743606719507,0.8180251989976475
+llama,x,Republican,81-118 (all transitions),obs,0.11028510967662916,0.7403304802648842,0.8506155899415134
+llama,x,Republican,86-113 (from the end of W0 to the start of W1),equal,-0.11718019752904718,0.6240055142182703,0.5068253166892231
+llama,x,Republican,86-113 (from the end of W0 to the start of W1),obs,-0.08352831901768196,0.6706193449651999,0.5870910259475179
+llama,y,Democrat,81-118 (all transitions),equal,-1.7356828987173136,-1.0338680090829961,-2.7695509078003098
+llama,y,Democrat,81-118 (all transitions),obs,-1.7923716607521962,-1.0521256958146705,-2.8444973565668668
+llama,y,Democrat,86-113 (from the end of W0 to the start of W1),equal,-1.358135576976612,-0.836359479615626,-2.194495056592238
+llama,y,Democrat,86-113 (from the end of W0 to the start of W1),obs,-1.380383428528567,-0.8800864596842186,-2.2604698882127856
+llama,y,Republican,81-118 (all transitions),equal,-0.8919339004413347,0.48630683096489236,-0.40562706947644234
+llama,y,Republican,81-118 (all transitions),obs,-0.9240847902038641,0.5435161946101765,-0.3805685955936876
+llama,y,Republican,86-113 (from the end of W0 to the start of W1),equal,-0.794007119246503,0.2866099925704848,-0.5073971266760182
+llama,y,Republican,86-113 (from the end of W0 to the start of W1),obs,-0.8061914017930131,0.3682889329281589,-0.4379024688648542
+llama,dw1,Democrat,81-118 (all transitions),equal,0.0,-0.40316760632411236,-0.40316760632411236
+llama,dw1,Democrat,81-118 (all transitions),obs,0.0,-0.39651383805440304,-0.39651383805440304
+llama,dw1,Democrat,86-113 (from the end of W0 to the start of W1),equal,0.0,-0.2519698727127475,-0.2519698727127475
+llama,dw1,Democrat,86-113 (from the end of W0 to the start of W1),obs,0.0,-0.2657822957099428,-0.2657822957099428
+llama,dw1,Republican,81-118 (all transitions),equal,0.0,0.6287091958136096,0.6287091958136096
+llama,dw1,Republican,81-118 (all transitions),obs,0.0,0.5964888906815167,0.5964888906815167
+llama,dw1,Republican,86-113 (from the end of W0 to the start of W1),equal,0.0,0.5505671767373534,0.5505671767373534
+llama,dw1,Republican,86-113 (from the end of W0 to the start of W1),obs,0.0,0.5532097405197124,0.5532097405197124
+llama,dw2,Democrat,81-118 (all transitions),equal,0.0,-1.291680483452533,-1.291680483452533
+llama,dw2,Democrat,81-118 (all transitions),obs,0.0,-1.2425433430479509,-1.2425433430479509
+llama,dw2,Democrat,86-113 (from the end of W0 to the start of W1),equal,0.0,-1.234538005493363,-1.234538005493363
+llama,dw2,Democrat,86-113 (from the end of W0 to the start of W1),obs,0.0,-1.2239087768450851,-1.2239087768450851
+llama,dw2,Republican,81-118 (all transitions),equal,0.0,0.7164091270973516,0.7164091270973516
+llama,dw2,Republican,81-118 (all transitions),obs,0.0,0.8117192757670308,0.8117192757670308
+llama,dw2,Republican,86-113 (from the end of W0 to the start of W1),equal,0.0,0.6963701696008763,0.6963701696008763
+llama,dw2,Republican,86-113 (from the end of W0 to the start of W1),obs,0.0,0.7091570543702556,0.7091570543702556

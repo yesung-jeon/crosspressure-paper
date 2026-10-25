@@ -1,0 +1,37 @@
+congress,chamber,n_rollcalls,built,passed,reason,n_members,pc1_share,loading_sign_agreement,loo_min_corr,loo_corrs
+90,House,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+90,Senate,11,True,True,,100.0,0.616334796804043,1.0,0.9961852580855751,0.9969;0.9970;0.9972;0.9970;0.9962;0.9969;0.9962;0.9964;0.9965;0.9970;0.9986
+91,Senate,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+92,Senate,6,True,True,,97.0,0.5152746640209646,0.8333333333333334,0.9631277207212882,0.9909;0.9847;0.9792;0.9631;0.9820;0.9906
+93,Senate,3,True,False,leave-one-out corr < 0.9 or undefined,83.0,0.7182150359264267,1.0,,nan;nan;nan
+94,House,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+94,Senate,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+95,House,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+98,Senate,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+99,House,4,True,True,,425.0,0.8155311047776782,1.0,0.9839547475796904,0.9910;0.9895;0.9840;0.9883
+99,Senate,5,True,True,,95.0,0.7069659842881435,1.0,0.980436518915821,0.9804;0.9869;0.9852;0.9918;0.9991
+100,House,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+100,Senate,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+101,Senate,4,True,True,,100.0,0.8628906100855273,1.0,0.9963715193042932,0.9964;0.9964;0.9979;0.9964
+102,House,3,True,False,leave-one-out corr < 0.9 or undefined,415.0,0.781710286112855,1.0,,nan;nan;nan
+102,Senate,3,True,False,loading agreement < 0.8,80.0,0.7433439814430578,0.6666666666666666,,nan;nan;nan
+103,House,9,True,True,,434.0,0.6499339742871589,1.0,0.994567122712684,0.9999;0.9997;0.9946;0.9950;0.9949;0.9963;0.9964;0.9962;0.9946
+103,Senate,5,True,True,,100.0,0.7482455273557067,1.0,0.9885980394866828,0.9915;0.9886;0.9904;0.9927;0.9906
+104,House,3,True,False,leave-one-out corr < 0.9 or undefined,402.0,0.826841793566768,1.0,,nan;nan;nan
+104,Senate,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+105,House,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+105,Senate,3,True,False,leave-one-out corr < 0.9 or undefined,98.0,0.8503694851615551,1.0,,nan;nan;nan
+106,House,2,False,False,fewer than 3 roll calls or 20 members,,,,,
+106,Senate,8,True,True,,100.0,0.8037855655300982,0.875,0.9966601213164267,0.9987;0.9977;0.9967;0.9970;0.9987;0.9989;0.9979;0.9984
+108,Senate,6,True,True,,98.0,0.6529421522234551,0.8333333333333334,0.9839577432389778,0.9914;0.9895;0.9840;0.9851;0.9979;0.9853
+109,Senate,6,True,True,,100.0,0.6786056172059011,0.8333333333333334,0.9884501852547081,0.9911;0.9885;0.9976;0.9899;0.9925;0.9953
+110,Senate,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+111,Senate,5,True,True,,98.0,0.7778062798099964,1.0,0.9875035127053722,0.9934;0.9909;0.9924;0.9926;0.9875
+112,House,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+112,Senate,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+113,Senate,10,True,True,,101.0,0.8177236279475275,0.9,0.9982921795405393,0.9991;0.9989;0.9984;0.9983;0.9989;0.9983;0.9989;0.9984;0.9987;0.9993
+114,Senate,5,True,False,loading agreement < 0.8,100.0,0.8388869528464,0.6,0.9934237036830669,0.9944;0.9974;0.9969;0.9969;0.9934
+115,House,3,True,False,leave-one-out corr < 0.9 or undefined,425.0,0.9516500001441136,1.0,,nan;nan;nan
+117,House,4,True,True,,426.0,0.9806163062125742,1.0,0.9983628672289131,0.9989;0.9993;0.9992;0.9984
+118,House,1,False,False,fewer than 3 roll calls or 20 members,,,,,
+118,Senate,1,False,False,fewer than 3 roll calls or 20 members,,,,,

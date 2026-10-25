@@ -1,0 +1,67 @@
+{
+ "qwen": {
+  "layer": 16,
+  "n_rows": 21288,
+  "recall": 0.8106444945509207,
+  "recall_1947": 0.6270566727605119,
+  "recall_2023": 0.8880866425992779,
+  "r_x_dim1_by_congress_mean": 0.5983140353463374,
+  "r_x_dim1_80": 0.3151558268124329,
+  "r_x_dim1_118": 0.7921702696951503,
+  "r_y_dim1_pooled_within_cc": 0.6362445718237956,
+  "r_x_economic_scale_within_cc": [
+   0.6812258687218452,
+   17124
+  ],
+  "r_y_abortion_scale_within_cc": [
+   0.602780326512475,
+   1972
+  ],
+  "r_y_economic_scale_within_cc": [
+   0.637200589282453,
+   17124
+  ],
+  "r_x_abortion_scale_within_cc": [
+   0.6321847124106524,
+   1972
+  ],
+  "party_gap_x_d": 1.168602375873778,
+  "party_gap_y_d": 0.6861617698795593,
+  "party_gap_x_cohen_d_pooled_A15": 1.4233493745864352,
+  "party_gap_y_cohen_d_pooled_A15": 0.7282828911937108,
+  "r_with_kim_map_econ": 0.9425191120422938,
+  "r_with_kim_map_social": 0.9896525503383359,
+  "recall_agreement_with_kim": 0.994879744456971
+ },
+ "llama": {
+  "layer": 15,
+  "n_rows": 21288,
+  "recall": 0.9210822998872604,
+  "recall_1947": 0.9177330895795247,
+  "recall_2023": 0.9386281588447654,
+  "r_x_dim1_by_congress_mean": 0.8364471392014963,
+  "r_x_dim1_80": 0.5107855379997921,
+  "r_x_dim1_118": 0.9629599175095692,
+  "r_y_dim1_pooled_within_cc": 0.8110988692131897,
+  "r_x_economic_scale_within_cc": [
+   0.873105978944207,
+   19466
+  ],
+  "r_y_abortion_scale_within_cc": [
+   0.7354460158709841,
+   2139
+  ],
+  "r_y_economic_scale_within_cc": [
+   0.8124463868233383,
+   19466
+  ],
+  "r_x_abortion_scale_within_cc": [
+   0.7512060488687547,
+   2139
+  ],
+  "party_gap_x_d": 1.5326035138073832,
+  "party_gap_y_d": 1.15476614700828,
+  "party_gap_x_cohen_d_pooled_A15": 2.3787358859826617,
+  "party_gap_y_cohen_d_pooled_A15": 1.412908336313834
+ }
+}

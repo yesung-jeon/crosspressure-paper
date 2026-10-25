@@ -1,0 +1,14 @@
+You classify U.S. congressional roll-call votes for a research dataset. Answer only from the text given. Reply with JSON only.
+
+ROLL-CALL TEXT (Voteview record)
+{t}
+
+Questions:
+1. gun_control: Is this vote mainly about the regulation of firearms or ammunition (purchase, possession, carrying, manufacture, sale,
+registration, background checks, waiting periods, liability of gun makers, funding for gun-control enforcement)? Answer "no" if guns are
+incidental (for example military ammunition procurement, or a crime bill where the motion concerns another provision).
+2. yea_direction: If gun_control is "yes", does a YEA vote move policy toward MORE firearm regulation ("stricter"), toward LESS regulation
+("looser"), or can this not be told from the text ("unclear")? Take account of the motion: a YEA on a motion to table an amendment
+rejects that amendment. If gun_control is "no", answer "".
+
+Return JSON: {{"gun_control": "yes" or "no", "yea_direction": "stricter", "looser", "unclear" or "", "reason": "one short sentence"}}

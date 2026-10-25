@@ -1,0 +1,17 @@
+{
+  "tag": "havg__llama_abortion",
+  "outcome": "H_avg",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 54086,
+  "fe_cells": 386,
+  "clusters": [2146, 193],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.026437455166957231
+  },
+  "covariance": [
+    [1.4532730856348949e-05]
+  ]
+}

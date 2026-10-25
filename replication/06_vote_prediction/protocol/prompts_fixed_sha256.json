@@ -1,0 +1,5 @@
+{
+ "prompts.parquet": "d3992184f7e81ff720037ff8572d5a0e4b06579f50a4b274005d9e1bfe918bf4",
+ "prompts_swap.parquet": "fdcaa02ec6a38f57c02a5a94369dbe7d3d0855b95149bef1d1a3ab899a1154cb",
+ "_doc": "content hash (w1_checks.content_sha) of the sealed FP8 prompt tables (kim/STUDY_V_votes/out/v3, RELEASE_SEAL_2026-10-21b) without the columns known, cp, vote_q; made 2026-10-24 by the rebuild"
+}

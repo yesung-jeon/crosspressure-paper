@@ -1,0 +1,73 @@
+{
+ "model": "llama",
+ "rows": {
+  "A3 r(x, dim1)": {
+   "new": 0.8364471392014963,
+   "sealed": 0.8364471392014963,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A4 r(x, economic)": {
+   "new": 0.873105978944207,
+   "sealed": 0.873105978944207,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A4 r(y, abortion)": {
+   "new": 0.7414952286708009,
+   "sealed": 0.7414952286708009,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A6 party gap x": {
+   "new": 1.5326035138073832,
+   "sealed": 1.5326035138073832,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A6 party gap y": {
+   "new": 1.15476614700828,
+   "sealed": 1.15476614700828,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A9 recall EL-SP": {
+   "new": 0.881277482064337,
+   "sealed": 0.881277482064337,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A9 recall ER-ST": {
+   "new": 0.8784202374806401,
+   "sealed": 0.8784202374806401,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A9 recall EL-ST": {
+   "new": 0.1639163916391639,
+   "sealed": 0.1639163916391639,
+   "diff": 0.0,
+   "pass_": true
+  },
+  "A9 recall ER-SP": {
+   "new": 0.15746268656716417,
+   "sealed": 0.15746268656716417,
+   "diff": 0.0,
+   "pass_": true
+  }
+ },
+ "pattern_aligned_gt_cross_and_gap_x_gt_y": true,
+ "digits": {
+  "rows": 21288,
+  "identical_econ_orth": true,
+  "identical_social_orth": true,
+  "max_abs_diff_econ": 0.0,
+  "max_abs_diff_social": 0.0,
+  "r_econ": 0.9999999999999998,
+  "r_social": 1.0,
+  "known_agreement": 1.0,
+  "vote_map_confusion_identical": true
+ },
+ "pass_verdict_level": true,
+ "pass": true
+}

@@ -1,0 +1,156 @@
+{
+ "plan": "PLAN_X5.md v0.1 + A0 + A1",
+ "stage": "B (per layer, batch-1 re-run)",
+ "run": "2026-10-24T10:37",
+ "B": 10000,
+ "models": {
+  "qwen": {
+   "analysed": true,
+   "status": "A1 (verdict)",
+   "n_layers": 28,
+   "steer_layer": 16,
+   "reproduction": {
+    "model": "qwen",
+    "smoke": false,
+    "n": 4320,
+    "share_abs_dm_le_0.05": 0.3104166666666667,
+    "max_abs_dm": 1.0,
+    "sign_agreement": 0.9958333333333333,
+    "DL_agreement": 0.9724537037037037,
+    "pearson_r": 0.9997806302718562,
+    "sign_agreement_abs_mL_gt_3.5": 1.0,
+    "n_abs_mL_gt_3.5": 3613,
+    "pass_A2_pending_author": true,
+    "criterion": "A1: sign >= 0.995 and r >= 0.99",
+    "pass": true
+   },
+   "Democrat": {
+    "layers_I_1based": [
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "delta_r": -0.04646690851316637,
+    "ci95": [
+     -0.08776384983505743,
+     0.016175243683271143
+    ],
+    "verdict": "no late suppression",
+    "r_final": 0.6638519612603985,
+    "r_final_ci95": [
+     0.39849940975303166,
+     1.063613227664242
+    ],
+    "r_mean_I": 0.6173850527472321,
+    "verdict_final_A_rule": "equal weight not excluded"
+   },
+   "Republican": {
+    "layers_I_1based": [
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "delta_r": -0.025412816065718102,
+    "ci95": [
+     -0.06533055649072081,
+     0.017240039351387907
+    ],
+    "verdict": "no late suppression",
+    "r_final": 0.35851685254908894,
+    "r_final_ci95": [
+     0.17596139291441368,
+     0.646000310497939
+    ],
+    "r_mean_I": 0.33310403648337084,
+    "verdict_final_A_rule": "social commitment down-weighted at the decision"
+   }
+  },
+  "llama": {
+   "analysed": true,
+   "status": "A1 (verdict)",
+   "n_layers": 32,
+   "steer_layer": 15,
+   "reproduction": {
+    "model": "llama",
+    "smoke": false,
+    "n": 4320,
+    "share_abs_dm_le_0.05": 0.36921296296296297,
+    "max_abs_dm": 0.625,
+    "sign_agreement": 0.9976851851851852,
+    "DL_agreement": 0.9643518518518519,
+    "pearson_r": 0.9994480496841738,
+    "sign_agreement_abs_mL_gt_3.5": 1.0,
+    "n_abs_mL_gt_3.5": 2918,
+    "pass_A2_pending_author": true,
+    "criterion": "A1: sign >= 0.995 and r >= 0.99",
+    "pass": true
+   },
+   "Democrat": {
+    "layers_I_1based": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "delta_r": 0.06218871299701878,
+    "ci95": [
+     -0.039104023890912325,
+     0.41335164317523543
+    ],
+    "verdict": "undetermined",
+    "r_final": 0.8684743043939337,
+    "r_final_ci95": [
+     0.48862167965557884,
+     1.5846279048289016
+    ],
+    "r_mean_I": 0.9306630173909525,
+    "verdict_final_A_rule": "equal weight not excluded"
+   },
+   "Republican": {
+    "layers_I_1based": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "delta_r": 0.07743855828947022,
+    "ci95": [
+     -0.0669545066784001,
+     0.23824083130643486
+    ],
+    "verdict": "undetermined",
+    "r_final": 0.4401435925505518,
+    "r_final_ci95": [
+     0.1625891887829712,
+     0.9852099816284768
+    ],
+    "r_mean_I": 0.517582150840022,
+    "verdict_final_A_rule": "social commitment down-weighted at the decision"
+   }
+  }
+ }
+}

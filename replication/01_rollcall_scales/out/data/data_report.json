@@ -1,0 +1,66 @@
+{
+ "pap_chamber_raw": {
+  "1": 32148,
+  "2": 24096,
+  "House": 2029,
+  "Senate": 1460
+ },
+ "pap_status": {
+  "ok": 59159,
+  "misaligned": 548,
+  "duplicate_conflict": 14,
+  "duplicate_same": 7,
+  "no_topic": 5
+ },
+ "pap_vs_voteview_yea_agreement": 0.9999323856048953,
+ "voteview_rollcalls_80_118": 60215,
+ "pap_match_rate": 0.9824628414846799,
+ "pap_unmatched_by_reason": "Voteview roll calls without a usable PAP topic (misaligned, conflict, no topic, or absent in PAP)",
+ "pap_match_gate_0.99": false,
+ "issue_rollcalls": {
+  "abortion": {
+   "all": 344,
+   "contested": 333
+  },
+  "civil_rights": {
+   "all": 635,
+   "contested": 558
+  },
+  "economic": {
+   "all": 10817,
+   "contested": 8815
+  }
+ },
+ "scales_built": {
+  "abortion": 40,
+  "civil_rights": 40,
+  "economic": 78
+ },
+ "orientation_rules": [
+  {
+   "issue": "abortion",
+   "rule": "dim1",
+   "n": 40
+  },
+  {
+   "issue": "civil_rights",
+   "rule": "dim1",
+   "n": 36
+  },
+  {
+   "issue": "civil_rights",
+   "rule": "south_dem",
+   "n": 4
+  },
+  {
+   "issue": "economic",
+   "rule": "dim1",
+   "n": 78
+  }
+ ],
+ "first_congress_with_scale": {
+  "abortion": 93,
+  "civil_rights": 80,
+  "economic": 80
+ }
+}

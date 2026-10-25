@@ -1,0 +1,19 @@
+{
+ "model": "qwen",
+ "n_prompts": 1920,
+ "max_abs_diff_C1a_by_condition": 0.015081843509260062,
+ "max_abs_diff_C2_by_condition": 0.008681469036799339,
+ "I4_cross_minus_aligned_C1a": {
+  "new": 0.011738264273117749,
+  "sealed": 0.011680442124480245
+ },
+ "I4_cross_minus_aligned_C2": {
+  "new": -0.033369719351480254,
+  "sealed": -0.03275662336701812
+ },
+ "max_abs_diff_p_yes": 0.10027489066123962,
+ "batch": 1,
+ "pass_original_rule": true,
+ "pass": true,
+ "rule": "PROTOCOL_A1 aggregate"
+}

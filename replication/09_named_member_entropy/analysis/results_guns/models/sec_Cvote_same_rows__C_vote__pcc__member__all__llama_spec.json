@@ -1,0 +1,17 @@
+{
+  "tag": "sec_Cvote_same_rows__C_vote__pcc__member__all__llama",
+  "outcome": "C_vote",
+  "rhs": "vote_cp",
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 1514,
+  "fe_cells": 18,
+  "clusters": 838,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "vote_cp": -0.16484269481141034
+  },
+  "covariance": [
+    [7.1090079768607178e-05]
+  ]
+}

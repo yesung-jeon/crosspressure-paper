@@ -1,0 +1,201 @@
+{
+ "qwen": {
+  "party_like": 0.06561348662587785,
+  "reversed": 0.19249886334050714,
+  "reversed_minus_party_like": 0.1268853767146293,
+  "n_units": {
+   "party_like": 54,
+   "reversed": 54
+  },
+  "interval_2026_10_18": {
+   "est": 0.12688537671462932,
+   "n_pairs": 54,
+   "n_econ": 6,
+   "n_social": 9,
+   "ci95_pigeonhole": [
+    -0.017050082639863823,
+    0.271510353213879
+   ],
+   "ci95_pair": [
+    0.05829491238431977,
+    0.1956352114584786
+   ],
+   "ci95_econ": [
+    0.05902897654994249,
+    0.1951722504755711
+   ],
+   "ci95_social": [
+    0.005109934000745947,
+    0.23716087261226793
+   ]
+  },
+  "context_persona_arm_2026_10_18": {
+   "both": {
+    "est": 0.16744560544378576,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     0.10371484225576973,
+     0.23512287651506622
+    ],
+    "ci95_pair": [
+     0.13184935304283424,
+     0.20392052590132573
+    ],
+    "ci95_econ": [
+     0.1467354646008406,
+     0.18701886516492025
+    ],
+    "ci95_social": [
+     0.11277406028917929,
+     0.22269535447902938
+    ]
+   },
+   "Democrat": {
+    "est": 0.18543313377541756,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     0.11282963988706858,
+     0.2669759762798793
+    ],
+    "ci95_pair": [
+     0.13751096005875243,
+     0.23521742825401287
+    ],
+    "ci95_econ": [
+     0.15016153775117214,
+     0.2219817363669893
+    ],
+    "ci95_social": [
+     0.13349945532517318,
+     0.23599625504652866
+    ]
+   },
+   "Republican": {
+    "est": 0.14945807711215378,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     0.05784025545419012,
+     0.24947245132661203
+    ],
+    "ci95_pair": [
+     0.09521144962051085,
+     0.20400798506051604
+    ],
+    "ci95_econ": [
+     0.10829226406392246,
+     0.17909363816319873
+    ],
+    "ci95_social": [
+     0.06701450814868057,
+     0.22508766712366426
+    ]
+   }
+  }
+ },
+ "llama": {
+  "party_like": 0.12018171420417947,
+  "reversed": 0.09159841219654484,
+  "reversed_minus_party_like": -0.028583302007634634,
+  "n_units": {
+   "party_like": 54,
+   "reversed": 54
+  },
+  "interval_2026_10_18": {
+   "est": -0.02858330200763464,
+   "n_pairs": 54,
+   "n_econ": 6,
+   "n_social": 9,
+   "ci95_pigeonhole": [
+    -0.1247080786955102,
+    0.06136693597129224
+   ],
+   "ci95_pair": [
+    -0.08338657394638306,
+    0.024166481901253364
+   ],
+   "ci95_econ": [
+    -0.07021282307442513,
+    0.01293321853495525
+   ],
+   "ci95_social": [
+    -0.09881148981646898,
+    0.04273400490563712
+   ]
+  },
+  "context_persona_arm_2026_10_18": {
+   "both": {
+    "est": -0.15425130649278762,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     -0.21634189640382157,
+     -0.09811333913034492
+    ],
+    "ci95_pair": [
+     -0.179482530600884,
+     -0.12910247860717
+    ],
+    "ci95_econ": [
+     -0.19938767301224752,
+     -0.10911493997332772
+    ],
+    "ci95_social": [
+     -0.18611387061467205,
+     -0.12195770570776161
+    ]
+   },
+   "Democrat": {
+    "est": -0.13736119374424363,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     -0.18869686214875284,
+     -0.08742931782988114
+    ],
+    "ci95_pair": [
+     -0.16460917039076364,
+     -0.10791707683668365
+    ],
+    "ci95_econ": [
+     -0.16573651084563928,
+     -0.11022415381990555
+    ],
+    "ci95_social": [
+     -0.16881851530005323,
+     -0.1028612744001306
+    ]
+   },
+   "Republican": {
+    "est": -0.17114141924133153,
+    "n_pairs": 54,
+    "n_econ": 6,
+    "n_social": 9,
+    "ci95_pigeonhole": [
+     -0.2763988825471955,
+     -0.07500624633659117
+    ],
+    "ci95_pair": [
+     -0.21192202514597808,
+     -0.13074576263531362
+    ],
+    "ci95_econ": [
+     -0.25031398738768307,
+     -0.09701838202543503
+    ],
+    "ci95_social": [
+     -0.23147057571345767,
+     -0.10631003557097865
+    ]
+   }
+  }
+ },
+ "_definition_2026_10_18": "2026-10-18 (author: \"4\ub9c9 \uad6c\uac04 \uacc4\uc0b0\ud574\"): intervals for the same estimand (mean over the 54 topic pairs of reversed - party-like).\nThe 54 pairs cross 6 economic x 9 social items, so pairs sharing a passage are not independent. Declared before running:\n  primary   = pigeonhole two-way bootstrap (resample economic and social items independently with replacement; every pair in the product,\n              with multiplicities), percentile 95%, B = 10,000, fixed seed\n  reported  = pair bootstrap (iid over 54 pairs), one-way economic-item and social-item cluster bootstraps\n  context   = the persona arm (Democratic and Republican personas pooled, then per party) with the same pair-level estimator: persona-arm topic\n              means of reversed - party-like, same pigeonhole interval. Context only; the persona - no-persona difference is not tested.\n--synth runs a synthetic check (known effect, crossed item effects) before the real run."
+}

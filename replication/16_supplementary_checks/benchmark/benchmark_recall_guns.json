@@ -1,0 +1,73 @@
+{
+ "note": "descriptive benchmark checks added 2026-10-19 after sealing (council N1, N2); no tests",
+ "N1_dwnominate": {
+  "recall": {
+   "EL-SP": 0.5418994413407822,
+   "ER-ST": 0.5456821026282853,
+   "EL-ST": 0.8057553956834532,
+   "ER-SP": 0.7142857142857143,
+   "aligned_pooled": 0.5436835891381346,
+   "cross_pooled": 0.7486486486486487,
+   "n": 2064
+  },
+  "dim2_sign_flipped_cells": 1,
+  "cells": 11,
+  "r_dim1_economic_within_cc": 0.953870507567481,
+  "r_dim1_dim2_within_cc": -0.040937523599523955,
+  "r_dim2_abortion_within_cc": 0.25128887803480754
+ },
+ "N2_recognized": {
+  "qwen": {
+   "all_rows": {
+    "EL-SP": 0.7094972067039106,
+    "ER-ST": 0.7409261576971214,
+    "EL-ST": 0.2302158273381295,
+    "ER-SP": 0.13852813852813853,
+    "aligned_pooled": 0.7243211334120425,
+    "cross_pooled": 0.17297297297297298,
+    "n": 2064
+   },
+   "recognized_rows": {
+    "EL-SP": 0.7406103286384976,
+    "ER-ST": 0.8023774145616642,
+    "EL-ST": 0.2358490566037736,
+    "ER-SP": 0.13966480446927373,
+    "aligned_pooled": 0.7678688524590164,
+    "cross_pooled": 0.17543859649122806,
+    "n": 1810
+   },
+   "recognition_rate": {
+    "aligned": 0.9002361275088547,
+    "cross_pressured": 0.7702702702702703
+   }
+  },
+  "llama": {
+   "all_rows": {
+    "EL-SP": 0.9027932960893855,
+    "ER-ST": 0.9224030037546934,
+    "EL-ST": 0.12949640287769784,
+    "ER-SP": 0.12987012987012986,
+    "aligned_pooled": 0.9120425029515938,
+    "cross_pooled": 0.12972972972972974,
+    "n": 2064
+   },
+   "recognized_rows": {
+    "EL-SP": 0.9234393404004712,
+    "ER-ST": 0.9231770833333334,
+    "EL-ST": 0.12173913043478261,
+    "ER-SP": 0.12612612612612611,
+    "aligned_pooled": 0.9233147804576376,
+    "cross_pooled": 0.12462908011869436,
+    "n": 1954
+   },
+   "recognition_rate": {
+    "aligned": 0.9545454545454546,
+    "cross_pressured": 0.9108108108108108
+   }
+  }
+ },
+ "r_x_y_within_cc": {
+  "qwen": 0.7175422843378315,
+  "llama": 0.9189092240762889
+ }
+}

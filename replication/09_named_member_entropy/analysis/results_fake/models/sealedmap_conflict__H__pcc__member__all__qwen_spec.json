@@ -1,0 +1,19 @@
+{
+  "tag": "sealedmap_conflict__H__pcc__member__all__qwen",
+  "outcome": "H",
+  "rhs": ["conflict_sealed", "depth_sealed"],
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "conflict_sealed": -0.00040578181503915679,
+    "depth_sealed": 0.00097389940182570907
+  },
+  "covariance": [
+    [1.795807841529302e-05, 4.1537943965401614e-07],
+    [4.1537943965401609e-07, 1.4685074827073905e-06]
+  ]
+}

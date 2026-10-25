@@ -1,0 +1,2953 @@
+{
+ "LAYER_Q": {
+  "value": "16",
+  "source": [
+   "map | qwen | - | rule layer"
+  ]
+ },
+ "R_X_DW1_Q": {
+  "value": "0.598",
+  "source": [
+   "map | qwen | - | A3 r(x, DW-NOMINATE dim1)"
+  ]
+ },
+ "R_X_ECON_Q": {
+  "value": "0.681",
+  "source": [
+   "map | qwen | economic | A4 r(x, economic scale)"
+  ]
+ },
+ "R_Y_AB_Q": {
+  "value": "0.588",
+  "source": [
+   "map | qwen | abortion | A4 r(y, social scale)"
+  ]
+ },
+ "R_Y_GUN_Q": {
+  "value": "0.603",
+  "source": [
+   "map | qwen | guns | A4 r(y, social scale)"
+  ]
+ },
+ "PARTY_GAP_X_Q": {
+  "value": "1.169",
+  "source": [
+   "map | qwen | - | A6 party gap x"
+  ]
+ },
+ "PARTY_GAP_Y_Q": {
+  "value": "0.686",
+  "source": [
+   "map | qwen | - | A6 party gap y (map axis; the same for both social scales)"
+  ]
+ },
+ "LAYER_L": {
+  "value": "15",
+  "source": [
+   "map | llama | - | rule layer"
+  ]
+ },
+ "R_X_DW1_L": {
+  "value": "0.836",
+  "source": [
+   "map | llama | - | A3 r(x, DW-NOMINATE dim1)"
+  ]
+ },
+ "R_X_ECON_L": {
+  "value": "0.873",
+  "source": [
+   "map | llama | economic | A4 r(x, economic scale)"
+  ]
+ },
+ "R_Y_AB_L": {
+  "value": "0.741",
+  "source": [
+   "map | llama | abortion | A4 r(y, social scale)"
+  ]
+ },
+ "R_Y_GUN_L": {
+  "value": "0.735",
+  "source": [
+   "map | llama | guns | A4 r(y, social scale)"
+  ]
+ },
+ "PARTY_GAP_X_L": {
+  "value": "1.533",
+  "source": [
+   "map | llama | - | A6 party gap x"
+  ]
+ },
+ "PARTY_GAP_Y_L": {
+  "value": "1.155",
+  "source": [
+   "map | llama | - | A6 party gap y (map axis; the same for both social scales)"
+  ]
+ },
+ "LAYER_GATE": {
+  "value": "True",
+  "source": [
+   "map | - | - | layer stability gate (s1 -> s2rule twice)"
+  ]
+ },
+ "T0_DGAP_Q": {
+  "value": "2.285",
+  "source": [
+   "history | qwen | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_DGAP_Q_CI": {
+  "value": "[2.078, 2.484]",
+  "source": [
+   "history | qwen | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_DGAP_MINUS_DW_Q": {
+  "value": "1.381",
+  "source": [
+   "history | qwen | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_DGAP_MINUS_DW_Q_CI": {
+  "value": "[1.192, 1.557]",
+  "source": [
+   "history | qwen | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_SHARE_D_Q": {
+  "value": "0.679",
+  "source": [
+   "history | qwen | economic | T0 Democratic share of gap growth (x)"
+  ]
+ },
+ "T0_SHARE_D_Q_CI": {
+  "value": "[0.635, 0.723]",
+  "source": [
+   "history | qwen | economic | T0 Democratic share of gap growth (x)"
+  ]
+ },
+ "T0_SHARE_D_MINUS_DW_Q": {
+  "value": "0.322",
+  "source": [
+   "history | qwen | economic | T0 Democratic share, model minus DW"
+  ]
+ },
+ "T0_SHARE_D_MINUS_DW_Q_CI": {
+  "value": "[0.261, 0.385]",
+  "source": [
+   "history | qwen | economic | T0 Democratic share, model minus DW"
+  ]
+ },
+ "T0_EARLY_RATIO_Q": {
+  "value": "0.156",
+  "source": [
+   "history | qwen | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_RATIO_Q_CI": {
+  "value": "[0.048, 0.261]",
+  "source": [
+   "history | qwen | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_READING_Q": {
+  "value": "True",
+  "source": [
+   "history | qwen | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_SEP_MAP_Q": {
+  "value": "0.259",
+  "source": [
+   "history | qwen | economic | T0 early-postwar party separation, map x"
+  ]
+ },
+ "T0_EARLY_SEP_MAP_Q_CI": {
+  "value": "[0.080, 0.436]",
+  "source": [
+   "history | qwen | economic | T0 early-postwar party separation, map x"
+  ]
+ },
+ "T0_EARLY_FRAC_Q": {
+  "value": "about a sixth",
+  "source": [
+   "history | qwen | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_READING_A_Q": {
+  "value": "True",
+  "source": [
+   "history | qwen | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_READING_B_Q": {
+  "value": "True",
+  "source": [
+   "history | qwen | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_CHANGE_D_Q": {
+  "value": "−1.551",
+  "source": [
+   "history | qwen | economic | T0 change in Democratic mean (x)"
+  ]
+ },
+ "T0_CHANGE_D_Q_CI": {
+  "value": "[−1.717, −1.382]",
+  "source": [
+   "history | qwen | economic | T0 change in Democratic mean (x)"
+  ]
+ },
+ "T0_CHANGE_R_Q": {
+  "value": "0.733",
+  "source": [
+   "history | qwen | economic | T0 change in Republican mean (x)"
+  ]
+ },
+ "T0_CHANGE_R_Q_CI": {
+  "value": "[0.607, 0.864]",
+  "source": [
+   "history | qwen | economic | T0 change in Republican mean (x)"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_Q": {
+  "value": "−0.600",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_Q_CI": {
+  "value": "[−0.741, −0.451]",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_READING_Q": {
+  "value": "True",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_Q": {
+  "value": "0.274",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_Q_CI": {
+  "value": "[0.099, 0.434]",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_READING_Q": {
+  "value": "False",
+  "source": [
+   "nominate | qwen | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "S1_DIST_Q": {
+  "value": "0.409",
+  "source": [
+   "speech | qwen | - | S1 model minus DW sorting distance"
+  ]
+ },
+ "S1_DIST_Q_CI": {
+  "value": "[0.252, 0.501]",
+  "source": [
+   "speech | qwen | - | S1 model minus DW sorting distance"
+  ]
+ },
+ "RS1_Q": {
+  "value": "False",
+  "source": [
+   "speech | qwen | - | S1 model closer to speech (RS1)"
+  ]
+ },
+ "T0_DGAP_L": {
+  "value": "2.187",
+  "source": [
+   "history | llama | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_DGAP_L_CI": {
+  "value": "[2.065, 2.315]",
+  "source": [
+   "history | llama | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_DGAP_MINUS_DW_L": {
+  "value": "1.283",
+  "source": [
+   "history | llama | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_DGAP_MINUS_DW_L_CI": {
+  "value": "[1.172, 1.381]",
+  "source": [
+   "history | llama | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_SHARE_D_L": {
+  "value": "0.730",
+  "source": [
+   "history | llama | economic | T0 Democratic share of gap growth (x)"
+  ]
+ },
+ "T0_SHARE_D_L_CI": {
+  "value": "[0.702, 0.759]",
+  "source": [
+   "history | llama | economic | T0 Democratic share of gap growth (x)"
+  ]
+ },
+ "T0_SHARE_D_MINUS_DW_L": {
+  "value": "0.373",
+  "source": [
+   "history | llama | economic | T0 Democratic share, model minus DW"
+  ]
+ },
+ "T0_SHARE_D_MINUS_DW_L_CI": {
+  "value": "[0.320, 0.431]",
+  "source": [
+   "history | llama | economic | T0 Democratic share, model minus DW"
+  ]
+ },
+ "T0_EARLY_RATIO_L": {
+  "value": "0.605",
+  "source": [
+   "history | llama | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_RATIO_L_CI": {
+  "value": "[0.542, 0.664]",
+  "source": [
+   "history | llama | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_READING_L": {
+  "value": "False",
+  "source": [
+   "history | llama | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_EARLY_SEP_MAP_L": {
+  "value": "1.003",
+  "source": [
+   "history | llama | economic | T0 early-postwar party separation, map x"
+  ]
+ },
+ "T0_EARLY_SEP_MAP_L_CI": {
+  "value": "[0.889, 1.116]",
+  "source": [
+   "history | llama | economic | T0 early-postwar party separation, map x"
+  ]
+ },
+ "T0_EARLY_FRAC_L": {
+  "value": "about three-fifths",
+  "source": [
+   "history | llama | economic | T0 early-postwar gap, model / DW"
+  ]
+ },
+ "T0_READING_A_L": {
+  "value": "True",
+  "source": [
+   "history | llama | economic | T0 model minus DW gap growth"
+  ]
+ },
+ "T0_READING_B_L": {
+  "value": "True",
+  "source": [
+   "history | llama | economic | T0 change in party gap (x)"
+  ]
+ },
+ "T0_CHANGE_D_L": {
+  "value": "−1.597",
+  "source": [
+   "history | llama | economic | T0 change in Democratic mean (x)"
+  ]
+ },
+ "T0_CHANGE_D_L_CI": {
+  "value": "[−1.690, −1.505]",
+  "source": [
+   "history | llama | economic | T0 change in Democratic mean (x)"
+  ]
+ },
+ "T0_CHANGE_R_L": {
+  "value": "0.590",
+  "source": [
+   "history | llama | economic | T0 change in Republican mean (x)"
+  ]
+ },
+ "T0_CHANGE_R_L_CI": {
+  "value": "[0.510, 0.672]",
+  "source": [
+   "history | llama | economic | T0 change in Republican mean (x)"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_L": {
+  "value": "−1.115",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_L_CI": {
+  "value": "[−1.243, −0.985]",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_DEMOCRAT_81_118_READING_L": {
+  "value": "True",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Democrat"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_L": {
+  "value": "0.154",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_L_CI": {
+  "value": "[−0.024, 0.327]",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "N1_REPUBLICAN_81_118_READING_L": {
+  "value": "False",
+  "source": [
+   "nominate | llama | economic | N1 within-member drift, model - NP, 81-118 Republican"
+  ]
+ },
+ "S1_DIST_L": {
+  "value": "0.409",
+  "source": [
+   "speech | llama | - | S1 model minus DW sorting distance"
+  ]
+ },
+ "S1_DIST_L_CI": {
+  "value": "[0.255, 0.540]",
+  "source": [
+   "speech | llama | - | S1 model minus DW sorting distance"
+  ]
+ },
+ "RS1_L": {
+  "value": "False",
+  "source": [
+   "speech | llama | - | S1 model closer to speech (RS1)"
+  ]
+ },
+ "T0_SHARE_D_DW": {
+  "value": "0.357",
+  "source": [
+   "history | qwen | economic | T0 Democratic share of gap growth, DW dim 1"
+  ]
+ },
+ "T0_SHARE_D_DW_CI": {
+  "value": "[0.293, 0.419]",
+  "source": [
+   "history | qwen | economic | T0 Democratic share of gap growth, DW dim 1"
+  ]
+ },
+ "T0_EARLY_SEP_DW": {
+  "value": "1.657",
+  "source": [
+   "history | qwen | economic | T0 early-postwar party separation, DW dim 1"
+  ]
+ },
+ "T0_EARLY_SEP_DW_CI": {
+  "value": "[1.613, 1.710]",
+  "source": [
+   "history | qwen | economic | T0 early-postwar party separation, DW dim 1"
+  ]
+ },
+ "SAME_ECON_ELST_AB_Q": {
+  "value": "0.586",
+  "source": [
+   "map | qwen | abortion | misplaced EL-ST rows placed in EL-SP (share)"
+  ]
+ },
+ "SAME_ECON_ERSP_AB_Q": {
+  "value": "0.644",
+  "source": [
+   "map | qwen | abortion | misplaced ER-SP rows placed in ER-ST (share)"
+  ]
+ },
+ "SAME_ECON_ELST_AB_L": {
+  "value": "0.754",
+  "source": [
+   "map | llama | abortion | misplaced EL-ST rows placed in EL-SP (share)"
+  ]
+ },
+ "SAME_ECON_ERSP_AB_L": {
+  "value": "0.790",
+  "source": [
+   "map | llama | abortion | misplaced ER-SP rows placed in ER-ST (share)"
+  ]
+ },
+ "SAME_ECON_ELST_GUN_Q": {
+  "value": "0.505",
+  "source": [
+   "map | qwen | guns | misplaced EL-ST rows placed in EL-SP (share)"
+  ]
+ },
+ "SAME_ECON_ERSP_GUN_Q": {
+  "value": "0.598",
+  "source": [
+   "map | qwen | guns | misplaced ER-SP rows placed in ER-ST (share)"
+  ]
+ },
+ "SAME_ECON_ELST_GUN_L": {
+  "value": "0.694",
+  "source": [
+   "map | llama | guns | misplaced EL-ST rows placed in EL-SP (share)"
+  ]
+ },
+ "SAME_ECON_ERSP_GUN_L": {
+  "value": "0.751",
+  "source": [
+   "map | llama | guns | misplaced ER-SP rows placed in ER-ST (share)"
+  ]
+ },
+ "DW2_RECALL_ALIGNED_AB": {
+  "value": "0.543",
+  "source": [
+   "map | - | abortion | two-dimensional DW-NOMINATE recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_AB_Q": {
+  "value": "0.673",
+  "source": [
+   "map | qwen | abortion | map recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_AB_RECOG_Q": {
+  "value": "0.727",
+  "source": [
+   "map | qwen | abortion | map recall aligned_pooled, recognized rows"
+  ]
+ },
+ "RECALL_ALIGNED_AB_L": {
+  "value": "0.880",
+  "source": [
+   "map | llama | abortion | map recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_AB_RECOG_L": {
+  "value": "0.899",
+  "source": [
+   "map | llama | abortion | map recall aligned_pooled, recognized rows"
+  ]
+ },
+ "DW2_RECALL_CROSS_AB": {
+  "value": "0.642",
+  "source": [
+   "map | - | abortion | two-dimensional DW-NOMINATE recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_AB_Q": {
+  "value": "0.191",
+  "source": [
+   "map | qwen | abortion | map recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_AB_RECOG_Q": {
+  "value": "0.177",
+  "source": [
+   "map | qwen | abortion | map recall cross_pooled, recognized rows"
+  ]
+ },
+ "RECALL_CROSS_AB_L": {
+  "value": "0.160",
+  "source": [
+   "map | llama | abortion | map recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_AB_RECOG_L": {
+  "value": "0.163",
+  "source": [
+   "map | llama | abortion | map recall cross_pooled, recognized rows"
+  ]
+ },
+ "RECALL_ELSP_AB_Q": {
+  "value": "0.675",
+  "source": [
+   "map | qwen | abortion | A9 recall EL-SP"
+  ]
+ },
+ "RECALL_ERST_AB_Q": {
+  "value": "0.670",
+  "source": [
+   "map | qwen | abortion | A9 recall ER-ST"
+  ]
+ },
+ "RECALL_ELST_AB_Q": {
+  "value": "0.238",
+  "source": [
+   "map | qwen | abortion | A9 recall EL-ST"
+  ]
+ },
+ "RECALL_ERSP_AB_Q": {
+  "value": "0.160",
+  "source": [
+   "map | qwen | abortion | A9 recall ER-SP"
+  ]
+ },
+ "RECALL_ELSP_AB_L": {
+  "value": "0.881",
+  "source": [
+   "map | llama | abortion | A9 recall EL-SP"
+  ]
+ },
+ "RECALL_ERST_AB_L": {
+  "value": "0.878",
+  "source": [
+   "map | llama | abortion | A9 recall ER-ST"
+  ]
+ },
+ "RECALL_ELST_AB_L": {
+  "value": "0.164",
+  "source": [
+   "map | llama | abortion | A9 recall EL-ST"
+  ]
+ },
+ "RECALL_ERSP_AB_L": {
+  "value": "0.157",
+  "source": [
+   "map | llama | abortion | A9 recall ER-SP"
+  ]
+ },
+ "DW2_RECALL_ALIGNED_GUN": {
+  "value": "0.544",
+  "source": [
+   "map | - | guns | two-dimensional DW-NOMINATE recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_GUN_Q": {
+  "value": "0.724",
+  "source": [
+   "map | qwen | guns | map recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_GUN_RECOG_Q": {
+  "value": "0.768",
+  "source": [
+   "map | qwen | guns | map recall aligned_pooled, recognized rows"
+  ]
+ },
+ "RECALL_ALIGNED_GUN_L": {
+  "value": "0.912",
+  "source": [
+   "map | llama | guns | map recall aligned_pooled"
+  ]
+ },
+ "RECALL_ALIGNED_GUN_RECOG_L": {
+  "value": "0.923",
+  "source": [
+   "map | llama | guns | map recall aligned_pooled, recognized rows"
+  ]
+ },
+ "DW2_RECALL_CROSS_GUN": {
+  "value": "0.749",
+  "source": [
+   "map | - | guns | two-dimensional DW-NOMINATE recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_GUN_Q": {
+  "value": "0.173",
+  "source": [
+   "map | qwen | guns | map recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_GUN_RECOG_Q": {
+  "value": "0.175",
+  "source": [
+   "map | qwen | guns | map recall cross_pooled, recognized rows"
+  ]
+ },
+ "RECALL_CROSS_GUN_L": {
+  "value": "0.130",
+  "source": [
+   "map | llama | guns | map recall cross_pooled"
+  ]
+ },
+ "RECALL_CROSS_GUN_RECOG_L": {
+  "value": "0.125",
+  "source": [
+   "map | llama | guns | map recall cross_pooled, recognized rows"
+  ]
+ },
+ "RECALL_ELSP_GUN_Q": {
+  "value": "0.709",
+  "source": [
+   "map | qwen | guns | A9 recall EL-SP"
+  ]
+ },
+ "RECALL_ERST_GUN_Q": {
+  "value": "0.741",
+  "source": [
+   "map | qwen | guns | A9 recall ER-ST"
+  ]
+ },
+ "RECALL_ELST_GUN_Q": {
+  "value": "0.230",
+  "source": [
+   "map | qwen | guns | A9 recall EL-ST"
+  ]
+ },
+ "RECALL_ERSP_GUN_Q": {
+  "value": "0.139",
+  "source": [
+   "map | qwen | guns | A9 recall ER-SP"
+  ]
+ },
+ "RECALL_ELSP_GUN_L": {
+  "value": "0.903",
+  "source": [
+   "map | llama | guns | A9 recall EL-SP"
+  ]
+ },
+ "RECALL_ERST_GUN_L": {
+  "value": "0.922",
+  "source": [
+   "map | llama | guns | A9 recall ER-ST"
+  ]
+ },
+ "RECALL_ELST_GUN_L": {
+  "value": "0.129",
+  "source": [
+   "map | llama | guns | A9 recall EL-ST"
+  ]
+ },
+ "RECALL_ERSP_GUN_L": {
+  "value": "0.130",
+  "source": [
+   "map | llama | guns | A9 recall ER-SP"
+  ]
+ },
+ "NAMED_N": {
+  "value": "15",
+  "source": [
+   "map | qwen | abortion | A12 selected EL-SP (n)",
+   "map | qwen | abortion | A12 selected ER-ST (n)",
+   "map | qwen | abortion | A12 selected EL-ST (n)",
+   "map | qwen | abortion | A12 selected ER-SP (n)",
+   "map | llama | abortion | A12 selected EL-SP (n)",
+   "map | llama | abortion | A12 selected ER-ST (n)",
+   "map | llama | abortion | A12 selected EL-ST (n)",
+   "map | llama | abortion | A12 selected ER-SP (n)"
+  ]
+ },
+ "NAMED_TOTAL": {
+  "value": "60",
+  "source": [
+   "four quadrants x NAMED_N (the common per-quadrant count of the rows below)",
+   "map | qwen | abortion | A12 selected EL-SP (n)",
+   "map | qwen | abortion | A12 selected ER-ST (n)",
+   "map | qwen | abortion | A12 selected EL-ST (n)",
+   "map | qwen | abortion | A12 selected ER-SP (n)",
+   "map | llama | abortion | A12 selected EL-SP (n)",
+   "map | llama | abortion | A12 selected ER-ST (n)",
+   "map | llama | abortion | A12 selected EL-ST (n)",
+   "map | llama | abortion | A12 selected ER-SP (n)"
+  ]
+ },
+ "G1_GAP_Q": {
+  "value": "−0.523",
+  "source": [
+   "gun scale | qwen | guns | G1 map recall CP - aligned"
+  ]
+ },
+ "G1_GAP_Q_CI": {
+  "value": "[−0.574, −0.470]",
+  "source": [
+   "gun scale | qwen | guns | G1 map recall CP - aligned"
+  ]
+ },
+ "NAMED_PLACED_ELSP_Q": {
+  "value": "10",
+  "source": [
+   "map | qwen | abortion | A12 placed EL-SP (/15)"
+  ]
+ },
+ "NAMED_PLACED_ERST_Q": {
+  "value": "10",
+  "source": [
+   "map | qwen | abortion | A12 placed ER-ST (/15)"
+  ]
+ },
+ "NAMED_PLACED_ELST_Q": {
+  "value": "5",
+  "source": [
+   "map | qwen | abortion | A12 placed EL-ST (/15)"
+  ]
+ },
+ "NAMED_PLACED_ERSP_Q": {
+  "value": "1",
+  "source": [
+   "map | qwen | abortion | A12 placed ER-SP (/15)"
+  ]
+ },
+ "DEST_ELST_TO_ELSP_Q": {
+  "value": "6",
+  "source": [
+   "map | qwen | abortion | named cross-pressured members placed EL-ST -> EL-SP (/15)"
+  ]
+ },
+ "DEST_ERSP_TO_ERST_Q": {
+  "value": "10",
+  "source": [
+   "map | qwen | abortion | named cross-pressured members placed ER-SP -> ER-ST (/15)"
+  ]
+ },
+ "H3_Q": {
+  "value": "−0.086",
+  "source": [
+   "profiles | qwen | - | S5 H3_C2"
+  ]
+ },
+ "H3_Q_CI": {
+  "value": "[−0.095, −0.076]",
+  "source": [
+   "profiles | qwen | - | S5 H3_C2"
+  ]
+ },
+ "H3_READING_Q": {
+  "value": "True",
+  "source": [
+   "profiles | qwen | - | S5 H3_C2"
+  ]
+ },
+ "H4_Q": {
+  "value": "−0.331",
+  "source": [
+   "profiles | qwen | - | S5 H4_C3hit"
+  ]
+ },
+ "H4_Q_CI": {
+  "value": "[−0.388, −0.273]",
+  "source": [
+   "profiles | qwen | - | S5 H4_C3hit"
+  ]
+ },
+ "H4_READING_Q": {
+  "value": "True",
+  "source": [
+   "profiles | qwen | - | S5 H4_C3hit"
+  ]
+ },
+ "H1_Q": {
+  "value": "0.007",
+  "source": [
+   "profiles | qwen | - | S5 H1_C1a"
+  ]
+ },
+ "H1_Q_CI": {
+  "value": "[−0.000, 0.015]",
+  "source": [
+   "profiles | qwen | - | S5 H1_C1a"
+  ]
+ },
+ "H1_READING_Q": {
+  "value": "False",
+  "source": [
+   "profiles | qwen | - | S5 H1_C1a"
+  ]
+ },
+ "H2_Q": {
+  "value": "0.020",
+  "source": [
+   "profiles | qwen | - | S5 H2_C4"
+  ]
+ },
+ "H2_Q_CI": {
+  "value": "[0.011, 0.029]",
+  "source": [
+   "profiles | qwen | - | S5 H2_C4"
+  ]
+ },
+ "H2_READING_Q": {
+  "value": "False",
+  "source": [
+   "profiles | qwen | - | S5 H2_C4"
+  ]
+ },
+ "T2_AB_Q": {
+  "value": "−0.067",
+  "source": [
+   "history | qwen | abortion | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_AB_Q_CI": {
+  "value": "[−0.098, −0.036]",
+  "source": [
+   "history | qwen | abortion | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_AB_ALIGNS_MORE_Q": {
+  "value": "False",
+  "source": [
+   "history | qwen | abortion | T2 map aligns more than votes"
+  ]
+ },
+ "T2_AB_CP_EARLIER_Q": {
+  "value": "False",
+  "source": [
+   "history | qwen | abortion | T2 CP more common before sorting"
+  ]
+ },
+ "T2_GUN_Q": {
+  "value": "−0.054",
+  "source": [
+   "history | qwen | guns | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_GUN_Q_CI": {
+  "value": "[−0.104, −0.003]",
+  "source": [
+   "history | qwen | guns | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_GUN_ALIGNS_MORE_Q": {
+  "value": "False",
+  "source": [
+   "history | qwen | guns | T2 map aligns more than votes"
+  ]
+ },
+ "T2_GUN_CP_EARLIER_Q": {
+  "value": "True",
+  "source": [
+   "history | qwen | guns | T2 CP more common before sorting"
+  ]
+ },
+ "T2_ABGR_Q": {
+  "value": "−0.089",
+  "source": [
+   "history | qwen | abortion (gun rows) | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_ABGR_Q_CI": {
+  "value": "[−0.127, −0.045]",
+  "source": [
+   "history | qwen | abortion (gun rows) | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_ABGR_ALIGNS_MORE_Q": {
+  "value": "False",
+  "source": [
+   "history | qwen | abortion (gun rows) | T2 map aligns more than votes"
+  ]
+ },
+ "T2_ABGR_CP_EARLIER_Q": {
+  "value": "False",
+  "source": [
+   "history | qwen | abortion (gun rows) | T2 CP more common before sorting"
+  ]
+ },
+ "G1_GAP_L": {
+  "value": "−0.786",
+  "source": [
+   "gun scale | llama | guns | G1 map recall CP - aligned"
+  ]
+ },
+ "G1_GAP_L_CI": {
+  "value": "[−0.825, −0.746]",
+  "source": [
+   "gun scale | llama | guns | G1 map recall CP - aligned"
+  ]
+ },
+ "NAMED_PLACED_ELSP_L": {
+  "value": "15",
+  "source": [
+   "map | llama | abortion | A12 placed EL-SP (/15)"
+  ]
+ },
+ "NAMED_PLACED_ERST_L": {
+  "value": "15",
+  "source": [
+   "map | llama | abortion | A12 placed ER-ST (/15)"
+  ]
+ },
+ "NAMED_PLACED_ELST_L": {
+  "value": "1",
+  "source": [
+   "map | llama | abortion | A12 placed EL-ST (/15)"
+  ]
+ },
+ "NAMED_PLACED_ERSP_L": {
+  "value": "2",
+  "source": [
+   "map | llama | abortion | A12 placed ER-SP (/15)"
+  ]
+ },
+ "DEST_ELST_TO_ELSP_L": {
+  "value": "12",
+  "source": [
+   "map | llama | abortion | named cross-pressured members placed EL-ST -> EL-SP (/15)"
+  ]
+ },
+ "DEST_ERSP_TO_ERST_L": {
+  "value": "11",
+  "source": [
+   "map | llama | abortion | named cross-pressured members placed ER-SP -> ER-ST (/15)"
+  ]
+ },
+ "H3_L": {
+  "value": "−0.128",
+  "source": [
+   "profiles | llama | - | S5 H3_C2"
+  ]
+ },
+ "H3_L_CI": {
+  "value": "[−0.143, −0.115]",
+  "source": [
+   "profiles | llama | - | S5 H3_C2"
+  ]
+ },
+ "H3_READING_L": {
+  "value": "True",
+  "source": [
+   "profiles | llama | - | S5 H3_C2"
+  ]
+ },
+ "H4_L": {
+  "value": "−0.308",
+  "source": [
+   "profiles | llama | - | S5 H4_C3hit"
+  ]
+ },
+ "H4_L_CI": {
+  "value": "[−0.350, −0.262]",
+  "source": [
+   "profiles | llama | - | S5 H4_C3hit"
+  ]
+ },
+ "H4_READING_L": {
+  "value": "True",
+  "source": [
+   "profiles | llama | - | S5 H4_C3hit"
+  ]
+ },
+ "H1_L": {
+  "value": "0.064",
+  "source": [
+   "profiles | llama | - | S5 H1_C1a"
+  ]
+ },
+ "H1_L_CI": {
+  "value": "[0.053, 0.077]",
+  "source": [
+   "profiles | llama | - | S5 H1_C1a"
+  ]
+ },
+ "H1_READING_L": {
+  "value": "True",
+  "source": [
+   "profiles | llama | - | S5 H1_C1a"
+  ]
+ },
+ "H2_L": {
+  "value": "0.019",
+  "source": [
+   "profiles | llama | - | S5 H2_C4"
+  ]
+ },
+ "H2_L_CI": {
+  "value": "[0.009, 0.028]",
+  "source": [
+   "profiles | llama | - | S5 H2_C4"
+  ]
+ },
+ "H2_READING_L": {
+  "value": "False",
+  "source": [
+   "profiles | llama | - | S5 H2_C4"
+  ]
+ },
+ "T2_AB_L": {
+  "value": "0.161",
+  "source": [
+   "history | llama | abortion | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_AB_L_CI": {
+  "value": "[0.117, 0.209]",
+  "source": [
+   "history | llama | abortion | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_AB_ALIGNS_MORE_L": {
+  "value": "True",
+  "source": [
+   "history | llama | abortion | T2 map aligns more than votes"
+  ]
+ },
+ "T2_AB_CP_EARLIER_L": {
+  "value": "False",
+  "source": [
+   "history | llama | abortion | T2 CP more common before sorting"
+  ]
+ },
+ "T2_GUN_L": {
+  "value": "0.159",
+  "source": [
+   "history | llama | guns | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_GUN_L_CI": {
+  "value": "[0.088, 0.230]",
+  "source": [
+   "history | llama | guns | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_GUN_ALIGNS_MORE_L": {
+  "value": "True",
+  "source": [
+   "history | llama | guns | T2 map aligns more than votes"
+  ]
+ },
+ "T2_GUN_CP_EARLIER_L": {
+  "value": "True",
+  "source": [
+   "history | llama | guns | T2 CP more common before sorting"
+  ]
+ },
+ "T2_ABGR_L": {
+  "value": "0.113",
+  "source": [
+   "history | llama | abortion (gun rows) | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_ABGR_L_CI": {
+  "value": "[0.048, 0.181]",
+  "source": [
+   "history | llama | abortion (gun rows) | T2 over-alignment all (map - vote corr)"
+  ]
+ },
+ "T2_ABGR_ALIGNS_MORE_L": {
+  "value": "True",
+  "source": [
+   "history | llama | abortion (gun rows) | T2 map aligns more than votes"
+  ]
+ },
+ "T2_ABGR_CP_EARLIER_L": {
+  "value": "False",
+  "source": [
+   "history | llama | abortion (gun rows) | T2 CP more common before sorting"
+  ]
+ },
+ "ACC_ALIGNED_AB_Q": {
+  "value": "0.557",
+  "source": [
+   "votes | qwen | abortion | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_AB_Q": {
+  "value": "0.875",
+  "source": [
+   "votes | qwen | abortion | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_AB_Q": {
+  "value": "0.917",
+  "source": [
+   "votes | qwen | abortion | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_AB_Q": {
+  "value": "0.479",
+  "source": [
+   "votes | qwen | abortion | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_AB_Q": {
+  "value": "0.400",
+  "source": [
+   "votes | qwen | abortion | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_AB_Q": {
+  "value": "0.419",
+  "source": [
+   "votes | qwen | abortion | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_AB_Q": {
+  "value": "True",
+  "source": [
+   "votes | qwen | abortion | A5 competent"
+  ]
+ },
+ "ACC_ALIGNED_ECON_Q": {
+  "value": "0.556",
+  "source": [
+   "votes | qwen | economic | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_ECON_Q": {
+  "value": "0.834",
+  "source": [
+   "votes | qwen | economic | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_ECON_Q": {
+  "value": "0.861",
+  "source": [
+   "votes | qwen | economic | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_ECON_Q": {
+  "value": "0.581",
+  "source": [
+   "votes | qwen | economic | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_ECON_Q": {
+  "value": "0.783",
+  "source": [
+   "votes | qwen | economic | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_ECON_Q": {
+  "value": "0.817",
+  "source": [
+   "votes | qwen | economic | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_ECON_Q": {
+  "value": "True",
+  "source": [
+   "votes | qwen | economic | A5 competent"
+  ]
+ },
+ "ACC_ALIGNED_GUN_Q": {
+  "value": "0.479",
+  "source": [
+   "votes | qwen | guns | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_GUN_Q": {
+  "value": "0.805",
+  "source": [
+   "votes | qwen | guns | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_GUN_Q": {
+  "value": "0.836",
+  "source": [
+   "votes | qwen | guns | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_GUN_Q": {
+  "value": "0.476",
+  "source": [
+   "votes | qwen | guns | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_GUN_Q": {
+  "value": "0.657",
+  "source": [
+   "votes | qwen | guns | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_GUN_Q": {
+  "value": "0.703",
+  "source": [
+   "votes | qwen | guns | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_GUN_Q": {
+  "value": "False",
+  "source": [
+   "votes | qwen | guns | A5 competent"
+  ]
+ },
+ "CP_COEF_AB_Q": {
+  "value": "−0.043",
+  "source": [
+   "votes | qwen | abortion | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_COEF_AB_Q_CI": {
+  "value": "[−0.074, −0.012]",
+  "source": [
+   "votes | qwen | abortion | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_LOO_AB_Q": {
+  "value": "−0.046",
+  "source": [
+   "votes | qwen | abortion | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_LOO_AB_Q_CI": {
+  "value": "[−0.079, −0.013]",
+  "source": [
+   "votes | qwen | abortion | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_COEF_AB_DEMOCRAT_Q": {
+  "value": "−0.002",
+  "source": [
+   "votes | qwen | abortion | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_AB_DEMOCRAT_Q_CI": {
+  "value": "[−0.101, 0.098]",
+  "source": [
+   "votes | qwen | abortion | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_AB_REPUBLICAN_Q": {
+  "value": "−0.095",
+  "source": [
+   "votes | qwen | abortion | CP coefficient Republican"
+  ]
+ },
+ "CP_COEF_AB_REPUBLICAN_Q_CI": {
+  "value": "[−0.190, 0.000]",
+  "source": [
+   "votes | qwen | abortion | CP coefficient Republican"
+  ]
+ },
+ "PRED_PARTY_GAP_AB_Q": {
+  "value": "0.059",
+  "source": [
+   "votes | qwen | abortion | predicted party gap in yea share"
+  ]
+ },
+ "ACTUAL_PARTY_GAP_AB_Q": {
+  "value": "0.513",
+  "source": [
+   "votes | qwen | abortion | actual party gap in yea share"
+  ]
+ },
+ "ORDER_CORR_AB_Q": {
+  "value": "0.195",
+  "source": [
+   "votes | qwen | abortion | yea-first / nay-first prediction correlation"
+  ]
+ },
+ "CP_COEF_ECON_Q": {
+  "value": "0.020",
+  "source": [
+   "votes | qwen | economic | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_COEF_ECON_Q_CI": {
+  "value": "[0.002, 0.039]",
+  "source": [
+   "votes | qwen | economic | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_LOO_ECON_Q": {
+  "value": "0.020",
+  "source": [
+   "votes | qwen | economic | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_LOO_ECON_Q_CI": {
+  "value": "[0.002, 0.039]",
+  "source": [
+   "votes | qwen | economic | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_COEF_ECON_DEMOCRAT_Q": {
+  "value": "0.013",
+  "source": [
+   "votes | qwen | economic | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_ECON_DEMOCRAT_Q_CI": {
+  "value": "[−0.013, 0.039]",
+  "source": [
+   "votes | qwen | economic | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_ECON_REPUBLICAN_Q": {
+  "value": "0.029",
+  "source": [
+   "votes | qwen | economic | CP coefficient Republican"
+  ]
+ },
+ "CP_COEF_ECON_REPUBLICAN_Q_CI": {
+  "value": "[−0.003, 0.061]",
+  "source": [
+   "votes | qwen | economic | CP coefficient Republican"
+  ]
+ },
+ "PRED_PARTY_GAP_ECON_Q": {
+  "value": "0.033",
+  "source": [
+   "votes | qwen | economic | predicted party gap in yea share"
+  ]
+ },
+ "ACTUAL_PARTY_GAP_ECON_Q": {
+  "value": "0.531",
+  "source": [
+   "votes | qwen | economic | actual party gap in yea share"
+  ]
+ },
+ "ORDER_CORR_ECON_Q": {
+  "value": "0.018",
+  "source": [
+   "votes | qwen | economic | yea-first / nay-first prediction correlation"
+  ]
+ },
+ "A13_AB_Q": {
+  "value": "True",
+  "source": [
+   "votes | qwen | abortion | A13 CP errors toward party (M1)"
+  ]
+ },
+ "CP_COEF_GUN_ABCP_Q": {
+  "value": "−0.029",
+  "source": [
+   "votes | qwen | guns | 6.1 CP coefficient (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_ABCP_Q_CI": {
+  "value": "[−0.065, 0.007]",
+  "source": [
+   "votes | qwen | guns | 6.1 CP coefficient (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_GUNCP_Q": {
+  "value": "−0.026",
+  "source": [
+   "votes | qwen | guns | 6.1 CP coefficient (gun-defined CP, LOO)"
+  ]
+ },
+ "CP_COEF_GUN_GUNCP_Q_CI": {
+  "value": "[−0.090, 0.038]",
+  "source": [
+   "votes | qwen | guns | 6.1 CP coefficient (gun-defined CP, LOO)"
+  ]
+ },
+ "CP_COEF_GUN_SAMEROWS_Q": {
+  "value": "−0.022",
+  "source": [
+   "votes | qwen | guns | abortion CP on the same rows"
+  ]
+ },
+ "CP_COEF_GUN_SAMEROWS_Q_CI": {
+  "value": "[−0.062, 0.019]",
+  "source": [
+   "votes | qwen | guns | abortion CP on the same rows"
+  ]
+ },
+ "GUN_ERRORS_TOWARD_PARTY_Q": {
+  "value": "False",
+  "source": [
+   "votes | qwen | guns | CP errors toward party"
+  ]
+ },
+ "CP_COEF_GUN_DEMOCRAT_Q": {
+  "value": "−0.085",
+  "source": [
+   "votes | qwen | guns | CP coefficient Democrat (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_DEMOCRAT_Q_CI": {
+  "value": "[−0.184, 0.014]",
+  "source": [
+   "votes | qwen | guns | CP coefficient Democrat (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_REPUBLICAN_Q": {
+  "value": "0.043",
+  "source": [
+   "votes | qwen | guns | CP coefficient Republican (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_REPUBLICAN_Q_CI": {
+  "value": "[−0.048, 0.135]",
+  "source": [
+   "votes | qwen | guns | CP coefficient Republican (abortion-defined CP)"
+  ]
+ },
+ "D3_AB_Q": {
+  "value": "−0.035",
+  "source": [
+   "state | qwen | abortion | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_AB_Q_CI": {
+  "value": "[−0.056, −0.015]",
+  "source": [
+   "state | qwen | abortion | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_ECON_Q": {
+  "value": "−0.002",
+  "source": [
+   "state | qwen | economic | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_ECON_Q_CI": {
+  "value": "[−0.019, 0.014]",
+  "source": [
+   "state | qwen | economic | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "N2_ACC_AB_Q": {
+  "value": "−0.027",
+  "source": [
+   "nominate | qwen | abortion | N2 vote accuracy ~ CP given GMP"
+  ]
+ },
+ "N2_ACC_AB_Q_CI": {
+  "value": "[−0.056, 0.001]",
+  "source": [
+   "nominate | qwen | abortion | N2 vote accuracy ~ CP given GMP"
+  ]
+ },
+ "N2_BEYOND_AB_Q": {
+  "value": "False",
+  "source": [
+   "nominate | qwen | abortion | N2 beyond NOMINATE"
+  ]
+ },
+ "ACC_ALIGNED_AB_L": {
+  "value": "0.688",
+  "source": [
+   "votes | llama | abortion | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_AB_L": {
+  "value": "0.875",
+  "source": [
+   "votes | llama | abortion | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_AB_L": {
+  "value": "0.917",
+  "source": [
+   "votes | llama | abortion | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_AB_L": {
+  "value": "0.561",
+  "source": [
+   "votes | llama | abortion | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_AB_L": {
+  "value": "0.400",
+  "source": [
+   "votes | llama | abortion | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_AB_L": {
+  "value": "0.419",
+  "source": [
+   "votes | llama | abortion | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_AB_L": {
+  "value": "True",
+  "source": [
+   "votes | llama | abortion | A5 competent"
+  ]
+ },
+ "ACC_ALIGNED_ECON_L": {
+  "value": "0.567",
+  "source": [
+   "votes | llama | economic | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_ECON_L": {
+  "value": "0.834",
+  "source": [
+   "votes | llama | economic | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_ECON_L": {
+  "value": "0.861",
+  "source": [
+   "votes | llama | economic | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_ECON_L": {
+  "value": "0.581",
+  "source": [
+   "votes | llama | economic | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_ECON_L": {
+  "value": "0.783",
+  "source": [
+   "votes | llama | economic | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_ECON_L": {
+  "value": "0.817",
+  "source": [
+   "votes | llama | economic | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_ECON_L": {
+  "value": "True",
+  "source": [
+   "votes | llama | economic | A5 competent"
+  ]
+ },
+ "ACC_ALIGNED_GUN_L": {
+  "value": "0.617",
+  "source": [
+   "votes | llama | guns | accuracy aligned"
+  ]
+ },
+ "PARTY_RULE_ALIGNED_GUN_L": {
+  "value": "0.805",
+  "source": [
+   "votes | llama | guns | party-majority rule accuracy aligned"
+  ]
+ },
+ "DW1_REF_ALIGNED_GUN_L": {
+  "value": "0.836",
+  "source": [
+   "votes | llama | guns | DW dim 1 reference accuracy aligned"
+  ]
+ },
+ "ACC_CROSS_GUN_L": {
+  "value": "0.523",
+  "source": [
+   "votes | llama | guns | accuracy cross-pressured"
+  ]
+ },
+ "PARTY_RULE_CROSS_GUN_L": {
+  "value": "0.657",
+  "source": [
+   "votes | llama | guns | party-majority rule accuracy cross-pressured"
+  ]
+ },
+ "DW1_REF_CROSS_GUN_L": {
+  "value": "0.703",
+  "source": [
+   "votes | llama | guns | DW dim 1 reference accuracy cross-pressured"
+  ]
+ },
+ "COMPETENT_GUN_L": {
+  "value": "True",
+  "source": [
+   "votes | llama | guns | A5 competent"
+  ]
+ },
+ "CP_COEF_AB_L": {
+  "value": "−0.106",
+  "source": [
+   "votes | llama | abortion | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_COEF_AB_L_CI": {
+  "value": "[−0.152, −0.059]",
+  "source": [
+   "votes | llama | abortion | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_LOO_AB_L": {
+  "value": "−0.094",
+  "source": [
+   "votes | llama | abortion | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_LOO_AB_L_CI": {
+  "value": "[−0.141, −0.047]",
+  "source": [
+   "votes | llama | abortion | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_COEF_AB_DEMOCRAT_L": {
+  "value": "−0.005",
+  "source": [
+   "votes | llama | abortion | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_AB_DEMOCRAT_L_CI": {
+  "value": "[−0.090, 0.080]",
+  "source": [
+   "votes | llama | abortion | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_AB_REPUBLICAN_L": {
+  "value": "−0.233",
+  "source": [
+   "votes | llama | abortion | CP coefficient Republican"
+  ]
+ },
+ "CP_COEF_AB_REPUBLICAN_L_CI": {
+  "value": "[−0.319, −0.146]",
+  "source": [
+   "votes | llama | abortion | CP coefficient Republican"
+  ]
+ },
+ "PRED_PARTY_GAP_AB_L": {
+  "value": "0.186",
+  "source": [
+   "votes | llama | abortion | predicted party gap in yea share"
+  ]
+ },
+ "ACTUAL_PARTY_GAP_AB_L": {
+  "value": "0.513",
+  "source": [
+   "votes | llama | abortion | actual party gap in yea share"
+  ]
+ },
+ "ORDER_CORR_AB_L": {
+  "value": "0.823",
+  "source": [
+   "votes | llama | abortion | yea-first / nay-first prediction correlation"
+  ]
+ },
+ "CP_COEF_ECON_L": {
+  "value": "0.011",
+  "source": [
+   "votes | llama | economic | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_COEF_ECON_L_CI": {
+  "value": "[−0.009, 0.031]",
+  "source": [
+   "votes | llama | economic | 6.1 CP coefficient (party x roll call FE)"
+  ]
+ },
+ "CP_LOO_ECON_L": {
+  "value": "0.011",
+  "source": [
+   "votes | llama | economic | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_LOO_ECON_L_CI": {
+  "value": "[−0.009, 0.031]",
+  "source": [
+   "votes | llama | economic | A12 leave-one-out CP 6.1"
+  ]
+ },
+ "CP_COEF_ECON_DEMOCRAT_L": {
+  "value": "−0.001",
+  "source": [
+   "votes | llama | economic | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_ECON_DEMOCRAT_L_CI": {
+  "value": "[−0.028, 0.026]",
+  "source": [
+   "votes | llama | economic | CP coefficient Democrat"
+  ]
+ },
+ "CP_COEF_ECON_REPUBLICAN_L": {
+  "value": "0.026",
+  "source": [
+   "votes | llama | economic | CP coefficient Republican"
+  ]
+ },
+ "CP_COEF_ECON_REPUBLICAN_L_CI": {
+  "value": "[−0.007, 0.060]",
+  "source": [
+   "votes | llama | economic | CP coefficient Republican"
+  ]
+ },
+ "PRED_PARTY_GAP_ECON_L": {
+  "value": "0.076",
+  "source": [
+   "votes | llama | economic | predicted party gap in yea share"
+  ]
+ },
+ "ACTUAL_PARTY_GAP_ECON_L": {
+  "value": "0.531",
+  "source": [
+   "votes | llama | economic | actual party gap in yea share"
+  ]
+ },
+ "ORDER_CORR_ECON_L": {
+  "value": "0.776",
+  "source": [
+   "votes | llama | economic | yea-first / nay-first prediction correlation"
+  ]
+ },
+ "A13_AB_L": {
+  "value": "True",
+  "source": [
+   "votes | llama | abortion | A13 CP errors toward party (M1)"
+  ]
+ },
+ "CP_COEF_GUN_ABCP_L": {
+  "value": "−0.090",
+  "source": [
+   "votes | llama | guns | 6.1 CP coefficient (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_ABCP_L_CI": {
+  "value": "[−0.128, −0.052]",
+  "source": [
+   "votes | llama | guns | 6.1 CP coefficient (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_GUNCP_L": {
+  "value": "−0.165",
+  "source": [
+   "votes | llama | guns | 6.1 CP coefficient (gun-defined CP, LOO)"
+  ]
+ },
+ "CP_COEF_GUN_GUNCP_L_CI": {
+  "value": "[−0.213, −0.117]",
+  "source": [
+   "votes | llama | guns | 6.1 CP coefficient (gun-defined CP, LOO)"
+  ]
+ },
+ "CP_COEF_GUN_SAMEROWS_L": {
+  "value": "−0.116",
+  "source": [
+   "votes | llama | guns | abortion CP on the same rows"
+  ]
+ },
+ "CP_COEF_GUN_SAMEROWS_L_CI": {
+  "value": "[−0.157, −0.076]",
+  "source": [
+   "votes | llama | guns | abortion CP on the same rows"
+  ]
+ },
+ "GUN_ERRORS_TOWARD_PARTY_L": {
+  "value": "False",
+  "source": [
+   "votes | llama | guns | CP errors toward party"
+  ]
+ },
+ "CP_COEF_GUN_DEMOCRAT_L": {
+  "value": "−0.160",
+  "source": [
+   "votes | llama | guns | CP coefficient Democrat (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_DEMOCRAT_L_CI": {
+  "value": "[−0.229, −0.091]",
+  "source": [
+   "votes | llama | guns | CP coefficient Democrat (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_REPUBLICAN_L": {
+  "value": "−0.001",
+  "source": [
+   "votes | llama | guns | CP coefficient Republican (abortion-defined CP)"
+  ]
+ },
+ "CP_COEF_GUN_REPUBLICAN_L_CI": {
+  "value": "[−0.081, 0.080]",
+  "source": [
+   "votes | llama | guns | CP coefficient Republican (abortion-defined CP)"
+  ]
+ },
+ "D3_AB_L": {
+  "value": "−0.054",
+  "source": [
+   "state | llama | abortion | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_AB_L_CI": {
+  "value": "[−0.075, −0.033]",
+  "source": [
+   "state | llama | abortion | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_ECON_L": {
+  "value": "−0.009",
+  "source": [
+   "state | llama | economic | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_ECON_L_CI": {
+  "value": "[−0.025, 0.007]",
+  "source": [
+   "state | llama | economic | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "N2_ACC_AB_L": {
+  "value": "−0.086",
+  "source": [
+   "nominate | llama | abortion | N2 vote accuracy ~ CP given GMP"
+  ]
+ },
+ "N2_ACC_AB_L_CI": {
+  "value": "[−0.130, −0.042]",
+  "source": [
+   "nominate | llama | abortion | N2 vote accuracy ~ CP given GMP"
+  ]
+ },
+ "N2_BEYOND_AB_L": {
+  "value": "False",
+  "source": [
+   "nominate | llama | abortion | N2 beyond NOMINATE"
+  ]
+ },
+ "D3_GUN_L": {
+  "value": "−0.077",
+  "source": [
+   "state | llama | guns | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "D3_GUN_L_CI": {
+  "value": "[−0.110, −0.044]",
+  "source": [
+   "state | llama | guns | D3 vote accuracy ~ constituency CP"
+  ]
+ },
+ "N2_FITTED_WORSE": {
+  "value": "True",
+  "source": [
+   "nominate | - | - | N2 CP fitted worse by NOMINATE"
+  ]
+ },
+ "G2_GATE": {
+  "value": "True",
+  "source": [
+   "votes | - | guns | G2 leave-one-out gate"
+  ]
+ },
+ "SNOWE_AB_N_Q": {
+  "value": "64",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe: n"
+  ]
+ },
+ "SNOWE_AB_ACC_Q": {
+  "value": "0.531",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe: accuracy"
+  ]
+ },
+ "SNOWE_AB_WRONG_PARTY_Q": {
+  "value": "0.967",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_AB_AGAINST_Q": {
+  "value": "0.953",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe: against_party_share"
+  ]
+ },
+ "SNOWE_AB_WRONG_PARTY_WORDS_Q": {
+  "value": "97 percent",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_ECON_N_Q": {
+  "value": "63",
+  "source": [
+   "cases | qwen | economic | Olympia Snowe: n"
+  ]
+ },
+ "SNOWE_ECON_ACC_Q": {
+  "value": "0.556",
+  "source": [
+   "cases | qwen | economic | Olympia Snowe: accuracy"
+  ]
+ },
+ "SNOWE_ECON_WRONG_PARTY_Q": {
+  "value": "0.179",
+  "source": [
+   "cases | qwen | economic | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_ECON_AGAINST_Q": {
+  "value": "0.238",
+  "source": [
+   "cases | qwen | economic | Olympia Snowe: against_party_share"
+  ]
+ },
+ "SNOWE_ECON_WRONG_PARTY_WORDS_Q": {
+  "value": "18 percent",
+  "source": [
+   "cases | qwen | economic | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_AB_N_Q": {
+  "value": "26",
+  "source": [
+   "cases | qwen | abortion | Thomas Eagleton: n"
+  ]
+ },
+ "EAGLETON_AB_ACC_Q": {
+  "value": "0.462",
+  "source": [
+   "cases | qwen | abortion | Thomas Eagleton: accuracy"
+  ]
+ },
+ "EAGLETON_AB_WRONG_PARTY_Q": {
+  "value": "0.857",
+  "source": [
+   "cases | qwen | abortion | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_AB_AGAINST_Q": {
+  "value": "0.846",
+  "source": [
+   "cases | qwen | abortion | Thomas Eagleton: against_party_share"
+  ]
+ },
+ "EAGLETON_AB_WRONG_PARTY_WORDS_Q": {
+  "value": "86 percent",
+  "source": [
+   "cases | qwen | abortion | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_ECON_N_Q": {
+  "value": "26",
+  "source": [
+   "cases | qwen | economic | Thomas Eagleton: n"
+  ]
+ },
+ "EAGLETON_ECON_ACC_Q": {
+  "value": "0.577",
+  "source": [
+   "cases | qwen | economic | Thomas Eagleton: accuracy"
+  ]
+ },
+ "EAGLETON_ECON_WRONG_PARTY_Q": {
+  "value": "0.091",
+  "source": [
+   "cases | qwen | economic | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_ECON_AGAINST_Q": {
+  "value": "0.077",
+  "source": [
+   "cases | qwen | economic | Thomas Eagleton: against_party_share"
+  ]
+ },
+ "EAGLETON_ECON_WRONG_PARTY_WORDS_Q": {
+  "value": "9 percent",
+  "source": [
+   "cases | qwen | economic | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_AB_N_Q": {
+  "value": "39",
+  "source": [
+   "cases | qwen | abortion | Robert Packwood: n"
+  ]
+ },
+ "PACKWOOD_AB_ACC_Q": {
+  "value": "0.641",
+  "source": [
+   "cases | qwen | abortion | Robert Packwood: accuracy"
+  ]
+ },
+ "PACKWOOD_AB_WRONG_PARTY_Q": {
+  "value": "0.786",
+  "source": [
+   "cases | qwen | abortion | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_AB_AGAINST_Q": {
+  "value": "0.769",
+  "source": [
+   "cases | qwen | abortion | Robert Packwood: against_party_share"
+  ]
+ },
+ "PACKWOOD_AB_WRONG_PARTY_WORDS_Q": {
+  "value": "79 percent",
+  "source": [
+   "cases | qwen | abortion | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_N_Q": {
+  "value": "43",
+  "source": [
+   "cases | qwen | economic | Robert Packwood: n"
+  ]
+ },
+ "PACKWOOD_ECON_ACC_Q": {
+  "value": "0.651",
+  "source": [
+   "cases | qwen | economic | Robert Packwood: accuracy"
+  ]
+ },
+ "PACKWOOD_ECON_WRONG_PARTY_Q": {
+  "value": "0.200",
+  "source": [
+   "cases | qwen | economic | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_AGAINST_Q": {
+  "value": "0.349",
+  "source": [
+   "cases | qwen | economic | Robert Packwood: against_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_WRONG_PARTY_WORDS_Q": {
+  "value": "20 percent",
+  "source": [
+   "cases | qwen | economic | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_DOD1997_YEA_Q": {
+  "value": "0.04",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe roll call 105|Senate|167: model YEA share"
+  ]
+ },
+ "SNOWE_DOD1998_YEA_Q": {
+  "value": "0.00",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe roll call 105|Senate|474: model YEA share"
+  ]
+ },
+ "SNOWE_PBA2003_YEA_Q": {
+  "value": "0.50",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe roll call 108|Senate|51: model YEA share"
+  ]
+ },
+ "SNOWE_PBA2003CONF_YEA_Q": {
+  "value": "0.50",
+  "source": [
+   "cases | qwen | abortion | Olympia Snowe roll call 108|Senate|402: model YEA share"
+  ]
+ },
+ "SNOWE_AB_N_L": {
+  "value": "64",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: n"
+  ]
+ },
+ "SNOWE_AB_ACC_L": {
+  "value": "0.484",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: accuracy"
+  ]
+ },
+ "SNOWE_AB_WRONG_PARTY_L": {
+  "value": "1",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_AB_AGAINST_L": {
+  "value": "0.953",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: against_party_share"
+  ]
+ },
+ "SNOWE_AB_WRONG_PARTY_WORDS_L": {
+  "value": "every one",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_ECON_N_L": {
+  "value": "63",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: n"
+  ]
+ },
+ "SNOWE_ECON_ACC_L": {
+  "value": "0.651",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: accuracy"
+  ]
+ },
+ "SNOWE_ECON_WRONG_PARTY_L": {
+  "value": "0.182",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_ECON_AGAINST_L": {
+  "value": "0.238",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: against_party_share"
+  ]
+ },
+ "SNOWE_ECON_WRONG_PARTY_WORDS_L": {
+  "value": "18 percent",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_AB_N_L": {
+  "value": "26",
+  "source": [
+   "cases | llama | abortion | Thomas Eagleton: n"
+  ]
+ },
+ "EAGLETON_AB_ACC_L": {
+  "value": "0.500",
+  "source": [
+   "cases | llama | abortion | Thomas Eagleton: accuracy"
+  ]
+ },
+ "EAGLETON_AB_WRONG_PARTY_L": {
+  "value": "0.923",
+  "source": [
+   "cases | llama | abortion | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_AB_AGAINST_L": {
+  "value": "0.846",
+  "source": [
+   "cases | llama | abortion | Thomas Eagleton: against_party_share"
+  ]
+ },
+ "EAGLETON_AB_WRONG_PARTY_WORDS_L": {
+  "value": "92 percent",
+  "source": [
+   "cases | llama | abortion | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_ECON_N_L": {
+  "value": "26",
+  "source": [
+   "cases | llama | economic | Thomas Eagleton: n"
+  ]
+ },
+ "EAGLETON_ECON_ACC_L": {
+  "value": "0.615",
+  "source": [
+   "cases | llama | economic | Thomas Eagleton: accuracy"
+  ]
+ },
+ "EAGLETON_ECON_WRONG_PARTY_L": {
+  "value": "0.100",
+  "source": [
+   "cases | llama | economic | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "EAGLETON_ECON_AGAINST_L": {
+  "value": "0.077",
+  "source": [
+   "cases | llama | economic | Thomas Eagleton: against_party_share"
+  ]
+ },
+ "EAGLETON_ECON_WRONG_PARTY_WORDS_L": {
+  "value": "10 percent",
+  "source": [
+   "cases | llama | economic | Thomas Eagleton: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_AB_N_L": {
+  "value": "39",
+  "source": [
+   "cases | llama | abortion | Robert Packwood: n"
+  ]
+ },
+ "PACKWOOD_AB_ACC_L": {
+  "value": "0.462",
+  "source": [
+   "cases | llama | abortion | Robert Packwood: accuracy"
+  ]
+ },
+ "PACKWOOD_AB_WRONG_PARTY_L": {
+  "value": "0.762",
+  "source": [
+   "cases | llama | abortion | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_AB_AGAINST_L": {
+  "value": "0.769",
+  "source": [
+   "cases | llama | abortion | Robert Packwood: against_party_share"
+  ]
+ },
+ "PACKWOOD_AB_WRONG_PARTY_WORDS_L": {
+  "value": "76 percent",
+  "source": [
+   "cases | llama | abortion | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_N_L": {
+  "value": "43",
+  "source": [
+   "cases | llama | economic | Robert Packwood: n"
+  ]
+ },
+ "PACKWOOD_ECON_ACC_L": {
+  "value": "0.628",
+  "source": [
+   "cases | llama | economic | Robert Packwood: accuracy"
+  ]
+ },
+ "PACKWOOD_ECON_WRONG_PARTY_L": {
+  "value": "0.500",
+  "source": [
+   "cases | llama | economic | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_AGAINST_L": {
+  "value": "0.349",
+  "source": [
+   "cases | llama | economic | Robert Packwood: against_party_share"
+  ]
+ },
+ "PACKWOOD_ECON_WRONG_PARTY_WORDS_L": {
+  "value": "50 percent",
+  "source": [
+   "cases | llama | economic | Robert Packwood: wrong_with_party_share"
+  ]
+ },
+ "SNOWE_DOD1997_YEA_L": {
+  "value": "0.25",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe roll call 105|Senate|167: model YEA share"
+  ]
+ },
+ "SNOWE_DOD1998_YEA_L": {
+  "value": "0.27",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe roll call 105|Senate|474: model YEA share"
+  ]
+ },
+ "SNOWE_PBA2003_YEA_L": {
+  "value": "0.59",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe roll call 108|Senate|51: model YEA share"
+  ]
+ },
+ "SNOWE_PBA2003CONF_YEA_L": {
+  "value": "0.63",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe roll call 108|Senate|402: model YEA share"
+  ]
+ },
+ "SNOWE_AB_AGAINST_PCT": {
+  "value": "95 percent",
+  "source": [
+   "cases | llama | abortion | Olympia Snowe: against_party_share"
+  ]
+ },
+ "SNOWE_ECON_AGAINST_PCT": {
+  "value": "24 percent",
+  "source": [
+   "cases | llama | economic | Olympia Snowe: against_party_share"
+  ]
+ },
+ "ENT_CELLS": {
+  "value": "12",
+  "source": [
+   "count of the entropy cells listed in paper/values.py ENT"
+  ]
+ },
+ "W1U_AB_Q": {
+  "value": "0.001",
+  "source": [
+   "vote uncertainty | qwen | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_AB_Q_CI": {
+  "value": "[−0.004, 0.005]",
+  "source": [
+   "vote uncertainty | qwen | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_AB_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | qwen | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_Q": {
+  "value": "−0.003",
+  "source": [
+   "vote uncertainty | qwen | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_Q_CI": {
+  "value": "[−0.006, 0.000]",
+  "source": [
+   "vote uncertainty | qwen | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | qwen | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_Q": {
+  "value": "0.002",
+  "source": [
+   "vote uncertainty | qwen | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_Q_CI": {
+  "value": "[−0.005, 0.009]",
+  "source": [
+   "vote uncertainty | qwen | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | qwen | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_Q": {
+  "value": "0.009",
+  "source": [
+   "vote uncertainty | qwen | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_Q_CI": {
+  "value": "[−0.003, 0.021]",
+  "source": [
+   "vote uncertainty | qwen | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | qwen | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "AUROC_ALIGNED_AB_Q": {
+  "value": "0.478",
+  "source": [
+   "warning | qwen | abortion | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_AB_Q": {
+  "value": "0.518",
+  "source": [
+   "warning | qwen | abortion | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_AB_Q": {
+  "value": "0.040",
+  "source": [
+   "warning | qwen | abortion | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_AB_Q_CI": {
+  "value": "[0.024, 0.056]",
+  "source": [
+   "warning | qwen | abortion | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_ALIGNED_ECON_Q": {
+  "value": "0.523",
+  "source": [
+   "warning | qwen | economic | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_ECON_Q": {
+  "value": "0.482",
+  "source": [
+   "warning | qwen | economic | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_ECON_Q": {
+  "value": "−0.041",
+  "source": [
+   "warning | qwen | economic | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_ECON_Q_CI": {
+  "value": "[−0.061, −0.020]",
+  "source": [
+   "warning | qwen | economic | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_ALIGNED_GUN_Q": {
+  "value": "0.501",
+  "source": [
+   "warning | qwen | guns | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_GUN_Q": {
+  "value": "0.481",
+  "source": [
+   "warning | qwen | guns | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_GUN_Q": {
+  "value": "−0.020",
+  "source": [
+   "warning | qwen | guns | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_GUN_Q_CI": {
+  "value": "[−0.055, 0.015]",
+  "source": [
+   "warning | qwen | guns | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "N_Q2_AB_Q": {
+  "value": "0.011",
+  "source": [
+   "named entropy | qwen | abortion | Q2"
+  ]
+ },
+ "N_Q2_AB_Q_CI": {
+  "value": "[0.006, 0.017]",
+  "source": [
+   "named entropy | qwen | abortion | Q2"
+  ]
+ },
+ "N_Q2_AB_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "named entropy | qwen | abortion | Q2"
+  ]
+ },
+ "N_Q3_AB_Q": {
+  "value": "0.017",
+  "source": [
+   "named entropy | qwen | abortion | Q3"
+  ]
+ },
+ "N_Q3_AB_Q_CI": {
+  "value": "[0.011, 0.023]",
+  "source": [
+   "named entropy | qwen | abortion | Q3"
+  ]
+ },
+ "N_Q3_AB_READING_Q": {
+  "value": "no meaningful difference",
+  "source": [
+   "named entropy | qwen | abortion | Q3"
+  ]
+ },
+ "ENT_ABOVE_Q": {
+  "value": "6",
+  "source": [
+   "profiles | qwen | - | S5 H1_C1a",
+   "profiles | qwen | - | S5 H2_C4",
+   "vote uncertainty | qwen | abortion | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | economic | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | guns | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | guns_gcp | CP effect on choice entropy (bits)",
+   "named entropy | qwen | abortion | Q2",
+   "named entropy | qwen | abortion | Q3",
+   "named entropy | qwen | guns | Q2gun",
+   "named entropy | qwen | guns | Q2ab_same_rows",
+   "bundles | qwen | - | B1_Democrat",
+   "bundles | qwen | - | B2_Republican"
+  ]
+ },
+ "ENT_BELOW_Q": {
+  "value": "0",
+  "source": [
+   "profiles | qwen | - | S5 H1_C1a",
+   "profiles | qwen | - | S5 H2_C4",
+   "vote uncertainty | qwen | abortion | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | economic | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | guns | CP effect on choice entropy (bits)",
+   "vote uncertainty | qwen | guns_gcp | CP effect on choice entropy (bits)",
+   "named entropy | qwen | abortion | Q2",
+   "named entropy | qwen | abortion | Q3",
+   "named entropy | qwen | guns | Q2gun",
+   "named entropy | qwen | guns | Q2ab_same_rows",
+   "bundles | qwen | - | B1_Democrat",
+   "bundles | qwen | - | B2_Republican"
+  ]
+ },
+ "W1U_AB_L": {
+  "value": "0.029",
+  "source": [
+   "vote uncertainty | llama | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_AB_L_CI": {
+  "value": "[0.021, 0.037]",
+  "source": [
+   "vote uncertainty | llama | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_AB_READING_L": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | llama | abortion | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_L": {
+  "value": "0.011",
+  "source": [
+   "vote uncertainty | llama | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_L_CI": {
+  "value": "[0.005, 0.017]",
+  "source": [
+   "vote uncertainty | llama | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_ECON_READING_L": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | llama | economic | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_L": {
+  "value": "0.027",
+  "source": [
+   "vote uncertainty | llama | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_L_CI": {
+  "value": "[0.016, 0.038]",
+  "source": [
+   "vote uncertainty | llama | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUN_READING_L": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | llama | guns | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_L": {
+  "value": "0.036",
+  "source": [
+   "vote uncertainty | llama | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_L_CI": {
+  "value": "[0.020, 0.051]",
+  "source": [
+   "vote uncertainty | llama | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "W1U_GUNCP_READING_L": {
+  "value": "no meaningful difference",
+  "source": [
+   "vote uncertainty | llama | guns_gcp | CP effect on choice entropy (bits)"
+  ]
+ },
+ "AUROC_ALIGNED_AB_L": {
+  "value": "0.739",
+  "source": [
+   "warning | llama | abortion | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_AB_L": {
+  "value": "0.474",
+  "source": [
+   "warning | llama | abortion | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_AB_L": {
+  "value": "−0.265",
+  "source": [
+   "warning | llama | abortion | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_AB_L_CI": {
+  "value": "[−0.288, −0.242]",
+  "source": [
+   "warning | llama | abortion | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_ALIGNED_ECON_L": {
+  "value": "0.580",
+  "source": [
+   "warning | llama | economic | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_ECON_L": {
+  "value": "0.551",
+  "source": [
+   "warning | llama | economic | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_ECON_L": {
+  "value": "−0.029",
+  "source": [
+   "warning | llama | economic | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_ECON_L_CI": {
+  "value": "[−0.046, −0.013]",
+  "source": [
+   "warning | llama | economic | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_ALIGNED_GUN_L": {
+  "value": "0.663",
+  "source": [
+   "warning | llama | guns | AUROC within roll call, aligned"
+  ]
+ },
+ "AUROC_CP_GUN_L": {
+  "value": "0.588",
+  "source": [
+   "warning | llama | guns | AUROC within roll call, cp"
+  ]
+ },
+ "AUROC_DIFF_GUN_L": {
+  "value": "−0.075",
+  "source": [
+   "warning | llama | guns | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "AUROC_DIFF_GUN_L_CI": {
+  "value": "[−0.117, −0.029]",
+  "source": [
+   "warning | llama | guns | AUROC within roll call, CP - aligned"
+  ]
+ },
+ "N_Q2_AB_L": {
+  "value": "0.053",
+  "source": [
+   "named entropy | llama | abortion | Q2"
+  ]
+ },
+ "N_Q2_AB_L_CI": {
+  "value": "[0.044, 0.061]",
+  "source": [
+   "named entropy | llama | abortion | Q2"
+  ]
+ },
+ "N_Q2_AB_READING_L": {
+  "value": "more uncertain",
+  "source": [
+   "named entropy | llama | abortion | Q2"
+  ]
+ },
+ "N_Q3_AB_L": {
+  "value": "0.084",
+  "source": [
+   "named entropy | llama | abortion | Q3"
+  ]
+ },
+ "N_Q3_AB_L_CI": {
+  "value": "[0.073, 0.095]",
+  "source": [
+   "named entropy | llama | abortion | Q3"
+  ]
+ },
+ "N_Q3_AB_READING_L": {
+  "value": "more uncertain",
+  "source": [
+   "named entropy | llama | abortion | Q3"
+  ]
+ },
+ "ENT_ABOVE_L": {
+  "value": "10",
+  "source": [
+   "profiles | llama | - | S5 H1_C1a",
+   "profiles | llama | - | S5 H2_C4",
+   "vote uncertainty | llama | abortion | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | economic | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | guns | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | guns_gcp | CP effect on choice entropy (bits)",
+   "named entropy | llama | abortion | Q2",
+   "named entropy | llama | abortion | Q3",
+   "named entropy | llama | guns | Q2gun",
+   "named entropy | llama | guns | Q2ab_same_rows",
+   "bundles | llama | - | B1_Democrat",
+   "bundles | llama | - | B2_Republican"
+  ]
+ },
+ "ENT_BELOW_L": {
+  "value": "2",
+  "source": [
+   "profiles | llama | - | S5 H1_C1a",
+   "profiles | llama | - | S5 H2_C4",
+   "vote uncertainty | llama | abortion | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | economic | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | guns | CP effect on choice entropy (bits)",
+   "vote uncertainty | llama | guns_gcp | CP effect on choice entropy (bits)",
+   "named entropy | llama | abortion | Q2",
+   "named entropy | llama | abortion | Q3",
+   "named entropy | llama | guns | Q2gun",
+   "named entropy | llama | guns | Q2ab_same_rows",
+   "bundles | llama | - | B1_Democrat",
+   "bundles | llama | - | B2_Republican"
+  ]
+ },
+ "S2A_AB": {
+  "value": "−0.218",
+  "source": [
+   "speech | qwen | abortion | S2a partisan speech ~ CP"
+  ]
+ },
+ "S2A_AB_CI": {
+  "value": "[−0.274, −0.163]",
+  "source": [
+   "speech | qwen | abortion | S2a partisan speech ~ CP"
+  ]
+ },
+ "S2A_GUN": {
+  "value": "−0.345",
+  "source": [
+   "speech | qwen | guns | S2a partisan speech ~ gun CP"
+  ]
+ },
+ "S2A_GUN_CI": {
+  "value": "[−0.456, −0.233]",
+  "source": [
+   "speech | qwen | guns | S2a partisan speech ~ gun CP"
+  ]
+ },
+ "X2_AB_DEMOCRAT_Q": {
+  "value": "0.134",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_DEMOCRAT_Q_CI": {
+  "value": "[0.051, 0.221]",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_DEMOCRAT_READING_Q": {
+  "value": "encoded but down-weighted relative to economic (H-E side)",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_REPUBLICAN_Q": {
+  "value": "0.093",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X2_AB_REPUBLICAN_Q_CI": {
+  "value": "[0.006, 0.177]",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X2_AB_REPUBLICAN_READING_Q": {
+  "value": "undetermined",
+  "source": [
+   "mechanism | qwen | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X5A_REPUBLICAN_Q": {
+  "value": "0.358",
+  "source": [
+   "mechanism | qwen | - | X5 stage A Republican"
+  ]
+ },
+ "X5A_REPUBLICAN_Q_CI": {
+  "value": "[0.180, 0.646]",
+  "source": [
+   "mechanism | qwen | - | X5 stage A Republican"
+  ]
+ },
+ "B5_ECON_SHARE_DEMOCRAT_Q": {
+  "value": "0.837",
+  "source": [
+   "bundles | qwen | - | B5 economic share Democrat"
+  ]
+ },
+ "BUNDLE_DEMOCRAT_Q": {
+  "value": "0.185",
+  "source": [
+   "bundles | qwen | - | B1_Democrat"
+  ]
+ },
+ "BUNDLE_DEMOCRAT_Q_CI": {
+  "value": "[0.178, 0.193]",
+  "source": [
+   "bundles | qwen | - | B1_Democrat"
+  ]
+ },
+ "B5_ECON_SHARE_REPUBLICAN_Q": {
+  "value": "0.902",
+  "source": [
+   "bundles | qwen | - | B5 economic share Republican"
+  ]
+ },
+ "BUNDLE_REPUBLICAN_Q": {
+  "value": "0.149",
+  "source": [
+   "bundles | qwen | - | B2_Republican"
+  ]
+ },
+ "BUNDLE_REPUBLICAN_Q_CI": {
+  "value": "[0.140, 0.158]",
+  "source": [
+   "bundles | qwen | - | B2_Republican"
+  ]
+ },
+ "X2_AB_DEMOCRAT_L": {
+  "value": "0.244",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_DEMOCRAT_L_CI": {
+  "value": "[0.165, 0.326]",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_DEMOCRAT_READING_L": {
+  "value": "encoded but down-weighted relative to economic (H-E side)",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Democrat"
+  ]
+ },
+ "X2_AB_REPUBLICAN_L": {
+  "value": "0.169",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X2_AB_REPUBLICAN_L_CI": {
+  "value": "[0.070, 0.268]",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X2_AB_REPUBLICAN_READING_L": {
+  "value": "encoded but down-weighted relative to economic (H-E side)",
+  "source": [
+   "mechanism | llama | abortion | X2 within-party gap economic - social, Republican"
+  ]
+ },
+ "X5A_REPUBLICAN_L": {
+  "value": "0.440",
+  "source": [
+   "mechanism | llama | - | X5 stage A Republican"
+  ]
+ },
+ "X5A_REPUBLICAN_L_CI": {
+  "value": "[0.165, 0.992]",
+  "source": [
+   "mechanism | llama | - | X5 stage A Republican"
+  ]
+ },
+ "B5_ECON_SHARE_DEMOCRAT_L": {
+  "value": "0.422",
+  "source": [
+   "bundles | llama | - | B5 economic share Democrat"
+  ]
+ },
+ "BUNDLE_DEMOCRAT_L": {
+  "value": "−0.137",
+  "source": [
+   "bundles | llama | - | B1_Democrat"
+  ]
+ },
+ "BUNDLE_DEMOCRAT_L_CI": {
+  "value": "[−0.177, −0.098]",
+  "source": [
+   "bundles | llama | - | B1_Democrat"
+  ]
+ },
+ "B5_ECON_SHARE_REPUBLICAN_L": {
+  "value": "0.857",
+  "source": [
+   "bundles | llama | - | B5 economic share Republican"
+  ]
+ },
+ "BUNDLE_REPUBLICAN_L": {
+  "value": "−0.171",
+  "source": [
+   "bundles | llama | - | B2_Republican"
+  ]
+ },
+ "BUNDLE_REPUBLICAN_L_CI": {
+  "value": "[−0.206, −0.136]",
+  "source": [
+   "bundles | llama | - | B2_Republican"
+  ]
+ }
+}

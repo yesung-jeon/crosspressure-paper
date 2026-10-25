@@ -1,0 +1,90 @@
+{
+ "note": "descriptive follow-up added 2026-10-19 after the sealed results; no tests",
+ "members": "not applicable: the 60 legislators were selected and coded on the abortion/economic scales (PROTOCOL_GUNSYM)",
+ "rows": {
+  "qwen": {
+   "by_decade": {
+    "1980": {
+     "rows": 617,
+     "cross_share": 0.31280388978930307,
+     "recall_aligned": 0.5825471698113207,
+     "recall_cross": 0.17098445595854922,
+     "n_cross": 193
+    },
+    "1990": {
+     "rows": 631,
+     "cross_share": 0.196513470681458,
+     "recall_aligned": 0.6962524654832347,
+     "recall_cross": 0.20967741935483872,
+     "n_cross": 124
+    },
+    "2000": {
+     "rows": 292,
+     "cross_share": 0.1232876712328767,
+     "recall_aligned": 0.82421875,
+     "recall_cross": 0.08333333333333333,
+     "n_cross": 36
+    },
+    "2010": {
+     "rows": 524,
+     "cross_share": 0.03244274809160305,
+     "recall_aligned": 0.8205128205128205,
+     "recall_cross": 0.11764705882352941,
+     "n_cross": 17
+    }
+   },
+   "cross_rows_party_by_quadrant": {
+    "EL-ST": {
+     "Democrat": 133,
+     "Republican": 6
+    },
+    "ER-SP": {
+     "Republican": 191,
+     "Democrat": 40
+    }
+   }
+  },
+  "llama": {
+   "by_decade": {
+    "1980": {
+     "rows": 617,
+     "cross_share": 0.31280388978930307,
+     "recall_aligned": 0.8443396226415094,
+     "recall_cross": 0.11917098445595854,
+     "n_cross": 193
+    },
+    "1990": {
+     "rows": 631,
+     "cross_share": 0.196513470681458,
+     "recall_aligned": 0.8954635108481263,
+     "recall_cross": 0.14516129032258066,
+     "n_cross": 124
+    },
+    "2000": {
+     "rows": 292,
+     "cross_share": 0.1232876712328767,
+     "recall_aligned": 0.9375,
+     "recall_cross": 0.1388888888888889,
+     "n_cross": 36
+    },
+    "2010": {
+     "rows": 524,
+     "cross_share": 0.03244274809160305,
+     "recall_aligned": 0.9723865877712031,
+     "recall_cross": 0.11764705882352941,
+     "n_cross": 17
+    }
+   },
+   "cross_rows_party_by_quadrant": {
+    "EL-ST": {
+     "Democrat": 133,
+     "Republican": 6
+    },
+    "ER-SP": {
+     "Republican": 191,
+     "Democrat": 40
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "qwen": {
+  "n": 10444,
+  "sealed_n": 10444,
+  "confusion_equal": true
+ },
+ "llama": {
+  "n": 10444,
+  "sealed_n": 10444,
+  "confusion_equal": true
+ },
+ "items": {
+  "n": 16,
+  "econ": 8,
+  "soc": 8
+ }
+}

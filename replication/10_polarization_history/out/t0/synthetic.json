@@ -1,0 +1,9 @@
+{
+ "share_D_planted": 1.0,
+ "share_D": 1.0046324298139127,
+ "dgap": 2.4705584500583337,
+ "common_shift_share_D": -0.495696075647616,
+ "common_shift_dgap": 1.9978223630250365,
+ "dgap_unchanged_raw_units": true,
+ "pass": true
+}

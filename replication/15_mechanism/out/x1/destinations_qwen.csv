@@ -1,0 +1,17 @@
+party,vote_q,map_q,rows
+Democrat,EL-ST,EL-SP,387
+Democrat,EL-ST,EL-ST,206
+Democrat,EL-ST,ER-SP,101
+Democrat,EL-ST,ER-ST,120
+Democrat,ER-SP,EL-SP,56
+Democrat,ER-SP,EL-ST,65
+Democrat,ER-SP,ER-SP,36
+Democrat,ER-SP,ER-ST,97
+Republican,EL-ST,EL-SP,19
+Republican,EL-ST,EL-ST,10
+Republican,EL-ST,ER-SP,14
+Republican,EL-ST,ER-ST,52
+Republican,ER-SP,EL-SP,185
+Republican,ER-SP,EL-ST,95
+Republican,ER-SP,ER-SP,178
+Republican,ER-SP,ER-ST,628

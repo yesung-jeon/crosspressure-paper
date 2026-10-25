@@ -1,0 +1,12 @@
+{
+ "rows": 220319,
+ "by_variant": {
+  "main": 142403,
+  "V1": 25972,
+  "V2": 25972,
+  "V3": 25972
+ },
+ "main_sample_main_prompt": 102285,
+ "variant_rollcalls": 94,
+ "text_sha256": "e7d6a0d8ef4fdfe3fa33982b995123441486cbc18854683f4e6a9fb33a37b301"
+}

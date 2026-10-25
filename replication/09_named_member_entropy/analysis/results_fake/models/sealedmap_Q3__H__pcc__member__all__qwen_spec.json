@@ -1,0 +1,17 @@
+{
+  "tag": "sealedmap_Q3__H__pcc__member__all__qwen",
+  "outcome": "H",
+  "rhs": "map_crossed_sealed",
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 10444,
+  "fe_cells": 80,
+  "clusters": 2151,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "map_crossed_sealed": 0.001237172039358957
+  },
+  "covariance": [
+    [1.835841678806184e-06]
+  ]
+}

@@ -1,0 +1,65 @@
+{
+ "candidates_contested": 234,
+ "final": {
+  "no/": 76,
+  "yes/looser": 57,
+  "yes/stricter": 71,
+  "yes/unclear": 30
+ },
+ "label_source": {
+  "agreed": 146,
+  "author": 88
+ },
+ "included": 128,
+ "out_of_regex_misses": [
+  "112|House|838"
+ ],
+ "cells_built": 20,
+ "cells_passed": 13,
+ "cells_failed": [
+  [
+   "93",
+   "Senate",
+   "leave-one-out corr < 0.9 or undefined"
+  ],
+  [
+   "102",
+   "House",
+   "leave-one-out corr < 0.9 or undefined"
+  ],
+  [
+   "102",
+   "Senate",
+   "loading agreement < 0.8"
+  ],
+  [
+   "104",
+   "House",
+   "leave-one-out corr < 0.9 or undefined"
+  ],
+  [
+   "105",
+   "Senate",
+   "leave-one-out corr < 0.9 or undefined"
+  ],
+  [
+   "114",
+   "Senate",
+   "loading agreement < 0.8"
+  ],
+  [
+   "115",
+   "House",
+   "leave-one-out corr < 0.9 or undefined"
+  ]
+ ],
+ "gun_cp_rows": 2256,
+ "gun_cp_share": 0.19326241134751773,
+ "overlap_with_abortion_cp": {
+  "rows_with_both": 1514,
+  "same_label_share": 0.7371202113606341,
+  "corr_gun_abortion": 0.6497654189592905
+ },
+ "corr_gun_economic": 0.7420009309092609,
+ "descriptive_only": false
+}

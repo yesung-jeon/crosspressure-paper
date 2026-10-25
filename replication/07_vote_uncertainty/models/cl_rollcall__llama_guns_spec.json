@@ -1,0 +1,17 @@
+{
+  "tag": "cl_rollcall__llama_guns",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": "key",
+  "n": 11934,
+  "fe_cells": 104,
+  "clusters": 52,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.027285981762440018
+  },
+  "covariance": [
+    [2.0936370389157175e-05]
+  ]
+}

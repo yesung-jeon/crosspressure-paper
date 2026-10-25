@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "models": 404,
+  "max_coefficient_error": 2.4702e-15,
+  "max_variance_error": 6.7437e-17
+}

@@ -1,0 +1,90 @@
+{
+ "n": 524,
+ "insufficient": 48,
+ "leak_outcome": 21,
+ "leak_party": 0,
+ "loaded_term": 14,
+ "words_median": 31.0,
+ "words_max": 79
+}
+95|House|696 | A motion that the House concur in the Senate amendments to H.J.Res. 622, a supplemental appropriations measure. One Senate amendment prohibits the use of the supplemental funds for abortion except whe
+95|Senate|610 | A motion that the Senate concur in an amendment to the House amendment to Senate amendment #82 to H.R. 7555, the Labor and Health, Education and Welfare appropriations bill for fiscal year 1978. As mo
+95|Senate|1054 | An amendment to H.R. 12929 that would prohibit the use of its funds for abortions, except where the woman's life would be endangered if the fetus were carried to term, or where the woman is a victim o
+96|Senate|307 | A motion that the Senate recede from its amendment No. 137 to H.R. 4389 and accept the House language on Medicaid funding of abortions, which prohibits the use of funds except where the woman's life w
+96|Senate|355 | A motion that the Senate agree to the House abortion amendment to H.J.Res. 412, a continuing appropriations measure.
+97|Senate|927 | A motion to table a motion to reconsider the earlier vote that added a committee amendment to H.J.Res. 631. The committee amendment relates to abortion coverage under federal health insurance plans.
+100|Senate|747 | A procedural motion on an appropriations measure concerning the Senate's position on an amendment that would permit the use of Medicaid funds for abortions when pregnancy results from rape or incest. 
+101|Senate|380 | An appeal of the chair's ruling that the defense of germaneness is not available to an amendment to H.R. 4404, fiscal 1990 supplemental appropriations. The amendment relates to the use of federal fund
+103|Senate|290 | A committee amendment to H.R. 2518, the Labor, Health and Human Services and Education appropriations bill for fiscal year 1994, at page 74, lines 20 through 25, relating to federal payments for abort
+104|House|736 | A motion that the House recede and concur, with a further amendment, in Senate amendment No. 115 to H.R. 1868, Foreign Operations appropriations for fiscal 1996. The Senate amendment concerns a prohib
+104|Senate|178 | An amendment in the nature of a substitute for S.Con.Res. 13.
+106|House|462 | A substitute amendment to H.R. 2436, the "Unborn Victims of Violence Act."
+106|House|711 | A motion to recommit H.R. 3660, the "Partial-Birth Abortion Ban Act of 2000", to committee with instructions.
+106|Senate|334 | A motion to table an amendment to S. 1692, a bill to ban "partial birth abortions". The amendment would express the sense of Congress concerning Roe v. Wade and partial birth abortion bans.
+107|House|848 | A motion to recommit H.R. 4965, the "Partial-Birth Abortion Ban Act", to committee with instructions.
+108|House|843 | An amendment to H.R. 4275, a bill to amend the Internal Revenue Code of 1986 to permanently extend the 10-percent individual income tax rate bracket.
+109|House|142 | A motion to recommit H.R. 748, the "Child Interstate Abortion Notification Act", to committee with instructions.
+109|House|1194 | A motion to suspend the rules and pass H.R. 6099, the "Unborn Child Pain Awareness Act of 2006."
+110|Senate|302 | An amendment to H.R. 976 that would codify what the source calls the "unborn child rule."
+111|Senate|26 | An amendment to H.R. 2 that would codify regulations specifying that an "unborn child" is eligible for child health assistance.
+112|House|735 | An amendment to H.R. 2401, a bill to require analyses of the cumulative and incremental impacts of certain rules and actions of the Environmental Protection Agency.
+112|House|1482 | A motion to suspend the rules and pass, as amended, H.R. 3803, the "District of Columbia Pain-Capable Unborn Child Protection Act."
+113|House|668 | A motion to recommit H.R. 7, a bill to prohibit federal funding of abortions, to committee with instructions.
+114|House|220 | A vote on H.Res. 255, the rule providing for consideration of H.R. 1735, fiscal 2016 Department of Defense authorization; H.R. 36, the "Pain-Capable Unborn Child Protection Act"; and H.R. 2048, the US
+114|House|1153 | An amendment to H.R. 5538, appropriations for the Department of the Interior, environment and related agencies for fiscal 2017.
+115|House|547 | A motion to recommit H.R. 36, the "Pain-Capable Unborn Child Protection Act", to committee with instructions.
+94|Senate|595 | Final passage of H.R. 5559. The source does not describe the bill's subject; the context lists only amendments offered to it.
+95|House|701 | A motion to concur in Senate amendment no. 2 to H.J.Res. 662. The Senate amendment prohibits use of the supplemental HEW funds for abortion except when the woman's life would be endangered if the fetu
+95|House|1087 | An amendment to H.R. 12929, the fiscal 1979 appropriations bill for the Departments of Labor and of Health, Education, and Welfare. It would strike language prohibiting use of the funds for abortions 
+95|Senate|615 | An amendment to the modified House amendment to Senate amendment no. 82 to H.R. 7555, fiscal 1978 appropriations for the Departments of Labor and of Health, Education, and Welfare. It would authorize 
+96|House|550 | A motion to concur in Senate amendment no. 137 to H.R. 4389, fiscal 1980 Labor and HEW appropriations, with a House amendment. The Senate amendment permits federal funding of abortion where "medically
+96|Senate|194 | An amendment to H.R. 4389 providing federal funding of abortions when the woman's life is endangered, when she is a victim of rape or incest, or when two physicians determine that severe physical heal
+106|House|74 | A substitute amendment to H.Con.Res. 68, the congressional budget for fiscal 2000. The source does not describe what the substitute budget contains.
+108|House|704 | An amendment to H.R. 1997, the "Unborn Victims of Violence Act." The source does not describe what the amendment would do.
+108|House|984 | An amendment to H.R. 4663. The source does not describe the bill or the amendment.
+109|House|1200 | A motion to amend the House amendment to the Senate amendment to H.R. 6111, the Tax Relief and Health Care Act. The source does not describe what the motion's amendment would do.
+112|House|289 | A motion to recommit H.R. 3, the "No Taxpayer Funding for Abortion Act," with instructions. The source does not say what the instructions would add.
+113|House|250 | Final passage of H.R. 1797, the "District of Columbia Pain-Capable Unborn Child Protection Act."
+114|House|221 | A motion to recommit H.R. 36, the "Pain-Capable Unborn Child Protection Act," with instructions. The source does not say what the instructions would add.
+115|House|143 | An amendment to H.R. 985, the Fairness in Class Action Litigation Act. The source does not describe what the amendment would do.
+115|House|548 | Final passage of H.R. 36, the "Pain-Capable Unborn Child Protection Act."
+95|House|595 | A conference motion on H.R. 7555, the fiscal 1978 Labor and Health, Education and Welfare appropriations bill, that the House recede from its amendment to Senate amendment #82. The House amendment for
+95|Senate|258 | An amendment to H.R. 7555, an appropriations bill, would prohibit the use of funds for abortions except where the woman's life would be endangered if the fetus were carried to term.
+95|Senate|633 | A conference-stage substitute on abortion funding in H.R. 7555, the fiscal 1978 Labor and Health, Education and Welfare appropriations bill. It would replace a pending amendment with language prohibit
+96|Senate|677 | Final passage of S. 2352. The source does not describe the bill's subject or contents.
+98|House|333 | Final passage of H.R. 1036, a bill authorizing funds for a program. The source does not name the program; an amendment to the bill would authorize $3.5 billion for fiscal year 1984.
+99|House|649 | A motion that the Committee of the Whole rise and report H.R. 5161, an appropriations bill, back to the House. Rising would block consideration of an amendment prohibiting Justice Department funds for
+104|House|703 | An amendment to H.R. 39, the Fisheries Conservation and Management Amendments, would strike provisions that would prevent the Commerce Department from requiring shrimp fishermen to use devices that re
+106|House|291 | An amendment to H.R. 2466, the Department of the Interior and Related Agencies Appropriations Act, 2000. The source does not describe what the amendment would do.
+106|House|520 | An amendment to H.R. 2, the Student Results Act. The source does not describe what the amendment would do.
+106|House|778 | An amendment to H.R. 701, the Conservation and Reinvestment Act. The source does not describe what the amendment would do.
+108|House|240 | A motion to recommit H.R. 760, the "Partial-Birth Abortion Ban Act", with instructions. The source does not state what the instructions would add.
+110|Senate|523 | An amendment to S.Con.Res. 70 would require that legislation reauthorizing SCHIP include provisions codifying the "unborn child regulation".
+112|House|784 | A motion to recommit with instructions H.R. 358, a bill to amend the Patient Protection and Affordable Care Act to modify special rules on coverage of abortion services. The source does not state what
+113|House|170 | An amendment to H.R. 3, a bill to approve the construction, operation and maintenance of the Keystone XL pipeline. The source does not describe what the amendment would do.
+114|House|37 | A motion to order the previous question on H.Res. 38, the rule providing for consideration of H.R. 161, the Natural Gas Pipeline Permitting Reform Act, and H.R. 36, the "Pain-Capable Unborn Child Prot
+114|House|43 | A motion to recommit with instructions H.R. 7, a bill to prohibit taxpayer funded abortions. The source does not state what the instructions would add.
+114|House|222 | Passage of H.R. 36, the "Pain-Capable Unborn Child Protection Act".
+115|House|645 | An amendment to H.R. 4182, the Ensuring a Qualified Civil Service Act. The source does not describe what the amendment would do.
+95|House|466 | A motion to concur in Senate amendment #82 to H.R. 7555, an appropriations bill, with a further amendment. Senate amendment #82 prohibits federal funds for abortion except when the mother's life is en
+95|House|690 | An amendment to modify another amendment to H.J.Res. 662. The underlying amendment adds continuing appropriations for the Departments of Labor and of Health, Education and Welfare. The modification wo
+95|House|1290 | An amendment to H.R. 13635, an appropriations bill, that would prohibit use of these funds to pay for abortions except when the life of the mother would be endangered if the fetus were carried to term
+95|Senate|1053 | An amendment to H.R. 12929, an appropriations bill, that would prohibit the use of these funds for abortions except where the life of the mother would be endangered if the fetus were carried to term.
+96|House|288 | An amendment to H.R. 2444, a bill to establish a Department of Education. It would bar any institution of higher education that uses mandatory student fees to pay for abortions from using facilities c
+96|House|633 | An amendment to H.R. 4962, a child health assurance bill, that would prohibit use of funds to perform abortions except where the life of the mother would be endangered if the fetus were carried to ter
+97|Senate|926 | A committee amendment to H.J.Res. 631 relating to abortion coverage under federal health insurance plans.
+104|House|325 | An amendment to H.R. 961, the Clean Water Amendments of 1995. It would let states that already run their own federally approved wetlands permit programs on the date of enactment keep running them inst
+104|House|529 | A perfecting amendment to H.R. 1976, making appropriations for agriculture, rural development, the Food and Drug Administration and related agencies for fiscal 1996. The source does not say what the a
+105|House|22 | Passage of H.R. 581, the "Family Planning Facilitation and Abortion Funding Restriction Act of 1997". It amends Public Law 104-208 so the President may make population planning funds available on Marc
+106|House|461 | An amendment to H.R. 2436, the "Unborn Victims of Violence Act". The source does not say what the amendment would do.
+106|Senate|333 | A motion to table an unspecified proposal during consideration of S. 1692, a bill to amend title 18 of the U.S. Code to ban "partial birth abortions". The source does not say which amendment or motion
+107|House|917 | A motion to recommit H.R. 4691, the "Abortion Non-Discrimination Act", with instructions. The source does not say what the instructions would add.
+108|House|764 | An amendment to H.Con.Res. 393, the congressional budget for the U.S. government for fiscal 2005. The source does not say what the amendment would do.
+108|Senate|47 | A vote on an unspecified motion during consideration of S. 3, a bill to prohibit the procedure commonly known as partial-birth abortion. The source does not say what the motion would do.
+109|House|140 | An amendment to H.R. 748, the "Child Interstate Abortion Notification Act". The source does not say what the amendment would do.
+112|House|61 | An amendment to H.R. 1, making appropriations for the Department of Defense and other agencies for fiscal 2011. The source does not say what the amendment would do.
+112|House|582 | An amendment to H.R. 2354, making appropriations for energy and water development for fiscal 2012. The source does not say what the amendment would do.
+114|House|38 | A vote on H.Res. 38, the rule providing for consideration of H.R. 161, the "Natural Gas Pipeline Permitting Reform Act", and H.R. 36, the "Pain-Capable Unborn Child Protection Act".
+114|House|979 | An amendment to H.R. 4775, the "Ozone Standards Implementation Act of 2016". The source does not say what the amendment would do.
+115|House|63 | A motion to recommit H.R. 7, a bill "to prohibit taxpayer funded abortions", with instructions. The source does not say what the instructions would add.
+117|Senate|23 | A vote on an unspecified motion concerning an amendment to S.Con.Res. 5, a budget resolution. The amendment would set up a deficit-neutral reserve fund for prohibiting a health care practitioner from 

@@ -1,0 +1,17 @@
+{
+  "tag": "cl_member__qwen_abortion",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": "icpsr",
+  "n": 54086,
+  "fe_cells": 386,
+  "clusters": 2146,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.00067070412333590122
+  },
+  "covariance": [
+    [2.6167795875445925e-06]
+  ]
+}

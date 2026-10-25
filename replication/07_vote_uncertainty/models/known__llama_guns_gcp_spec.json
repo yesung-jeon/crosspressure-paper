@@ -1,0 +1,17 @@
+{
+  "tag": "known__llama_guns_gcp",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 6122,
+  "fe_cells": 72,
+  "clusters": [763, 36],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.03797891887875738
+  },
+  "covariance": [
+    [6.6694978167712026e-05]
+  ]
+}
