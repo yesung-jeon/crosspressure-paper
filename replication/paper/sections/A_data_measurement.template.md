@@ -10,7 +10,8 @@ directions, how members are placed on the map, the prompts, and the models.
   conservative. The abortion and gun-control scales are the two social scales; together the three are the roll-call scales.
 - **Quadrant.** The combination of a member-Congress's economic and social positions, each split at the median of its Congress and
   chamber: liberal on both dimensions, conservative on both dimensions, economically liberal and socially conservative, or economically
-  conservative and socially liberal. Quadrants are named in words throughout.
+  conservative and socially liberal. Quadrants are named in words in the text; figure labels abbreviate them.
+- **Recall.** The share of a group's member-Congresses that the map places in the quadrant of their votes.
 - **Aligned and cross-pressured members.** Aligned member-Congresses are liberal on both dimensions or conservative on both;
   cross-pressured ones are economically liberal and socially conservative, or the reverse.
 - **Economic and social directions.** Two directions in a model's activations, one for economic and one for social policy (A.4).
@@ -65,7 +66,7 @@ scripts called external models and are not rerun by the package; their labels ar
 of nay 0. Members with fewer than three votes are dropped, and a cell needs at least three roll calls and twenty members. Each roll call is centred on its mean among the members who voted, and missing votes are then set to zero, which fills them with that mean. The scale is the first principal component of this matrix. It is oriented so that higher values are more conservative: by the sign of its correlation with the first dimension of DW-NOMINATE when that correlation is at least three tenths in absolute value; otherwise so that southern Democrats score higher than other Democrats, when each group has at least five members; and otherwise by the sign of the weaker correlation with DW-NOMINATE. The economic scale
 exists for {{AP_SCALES_ECON}} Congress-chamber cells, and the abortion scale for {{AP_SCALES_AB}}, from the Congress that began in 1973.
 
-**Quadrants.** Within each Congress and chamber, the economic and the social scale are each split at the median, with ties assigned to the lower half. Quadrants are assigned to Democratic and Republican member-Congresses with both scales (Figure A1).
+**Quadrants.** Within each Congress and chamber, the economic and the social scale are each split at the median, and members tied at the median are assigned to whichever half keeps the split closer to even. In a few chambers most members share the strictest anti-abortion score, and this assignment keeps them on the traditional side. Quadrants are assigned to Democratic and Republican member-Congresses with both scales (Figure A1).
 
 ![Figure A1](figures/appendix/A1_quadrants.png)
 
@@ -91,7 +92,7 @@ average judge score over strengths, and the chosen layer is the one with the bes
 single layers are {{AP_BEST_ECON_Q}} (economic) and {{AP_BEST_SOC_Q}} (social) in Qwen and {{AP_BEST_ECON_L}} and {{AP_BEST_SOC_L}} in
 Llama; the combined rule chooses layer {{LAYER_Q}} in Qwen and {{LAYER_L}} in Llama. The replication package repeats the extraction,
 the steering, the judging and the choice of layer from the start, and it stops unless both runs give the same layer and identical
-directions. Both runs give the same layers.
+directions. Both runs give the same layers and identical directions.
 
 ## A.5 Placing Members
 
@@ -106,10 +107,10 @@ coordinate increases toward the traditional side.
 **Correlations in Table 1.** The correlation with the first dimension of DW-NOMINATE is computed in each Congress, with both chambers
 together, and averaged across Congresses. It is lower in the earliest Congress than in the latest ({{AP_R_X_DW1_80_Q}} against
 {{AP_R_X_DW1_118_Q}} in Qwen, and {{AP_R_X_DW1_80_L}} against {{AP_R_X_DW1_118_L}} in Llama). The correlations with the roll-call scales are computed after subtracting each Congress-chamber mean. These correlations and the party gaps use only the member-Congresses the model recognizes (below). The party gap in Table 1 is the difference between the Republican and the
-Democratic mean divided by the standard deviation of all coordinates.
+Democratic mean divided by the standard deviation of all coordinates. Section 4 measures the gap in each Congress instead, with the two chambers weighted equally and over all Democratic and Republican member-Congresses (Appendix B.1, B.2).
 
 **Recognized members.** To check whether a model knows a member, each model is also asked, "Which political party did {name}, a member
-of the U.S. {chamber} from {state} in {year}, belong to? Answer with one word." A member-Congress counts as recognized when the answer names the member's actual party. This shows that the model can name the party, which the state and year may suggest; it does not show that the model knows the member. Qwen recognizes a share of {{AP_RECOG_Q}} of member-Congresses and Llama {{AP_RECOG_L}}. Unless stated otherwise, analyses keep the coordinates of unrecognized members. The exceptions are the correlations and party gaps of Table 1, the selected members of Appendix C.4 and the within-party analysis of Appendix F.1, which use recognized member-Congresses only. Section 5 also reports placement for recognized members only.
+of the U.S. {chamber} from {state} in {year}, belong to? Answer with one word." A member-Congress counts as recognized when the answer names the member's actual party. This shows that the model can name the party, which the state and year may suggest; it does not show that the model knows the member. Qwen recognizes a share of {{AP_RECOG_Q}} of member-Congresses and Llama {{AP_RECOG_L}}. Unless stated otherwise, analyses keep the coordinates of unrecognized members. The exceptions are the correlations and party gaps of Table 1, the selected members of Appendix C.4 and the within-party analysis of Appendix F.1, which use recognized member-Congresses only. Section 5 also reports, as a check, placement among recognized member-Congresses only.
 
 ## A.6 Prompts
 
@@ -121,7 +122,7 @@ The prompts for each task are reproduced below. Braces mark the parts filled for
 {social position}." The economic positions are "expanding Social Security, public health insurance and union rights" and "cutting
 taxes, reducing government spending and deregulating business"; the social positions are "abortion rights and same-sex marriage" and
 "restrictions on abortion and a traditional definition of marriage." The same positions are also given in the user turn, through the
-paired instructions of A.4, through four answered example questions, or through a named member who holds them (Appendix C.6). Each
+paired instructions of A.4, through four answered example questions, or through a named member who holds them (Appendix C.5). Each
 item ends with "Answer with Yes or No."
 
 **Vote prediction (Section 6).** "You are {Senator | Representative} {name}, representing {state} in the United States {Senate | House
@@ -130,26 +131,15 @@ would: {what a nay vote does}. How would you vote, based on your policy position
 Respond with exactly one word: YEA or NAY." In the second order the two meaning lines are swapped and the last line reads "NAY or YEA"
 (Appendix D.1).
 
-**Choices between policy packages (Section 7, Appendix C.8).** "You must choose between two policy packages. A) {package} B) {package}
-Which do you choose? Answer with A or B only." The positions are listed in Table A2. Here the persona is a Democratic or Republican member of the House from a given state and
-year, so the party is given.
-
 **Named-member questions (Section 7).** The member persona of A.5, followed by a single-issue question and "Answer with Yes or No." or
-"Answer with No or Yes." The questions are the sixteen single-issue items of Table A1.
+"Answer with No or Yes." The questions are the sixteen single-issue items of Table A1. On the scale, the question is followed instead by "Answer with a single number from 1 to 9, where 1 means definitely no and 9 means definitely yes." or by the same sentence with the ends swapped (Appendix E.1).
 
 **Table A1. Items for stated profiles and named members**
 
 {{ITEMS_PROFILES}}
 
-**Table A2. Positions combined into policy packages**
-
-{{ITEMS_PACKAGES}}
-
-Note. A package joins one economic and one social position with "and". In the party-like version, the liberal economic position is
-paired with the progressive social position; in the crossed version, with the traditional one.
-
 ## A.7 Models and Computation
 
 The models are Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct, loaded at fixed revisions that are listed in the replication package, in
-bfloat16. Directions are extracted from sampled answers; steering generations and the party question use greedy decoding. Member placement on the map and the coordinates of stated profiles are projections of the hidden state at the last prompt token. Answers to Yes-or-No questions, choices between policy packages and vote predictions are read from the model's next-token probabilities. None of these involves sampling. All computations run in deterministic mode with fixed
+bfloat16. Directions are extracted from sampled answers; steering generations, the party question and the free answers to stated profiles use greedy decoding. Member placement on the map and the coordinates of stated profiles are projections of the hidden state at the last prompt token. Answers to Yes-or-No questions, vote predictions and answers on the nine-point scales are read from the model's next-token probabilities. Member placement and these probability readouts involve no sampling. All computations run in deterministic mode with fixed
 batch sizes and seeds, and a rerun on the same hardware and software gives identical outputs (Appendix G).

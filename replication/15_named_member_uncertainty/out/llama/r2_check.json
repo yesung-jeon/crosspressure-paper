@@ -1,0 +1,19 @@
+{
+ "model": "llama",
+ "n_prompts": 1920,
+ "max_abs_diff_C1a_by_condition": 0.013887323913447824,
+ "max_abs_diff_C2_by_condition": 0.009269462124151362,
+ "I4_cross_minus_aligned_C1a": {
+  "new": 0.023721838950336138,
+  "sealed": 0.02300575812358907
+ },
+ "I4_cross_minus_aligned_C2": {
+  "new": -0.16854391679592384,
+  "sealed": -0.16870319717886806
+ },
+ "max_abs_diff_p_yes": 0.059814453125,
+ "batch": 1,
+ "pass_original_rule": true,
+ "pass": true,
+ "rule": "PROTOCOL_A1 aggregate"
+}

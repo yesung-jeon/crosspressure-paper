@@ -8,7 +8,7 @@ from speech_common import O, S0, KIM, MAIN, dc, load_matrix
 from speech_history import LO
 import speech_estimators as est
 
-sys.path.insert(0, str(KIM / "09_named_member_entropy" / "code"))
+sys.path.insert(0, str(KIM / "15_named_member_uncertainty" / "code"))
 import named_common as nc  # noqa: E402
 S2 = O / "s2"; S2.mkdir(parents=True, exist_ok=True)
 MIN_TOKENS = 500
@@ -37,8 +37,8 @@ def main():
     P, led = member_p(); P.to_csv(S2 / "member_p.csv", index=False)
     res = dict(ledger=led, ledger_totals={k: sum(x[k] for x in led.values()) for k in ["speakers", "linked", "dropped_multi_match",
                                                                                         "dropped_low_tokens", "dropped_duplicate_member", "kept"]})
-    for m in ["qwen", "llama"]:
-        v = nc.analysis_rows(KIM / "02_ideology_map" / "out" / m / "s3" / "temporal_member_scores.csv")
+    for m in dc.MODELS:
+        v = nc.analysis_rows(KIM / "05_directions_and_map" / "out" / m / "s3" / "temporal_member_scores.csv")
         v = v[v.congress <= 114].copy(); n0 = len(v)
         v = v.merge(P[["congress", "chamber", "icpsr", "p", "party"]].rename(columns={"party": "sp_party"}), on=["congress", "chamber", "icpsr"],
                     how="left", validate="one_to_one")
@@ -56,7 +56,7 @@ def main():
         it = est.fe_ols(v, "misplaced", ["cp", "p_z", "cp_x_p"], "fe", "icpsr"); out["S2b_interaction"] = {x: s(it, x) for x in ["cp", "p_z", "cp_x_p"]}
         out["reading_RS2"] = bool(out["S2b_cp_rows"]["ci95"][0] > 0)
         # S2c: W1 abortion, CP members' wrong predictions with a party majority
-        f = pd.read_parquet(KIM / "06_vote_prediction" / "out" / "v5" / f"frame_v2_{m}_abortion_economic.parquet")
+        f = pd.read_parquet(KIM / "10_vote_prediction" / "out" / "v5" / f"frame_v2_{m}_abortion_economic.parquet")
         f = f[f.issue == "abortion"].copy(); kk = f.key.str.split("|", expand=True); f["congress"] = kk[0].astype(int); f["chamber"] = kk[1]
         f = f.merge(v[["congress", "chamber", "icpsr", "p_z"]], on=["congress", "chamber", "icpsr"], how="inner", validate="many_to_one")
         w = f[(f.cp == 1) & (f.correct_avg == 0) & f.party_yea_share.notna() & (f.party_yea_share != 0.5)].copy()

@@ -1,0 +1,145 @@
+{
+ "model": "llama",
+ "rule": "A13 M1",
+ "cells": {
+  "cp=0": {
+   "n": 9730,
+   "n_wrong": 3704,
+   "toward_party_among_wrong": 0.23137149028077753,
+   "n_defections": 1843,
+   "defection_caught": 0.534997287032013,
+   "n_follow": 7887,
+   "follow_correct": 0.6390262457208064,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.21077487416304694,
+     0.253036908523974
+    ],
+    "defection_caught": [
+     0.5073871245876229,
+     0.56325973944492
+    ],
+    "follow_correct": [
+     0.6251416963596959,
+     0.6520011508951407
+    ]
+   }
+  },
+  "cp=0|Democrat": {
+   "n": 5146,
+   "n_wrong": 1729,
+   "toward_party_among_wrong": 0.3614806246385194,
+   "n_defections": 1231,
+   "defection_caught": 0.49228269699431354,
+   "n_follow": 3915,
+   "follow_correct": 0.7180076628352491,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.3325282932163964,
+     0.3945313567281421
+    ],
+    "defection_caught": [
+     0.45914761190411246,
+     0.5268153995965779
+    ],
+    "follow_correct": [
+     0.7024350670751239,
+     0.732588172749768
+    ]
+   }
+  },
+  "cp=0|Republican": {
+   "n": 4584,
+   "n_wrong": 1975,
+   "toward_party_among_wrong": 0.11746835443037974,
+   "n_defections": 612,
+   "defection_caught": 0.6209150326797386,
+   "n_follow": 3972,
+   "follow_correct": 0.5611782477341389,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.09447404512472564,
+     0.13894848527153428
+    ],
+    "defection_caught": [
+     0.5793377199778962,
+     0.6643239856345992
+    ],
+    "follow_correct": [
+     0.5421568157002211,
+     0.582903428942878
+    ]
+   }
+  },
+  "cp=1": {
+   "n": 2100,
+   "n_wrong": 1059,
+   "toward_party_among_wrong": 0.41359773371104813,
+   "n_defections": 825,
+   "defection_caught": 0.4690909090909091,
+   "n_follow": 1275,
+   "follow_correct": 0.5129411764705882,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.3767458662498743,
+     0.4478226016425826
+    ],
+    "defection_caught": [
+     0.4276256231306082,
+     0.5125088367609254
+    ],
+    "follow_correct": [
+     0.4848216123499143,
+     0.5407969913936501
+    ]
+   }
+  },
+  "cp=1|Democrat": {
+   "n": 1240,
+   "n_wrong": 659,
+   "toward_party_among_wrong": 0.511380880121396,
+   "n_defections": 516,
+   "defection_caught": 0.34689922480620156,
+   "n_follow": 724,
+   "follow_correct": 0.5552486187845304,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.4665480994492757,
+     0.5540772357723577
+    ],
+    "defection_caught": [
+     0.30592781589833784,
+     0.3872760235947259
+    ],
+    "follow_correct": [
+     0.5209738844368097,
+     0.5872452778231071
+    ]
+   }
+  },
+  "cp=1|Republican": {
+   "n": 860,
+   "n_wrong": 400,
+   "toward_party_among_wrong": 0.2525,
+   "n_defections": 309,
+   "defection_caught": 0.6731391585760518,
+   "n_follow": 551,
+   "follow_correct": 0.4573502722323049,
+   "ci95": {
+    "toward_party_among_wrong": [
+     0.20156967891868788,
+     0.30677614359935934
+    ],
+    "defection_caught": [
+     0.6182105492589364,
+     0.7193622972217043
+    ],
+    "follow_correct": [
+     0.41327716133048853,
+     0.5009688921041753
+    ]
+   }
+  }
+ },
+ "reading_cp_errors_toward_party": false
+}

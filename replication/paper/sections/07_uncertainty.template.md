@@ -1,37 +1,19 @@
-# 7. The Models Are Slightly More Uncertain about Cross-Pressured Members
+# 7. The Models Are Less Certain about Cross-Pressured Members, but Their Doubt Gives No Warning
 
-The models' own probabilities also differ for cross-pressured members. We measure the models' uncertainty as the
-entropy of their next-token probabilities over the answer options (Appendix E). For a choice between two answers, it ranges from 0 bits, when the
-model puts all its probability on one answer, to 1 bit, when it splits its probability evenly. In every task of the paper, we compare
-the entropy for cross-pressured members with the entropy for aligned members.
+Studies of voting link cross-pressure to ambivalence and less certainty in political judgments (Section 2.2). This section asks whether the models' own probabilities carry that sign when they predict cross-pressured members' votes, and whether that doubt warns of the predictions they get wrong. The second question matters to anyone who uses the models: if their doubt marked their errors, the mispredicted votes of Section 6 could be caught. We measure uncertainty as the entropy of the model's next-token probabilities over the answers (Appendix E). It is zero when the model puts all its probability on one answer and largest when it spreads its probability evenly. We divide it by that maximum, so it runs from 0 to 1 in both formats of Section 6, the two answers YEA or NAY and the nine-point scale. As in Section 6, we compare cross-pressured with aligned members of the same party voting on the same roll call.
 
-**More uncertain, across tasks.** Across the tasks, the comparisons in which cross-pressured members receive higher entropy outnumber those in which they receive lower entropy.
-In Llama, entropy is higher for cross-pressured members in {{ENT_ABOVE_L}} of {{ENT_CELLS}} comparisons and lower in {{ENT_BELOW_L}},
-both from choices between two policy packages that each combine an economic and a social position (Appendix C.8). In Qwen, it is higher in {{ENT_ABOVE_Q}} of {{ENT_CELLS}} and lower in none; in the other comparisons the interval includes zero (Figure 3a).
+**Slightly more uncertain on the scale.** Answering on the scale, both models are more uncertain about cross-pressured members' abortion votes than about aligned members' votes: by {{SH_VOTE_AB_Q}} {{SH_VOTE_AB_Q_CI}} in Qwen and {{SH_VOTE_AB_L}} {{SH_VOTE_AB_L_CI}} in Llama (Figure 5a). The differences are small next to the range from 0 to 1.
 
-![Figure 3](figures/body/fig3_uncertainty.png)
+**With YEA or NAY, only in Llama.** With the two answers, Llama is more uncertain about cross-pressured members by {{W1U_AB_L}} {{W1U_AB_L_CI}}. In Qwen the difference, {{W1U_AB_Q}} {{W1U_AB_Q_CI}}, cannot be told apart from zero. Qwen's two-answer predictions are also unstable: the YEA shares it gives in the two answer orders correlate at only {{ORDER_CORR_AB_Q}} on abortion (Appendix D.3). Gun-control votes are in Appendix E.2.
 
-**Figure 3. Entropy is slightly higher for cross-pressured members in many comparisons, most consistently in Llama, and in Llama it marks errors less well for them.** (a) Cross-pressured minus aligned members in each task (for packages, packages that pair one party's economic position with the other party's social position, minus packages that pair positions one party holds together), with 95% intervals; the tasks are defined in Appendix E. (b) Probability that a randomly drawn wrong prediction has higher entropy than a right one on the same roll call, averaged over roll calls; the vertical line marks one half. Intervals for the difference between the two groups are in Appendix E.4.
+![Figure 5](figures/body/fig5_uncertainty.png)
 
-**Largest where the member or the profile is in the prompt.** Apart from the choices between policy packages, which compare packages rather than members, the differences are largest when the model speaks as a named member or follows a stated profile. Answering yes-or-no policy questions as a named member, Llama is more uncertain for cross-pressured members by
-{{N_Q2_AB_L}} bits {{N_Q2_AB_L_CI}}, and Qwen by {{N_Q2_AB_Q}} {{N_Q2_AB_Q_CI}}. Following a stated profile, Llama's difference is
-{{H1_L}} bits {{H1_L_CI}}.
+**Figure 5. Both models are slightly more uncertain about cross-pressured members' votes when they answer on a scale, and more uncertain about these members in every format when asked about the member directly.** Each point is the difference in entropy between cross-pressured and aligned members, with a 95% interval: (a) when the model predicts a member's roll-call vote, among members of the same party voting on the same roll call; (b) when the model answers policy questions as a named member, among members of the same party, Congress and chamber. Entropy is shown as a share of its maximum, so the two-answer formats (YEA or NAY; yes or no) and the scales (1 to 9) share one axis. Abortion; guns are in Appendix E.2. Definitions in Appendix E.
 
-**Small, and smallest in vote prediction.** All of these differences are small next to the 1-bit range, and they are smallest when the
-models predict votes. Among members of the same party voting on the same roll call, Llama's entropy is higher for cross-pressured
-members by {{W1U_AB_L}} bits {{W1U_AB_L_CI}} on abortion and by {{W1U_GUNCP_L}} {{W1U_GUNCP_L_CI}} on gun control (with cross-pressure defined by gun votes), and Qwen's by
-{{W1U_AB_Q}} {{W1U_AB_Q_CI}} on abortion. The pattern is consistent in direction, clearest in Llama, and modest in size. It is
-correlational: it shows that the models' probabilities treat these members as harder, not why.
+**The same when asked about the member.** The pattern is not tied to the vote task. When the model speaks as a named member and answers policy questions, both models are more uncertain about cross-pressured members in either format (Figure 5b). On abortion, the difference is {{N_Q2_AB_Q}} {{N_Q2_AB_Q_CI}} in Qwen and {{N_Q2_AB_L}} {{N_Q2_AB_L_CI}} in Llama with yes or no, and {{SH_NAMED_AB_Q}} {{SH_NAMED_AB_Q_CI}} and {{SH_NAMED_AB_L}} {{SH_NAMED_AB_L_CI}} on the nine-point scale.
 
-**The uncertainty marks errors less well for cross-pressured members.** For aligned members, Llama's
-entropy separates its wrong abortion predictions from its right ones: if one wrong and one right prediction are drawn at random, the
-wrong one has the higher entropy with probability {{AUROC_ALIGNED_AB_L}}. For cross-pressured members this probability falls to
-{{AUROC_CP_AB_L}}, close to a coin flip (Figure 3b). The same drop appears on gun votes, from {{AUROC_ALIGNED_GUN_L}} to {{AUROC_CP_GUN_L}}, and a
-smaller one on economic votes, from {{AUROC_ALIGNED_ECON_L}} to {{AUROC_CP_ECON_L}}. Qwen's entropy separates right from wrong
-predictions for neither group (between {{AUROC_CP_ECON_Q}} and {{AUROC_ALIGNED_ECON_Q}} on economic votes and between
-{{AUROC_ALIGNED_AB_Q}} and {{AUROC_CP_AB_Q}} on abortion).
+**The doubt does not flag the errors.** The uncertainty also does not tell a user which predictions to doubt. With YEA or NAY, for aligned members, Llama's entropy separates its wrong abortion predictions from its right ones: if one wrong and one right prediction are drawn at random, the wrong one has the higher entropy with probability {{AUROC_ALIGNED_AB_L}}. For cross-pressured members, neither model's entropy separates them: the probability is {{AUROC_CP_AB_L}} in Llama and {{AUROC_CP_AB_Q}} in Qwen, close to a coin flip (Qwen's entropy does not separate them for aligned members either; Appendix E.4). The scale answers tell the same story: Llama's scale entropy separates its wrong scale predictions from its right ones with probability {{SAUROC_ALIGNED_AB_L}} for aligned members and {{SAUROC_CP_AB_L}} for cross-pressured members, and Qwen's with {{SAUROC_ALIGNED_AB_Q}} and {{SAUROC_CP_AB_Q}}. For cross-pressured members, the votes the models get wrong come with no warning from their confidence.
 
-**All in all.** The models are slightly more uncertain about cross-pressured members than about aligned ones. The difference is small and clearest in Llama, and it does not tell a user which predictions to doubt. Table 3
-brings together the measures of Sections 5 to 7.
+**What this does not show.** The comparison is correlational: it shows that the models' probabilities treat these members as harder, not why. The entropy measures the models' uncertainty about a member, not the member's own ambivalence.
 
-{{TABLE3}}
+**All in all.** The models' probabilities carry the sign that studies of voting attach to cross-pressure: the models are slightly less certain about these members, in both models on the scale and when asked about the member, and in Llama with YEA or NAY. But the doubt does not show which of their predictions are wrong: for cross-pressured members it separates wrong from right predictions about as well as a coin flip, in either model.

@@ -58,29 +58,8 @@ def kim_questions():
         qs += [dict(question=q, axis=ax) for q in ev]
     return qs
 
-def members():
-    """Kim's member scores joined to Voteview (key: congress x icpsr, 1:1)."""
-    m = pd.read_csv(KIM_MAP / "results" / "temporal_member_scores.csv")
-    v = pd.read_csv(VOTEVIEW, low_memory=False)[["congress", "icpsr", "chamber", "party_code", "nominate_geo_mean_probability"]]
-    v = v[v.chamber.isin(["House", "Senate"])].drop_duplicates(["congress", "icpsr"])
-    m = m.merge(v[["congress", "icpsr", "nominate_geo_mean_probability"]], on=["congress", "icpsr"], how="left", validate="1:1")
-    m = m.rename(columns={"nominate_geo_mean_probability": "gmp"})
-    m["x"], m["y"] = -m.econ_orth, -m.social_orth
-    m["group"] = np.where(m.party == "Republican", "Rep", np.where((m.party == "Democrat") & m.state.isin(SOUTH), "SouthDem",
-                          np.where(m.party == "Democrat", "OtherDem", "Other")))
-    m["era"] = pd.cut(m.congress, [79, 96, 109, 118], labels=["1947-79", "1981-2005", "2007-23"]).astype(str)
-    return m
-
-# ---- model ----
-def load(quant="int8"):
-    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-    tok = AutoTokenizer.from_pretrained(MODEL); tok.padding_side = "left"
-    kw = dict(device_map={"": 0})
-    if quant == "int8": kw["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True)
-    else: kw["dtype"] = torch.bfloat16
-    model = AutoModelForCausalLM.from_pretrained(MODEL, **kw).eval()
-    V = torch.load(KIM_MAP / "results" / "vectors.pt")
-    return tok, model, V
+# members() and load() removed 2026-11-02: no caller in the package; models load through 00_shared/loader.py
+# (bf16, pinned revisions). Old text: 
 
 def chat(tok, q, system=None):
     msg = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": q}]

@@ -45,7 +45,7 @@ for iss, k in (("abortion", "AB"), ("economic", "ECON")):
     num(f"AP_RC_{k}", D["issue_rollcalls"][iss]["all"], rep)
     num(f"AP_RC_{k}_CONTESTED", D["issue_rollcalls"][iss]["contested"], rep)
     num(f"AP_SCALES_{k}", D["scales_built"][iss], rep)
-g0 = "05_gun_scale/out/g0/report.json"; G = J(g0)
+g0 = "02_gun_scale/out/g0/report.json"; G = J(g0)
 num("AP_GUN_CANDIDATES", G["candidates_contested"], g0)
 num("AP_GUN_INCLUDED", G["included"], g0)
 num("AP_GUN_AUTHOR", G["label_source"]["author"], g0)
@@ -56,38 +56,38 @@ num("AP_GUN_CP_SHARE", G["gun_cp_share"], g0)
 num("AP_GUN_CORR_AB", G["overlap_with_abortion_cp"]["corr_gun_abortion"], g0)
 num("AP_GUN_SAME_LABEL", G["overlap_with_abortion_cp"]["same_label_share"], g0)
 
-ms = "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+ms = "05_directions_and_map/out/qwen/s3/temporal_member_scores.csv"
 rows = list(csv.DictReader(open(R / ms, encoding="utf-8")))
 num("AP_N_MC", len(rows), ms)
 num("AP_N_HOUSE", sum(r["chamber"] == "House" for r in rows), ms)
 num("AP_N_SENATE", sum(r["chamber"] == "Senate" for r in rows), ms)
 num("AP_N_MEMBERS", len({r["icpsr"] for r in rows}), ms)
 
-anc = "02_ideology_map/out/s4/anchors.json"; A = J(anc)
+anc = "05_directions_and_map/out/s4/anchors.json"; A = J(anc)
 for s, m in MS.items():
     num(f"AP_RECOG_{s}", A[m]["recall"], anc)
     num(f"AP_R_X_DW1_80_{s}", A[m]["r_x_dim1_80"], anc)
     num(f"AP_R_X_DW1_118_{s}", A[m]["r_x_dim1_118"], anc)
-    rule = f"02_ideology_map/out/{m}/rule.json"; RU = J(rule)
+    rule = f"05_directions_and_map/out/{m}/rule.json"; RU = J(rule)
     num(f"AP_BEST_ECON_{s}", RU["axis_best"]["economic"], rule)
     num(f"AP_BEST_SOC_{s}", RU["axis_best"]["social"], rule)
     for ax, k in (("economic", "ECON"), ("social", "SOC")):
-        j1 = f"02_ideology_map/out/{m}/s2/J1_{ax}.json"
+        j1 = f"05_directions_and_map/out/{m}/s2/J1_{ax}.json"
         num(f"AP_J1_{k}_{s}", J(j1)["auc"], j1)
 
-for tag, src in (("AB", "02_ideology_map/out/s4/vote_vs_map.json"), ("GUN", "02_ideology_map/out/s4_guns/vote_vs_map.json")):
+for tag, src in (("AB", "05_directions_and_map/out/s4/vote_vs_map.json"), ("GUN", "05_directions_and_map/out/s4_guns/vote_vs_map.json")):
     VM = J(src)["qwen"]
     num(f"AP_QN_{tag}", VM["n"], src)
     for q, conf in VM["confusion_vote_rows_map_cols"].items():
         num(f"AP_QN_{q.replace('-', '')}_{tag}", sum(conf.values()), src)
 
 # ---- Appendix B: history
-con = "10_polarization_history/out/t0/contrasts.json"; C = J(con)
+con = "06_party_history/out/t0/contrasts.json"; C = J(con)
 dw = C["qwen"]["main"]["dw1"]
 num("AP_DW_DGAP", dw["dgap"], con); interval("AP_DW_DGAP_CI", dw["ci"]["dgap"], con)
 num("AP_DW_CHANGE_D", dw["dD"], con); interval("AP_DW_CHANGE_D_CI", dw["ci"]["dD"], con)
 num("AP_DW_CHANGE_R", dw["dR"], con); interval("AP_DW_CHANGE_R_CI", dw["ci"]["dR"], con)
-sub = "10_polarization_history/out/t0/subgroups.csv"
+sub = "06_party_history/out/t0/subgroups.csv"
 for r in csv.DictReader(open(R / sub, encoding="utf-8")):
     if r["axis"] == "chamber" and r["pair"] == "x-dw1":
         s = {v: k for k, v in MS.items()}[r["model"]]; ch = r["cell"].upper()
@@ -95,7 +95,7 @@ for r in csv.DictReader(open(R / sub, encoding="utf-8")):
         num(f"AP_CH_{ch}_SHARE_D_{s}", r["share_D_model"], sub)
         num(f"AP_CH_{ch}_SHARE_D_DW", r["share_D_dw"], sub) if s == "Q" else None
         num(f"AP_CH_{ch}_EARLY_{s}", r["early_ratio"], sub); interval(f"AP_CH_{ch}_EARLY_{s}_CI", (r["early_ratio_lo"], r["early_ratio_hi"]), sub)
-n1 = "11_nominate_benchmarks/out/n1.json"; N1 = J(n1)
+n1 = "07_nominate_benchmarks/out/n1.json"; N1 = J(n1)
 for s, m in MS.items():
     for party in ("Democrat", "Republican"):
         x = N1[m]["spans"]["86-113"]["reading"][party]
@@ -103,16 +103,16 @@ for s, m in MS.items():
 num("AP_N1_ROWS", N1["qwen"]["rows"], n1)
 
 # ---- Appendix C: placing members
-for tag, src in (("AB", "16_supplementary_checks/members_by_era/members_by_era.json"),
-                 ("GUN", "16_supplementary_checks/members_by_era/members_by_era_guns.json")):
+for tag, src in (("AB", "08_supplementary_checks/members_by_era/members_by_era.json"),
+                 ("GUN", "08_supplementary_checks/members_by_era/members_by_era_guns.json")):
     E = J(src)["rows"]
     for s, m in MS.items():
         for dec, x in E[m]["by_decade"].items():
             num(f"AP_ERA_{tag}_{dec}_ALIGNED_{s}", x["recall_aligned"], src)
             num(f"AP_ERA_{tag}_{dec}_CROSS_{s}", x["recall_cross"], src)
             num(f"AP_ERA_{tag}_{dec}_NCROSS", x["n_cross"], src) if s == "Q" else None
-for tag, sfx in (("AB", ""), ("GUN", "_guns")):   # noise benchmark (council 2026-10-25 B2): main = independent noise, matched = map x-y correlation
-    nb = f"16_supplementary_checks/noise_benchmark/noise_benchmark{sfx}.json"; NB = J(nb)
+for tag, sfx in (("AB", ""), ("GUN", "_guns")):   # noise benchmark: main = independent noise, matched = map x-y correlation
+    nb = f"08_supplementary_checks/noise_benchmark/noise_benchmark{sfx}.json"; NB = J(nb)
     for s, m in MS.items():
         for c, k in (("recall_cross", "CROSS"), ("recall_aligned", "ALIGNED"), ("same_econ_share", "DEST")):
             num(f"AP_NOISE_{tag}_{k}_OBS_{s}", NB[m]["observed"][c], nb)
@@ -120,23 +120,30 @@ for tag, sfx in (("AB", ""), ("GUN", "_guns")):   # noise benchmark (council 202
                 x = NB[m][v_][c]
                 num(f"AP_NOISE_{tag}_{k}{vk}_{s}", x["mean"], nb); interval(f"AP_NOISE_{tag}_{k}{vk}_{s}_CI", (x["lo"], x["hi"]), nb)
     num(f"AP_NOISE_DRAWS", NB["draws"], nb) if tag == "AB" else None
-br = "16_supplementary_checks/benchmark/benchmark_recall.json"; B = J(br)
+br = "08_supplementary_checks/benchmark/benchmark_recall.json"; B = J(br)
 for s, m in MS.items():
     num(f"AP_RECOG_ALIGNED_AB_{s}", B["N2_recognized"][m]["recognition_rate"]["aligned"], br)
     num(f"AP_RECOG_CROSS_AB_{s}", B["N2_recognized"][m]["recognition_rate"]["cross_pressured"], br)
-np_ = "16_supplementary_checks/no_persona/no_persona_package_effect.json"; NP = J(np_)
+np_ = "08_supplementary_checks/no_persona/no_persona_package_effect.json"; NP = J(np_)
 for s, m in MS.items():
     x = NP[m]["interval_2026_10_18"]
     num(f"AP_NOPERSONA_{s}", x["est"], np_); interval(f"AP_NOPERSONA_{s}_CI", x["ci95_pigeonhole"], np_)
 for s, m in MS.items():
-    bf = f"04_bundled_choices/out/{m}/RESULTS.json"; BU = J(bf)
+    bf = f"19_bundled_choices/out/{m}/RESULTS.json"; BU = J(bf)
     num(f"AP_BUNDLE_MASS_{s}", BU["mean_mass"], bf)
     p1 = BU["blockD_flips_party_like_H"]["tests"]["P1_Dp_minus_placebo"]
     num(f"AP_STEER_P1_{s}", p1["est"], bf); interval(f"AP_STEER_P1_{s}_CI", p1["ci95"], bf)
 
+# DW-NOMINATE 2-D benchmark with dimension 2 as published
+dw2 = "08_supplementary_checks/benchmark/dw2_orientation.json"; D2O = J(dw2)
+for iss, t in (("abortion", "AB"), ("guns", "GUN")):
+    r = D2O[iss]["dimension 2 as published"]
+    num(f"AP_DW2U_RECALL_ALIGNED_{t}", r["aligned_pooled"], dw2); num(f"AP_DW2U_RECALL_CROSS_{t}", r["cross_pooled"], dw2)
+    put(f"AP_DW2_FLIPPED_{t}", str(len(D2O[iss]["flipped_cells"])), dw2); put(f"AP_DW2_CELLS_{t}", str(D2O[iss]["cells"]), dw2)
+
 # ---- Appendix D: votes
 for s, m in MS.items():
-    gf = f"06_vote_prediction/out/g2/estimates_{m}.json"; GE = J(gf)
+    gf = f"10_vote_prediction/out/g2/estimates_{m}.json"; GE = J(gf)
     num(f"AP_GUN_ORDER_CORR_{s}", GE["corr_two_orders"], gf)
     interval(f"AP_GUN_ACC_ALIGNED_{s}_CI", GE["competence"]["aligned_accuracy_ci95"], gf)
     num(f"AP_GUN_PRED_YEA_{s}", GE["descriptive"]["share_pred_yea"]["0"], gf)
@@ -144,17 +151,17 @@ for s, m in MS.items():
         num("AP_GUN_PRED_RC", GE["rollcalls"], gf)
         num("AP_GUN_PRED_RC_SCALE", GE["gun_cp_loo"]["rollcalls"], gf)
         num("AP_GUN_PRED_RC_OUTSIDE", GE["rollcalls"] - GE["gun_cp_loo"]["rollcalls"], gf + " (rollcalls minus gun_cp_loo.rollcalls)")
-    lf = f"06_vote_prediction/out/v6/loo_cp_{m}.json"
+    lf = f"10_vote_prediction/out/v6/loo_cp_{m}.json"
     num(f"AP_LOO_CHANGED_{s}", J(lf)["by_issue"]["abortion"]["share_cp_changed"], lf)
-    ef = f"06_vote_prediction/out/v6/error_direction_{m}.json"; ED = J(ef)["results"]["M1|abortion|pred_avg"]
+    ef = f"10_vote_prediction/out/v6/error_direction_{m}.json"; ED = J(ef)["results"]["M1|abortion|pred_avg"]
     for g, k in (("cp=1", "CP"), ("cp=0", "ALIGNED")):
         num(f"AP_ERRDIR_{k}_AB_{s}", ED[g]["toward_party_among_wrong"], ef)
         interval(f"AP_ERRDIR_{k}_AB_{s}_CI", ED[g]["ci95"]["toward_party_among_wrong"], ef)
-num("AP_GUN_ACTUAL_YEA", J("06_vote_prediction/out/g2/estimates_qwen.json")["descriptive"]["share_actual_yea"]["0"],
-    "06_vote_prediction/out/g2/estimates_qwen.json")
-ac = "06_vote_prediction/out/v1/AUTHOR_CHECK.md"   # descriptions the authors read (abortion and economic), one "## N." section each
+num("AP_GUN_ACTUAL_YEA", J("10_vote_prediction/out/g2/estimates_qwen.json")["descriptive"]["share_actual_yea"]["0"],
+    "10_vote_prediction/out/g2/estimates_qwen.json")
+ac = "10_vote_prediction/out/v1/AUTHOR_CHECK.md"   # descriptions the authors read (abortion and economic), one "## N." section each
 num("AP_AUTHOR_READ_AB_ECON", sum(1 for l in open(R / ac, encoding="utf-8") if l.startswith("## ") and l[3:4].isdigit()), ac)
-gc = "06_vote_prediction/out/g2/AUTHOR_DESC_CHECK.csv"   # gun descriptions the authors read, one row each
+gc = "10_vote_prediction/out/g2/AUTHOR_DESC_CHECK.csv"   # gun descriptions the authors read, one row each
 num("AP_AUTHOR_READ_GUN", len(list(csv.DictReader(open(R / gc, encoding="utf-8-sig")))), gc)
 dj = "12_speech_and_state/out/d/d.json"; DJ = J(dj)
 for s, m in MS.items():
@@ -172,7 +179,7 @@ ct = DJ["qwen"]["D1"]["crosstab_rows"]
 num("AP_D1_CP", ct["cp1_ccp0"] + ct["cp1_ccp1"], dj + " (crosstab cp1_ccp0 + cp1_ccp1)")
 num("AP_D1_OVERLAP", ct["cp1_ccp1"], dj)
 num("AP_D1_CCP", ct["cp0_ccp1"] + ct["cp1_ccp1"], dj + " (crosstab cp0_ccp1 + cp1_ccp1)")
-n2 = "11_nominate_benchmarks/out/n2.json"; N2 = J(n2)
+n2 = "07_nominate_benchmarks/out/n2.json"; N2 = J(n2)
 num("AP_GMP_CP", N2["qwen"]["gmp_by_cp"]["cp_coef"]["b"], n2); interval("AP_GMP_CP_CI", N2["qwen"]["gmp_by_cp"]["cp_coef"]["ci95"], n2)
 
 # ---- Appendix E: entropy cells counted in Section 7 that have no values.py key (read from the validated headline table)
@@ -184,14 +191,14 @@ for s, m in MS.items():
         num(f"AP_NAMED_{k}_{s}", x["estimate"], hv); interval(f"AP_NAMED_{k}_{s}_CI", (x["lower95"], x["upper95"]), hv)
 import pandas as pd  # only for the named-member rows file
 for s, m in MS.items():
-    nr = f"09_named_member_entropy/analysis/data/rows_{m}.parquet"
+    nr = f"15_named_member_uncertainty/analysis/data/rows_{m}.parquet"
     num(f"AP_NAMED_FAIL_{s}", pd.read_parquet(R / nr, columns=["fail_share"]).fail_share.mean(), nr + " (mean of fail_share)")
 
 # ---- Appendix F: mechanism and speech
-x1 = "15_mechanism/out/x1/RESULTS.json"; X1 = J(x1)
-x3 = "15_mechanism/out/x3/RESULTS.json"; X3 = J(x3)
-x4 = "15_mechanism/out/x4/RESULTS.json"; X4 = J(x4)
-x5 = "15_mechanism/out/x5/RESULTS_stageA.json"; X5 = J(x5)
+x1 = "18_economic_weight/out/x1/RESULTS.json"; X1 = J(x1)
+x3 = "18_economic_weight/out/x3/RESULTS.json"; X3 = J(x3)
+x4 = "18_economic_weight/out/x4/RESULTS.json"; X4 = J(x4)
+x5 = "18_economic_weight/out/x5/RESULTS_stageA.json"; X5 = J(x5)
 s1 = "12_speech_and_state/out/s1/s1.json"; S1 = J(s1)
 s2 = "12_speech_and_state/out/s2/s2.json"; S2 = J(s2)
 num("AP_S1_SPEECH", S1["speech"]["share"], s1); interval("AP_S1_SPEECH_CI", S1["speech"]["share_ci"], s1)
@@ -209,7 +216,7 @@ for s, m in MS.items():
     num("AP_X4_PAIRS", p["n_pairs"], x4) if s == "Q" else None
     p = X5["models"][m]["Democrat"]["primary"]
     num(f"AP_X5_DEMOCRAT_{s}", p["r"], x5); interval(f"AP_X5_DEMOCRAT_{s}_CI", p["ci95"], x5)
-    x5s = "15_mechanism/out/x5/SENS_threeway.json"
+    x5s = "18_economic_weight/out/x5/SENS_threeway.json"
     for party in ("Democrat", "Republican"):
         p = J(x5s)["stageA"][m][party]
         num(f"AP_X5_3W_{party.upper()}_{s}", p["r"], x5s); interval(f"AP_X5_3W_{party.upper()}_{s}_CI", p["ci95"], x5s)

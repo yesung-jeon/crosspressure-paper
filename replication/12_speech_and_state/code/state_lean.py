@@ -8,7 +8,7 @@ import numpy as np, pandas as pd
 import speech_estimators as est
 from speech_common import O, KIM, dc
 
-sys.path.insert(0, str(KIM / "09_named_member_entropy" / "code"))
+sys.path.insert(0, str(KIM / "15_named_member_uncertainty" / "code"))
 import named_common as nc  # noqa: E402
 D = O / "d"; D.mkdir(parents=True, exist_ok=True)
 SOUTH = {"AL", "AR", "FL", "GA", "LA", "MS", "NC", "SC", "TN", "TX", "VA"}   # T0's list
@@ -30,7 +30,7 @@ def election_for(c):
 
 
 def rows(m, L):
-    v = nc.analysis_rows(KIM / "02_ideology_map" / "out" / m / "s3" / "temporal_member_scores.csv")
+    v = nc.analysis_rows(KIM / "05_directions_and_map" / "out" / m / "s3" / "temporal_member_scores.csv")
     n_all = len(v); n_9394 = int((v.congress < 95).sum()); v = v[v.congress >= 95].copy()
     v["election"] = v.congress.map(election_for)
     v = v.merge(L.rename(columns={"year": "election", "state_po": "state"}), on=["election", "state"], how="left", validate="many_to_one")
@@ -59,7 +59,7 @@ def analyse(m, v):
     out["D1"] = {k: dict(cp_on_out_lean=s_(est.fe_ols(g, "cp", ["out_lean_z"], "fe", "icpsr"), "out_lean_z"),
                          ccp_share_by_cp=g.groupby("cp").ccp.mean().to_dict()) for k, g in sub.items()}
     out["D1"]["south"] = {str(k): s_(est.fe_ols(g, "cp", ["out_lean_z"], "fe", "icpsr"), "out_lean_z") for k, g in v.groupby("south")}
-    # overlap of the two definitions in member-Congress rows (Codex 2026-10-23)
+    # overlap of the two definitions in member-Congress rows
     out["D1"]["crosstab_rows"] = {f"cp{int(a)}_ccp{int(b)}": int(n) for (a, b), n in v.groupby(["cp", "ccp"]).size().items()}
     # D2
     d2 = {}
@@ -78,9 +78,9 @@ def analyse(m, v):
     out["D3_map"] = {k: dict(misplaced_on_ccp=s_(est.fe_ols(g, "misplaced", ["ccp"], "fe", "icpsr"), "ccp"),
                              recall_by_ccp=(1 - g.groupby("ccp").misplaced.mean()).to_dict()) for k, g in sub.items()}
     # D3 W1
-    f = pd.read_parquet(KIM / "06_vote_prediction" / "out" / "v5" / f"frame_v2_{m}_abortion_economic.parquet")
+    f = pd.read_parquet(KIM / "10_vote_prediction" / "out" / "v5" / f"frame_v2_{m}_abortion_economic.parquet")
     sets = [(i, g) for i, g in f.groupby("issue")]
-    if m == "llama": sets.append(("guns", pd.read_parquet(KIM / "06_vote_prediction" / "out" / "g2" / "frame_llama.parquet")))
+    if dc.gun_competent(m): sets.append(("guns", pd.read_parquet(KIM / "10_vote_prediction" / "out" / "g2" / f"frame_{m}.parquet")))
     w1 = {}
     for iss, g in sets:
         g = g.copy()
@@ -103,7 +103,7 @@ def v5_tw(g):
 def main():
     L, nat = lean_table(); L.to_csv(D / "lean.csv", index=False)
     res = dict(national_dshare={int(k): float(x) for k, x in nat.items()})
-    for m in ["qwen", "llama"]:
+    for m in dc.MODELS:
         v, info = rows(m, L); res[m] = dict(info=info, **analyse(m, v))
         r = res[m]
         print(m, info, "| D2 x", round(r["D2"]["pooled"]["x"]["b"], 4), [round(z, 4) for z in r["D2"]["pooled"]["x"]["ci95"]],
@@ -118,7 +118,7 @@ def synthetic():
     v = pd.DataFrame(dict(state=rng.integers(0, 50, n), party=rng.choice(["Democrat", "Republican"], n), congress=rng.integers(95, 118, n),
                           chamber="House", icpsr=rng.integers(0, 1500, n)))
     lean = pd.Series(rng.normal(size=50)); v["lean_z"] = v.state.map(lean)
-    v["lean_z"] = (v.lean_z - v.lean_z.mean()) / v.lean_z.std()        # standardized over rows as in rows() (Codex 2026-10-23)
+    v["lean_z"] = (v.lean_z - v.lean_z.mean()) / v.lean_z.std()        # standardized over rows as in rows()
     v["economic"] = rng.normal(size=n) - 0.4 * v.lean_z
     v["np1"] = v.economic + rng.normal(0, .3, n); v["np2"] = rng.normal(size=n); v["fe"] = v.party + "|" + v.congress.astype(str)
     out = {}

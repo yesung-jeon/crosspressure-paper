@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Fetch the raw data into replication/data/ and check each file against the exact copy the analyses used (sha256).
 
-Rebuild 2026-10-23 (PLAN v0.2 §4.12): a sha256 mismatch now stops the run. Voteview re-estimates NOMINATE and Nokken-Poole scores for
+a sha256 mismatch now stops the run. Voteview re-estimates NOMINATE and Nokken-Poole scores for
 every Congress at each update, so a newer download is a different input, not just extra 119th-Congress rows. --allow-drift continues
 anyway and writes data/DRIFT.json; such a run is not a reproduction. The exact copies are archived for deposit (upload only after the
 authors decide); place them in data/ to reproduce exactly.

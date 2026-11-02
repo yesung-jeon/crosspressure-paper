@@ -1,4 +1,4 @@
-"""Study B shared definitions: issues, paths, roll-call selection (keys defined once; Rhee rule).
+"""Study B shared definitions: issues, paths, roll-call selection.
 
 Imports Study A's measurement module (00_shared/common.py) so persona wording, projection and estimation are one code path.
 """

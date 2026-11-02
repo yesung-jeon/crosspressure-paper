@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Build the manuscript from templates. Steps: values.py -> tables.py -> fill every paper/sections/*.template.md into the same name
-without ".template" ({{KEY}} from values.json; {{TABLE1}}-{{TABLE3}} insert paper/tables/*.md) -> assemble paper/manuscript.md (body:
+without ".template" ({{KEY}} from values.json; {{TABLE1}}-{{TABLE2}} insert paper/tables/*.md) -> assemble paper/manuscript.md (body:
 sections 00-08) and paper/appendix.md (sections A-G) -> checks. A missing key stops the build. No number is typed in templates.
 
 Checks: numeric gate (every number in the filled text must exist in values.json, the tables or the headline table; years and small
@@ -16,8 +16,8 @@ for s in ("values.py", "appendix_values.py", "tables.py", "appendix_items.py"):
 V = json.load(open(P / "values.json", encoding="utf-8"))
 AV = json.load(open(P / "appendix_values.json", encoding="utf-8"))   # appendix-only numbers read from package outputs
 assert not set(V) & set(AV), sorted(set(V) & set(AV)); V.update(AV)
-TAB = {f"TABLE{i}": (P / "tables" / f"table{i}.md").read_text(encoding="utf-8").strip() for i in (1, 2, 3)}
-TAB.update({n.upper(): (P / "tables" / f"{n}.md").read_text(encoding="utf-8").strip() for n in ("items_profiles", "items_packages")})
+TAB = {f"TABLE{i}": (P / "tables" / f"table{i}.md").read_text(encoding="utf-8").strip() for i in (1,)}   # Table 2 to Table D1 and Table 3 deleted (2026-11-01)
+TAB.update({n.upper(): (P / "tables" / f"{n}.md").read_text(encoding="utf-8").strip() for n in ("items_profiles", "items_packages", "table_d1")})
 # figures need matplotlib, kept out of the analysis environment (environment/requirements-paper.txt): drawn with a separate
 # interpreter, $PAPER_PYTHON or ~/venvs/paperfig. Without it the build stops, so a manuscript is never built on stale figures.
 import os
@@ -60,7 +60,7 @@ body = [p for p in filled if re.match(r"0\d_", p.name)]; app = [p for p in fille
 
 
 def merge_refs(texts):
-    """One APA reference list for the body (author decision, 2026-10-25). Each section template keeps its own list, so a
+    """One APA reference list for the body. Each section template keeps its own list, so a
     citation stays next to the section that uses it; here the lists are removed from the sections, duplicates must be identical
     text (otherwise the build stops), and the union is sorted by author names, then year. Legal sources (e.g. "129 Cong. Rec.")
     file under their reporter name."""
@@ -104,7 +104,10 @@ for doc in ("manuscript.md", "appendix.md"):
     gtxt = re.sub(r"\d+\s+Cong\.\s+Rec\.\s+\d+", "CONGREC", gtxt)   # legal citations to the Congressional Record (volume, page)
     gtxt = re.sub(r"\((\d{4}), pp?\. \d+(?:–\d+)?\)", r"(\1, PAGE)", gtxt)   # pinpoint pages in author-year citations, e.g. (2014, p. 45)
     (gd / doc).write_text(gtxt, encoding="utf-8")
-    g = subprocess.run([sys.executable, str(GATE), str(gd / doc), "--outputs", str(P / "values.json"), str(P / "appendix_values.json"), str(P / "tables"),
+    # paper/tables/ is not an output corpus any more: the gate now reads table rows, and checking a table
+    # against itself would pass anything; the item lists (A.6) are generated from item files and are passed separately
+    g = subprocess.run([sys.executable, str(GATE), str(gd / doc), "--outputs", str(P / "values.json"), str(P / "appendix_values.json"),
+                        str(P / "tables" / "items_profiles.md"), str(P / "tables" / "items_packages.md"),
                         str(R / "validation" / "headline_values.csv")], capture_output=True, text=True)
     print(f"{doc}: " + (g.stdout.strip().splitlines() or ["(no gate output)"])[-1]); bad += g.returncode != 0
 ab = P / "sections" / "00_abstract.md"

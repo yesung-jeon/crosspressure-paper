@@ -4,8 +4,8 @@ from pathlib import Path
 import numpy as np, pandas as pd
 from scipy import sparse
 
-R = Path(__file__).resolve().parents[1]; KIM = R.parent                   # replication/ (rebuild)
-sys.path.insert(0, str(KIM / "01_rollcall_scales" / "code")); sys.path.insert(0, str(KIM / "02_ideology_map" / "code"))
+R = Path(__file__).resolve().parents[1]; KIM = R.parent                   # replication/
+sys.path.insert(0, str(KIM / "01_rollcall_scales" / "code")); sys.path.insert(0, str(KIM / "05_directions_and_map" / "code"))
 import speech_zipfix as zipfix  # noqa: E402
 import map_common as dc  # noqa: E402
 O = R / "out"; S0 = O / "s0"

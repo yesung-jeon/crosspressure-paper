@@ -1,0 +1,5 @@
+{
+ "sealed": "2026-10-22T00:02",
+ "PROTOCOL.md": "06d19f69146aa2fa3003df6e0b9d4bded7a59cd4754450a7bf64e544183a4d5a",
+ "note": "sha256 of the protocol as shipped (internal references removed for the release); the fitting script checks it before running."
+}

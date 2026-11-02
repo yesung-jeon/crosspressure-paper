@@ -1,0 +1,17 @@
+{
+  "tag": "cl_rollcall__llama_economic",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": "key",
+  "n": 48198,
+  "fe_cells": 360,
+  "clusters": 180,
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.011492594287034317
+  },
+  "covariance": [
+    [2.1576334553364553e-06]
+  ]
+}

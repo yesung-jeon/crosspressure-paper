@@ -1,0 +1,5 @@
+{
+ "sealed": "2026-10-18T17:16",
+ "purpose": "pre-run seal for X5B (PLAN_X5 v0.1 + A0 + A1 (stage B, batch 1))",
+ "note": "Written before the analysis ran. The full record of input hashes refers to the authors working repository and is not reproduced here; the analysis code checks only that this file exists."
+}

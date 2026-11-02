@@ -182,23 +182,8 @@ for ax, (k, title) in zip(axs, (("H3", "Consistency"), ("H4", "Reaches quadrant"
     ax.set_title(title, fontsize=8.5)
 save(fig, "C4_profiles")
 
-# ---- C5: over-alignment of the two coordinates
-fig, ax = plt.subplots(layout="constrained", figsize=(4.6, 1.8))
-dotci(ax, ["Abortion", "Guns", "Abortion, cells with a gun scale"], [(MN[s], MC[s], [f"T2_AB_{s}", f"T2_GUN_{s}", f"T2_ABGR_{s}"], "o") for s in "QL"],
-      xlabel="Map correlation minus vote correlation")
-legend_top(fig, ax, 2)
-save(fig, "C5_overalignment")
-
-# ---- C6: policy packages and steering
-fig, axs = plt.subplots(1, 2, layout="constrained", figsize=(7.2, 1.9), gridspec_kw={"width_ratios": [1.6, 1]})
-dotci(axs[0], ["Democratic personas", "Republican personas", "No persona"],
-      [(MN[s], MC[s], [f"BUNDLE_DEMOCRAT_{s}", f"BUNDLE_REPUBLICAN_{s}", f"AP_NOPERSONA_{s}"], "o") for s in "QL"],
-      xlabel="Entropy, crossed minus\nparty-like packages (bits)")
-dotci(axs[1], ["Steering vs placebo"], [(MN[s], MC[s], [f"AP_STEER_P1_{s}"], "o") for s in "QL"],
-      xlabel="Package changes,\npush minus placebo")
-axs[1].set_ylim(-0.6, 0.6)
-legend_top(fig, axs[0], 2)
-save(fig, "C6_packages")
+# C5 (over-alignment) and C6 (policy packages, steering) removed with old Appendices C.7 and C.8; the rows
+# stay in the replication package; the old figures are archived in 
 
 # ---- D1: accuracy and benchmarks
 fig, axs = plt.subplots(1, 3, layout="constrained", figsize=(7.6, 2.0), sharey=True, sharex=True)
@@ -208,7 +193,10 @@ for ax, (iss, title) in zip(axs, (("AB", "Abortion"), ("ECON", "Economic"), ("GU
                      ("Llama", LLAMA, [f"ACC_ALIGNED_{iss}_L", f"ACC_CROSS_{iss}_L"], "o"),
                      ("Party-majority rule", BENCH, [f"PARTY_RULE_ALIGNED_{iss}_Q", f"PARTY_RULE_CROSS_{iss}_Q"], "s"),
                      ("DW-NOMINATE dim. 1", BENCH2, [f"DW1_REF_ALIGNED_{iss}_Q", f"DW1_REF_CROSS_{iss}_Q"], "D")], zero=0.5)
-    ax.set_title(title); ax.set_xlim(0.3, 1.0)
+    ax.set_title(title if iss != "GUN" else "Guns (Qwen: not interpreted)"); ax.set_xlim(0.3, 1.0)
+# Qwen gun results are not interpreted: drawn hollow
+for i, k in enumerate(("ACC_ALIGNED_GUN_Q", "ACC_CROSS_GUN_Q")):
+    axs[2].plot(num(k), 1 - i - 1.5 * 0.22, "o", color=QWEN, mfc="white", ms=6, mew=1.4, ls="none", zorder=5)
 axs[1].set_xlabel("Share of votes predicted correctly (vertical line: one half)")
 legend_top(fig, axs[0], 4, handlelength=3.5)
 save(fig, "D1_accuracy")
@@ -220,10 +208,13 @@ rows = [("Abortion", "CP_COEF_AB"), ("Abortion: Democrats", "CP_COEF_AB_DEMOCRAT
         ("Economic", "CP_COEF_ECON"), ("Economic: Democrats", "CP_COEF_ECON_DEMOCRAT"),
         ("Economic: Republicans", "CP_COEF_ECON_REPUBLICAN"), ("Economic: leave-one-out", "CP_LOO_ECON"),
         ("Economic: state leans to other party", "D3_ECON"),
-        ("Guns, abortion-defined", "CP_COEF_GUN_ABCP"), ("Guns, gun-defined", "CP_COEF_GUN_GUNCP")]
+        ("Guns, abortion-defined (Qwen: not interpreted)", "CP_COEF_GUN_ABCP"), ("Guns, gun-defined (Qwen: not interpreted)", "CP_COEF_GUN_GUNCP")]
 fig, ax = plt.subplots(layout="constrained", figsize=(5.6, 4.0))
 dotci(ax, [r for r, _ in rows], [(MN[s], MC[s], [f"{k}_{s}" if f"{k}_{s}" in V else None for _, k in rows], "o") for s in "QL"],
       xlabel="Accuracy, cross-pressured minus aligned,\nwithin party and roll call")
+for i, (_, k) in enumerate(rows):   # Qwen gun rows drawn hollow
+    if k.startswith("CP_COEF_GUN"):
+        ax.plot(num(f"{k}_Q"), len(rows) - 1 - i - 0.11, "o", color=QWEN, mfc="white", ms=6, mew=1.4, ls="none", zorder=5)
 legend_top(fig, ax, 2)
 save(fig, "D2_coefficients")
 
@@ -240,14 +231,12 @@ save(fig, "D3_members")
 
 # (old Figures E1 and E2 are drawn as body Figure 3 by body_figures.py since 2026-10-25)
 
-# ---- F1: social weight within party, and speech timing
-fig, axs = plt.subplots(1, 2, layout="constrained", figsize=(7.2, 1.8))
-dotci(axs[0], ["Democrats", "Republicans"], [(MN[s], MC[s], [f"X2_AB_DEMOCRAT_{s}", f"X2_AB_REPUBLICAN_{s}"], "o") for s in "QL"],
+# ---- F1: social weight within party
+fig, ax = plt.subplots(layout="constrained", figsize=(4.6, 1.8))
+dotci(ax, ["Democrats", "Republicans"], [(MN[s], MC[s], [f"X2_AB_DEMOCRAT_{s}", f"X2_AB_REPUBLICAN_{s}"], "o") for s in "QL"],
       xlabel="Economic minus social coefficient, within party")
-dotci(axs[1], ["Speech", "DW-NOMINATE", "Qwen", "Llama"],
-      [("", BENCH, ["AP_S1_SPEECH", "AP_S1_DW", None, None], "s"), ("", QWEN, [None, None, "AP_S1_X_Q", None], "o"),
-       ("", LLAMA, [None, None, None, "AP_S1_X_L"], "o")], xlabel="Share of gap growth by mid-period", dodge=False)
-axs[1].set_ylim(-0.6, 3.6)
-legend_top(fig, axs[0], 2)
+legend_top(fig, ax, 2)
 save(fig, "F1_mechanism_speech")
+
+# ---- B4: moved to body_figures.py in pass 21 (2026-11-02): the snapshots are now Figure 2; Figure B4 is the social panels of Figure 1
 print(f"appendix figures written to {OUT}")

@@ -1,0 +1,5 @@
+{
+ "sealed": "2026-10-18T16:49",
+ "purpose": "pre-run seal for X2",
+ "note": "Written before the analysis ran. The full record of input hashes refers to the authors working repository and is not reproduced here; the analysis code checks only that this file exists."
+}

@@ -1,0 +1,73 @@
+{
+ "note": "descriptive benchmark checks added after the main results; no tests",
+ "N1_dwnominate": {
+  "recall": {
+   "EL-SP": 0.5755743651753326,
+   "ER-ST": 0.5182232346241458,
+   "EL-ST": 0.8019323671497585,
+   "ER-SP": 0.7236842105263158,
+   "aligned_pooled": 0.546041055718475,
+   "cross_pooled": 0.7688022284122563,
+   "n": 2064
+  },
+  "dim2_sign_flipped_cells": 1,
+  "cells": 11,
+  "r_dim1_economic_within_cc": 0.953870507567481,
+  "r_dim1_dim2_within_cc": -0.040937523599523955,
+  "r_dim2_abortion_within_cc": 0.25128887803480754
+ },
+ "N2_recognized": {
+  "qwen": {
+   "all_rows": {
+    "EL-SP": 0.717049576783555,
+    "ER-ST": 0.7300683371298405,
+    "EL-ST": 0.23671497584541062,
+    "ER-SP": 0.125,
+    "aligned_pooled": 0.7237536656891496,
+    "cross_pooled": 0.1894150417827298,
+    "n": 2064
+   },
+   "recognized_rows": {
+    "EL-SP": 0.7468354430379747,
+    "ER-ST": 0.7924016282225237,
+    "EL-ST": 0.23214285714285715,
+    "ER-SP": 0.13043478260869565,
+    "aligned_pooled": 0.7688277668631304,
+    "cross_pooled": 0.19081272084805653,
+    "n": 1810
+   },
+   "recognition_rate": {
+    "aligned": 0.8956011730205279,
+    "cross_pressured": 0.7883008356545961
+   }
+  },
+  "llama": {
+   "all_rows": {
+    "EL-SP": 0.9189842805320435,
+    "ER-ST": 0.907744874715262,
+    "EL-ST": 0.12077294685990338,
+    "ER-SP": 0.15789473684210525,
+    "aligned_pooled": 0.9131964809384164,
+    "cross_pooled": 0.13649025069637882,
+    "n": 2064
+   },
+   "recognized_rows": {
+    "EL-SP": 0.9400510204081632,
+    "ER-ST": 0.909952606635071,
+    "EL-ST": 0.11666666666666667,
+    "ER-SP": 0.15753424657534246,
+    "aligned_pooled": 0.9244471744471745,
+    "cross_pooled": 0.13496932515337423,
+    "n": 1954
+   },
+   "recognition_rate": {
+    "aligned": 0.9548387096774194,
+    "cross_pressured": 0.9080779944289693
+   }
+  }
+ },
+ "r_x_y_within_cc": {
+  "qwen": 0.7175422843378315,
+  "llama": 0.9189092240762889
+ }
+}

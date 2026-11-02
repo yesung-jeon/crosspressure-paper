@@ -1,0 +1,17 @@
+{
+  "tag": "main__llama_economic",
+  "outcome": "H",
+  "rhs": "cp",
+  "fe": "fe",
+  "cluster": ["icpsr", "key"],
+  "n": 48198,
+  "fe_cells": 360,
+  "clusters": [2111, 180],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": 0.011492594287034317
+  },
+  "covariance": [
+    [8.9209328361339105e-06]
+  ]
+}

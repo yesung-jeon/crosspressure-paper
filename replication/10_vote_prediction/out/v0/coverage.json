@@ -1,0 +1,89 @@
+{
+ "rows": {
+  "n": 10444,
+  "sealed_n": 10444,
+  "cross_share": 0.1895,
+  "by_quadrant": {
+   "EL-SP": 4237,
+   "ER-ST": 4228,
+   "EL-ST": 993,
+   "ER-SP": 986
+  }
+ },
+ "rollcalls_in_both_issues": 3,
+ "motion_by_issue": {
+  "abortion": {
+   "content": 201,
+   "procedural": 117,
+   "unclassified": 5
+  },
+  "economic": {
+   "content": 3922,
+   "procedural": 1679,
+   "unclassified": 453
+  }
+ },
+ "selected": {
+  "abortion": {
+   "content": 201,
+   "procedural": 117,
+   "unclassified": 5
+  },
+  "economic": {
+   "content": 201,
+   "procedural": 0,
+   "unclassified": 0
+  }
+ },
+ "votes_raw": 151159,
+ "votes_not_cast": 7065,
+ "duplicate_pairs": {
+  "pairs": 2,
+  "conflicting": 0
+ },
+ "member_votes": {
+  "total": 142403,
+  "main": 112457,
+  "by_issue_main": {
+   "abortion": 56469,
+   "economic": 55988
+  },
+  "rows_with_any_vote": 10444
+ },
+ "coverage_main": {
+  "abortion": {
+   "member_votes": 56469,
+   "rollcalls": 201,
+   "members": 2147,
+   "party_rollcall_cells": 402,
+   "cells_with_both_labels": 388,
+   "share_votes_in_identifying_cells": 0.9617,
+   "cp_share": 0.2021,
+   "actual_defection_rate": {
+    "aligned": 0.1184,
+    "cross": 0.6526
+   },
+   "party_baseline_accuracy": {
+    "aligned": 0.8816,
+    "cross": 0.3474
+   }
+  },
+  "economic": {
+   "member_votes": 55988,
+   "rollcalls": 201,
+   "members": 2144,
+   "party_rollcall_cells": 402,
+   "cells_with_both_labels": 388,
+   "share_votes_in_identifying_cells": 0.9613,
+   "cp_share": 0.2029,
+   "actual_defection_rate": {
+    "aligned": 0.1532,
+    "cross": 0.2298
+   },
+   "party_baseline_accuracy": {
+    "aligned": 0.8468,
+    "cross": 0.7702
+   }
+  }
+ }
+}

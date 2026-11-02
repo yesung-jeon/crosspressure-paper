@@ -1,0 +1,613 @@
+{
+ "plan": "PLAN.md v0.1",
+ "run": "2026-11-02T16:38",
+ "B": 10000,
+ "seed": 20261018,
+ "rule": {
+  "H-P": "d >= 0.65 and CI > 0.5",
+  "H-E": "d <= 0.35 and CI < 0.5",
+  "H-U": "CI within [0.40, 0.60]",
+  "min_disc_members": 20
+ },
+ "A_map": {
+  "qwen": {
+   "baseline_reproduced": true,
+   "n_rows": 10444,
+   "n_cross_rows": 1979,
+   "miss_rate_cross": 0.7918140474987367,
+   "aligned_share_of_misses": 0.8385449904275686,
+   "primary": {
+    "est": {
+     "d": 0.521551724137931,
+     "c": 0.7264325323475046,
+     "party_pull": 0.12399212824271788,
+     "econ_pull": 0.10244040410478678
+    },
+    "ci95": {
+     "d": [
+      0.423725112870994,
+      0.6150635509591853
+     ],
+     "c": [
+      0.6721466055744046,
+      0.7786770971336409
+     ],
+     "party_pull": [
+      0.06708146559026652,
+      0.17893043746454756
+     ],
+     "econ_pull": [
+      0.04902265395564887,
+      0.15686076220174558
+     ]
+    },
+    "n_disc_rows_den": 232,
+    "n_conc_rows_den": 1082,
+    "n_disc_members": 206,
+    "n_clusters": 731,
+    "verdict": "undetermined"
+   },
+   "sensitivity": {
+    "S1_known_only": {
+     "est": {
+      "d": 0.6011560693641619,
+      "c": 0.8235294117647058,
+      "party_pull": 0.2123427405644338,
+      "econ_pull": 0.11118667120027198
+     },
+     "ci95": {
+      "d": [
+       0.4927394701086957,
+       0.7014255229398774
+      ],
+      "c": [
+       0.7683389572045034,
+       0.8743852296202129
+      ],
+      "party_pull": [
+       0.14978723687939788,
+       0.26970739794137977
+      ],
+      "econ_pull": [
+       0.05520115121775414,
+       0.1698670219000883
+      ]
+     },
+     "n_disc_rows_den": 173,
+     "n_conc_rows_den": 833,
+     "n_disc_members": 160,
+     "n_clusters": 554,
+     "verdict": "undetermined"
+    },
+    "S2_first_congress_per_member": {
+     "est": {
+      "d": 0.5076923076923077,
+      "c": 0.6822033898305084,
+      "party_pull": 0.09494784876140805,
+      "econ_pull": 0.08725554106910038
+     },
+     "ci95": {
+      "d": [
+       0.38461538461538464,
+       0.6307692307692307
+      ],
+      "c": [
+       0.6227213399050748,
+       0.7399103139013453
+      ],
+      "party_pull": [
+       0.025954147969584764,
+       0.1640599933737881
+      ],
+      "econ_pull": [
+       0.01903767130666073,
+       0.15535838708393054
+      ]
+     },
+     "n_disc_rows_den": 65,
+     "n_conc_rows_den": 236,
+     "n_disc_members": 106,
+     "n_clusters": 471,
+     "verdict": "undetermined"
+    },
+    "S3_house": {
+     "est": {
+      "d": 0.5188679245283019,
+      "c": 0.706081081081081,
+      "party_pull": 0.1124745028046914,
+      "econ_pull": 0.09360657827638957
+     },
+     "ci95": {
+      "d": [
+       0.4166666666666667,
+       0.6188340807174888
+      ],
+      "c": [
+       0.6436379226815705,
+       0.7640919781574098
+      ],
+      "party_pull": [
+       0.05105753341226241,
+       0.17144066855667972
+      ],
+      "econ_pull": [
+       0.03472285041501206,
+       0.1503391512200998
+      ]
+     },
+     "n_disc_rows_den": 212,
+     "n_conc_rows_den": 888,
+     "n_disc_members": 179,
+     "n_clusters": 616,
+     "verdict": "undetermined"
+    },
+    "S3_senate": {
+     "est": {
+      "d": 0.55,
+      "c": 0.8195876288659794,
+      "party_pull": 0.1847938144329897,
+      "econ_pull": 0.13479381443298966
+     },
+     "ci95": {
+      "d": [
+       0.2631578947368421,
+       0.7777777777777778
+      ],
+      "c": [
+       0.6963332436267554,
+       0.9234972677595629
+      ],
+      "party_pull": [
+       0.026257344852991624,
+       0.31620151167433047
+      ],
+      "econ_pull": [
+       0.009646658781785958,
+       0.28154810950597464
+      ]
+     },
+     "n_disc_rows_den": 20,
+     "n_conc_rows_den": 194,
+     "n_disc_members": 28,
+     "n_clusters": 126,
+     "verdict": "undetermined"
+    },
+    "S4_all_misses_denominator": {
+     "est": {
+      "d": 0.39158576051779936,
+      "c": 0.6248012718600954,
+      "party_pull": 0.00819351618894737,
+      "econ_pull": 0.116607755671148
+     },
+     "ci95": {
+      "d": [
+       0.31176379811183735,
+       0.4726702718503361
+      ],
+      "c": [
+       0.5677958341093935,
+       0.6798457884288146
+      ],
+      "party_pull": [
+       -0.04126626149429117,
+       0.05879092507857492
+      ],
+      "econ_pull": [
+       0.06737982347142213,
+       0.16476492880146656
+      ]
+     },
+     "n_disc_rows_den": 309,
+     "n_conc_rows_den": 1258,
+     "n_disc_members": 206,
+     "n_clusters": 731,
+     "verdict": "undetermined"
+    }
+   },
+   "by_cell": {
+    "Democrat|EL-ST": {
+     "rows": 873,
+     "members": 267,
+     "miss": 0.7457044673539519,
+     "own_share_of_aligned_misses": 0.7597042513863216,
+     "opposite_cross_share_of_misses": 0.16897081413210446
+    },
+    "Democrat|ER-SP": {
+     "rows": 236,
+     "members": 131,
+     "miss": 0.8559322033898306,
+     "own_share_of_aligned_misses": 0.3732394366197183,
+     "opposite_cross_share_of_misses": 0.297029702970297
+    },
+    "Republican|EL-ST": {
+     "rows": 120,
+     "members": 75,
+     "miss": 0.8916666666666667,
+     "own_share_of_aligned_misses": 0.7555555555555555,
+     "opposite_cross_share_of_misses": 0.1588785046728972
+    },
+    "Republican|ER-SP": {
+     "rows": 750,
+     "members": 296,
+     "miss": 0.8093333333333333,
+     "own_share_of_aligned_misses": 0.6931608133086876,
+     "opposite_cross_share_of_misses": 0.10873146622734761
+    }
+   }
+  },
+  "llama": {
+   "baseline_reproduced": true,
+   "n_rows": 10444,
+   "n_cross_rows": 1979,
+   "miss_rate_cross": 0.8261748357756442,
+   "aligned_share_of_misses": 0.9486238532110092,
+   "primary": {
+    "est": {
+     "d": 0.4946236559139785,
+     "c": 0.8474842767295597,
+     "party_pull": 0.17105396632176917,
+     "econ_pull": 0.1764303104077906
+    },
+    "ci95": {
+     "d": [
+      0.40684091425004254,
+      0.5816336694040165
+     ],
+     "c": [
+      0.8095978665797158,
+      0.8820396738813472
+     ],
+     "party_pull": [
+      0.12304063749275516,
+      0.21828459900576147
+     ],
+     "econ_pull": [
+      0.13000201794791372,
+      0.22403151916370984
+     ]
+    },
+    "n_disc_rows_den": 279,
+    "n_conc_rows_den": 1272,
+    "n_disc_members": 206,
+    "n_clusters": 731,
+    "verdict": "consistent with H-U (equivalence range)"
+   },
+   "sensitivity": {
+    "S1_known_only": {
+     "est": {
+      "d": 0.5349794238683128,
+      "c": 0.8763948497854077,
+      "party_pull": 0.20568713682686024,
+      "econ_pull": 0.17070771295854748
+     },
+     "ci95": {
+      "d": [
+       0.43999656357388317,
+       0.6292148533844889
+      ],
+      "c": [
+       0.8392045240860572,
+       0.9093159032794444
+      ],
+      "party_pull": [
+       0.15348324593141513,
+       0.25666159033002356
+      ],
+      "econ_pull": [
+       0.1221621846351504,
+       0.22038215931667482
+      ]
+     },
+     "n_disc_rows_den": 243,
+     "n_conc_rows_den": 1165,
+     "n_disc_members": 187,
+     "n_clusters": 657,
+     "verdict": "undetermined"
+    },
+    "S2_first_congress_per_member": {
+     "est": {
+      "d": 0.43617021276595747,
+      "c": 0.8538205980066446,
+      "party_pull": 0.14499540538630096,
+      "econ_pull": 0.20882519262034355
+     },
+     "ci95": {
+      "d": [
+       0.3333333333333333,
+       0.5376344086021505
+      ],
+      "c": [
+       0.8131147540983606,
+       0.8924050632911392
+      ],
+      "party_pull": [
+       0.09047729421593606,
+       0.19955891452457863
+      ],
+      "econ_pull": [
+       0.1547160446706221,
+       0.26419113598389915
+      ]
+     },
+     "n_disc_rows_den": 94,
+     "n_conc_rows_den": 301,
+     "n_disc_members": 106,
+     "n_clusters": 471,
+     "verdict": "undetermined"
+    },
+    "S3_house": {
+     "est": {
+      "d": 0.47035573122529645,
+      "c": 0.852165725047081,
+      "party_pull": 0.16126072813618875,
+      "econ_pull": 0.19090499691089227
+     },
+     "ci95": {
+      "d": [
+       0.37754999590197524,
+       0.5636431989063567
+      ],
+      "c": [
+       0.8111425873465533,
+       0.8884793469195191
+      ],
+      "party_pull": [
+       0.10945501545117059,
+       0.21269884403036568
+      ],
+      "econ_pull": [
+       0.1412688805451237,
+       0.24024649679080495
+      ]
+     },
+     "n_disc_rows_den": 253,
+     "n_conc_rows_den": 1062,
+     "n_disc_members": 179,
+     "n_clusters": 616,
+     "verdict": "undetermined"
+    },
+    "S3_senate": {
+     "est": {
+      "d": 0.7307692307692307,
+      "c": 0.8238095238095238,
+      "party_pull": 0.2772893772893772,
+      "econ_pull": 0.04652014652014652
+     },
+     "ci95": {
+      "d": [
+       0.4614583333333334,
+       0.9444444444444444
+      ],
+      "c": [
+       0.723401673208015,
+       0.9090909090909091
+      ],
+      "party_pull": [
+       0.1306653463575903,
+       0.39796045283785153
+      ],
+      "econ_pull": [
+       -0.06379465114967692,
+       0.1833348464839881
+      ]
+     },
+     "n_disc_rows_den": 26,
+     "n_conc_rows_den": 210,
+     "n_disc_members": 28,
+     "n_clusters": 126,
+     "verdict": "undetermined"
+    },
+    "S4_all_misses_denominator": {
+     "est": {
+      "d": 0.42857142857142855,
+      "c": 0.821020563594821,
+      "party_pull": 0.12479599608312475,
+      "econ_pull": 0.19622456751169623
+     },
+     "ci95": {
+      "d": [
+       0.34782608695652173,
+       0.5094951826171088
+      ],
+      "c": [
+       0.7827398463589745,
+       0.8570318868935318
+      ],
+      "party_pull": [
+       0.07952946494643497,
+       0.16979507435306518
+      ],
+      "econ_pull": [
+       0.1523036628633732,
+       0.23923127445886566
+      ]
+     },
+     "n_disc_rows_den": 322,
+     "n_conc_rows_den": 1313,
+     "n_disc_members": 206,
+     "n_clusters": 731,
+     "verdict": "undetermined"
+    }
+   },
+   "by_cell": {
+    "Democrat|EL-ST": {
+     "rows": 873,
+     "members": 267,
+     "miss": 0.8442153493699885,
+     "own_share_of_aligned_misses": 0.8432732316227461,
+     "opposite_cross_share_of_misses": 0.021709633649932156
+    },
+    "Democrat|ER-SP": {
+     "rows": 236,
+     "members": 131,
+     "miss": 0.961864406779661,
+     "own_share_of_aligned_misses": 0.38613861386138615,
+     "opposite_cross_share_of_misses": 0.11013215859030837
+    },
+    "Republican|EL-ST": {
+     "rows": 120,
+     "members": 75,
+     "miss": 0.7916666666666666,
+     "own_share_of_aligned_misses": 0.7792207792207793,
+     "opposite_cross_share_of_misses": 0.18947368421052632
+    },
+    "Republican|ER-SP": {
+     "rows": 750,
+     "members": 296,
+     "miss": 0.768,
+     "own_share_of_aligned_misses": 0.852994555353902,
+     "opposite_cross_share_of_misses": 0.043402777777777776
+    }
+   }
+  }
+ },
+ "B1_I4": {
+  "qwen": {
+   "Democrat|EL-ST": {
+    "n": 21,
+    "miss": 15,
+    "aligned_miss": 14,
+    "own_party_landings": 13,
+    "arrivals": {
+     "EL-SP": 13,
+     "EL-ST": 6,
+     "ER-SP": 1,
+     "ER-ST": 1
+    }
+   },
+   "Democrat|ER-SP": {
+    "n": 10,
+    "miss": 10,
+    "aligned_miss": 7,
+    "own_party_landings": 4,
+    "arrivals": {
+     "EL-SP": 4,
+     "EL-ST": 3,
+     "ER-ST": 3
+    }
+   },
+   "Republican|EL-ST": {
+    "n": 9,
+    "miss": 8,
+    "aligned_miss": 8,
+    "own_party_landings": 6,
+    "arrivals": {
+     "ER-ST": 6,
+     "EL-SP": 2,
+     "EL-ST": 1
+    }
+   },
+   "Republican|ER-SP": {
+    "n": 20,
+    "miss": 16,
+    "aligned_miss": 16,
+    "own_party_landings": 12,
+    "arrivals": {
+     "ER-ST": 12,
+     "ER-SP": 4,
+     "EL-SP": 4
+    }
+   }
+  },
+  "llama": {
+   "Democrat|EL-ST": {
+    "n": 21,
+    "miss": 17,
+    "aligned_miss": 17,
+    "own_party_landings": 16,
+    "arrivals": {
+     "EL-SP": 16,
+     "EL-ST": 4,
+     "ER-ST": 1
+    }
+   },
+   "Democrat|ER-SP": {
+    "n": 10,
+    "miss": 10,
+    "aligned_miss": 8,
+    "own_party_landings": 5,
+    "arrivals": {
+     "EL-SP": 5,
+     "ER-ST": 3,
+     "EL-ST": 2
+    }
+   },
+   "Republican|EL-ST": {
+    "n": 9,
+    "miss": 9,
+    "aligned_miss": 8,
+    "own_party_landings": 6,
+    "arrivals": {
+     "ER-ST": 6,
+     "EL-SP": 2,
+     "ER-SP": 1
+    }
+   },
+   "Republican|ER-SP": {
+    "n": 20,
+    "miss": 17,
+    "aligned_miss": 17,
+    "own_party_landings": 16,
+    "arrivals": {
+     "ER-ST": 16,
+     "ER-SP": 3,
+     "EL-SP": 1
+    }
+   }
+  }
+ },
+ "B2_no_party_modes": {
+  "qwen": {
+   "n_cross_conditions": 200,
+   "misses": 94,
+   "aligned_misses": 85,
+   "e_keep_economic": 0.35294117647058826,
+   "ci95": [
+    0.25301204819277107,
+    0.45161290322580644
+   ],
+   "n_bases": 64,
+   "reading": "keeps social",
+   "by_mode": {
+    "I1": {
+     "aligned_misses": 8,
+     "keep_econ": 0.625
+    },
+    "I2": {
+     "aligned_misses": 6,
+     "keep_econ": 0.5
+    },
+    "I3": {
+     "aligned_misses": 39,
+     "keep_econ": 0.5128205128205128
+    },
+    "I5": {
+     "aligned_misses": 32,
+     "keep_econ": 0.0625
+    }
+   }
+  },
+  "llama": {
+   "n_cross_conditions": 200,
+   "misses": 42,
+   "aligned_misses": 38,
+   "e_keep_economic": 0.5526315789473685,
+   "ci95": [
+    0.39473684210526316,
+    0.6969873150105707
+   ],
+   "n_bases": 25,
+   "reading": "0.5 not excluded",
+   "by_mode": {
+    "I2": {
+     "aligned_misses": 6,
+     "keep_econ": 0.3333333333333333
+    },
+    "I3": {
+     "aligned_misses": 32,
+     "keep_econ": 0.59375
+    }
+   }
+  }
+ }
+}

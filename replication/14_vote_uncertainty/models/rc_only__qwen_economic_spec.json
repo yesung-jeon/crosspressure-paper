@@ -1,0 +1,19 @@
+{
+  "tag": "rc_only__qwen_economic",
+  "outcome": "H",
+  "rhs": ["cp", "party_dem"],
+  "fe": "key",
+  "cluster": ["icpsr", "key"],
+  "n": 48199,
+  "fe_cells": 180,
+  "clusters": [2111, 180],
+  "small_sample": "per piece G/(G-1)*(N-1)/(N-K), K = regressors + FE cells; two-way V = V1 + V2 - V12",
+  "coefficients": {
+    "cp": -0.0021585140739163234,
+    "party_dem": 0.008032366061171187
+  },
+  "covariance": [
+    [2.3053339484600046e-06, -2.4359047727271208e-06],
+    [-2.4359047727271204e-06, 1.4747294786133515e-05]
+  ]
+}

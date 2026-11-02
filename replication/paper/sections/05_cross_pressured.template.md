@@ -1,33 +1,31 @@
 # 5. The Models Move Cross-Pressured Members into the Aligned Quadrant That Matches Their Economic Votes
 
-Member by member, the map shows whether each member is placed where their votes put them. For each Democratic and Republican member-Congress with both roll-call scales, we compare the quadrant the map assigns with the quadrant of the member's economic and social roll-call scales. Figure 2 shows the result for both social issues and both models.
+Member by member, the map shows whether each member is placed where their votes put them. For each Democratic and Republican member-Congress with both roll-call scales, we compare the quadrant the map assigns with the quadrant of the member's economic and social roll-call scales. Figure 3 shows the result on abortion for both models; guns and the results by quadrant are in Appendix C.1.
 
-![Figure 2](figures/body/fig2_placement.png)
+![Figure 3](figures/body/fig3_placement.png)
 
-**Figure 2. Both models place most aligned members in the quadrant of their votes, but few cross-pressured members.** (a, b) The {{NAMED_TOTAL}} members selected by their votes alone, {{NAMED_N}} from each quadrant (Appendix C.4). Marker shape and color give the quadrant of the member's votes; a filled marker means the model places the member in that quadrant, a hollow one that it places the member elsewhere. Positions are the member's average percentile rank within Congress and chamber; the quadrant is set by the average coordinate centred on the median, so a marker on a median line can sit on either side. (c) Share of all Democratic and Republican member-Congresses with both scales that the map places in the quadrant of their votes, with a two-dimensional DW-NOMINATE placement for comparison; results by quadrant are in Appendix C.1.
+**Figure 3. Both models place most aligned members in the quadrant of their votes, but few cross-pressured members.** Abortion. Open circles: each vote-quadrant group's mean position by its roll-call scales; filled circles: its mean position on the model's map; arrows join the two (colored: the two cross-pressured groups; grey: the aligned groups). Positions are percentile ranks within Congress and chamber among Democratic and Republican member-Congresses from 1973 on with both scales, so 0.5 is the median line. Faint points: cross-pressured member-Congresses where the model places them. Shaded: each party's aligned corner. Panel titles: share of cross-pressured member-Congresses placed in the quadrant of their votes. The two-dimensional DW-NOMINATE comparison is in the text and Appendix C.1; the {{NAMED_TOTAL}} members selected by their votes are in Appendix C.4.
 
 **Aligned members land in their own quadrant; cross-pressured members do not.** The maps place most aligned member-Congresses in the quadrant of their
 own votes and few cross-pressured ones. On abortion, Qwen places {{RECALL_ALIGNED_AB_Q}} of aligned member-Congresses and
-{{RECALL_CROSS_AB_Q}} of cross-pressured ones in their own quadrant, and Llama places {{RECALL_ALIGNED_AB_L}} and {{RECALL_CROSS_AB_L}}. On guns, the
-corresponding figures are {{RECALL_ALIGNED_GUN_Q}} and {{RECALL_CROSS_GUN_Q}} for Qwen and {{RECALL_ALIGNED_GUN_L}} and
-{{RECALL_CROSS_GUN_L}} for Llama.
+{{RECALL_CROSS_AB_Q}} of cross-pressured ones in their own quadrant, and Llama places {{RECALL_ALIGNED_AB_L}} and {{RECALL_CROSS_AB_L}}. Appendix C.1 gives the same comparison on guns. The gap does not come from members who sit just across a median. Among the third of member-Congresses whose roll-call positions lie furthest from both medians ({{V2_FAR_N_CROSS}} of them cross-pressured), Qwen places {{V2_FAR_ALIGNED_Q}} of aligned and {{V2_FAR_CROSS_Q}} of cross-pressured member-Congresses in their own quadrant, and Llama {{V2_FAR_ALIGNED_L}} and {{V2_FAR_CROSS_L}}. The difference, {{V2_FAR_GAP_Q}} {{V2_FAR_GAP_Q_CI}} in Qwen and {{V2_FAR_GAP_L}} {{V2_FAR_GAP_L_CI}} in Llama, is no smaller than among all member-Congresses ({{V2_FULL_GAP_Q}} and {{V2_FULL_GAP_L}}; Appendix C.7).
 
-**Two-dimensional DW-NOMINATE places them correctly.** In NOMINATE scaling, the second dimension captures conflicts that divide the parties internally (Poole & Rosenthal, 1991). A two-dimensional DW-NOMINATE placement of the same member-Congresses places
+**Two-dimensional DW-NOMINATE places more of them in their own quadrant.** In NOMINATE scaling, the second dimension captures conflicts that divide the parties internally (Poole & Rosenthal, 1991). A two-dimensional DW-NOMINATE placement of the same member-Congresses places
 cross-pressured ones in their quadrant more often than aligned ones: {{DW2_RECALL_CROSS_AB}} against {{DW2_RECALL_ALIGNED_AB}} on
-abortion, and {{DW2_RECALL_CROSS_GUN}} against {{DW2_RECALL_ALIGNED_GUN}} on guns.
+abortion (guns in Appendix C.1).
 
 **Recognition does not explain it.** A model may misplace members it does not know. Restricting the comparison to member-Congresses whose
 party the model names correctly leaves the pattern unchanged. On abortion, Qwen places {{RECALL_CROSS_AB_RECOG_Q}} of these cross-pressured
-member-Congresses in their own quadrant and Llama {{RECALL_CROSS_AB_RECOG_L}}, against {{RECALL_ALIGNED_AB_RECOG_Q}} and {{RECALL_ALIGNED_AB_RECOG_L}} of aligned ones.
+member-Congresses in their own quadrant and Llama {{RECALL_CROSS_AB_RECOG_L}}, against {{RECALL_ALIGNED_AB_RECOG_Q}} and {{RECALL_ALIGNED_AB_RECOG_L}} of aligned ones (Appendix C.2).
 
-**Measurement error does not explain it.** A map that tracked members' votes only as closely as the models' maps do, with the rest random noise, would place {{AP_NOISE_AB_CROSS_Q}} (Qwen) and {{AP_NOISE_AB_CROSS_L}} (Llama) of cross-pressured member-Congresses in their own quadrant on abortion, far more than the models' maps place (Appendix C.9). Noise alone would already send many misplaced members toward their economic side, but on abortion fewer than the models do.
+**Measurement error does not explain it.** A map that tracked members' votes only as closely as the models' maps do, with the rest random noise, would place {{AP_NOISE_AB_CROSS_Q}} (Qwen) and {{AP_NOISE_AB_CROSS_L}} (Llama) of cross-pressured member-Congresses in their own quadrant on abortion, far more than the models' maps place (Appendix C.6). Noise alone would already send many misplaced members toward their economic side on abortion, but fewer than the models do (guns in Appendix C.6).
 
 **Where the misplaced members go.** Most misplaced cross-pressured member-Congresses land in the aligned quadrant that matches their economic
 votes. Members who vote liberal on economics are placed as liberal on both dimensions, and members who vote conservative on economics
 as conservative on both. On abortion, this is where {{SAME_ECON_ELST_AB_Q}} (Qwen) and {{SAME_ECON_ELST_AB_L}} (Llama) of the misplaced
 economically liberal, socially conservative member-Congresses go, and {{SAME_ECON_ERSP_AB_Q}} and {{SAME_ECON_ERSP_AB_L}} of the misplaced
-economically conservative, socially liberal ones. For most of these members, that quadrant is also the aligned quadrant of their own party, so the two cannot be told apart; among misplaced members whose party and economic side point to different aligned quadrants, the models favor neither (Appendix F.1). The same pattern
-appears among {{NAMED_TOTAL}} members selected by their votes, {{NAMED_N}} from each quadrant. Of the {{NAMED_N}} members in each aligned quadrant, Qwen places
+economically conservative, socially liberal ones (Appendix C.3). For most of these members, that quadrant is also the aligned quadrant of their own party, so the two cannot be told apart; among misplaced members whose party and economic side point to different aligned quadrants, the models favor neither (Appendix F.1). Cross-pressured members are also placed in their own quadrant less often
+among {{NAMED_TOTAL}} members selected by their votes, {{NAMED_N}} from each quadrant. Of the {{NAMED_N}} members in each aligned quadrant, Qwen places
 {{NAMED_PLACED_ELSP_Q}} and {{NAMED_PLACED_ERST_Q}} in their own quadrant. Of the {{NAMED_N}} in each cross-pressured quadrant, it places
 {{NAMED_PLACED_ELST_Q}} and {{NAMED_PLACED_ERSP_Q}}. For Llama, the numbers are {{NAMED_PLACED_ELSP_L}} and {{NAMED_PLACED_ERST_L}} against
 {{NAMED_PLACED_ELST_L}} and {{NAMED_PLACED_ERSP_L}}.
@@ -45,9 +43,9 @@ the same to Packwood and places him among members who are conservative on both; 
 
 **Stating their positions does not correct the placement.** The pattern does not depend only on what the models know about particular members. When the
 prompt states a profile's economic and social positions directly, both models follow cross-pressured profiles less faithfully than
-aligned ones. Cross-pressured minus aligned, the probability of answering consistently with the stated profile, among the Yes and No answers, differs by {{H3_Q}} {{H3_Q_CI}} in Qwen and {{H3_L}} {{H3_L_CI}} in Llama, and the share of conditions in which the profile's coordinates reach the stated quadrant differs by {{H4_Q}} {{H4_Q_CI}} and {{H4_L}} {{H4_L_CI}}. Llama also places members' economic and social coordinates closer together than their votes are; Qwen shows the reverse (Appendix C.7).
+aligned ones. Cross-pressured minus aligned, the probability of answering consistently with the stated profile, among the Yes and No answers, differs by {{H3_Q}} {{H3_Q_CI}} in Qwen and {{H3_L}} {{H3_L_CI}} in Llama, and the share of conditions in which the profile's coordinates reach the stated quadrant differs by {{H4_Q}} {{H4_Q_CI}} and {{H4_L}} {{H4_L_CI}} (Appendix C.5).
 
-**All in all.** On the models' internal map, cross-pressured members are misplaced, and in one direction: toward the aligned position on their economic side. With stated profiles, the models follow cross-pressured profiles less faithfully. The models thus flatten the differences within each party. Section 6 asks whether cross-pressured members are also mispredicted when the models predict their actual votes.
+**All in all.** On the models' internal map, cross-pressured members are misplaced, and mostly in one direction: toward the aligned position on their economic side. With stated profiles, the models follow cross-pressured profiles less faithfully. The models thus flatten the differences within each party. Section 6 asks whether cross-pressured members are also mispredicted when the models predict their actual votes.
 
 ## References (Section 5 only)
 

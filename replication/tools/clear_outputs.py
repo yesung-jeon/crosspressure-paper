@@ -19,7 +19,7 @@ for rel in seal:
     p = R / rel
     if p.is_file(): p.unlink(); n += 1
 # regenerated-only files that are never shipped or sealed (fixest objects, model input copies, speech matrices): a step that resumes
-# from existing files (12 S0 skips finished .npz) must not find a previous run's copies (Codex round 3)
+# from existing files (12 S0 skips finished.npz) must not find a previous run's copies
 regen = [p for s in sorted(R.glob("[01][0-9]_*")) for pat in ("*.rds", "*_input.csv.gz") for p in s.rglob(pat)]
 regen += [p for p in (R / "12_speech_and_state" / "out" / "s0").rglob("*") if p.is_file()]
 clash = sorted(p.relative_to(R).as_posix() for p in regen if p.relative_to(R).as_posix() in listed)

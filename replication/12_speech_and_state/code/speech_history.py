@@ -56,7 +56,7 @@ def speech_congress(args):
 
 def load_t0():
     import importlib.util
-    spec = importlib.util.spec_from_file_location("party_history", KIM / "10_polarization_history" / "code" / "party_history.py")
+    spec = importlib.util.spec_from_file_location("party_history", KIM / "06_party_history" / "code" / "party_history.py")
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod
 
 
@@ -122,7 +122,7 @@ def main():
         out["stopped"] = "G-S1 not met: S1 comparisons not run (PROTOCOL_S)"; ser.to_csv(S1 / "series.csv", index=False)
         dc.atomic_json(out, S1 / "s1.json"); print(json.dumps(out, indent=1)); raise SystemExit("STOP: G-S1")
     t0 = load_t0()
-    for m in ["qwen", "llama"]:
+    for m in dc.MODELS:
         pt, dr, info = rollcall_model_series(m, t0)
         for v in pt: ser[f"{m}_{v}_gap" if v == "x" else f"{v}_gap"] = pt[v]
         S = {v: dict(share=float(share(pt[v])), share_ci=ci(share(dr[v])), t50=t50(pt[v])) for v in pt}

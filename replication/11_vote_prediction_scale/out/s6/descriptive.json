@@ -1,0 +1,660 @@
+{
+ "_scale_dropped": {
+  "qwen": {
+   "abortion_economic": 0,
+   "guns": 0
+  },
+  "llama": {
+   "abortion_economic": 0,
+   "guns": 0
+  }
+ },
+ "qwen": {
+  "abortion": {
+   "A5_binary": {
+    "aligned_accuracy": 0.5540276874477377,
+    "aligned_accuracy_ci95": [
+     0.5376775636711607,
+     0.5711760733268844
+    ],
+    "party_gap_corr": 0.4632659616875598,
+    "party_gap_corr_ci95": [
+     0.34376324894908483,
+     0.5694340022196556
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 193
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.5284075072005946,
+    "aligned_accuracy_ci95": [
+     0.5092107397649144,
+     0.5496853682327605
+    ],
+    "party_gap_corr": 0.541005495167589,
+    "party_gap_corr_ci95": [
+     0.4254923805455604,
+     0.6427640231127508
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 193
+   },
+   "party_gap_binary": [
+    0.05850308462751128,
+    0.5130661382842965,
+    0.4632659616875598
+   ],
+   "party_gap_scale": [
+    0.10180922458771349,
+    0.5130661382842965,
+    0.541005495167589
+   ],
+   "party_rule_acc": {
+    "0": 0.8794,
+    "1": 0.3511
+   },
+   "dim1_ref_acc": {
+    "0": 0.9193,
+    "1": 0.3742
+   },
+   "brier_mean": {
+    "binary": {
+     "0": 0.2868,
+     "1": 0.3131
+    },
+    "scale": {
+     "0": 0.3498,
+     "1": 0.423
+    }
+   }
+  },
+  "economic": {
+   "A5_binary": {
+    "aligned_accuracy": 0.5526928367368532,
+    "aligned_accuracy_ci95": [
+     0.5254898815556489,
+     0.5794523171068121
+    ],
+    "party_gap_corr": 0.35941235676345235,
+    "party_gap_corr_ci95": [
+     0.2433766244220363,
+     0.45883277643056025
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 180
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.5571368109194794,
+    "aligned_accuracy_ci95": [
+     0.5311499194385639,
+     0.5831992645900097
+    ],
+    "party_gap_corr": 0.2982350628684722,
+    "party_gap_corr_ci95": [
+     0.14135628303722877,
+     0.4178215530108013
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 180
+   },
+   "party_gap_binary": [
+    0.03308133221693721,
+    0.5305598617983912,
+    0.35941235676345235
+   ],
+   "party_gap_scale": [
+    0.09746229859761683,
+    0.5305598617983912,
+    0.2982350628684722
+   ],
+   "party_rule_acc": {
+    "0": 0.8359,
+    "1": 0.7728
+   },
+   "dim1_ref_acc": {
+    "0": 0.8623,
+    "1": 0.8089
+   },
+   "brier_mean": {
+    "binary": {
+     "0": 0.2543,
+     "1": 0.2487
+    },
+    "scale": {
+     "0": 0.3373,
+     "1": 0.2945
+    }
+   }
+  },
+  "guns": {
+   "A5_binary": {
+    "aligned_accuracy": 0.4834046019140705,
+    "aligned_accuracy_ci95": [
+     0.43485579078029835,
+     0.5306418784726805
+    ],
+    "party_gap_corr": 0.47605611253520896,
+    "party_gap_corr_ci95": [
+     0.2321320813050665,
+     0.6658559919046201
+    ],
+    "pass_a": false,
+    "pass_b": true,
+    "competent": false,
+    "rollcalls": 52
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.48014660965180206,
+    "aligned_accuracy_ci95": [
+     0.4263542015239389,
+     0.5401560743878381
+    ],
+    "party_gap_corr": 0.33920187996805884,
+    "party_gap_corr_ci95": [
+     0.061039904678144706,
+     0.6029236206941481
+    ],
+    "pass_a": false,
+    "pass_b": true,
+    "competent": false,
+    "rollcalls": 52
+   },
+   "error_direction": {
+    "cp=0|pred_avg": {
+     "n_wrong": 5036,
+     "toward_party": 0.1499205718824464,
+     "ci95": [
+      0.13394385992407964,
+      0.16601044483942007
+     ]
+    },
+    "cp=0|pred_scale": {
+     "n_wrong": 5061,
+     "toward_party": 0.15945465323058683,
+     "ci95": [
+      0.14524095122865718,
+      0.1748042956471778
+     ]
+    },
+    "cp=1|pred_avg": {
+     "n_wrong": 1143,
+     "toward_party": 0.33070866141732286,
+     "ci95": [
+      0.29231596885235,
+      0.36688866110521146
+     ]
+    },
+    "cp=1|pred_scale": {
+     "n_wrong": 1192,
+     "toward_party": 0.34060402684563756,
+     "ci95": [
+      0.30426464504131046,
+      0.3770656156344636
+     ]
+    }
+   },
+   "party_gap_binary": [
+    0.0946156759239145,
+    0.49500988222380293,
+    0.47605611253520896
+   ],
+   "party_gap_scale": [
+    0.1547574265789245,
+    0.49500988222380293,
+    0.33920187996805884
+   ]
+  },
+  "cases": {
+   "Thomas Eagleton|abortion": {
+    "binary": {
+     "n": 26,
+     "accuracy": 0.46153846153846156,
+     "n_wrong": 14,
+     "wrong_with_party": 0.8571428571428571
+    },
+    "scale": {
+     "n": 26,
+     "accuracy": 0.38461538461538464,
+     "n_wrong": 16,
+     "wrong_with_party": 0.875
+    }
+   },
+   "Thomas Eagleton|economic": {
+    "binary": {
+     "n": 26,
+     "accuracy": 0.5769230769230769,
+     "n_wrong": 11,
+     "wrong_with_party": 0.09090909090909091
+    },
+    "scale": {
+     "n": 26,
+     "accuracy": 0.6153846153846154,
+     "n_wrong": 10,
+     "wrong_with_party": 0.1
+    }
+   },
+   "Robert Packwood|abortion": {
+    "binary": {
+     "n": 39,
+     "accuracy": 0.6410256410256411,
+     "n_wrong": 14,
+     "wrong_with_party": 0.7857142857142857
+    },
+    "scale": {
+     "n": 39,
+     "accuracy": 0.6666666666666666,
+     "n_wrong": 13,
+     "wrong_with_party": 0.7692307692307693
+    }
+   },
+   "Robert Packwood|economic": {
+    "binary": {
+     "n": 43,
+     "accuracy": 0.6511627906976745,
+     "n_wrong": 15,
+     "wrong_with_party": 0.2
+    },
+    "scale": {
+     "n": 43,
+     "accuracy": 0.6976744186046512,
+     "n_wrong": 13,
+     "wrong_with_party": 0.23076923076923078
+    }
+   },
+   "Olympia Snowe|abortion": {
+    "binary": {
+     "n": 64,
+     "accuracy": 0.53125,
+     "n_wrong": 30,
+     "wrong_with_party": 0.9666666666666667
+    },
+    "scale": {
+     "n": 64,
+     "accuracy": 0.59375,
+     "n_wrong": 26,
+     "wrong_with_party": 0.9615384615384616
+    }
+   },
+   "Olympia Snowe|economic": {
+    "binary": {
+     "n": 63,
+     "accuracy": 0.5555555555555556,
+     "n_wrong": 28,
+     "wrong_with_party": 0.17857142857142858
+    },
+    "scale": {
+     "n": 63,
+     "accuracy": 0.6190476190476191,
+     "n_wrong": 24,
+     "wrong_with_party": 0.16666666666666666
+    }
+   },
+   "Snowe four roll calls": [
+    {
+     "key": "105|Senate|167",
+     "actual": 1,
+     "share_avg": 0.04256955481921302,
+     "s_yea": 0.0007003868413435199,
+     "pred_avg": 0,
+     "pred_scale": 0
+    },
+    {
+     "key": "105|Senate|474",
+     "actual": 1,
+     "share_avg": 0.0045326713409690285,
+     "s_yea": 0.00013141686508913453,
+     "pred_avg": 0,
+     "pred_scale": 0
+    },
+    {
+     "key": "108|Senate|51",
+     "actual": 0,
+     "share_avg": 0.5004185826267616,
+     "s_yea": 0.5655577412532184,
+     "pred_avg": 1,
+     "pred_scale": 1
+    },
+    {
+     "key": "108|Senate|402",
+     "actual": 0,
+     "share_avg": 0.5017923314255016,
+     "s_yea": 0.9994054900351768,
+     "pred_avg": 1,
+     "pred_scale": 1
+    }
+   ]
+  }
+ },
+ "llama": {
+  "abortion": {
+   "A5_binary": {
+    "aligned_accuracy": 0.6933475796710954,
+    "aligned_accuracy_ci95": [
+     0.6620546703537977,
+     0.725864776961615
+    ],
+    "party_gap_corr": 0.767067801702576,
+    "party_gap_corr_ci95": [
+     0.6830481154335326,
+     0.8318185945733769
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 193
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.6341633373594723,
+    "aligned_accuracy_ci95": [
+     0.6056606723622291,
+     0.6638670932381259
+    ],
+    "party_gap_corr": 0.7069779908990392,
+    "party_gap_corr_ci95": [
+     0.6289038307687626,
+     0.7716776692653634
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 193
+   },
+   "party_gap_binary": [
+    0.1860978888636067,
+    0.5130661382842965,
+    0.767067801702576
+   ],
+   "party_gap_scale": [
+    0.18252399196857058,
+    0.5130661382842965,
+    0.7069779908990392
+   ],
+   "party_rule_acc": {
+    "0": 0.8794,
+    "1": 0.3511
+   },
+   "dim1_ref_acc": {
+    "0": 0.9193,
+    "1": 0.3742
+   },
+   "brier_mean": {
+    "binary": {
+     "0": 0.1964,
+     "1": 0.2694
+    },
+    "scale": {
+     "0": 0.2456,
+     "1": 0.2945
+    }
+   }
+  },
+  "economic": {
+   "A5_binary": {
+    "aligned_accuracy": 0.5665952437637225,
+    "aligned_accuracy_ci95": [
+     0.5364515524411334,
+     0.5964801679949769
+    ],
+    "party_gap_corr": 0.47231296047537435,
+    "party_gap_corr_ci95": [
+     0.36637254827110943,
+     0.5652604963538922
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 180
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.5386080469803984,
+    "aligned_accuracy_ci95": [
+     0.5097258411849799,
+     0.5665253567184495
+    ],
+    "party_gap_corr": 0.41093868129722666,
+    "party_gap_corr_ci95": [
+     0.31665478081580734,
+     0.49088265472581444
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 180
+   },
+   "party_gap_binary": [
+    0.07631821968565657,
+    0.5305539999934338,
+    0.47231296047537435
+   ],
+   "party_gap_scale": [
+    0.060223773073868295,
+    0.5305539999934338,
+    0.41093868129722666
+   ],
+   "party_rule_acc": {
+    "0": 0.8358,
+    "1": 0.7728
+   },
+   "dim1_ref_acc": {
+    "0": 0.8623,
+    "1": 0.8089
+   },
+   "brier_mean": {
+    "binary": {
+     "0": 0.2697,
+     "1": 0.2584
+    },
+    "scale": {
+     "0": 0.3437,
+     "1": 0.3326
+    }
+   }
+  },
+  "guns": {
+   "A5_binary": {
+    "aligned_accuracy": 0.6197312156383629,
+    "aligned_accuracy_ci95": [
+     0.54502445715016,
+     0.6921960390159381
+    ],
+    "party_gap_corr": 0.6566800375766658,
+    "party_gap_corr_ci95": [
+     0.4313388809897883,
+     0.8222242321148264
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 52
+   },
+   "A5_scale": {
+    "aligned_accuracy": 0.6325595601710446,
+    "aligned_accuracy_ci95": [
+     0.5626412121758808,
+     0.7041259671969066
+    ],
+    "party_gap_corr": 0.6397092948441002,
+    "party_gap_corr_ci95": [
+     0.4183307304970203,
+     0.8047568406925459
+    ],
+    "pass_a": true,
+    "pass_b": true,
+    "competent": true,
+    "rollcalls": 52
+   },
+   "error_direction": {
+    "cp=0|pred_avg": {
+     "n_wrong": 3704,
+     "toward_party": 0.23137149028077753,
+     "ci95": [
+      0.21002728123944375,
+      0.2536150606907999
+     ]
+    },
+    "cp=0|pred_scale": {
+     "n_wrong": 3572,
+     "toward_party": 0.269036954087346,
+     "ci95": [
+      0.24567930847854064,
+      0.2908937463608382
+     ]
+    },
+    "cp=1|pred_avg": {
+     "n_wrong": 1059,
+     "toward_party": 0.41359773371104813,
+     "ci95": [
+      0.37574968033101824,
+      0.4495265567765568
+     ]
+    },
+    "cp=1|pred_scale": {
+     "n_wrong": 1003,
+     "toward_party": 0.47357926221335994,
+     "ci95": [
+      0.43379427191854925,
+      0.516264683681653
+     ]
+    }
+   },
+   "party_gap_binary": [
+    0.21663439934398365,
+    0.49500988222380293,
+    0.6566800375766658
+   ],
+   "party_gap_scale": [
+    0.25328901707000584,
+    0.49500988222380293,
+    0.6397092948441002
+   ]
+  },
+  "cases": {
+   "Thomas Eagleton|abortion": {
+    "binary": {
+     "n": 26,
+     "accuracy": 0.5,
+     "n_wrong": 13,
+     "wrong_with_party": 0.9230769230769231
+    },
+    "scale": {
+     "n": 26,
+     "accuracy": 0.5,
+     "n_wrong": 13,
+     "wrong_with_party": 0.7692307692307693
+    }
+   },
+   "Thomas Eagleton|economic": {
+    "binary": {
+     "n": 26,
+     "accuracy": 0.6153846153846154,
+     "n_wrong": 10,
+     "wrong_with_party": 0.1
+    },
+    "scale": {
+     "n": 26,
+     "accuracy": 0.46153846153846156,
+     "n_wrong": 14,
+     "wrong_with_party": 0.14285714285714285
+    }
+   },
+   "Robert Packwood|abortion": {
+    "binary": {
+     "n": 39,
+     "accuracy": 0.46153846153846156,
+     "n_wrong": 21,
+     "wrong_with_party": 0.8421052631578947
+    },
+    "scale": {
+     "n": 39,
+     "accuracy": 0.358974358974359,
+     "n_wrong": 25,
+     "wrong_with_party": 0.8260869565217391
+    }
+   },
+   "Robert Packwood|economic": {
+    "binary": {
+     "n": 43,
+     "accuracy": 0.627906976744186,
+     "n_wrong": 16,
+     "wrong_with_party": 0.5
+    },
+    "scale": {
+     "n": 43,
+     "accuracy": 0.5116279069767442,
+     "n_wrong": 21,
+     "wrong_with_party": 0.47619047619047616
+    }
+   },
+   "Olympia Snowe|abortion": {
+    "binary": {
+     "n": 64,
+     "accuracy": 0.484375,
+     "n_wrong": 33,
+     "wrong_with_party": 1.0
+    },
+    "scale": {
+     "n": 64,
+     "accuracy": 0.390625,
+     "n_wrong": 39,
+     "wrong_with_party": 0.9487179487179487
+    }
+   },
+   "Olympia Snowe|economic": {
+    "binary": {
+     "n": 63,
+     "accuracy": 0.6507936507936508,
+     "n_wrong": 22,
+     "wrong_with_party": 0.18181818181818182
+    },
+    "scale": {
+     "n": 63,
+     "accuracy": 0.5396825396825397,
+     "n_wrong": 29,
+     "wrong_with_party": 0.20689655172413793
+    }
+   },
+   "Snowe four roll calls": [
+    {
+     "key": "105|Senate|167",
+     "actual": 1,
+     "share_avg": 0.245820793459105,
+     "s_yea": 0.5132291976163849,
+     "pred_avg": 0,
+     "pred_scale": 1
+    },
+    {
+     "key": "105|Senate|474",
+     "actual": 1,
+     "share_avg": 0.2689414426128896,
+     "s_yea": 0.5911466721944372,
+     "pred_avg": 0,
+     "pred_scale": 1
+    },
+    {
+     "key": "108|Senate|51",
+     "actual": 0,
+     "share_avg": 0.5872878323305337,
+     "s_yea": 0.9005420938319084,
+     "pred_avg": 1,
+     "pred_scale": 1
+    },
+    {
+     "key": "108|Senate|402",
+     "actual": 0,
+     "share_avg": 0.6339807726316009,
+     "s_yea": 0.8467755214198617,
+     "pred_avg": 1,
+     "pred_scale": 1
+    }
+   ]
+  }
+ }
+}

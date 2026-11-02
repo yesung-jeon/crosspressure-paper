@@ -15,7 +15,7 @@ the run.
 
 **Models and determinism.** Both models are loaded at fixed revisions in bfloat16. Deterministic algorithms are enforced, batch sizes
 and seeds are fixed, and every random draw uses a seed derived from the name of the analysis. On the same hardware and software, a
-rerun gives identical output files; the authors confirmed this with a complete rerun of the full path from a fresh copy of the package.
+rerun gives identical output files. The authors reran the full path from a fresh copy of the package once during the analysis; GPU steps added or changed after that rerun were run once, and their outputs ship with the package. The short path was rerun from a fresh copy of the released package and reproduces every output file and every number in the paper.
 On other hardware, the last digits of some model outputs can differ, and the validation script reports which files differ and how much
 the reported values change.
 
@@ -23,7 +23,7 @@ the reported values change.
 writing and checking of roll-call descriptions (Appendix D.1). Their scripts ship with the package, and their outputs ship as fixed
 inputs.
 
-**Documentation.** Each analysis folder has a short README that says what it computes and which section or appendix uses it.
+**Documentation.** The package README lists the analysis folders in the order of the paper, and each folder has a short README that says what it computes and which section or appendix uses it.
 
 ## References (Appendix)
 

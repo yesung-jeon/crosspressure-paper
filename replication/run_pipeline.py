@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Single entry point of the replication package (rebuild PLAN v0.2, 2026-10-23; Rhee replication-package rules).
+"""Single entry point of the replication package.
 
   python run_pipeline.py --path A     full rerun from raw data and the public models (GPU; H200 settings in config/run.json)
   python run_pipeline.py --path B     every CPU step from the shipped GPU outputs (no GPU)
@@ -12,11 +12,14 @@ rerun skips done steps, so an interrupted run resumes. The first failed step sto
 run.json records every step's start, end, seconds, exit code and the configuration. Batch-1 GPU steps are split into shards
 (--shard i/n), which does not change their outputs. Path B skips GPU steps and requires their shipped outputs.
 
-Step names are <topic>.<step>[.<model>]; the topic names the folder: scales 01, map 02 (layer check map.lc), bundles 04, gunscale 05,
-votes 06, uncertainty 07, warning 08, named 09, history 10, nominate 11, speech 12 (speech.d = state lean), fill 13, gunsym 14,
-mechanism 15, checks 16. (Before 2026-10-24 the prefixes were study letters B, D, L, G, V, W1U, EW, N, T, NOM, SD, GF, SYM, M, post.)
+Step names are <topic>.<step>[.<model>]; the topic names the folder: scales 01_rollcall_scales, gunscale 02_gun_scale,
+gunsym 03_gun_inputs, map 05_directions_and_map (layer check map.lc), history 06_party_history, nominate 07_nominate_benchmarks,
+checks 08_supplementary_checks, validity 09_distance_from_medians, votes 10_vote_prediction, scaleacc 11_vote_prediction_scale,
+speech 12_speech_and_state (speech.d = state lean), fill 13_gun_checks, uncertainty 14_vote_uncertainty,
+named 15_named_member_uncertainty, scaleH 16_scale_uncertainty, warning 17_error_warning, mechanism 18_economic_weight,
+bundles 19_bundled_choices. 04_steering_tools is a library used by 05, 18 and 19.
 """
-import argparse, json, os, platform, shlex, subprocess, sys, time
+import argparse, json, os, platform, subprocess, sys, time
 from pathlib import Path
 
 R = Path(__file__).resolve().parent
@@ -38,8 +41,8 @@ def step(name, cmd, cwd=".", deps=(), gpu=False, shards=1, env=None, path_b=True
                        gb=(CFG["gpu_gb"]["light"] if light else CFG["gpu_gb"]["heavy"]) if gpu else 0)
 
 
-D, L, V, G, N, T = "02_ideology_map/code", "04_bundled_choices/code", "06_vote_prediction/code", "05_gun_scale/code", "09_named_member_entropy", "10_polarization_history/code"
-LC = {"STUDYD_OUT": str(R / "02_ideology_map" / "out_layercheck")}
+D, L, V, G, N, T = "05_directions_and_map/code", "19_bundled_choices/code", "10_vote_prediction/code", "02_gun_scale/code", "15_named_member_uncertainty", "06_party_history/code"
+LC = {"STUDYD_OUT": str(R / "05_directions_and_map" / "out_layercheck")}
 SH = CFG.get("shards", {})
 
 # ---- 0-1 raw data and roll-call scales ----
@@ -52,36 +55,36 @@ for m in M:
         step(f"{pre}.s2gen.{m}", f"python 02_steer_layers.py --model {m}", D, [f"{pre}.s1.{m}"], gpu=True, env=env)
         step(f"{pre}.s2judge.{m}", f"python 03_judge_steering.py --models {m}", D, [f"{pre}.s2gen.{m}"], gpu=True, env=env)
         step(f"{pre}.s2rule.{m}", f"python 04_select_layer.py --model {m}", D, [f"{pre}.s2judge.{m}"], env=env, path_b=False)
-step("map.layercheck", "python 16_supplementary_checks/layercheck/layer_check.py", ".", [f"{p}.s2rule.{m}" for p in ("map", "map.lc") for m in M], path_b=False)
+step("map.layercheck", "python 08_supplementary_checks/layercheck/layer_check.py", ".", [f"{p}.s2rule.{m}" for p in ("map", "map.lc") for m in M], path_b=False)
 for m in M:
     step(f"map.s3.{m}", f"python 05_project_members.py --model {m} --which main", D, [f"map.s2rule.{m}", "map.layercheck"], gpu=True)
 S3 = [f"map.s3.{m}" for m in M]
-# ---- 3-4 shared definitions and Sections 4 (map) ----
+# ---- map placement and recall (Section 5, Appendix C) ----
 step("map.s4", "python 06_vote_vs_map.py", D, S3 + ["scales.issue_scales"])
 step("map.s4b_select", "python 07a_reselect_deepest.py", D, S3 + ["scales.issue_scales"])
 step("map.s4c_select", "python 07b_reselect_by_votes.py", D, ["map.s4b_select"])
 step("map.selection_report", "python tools/check_selection.py", ".", ["map.s4b_select", "map.s4c_select"])
 step("map.s4c_positions", "python 08b_place_by_votes.py", D, ["map.s4"])
 step("map.s4d", "python 09_within_party_by_era.py", D, S3 + ["scales.issue_scales"])
-step("checks.benchmark", "python 16_supplementary_checks/benchmark/benchmark_recall.py", ".", ["map.s4"])
-step("checks.members_by_era", "python 16_supplementary_checks/members_by_era/members_by_era.py", ".", ["map.s4", "map.s4c_positions"])
-step("checks.noise_benchmark", "python 16_supplementary_checks/noise_benchmark/noise_benchmark.py", ".", ["checks.benchmark"])   # council 2026-10-25 B2
-# ---- 5 stated profiles (Section 5) ----
+step("checks.benchmark", "python 08_supplementary_checks/benchmark/benchmark_recall.py", ".", ["map.s4"])
+step("checks.members_by_era", "python 08_supplementary_checks/members_by_era/members_by_era.py", ".", ["map.s4", "map.s4c_positions"])
+step("checks.noise_benchmark", "python 08_supplementary_checks/noise_benchmark/noise_benchmark.py", ".", ["checks.benchmark"])
+# ---- stated profiles (Section 5, Appendix C.5) ----
 step("map.s5_select", "python 10_select_profiles.py", D, S3, path_b=False)   # input of the GPU step s5_inject; Path B keeps the shipped selection
 for m in M:
     step(f"map.s5.{m}", f"python 11_stated_profiles.py --model {m}", D, ["map.s5_select", f"map.s2rule.{m}"], gpu=True)
 step("map.s5_analyze", "python 12_analyze_profiles.py", D, [f"map.s5.{m}" for m in M])
-# ---- 6 bundled choices (Section 6) ----
+# ---- bundled choices (inputs of the no-persona check and Appendix F.1 analyses) ----
 for m in M:
     step(f"bundles.l0.{m}", f"python 01_calibrate_norms.py --model {m}", L, [f"map.s2rule.{m}", "map.layercheck"], gpu=True)
     step(f"bundles.l1.{m}", f"python 02_score_bundles.py --model {m}", L, [f"bundles.l0.{m}"], gpu=True)
     step(f"bundles.l2.{m}", f"python 03_analyze_bundles.py --model {m}", L, [f"bundles.l1.{m}"])
-step("checks.no_persona", "python 16_supplementary_checks/no_persona/no_persona_effect.py", ".", [f"bundles.l2.{m}" for m in M])
-# ---- 7 W1 roll-call vote prediction (Junsol Kim's proposal) and extensions ----
+step("checks.no_persona", "python 08_supplementary_checks/no_persona/no_persona_effect.py", ".", [f"bundles.l2.{m}" for m in M])
+# ---- roll-call vote prediction (Section 6, Appendix D; design proposed by Junsol Kim) ----
 step("votes.v0", "python 01_select_rollcalls.py", V, ["map.s4", "fetch"])
 step("votes.v3", "python 02_build_prompts.py", V, ["votes.v0"])
 step("votes.v3b", "python 03_build_swap_prompts.py", V, ["votes.v3"])
-step("checks.w1_prompts", "python 16_supplementary_checks/w1/vote_prompt_checks.py prompts", ".", ["votes.v3b"])
+step("checks.w1_prompts", "python 08_supplementary_checks/w1/vote_prompt_checks.py prompts", ".", ["votes.v3b"])
 step("votes.v5_synthetic", "python estimate_votes.py --synthetic", V, ["votes.v0"])        # W1 gate 2: planted effect, recovery, reconstruction
 SELS = ["pilot", "economic", "swap_abortion", "swap_economic"]
 for m in M:
@@ -90,14 +93,15 @@ for m in M:
     step(f"votes.v5.{m}", f"python estimate_votes.py --model {m} --select v2", V, [f"votes.v4.{m}.{s}" for s in SELS] + ["votes.v5_synthetic"])
     step(f"votes.v5c.{m}", f"python 06_competence_by_party.py {m}", V, [f"votes.v5.{m}"])
 V5 = [f"votes.v5.{m}" for m in M]
-step("checks.order_corr", "python 16_supplementary_checks/w1/order_corr.py", ".", V5)
-step("checks.cases", "python 16_supplementary_checks/cases/case_votes.py", ".", V5 + ["votes.v0"])   # named cases for the manuscript (2026-10-25)
+step("checks.order_corr", "python 08_supplementary_checks/w1/order_corr.py", ".", V5)
+step("checks.cases", "python 08_supplementary_checks/cases/case_votes.py", ".", V5 + ["votes.v0"])   # named cases for the manuscript (2026-10-25)
+step("checks.figure_data", "python 08_supplementary_checks/figure_data/figure_data.py", ".", ["map.s4", "scales.issue_scales"])   # body Figures 1-2 data (2026-11-01)
 step("votes.A12_loo_cp", "python 08_leave_one_out_cp.py", V, V5 + ["scales.issue_scales"])
 step("votes.A13_error_direction", "python 09_error_direction.py", V, V5)
 # guns: G0 scale, G1 benchmark, G2 votes (A14)
 step("gunscale.g0_candidates", "python 01_find_candidates.py", G, ["scales.issue_scales"])
 step("gunscale.g0_labels_claude", "python 02_claude_labels.py", G, ["gunscale.g0_candidates"])
-step("gunscale.g0_scale", "python 03_build_gun_scale.py", G, ["gunscale.g0_candidates", "map.s3.qwen", "scales.issue_scales"])
+step("gunscale.g0_scale", "python 03_build_gun_scale.py", G, ["gunscale.g0_candidates", f"map.s3.{M[0]}", "scales.issue_scales"])   # reference model rows
 step("gunscale.g1", "python 05_map_benchmark.py", G, ["gunscale.g0_scale"] + S3)
 step("votes.g2_rollcalls", "python 10_gun_rollcalls.py", V, ["gunscale.g0_scale", "votes.v0"])
 step("votes.g2_descriptions", "python 11_gun_descriptions.py", V, ["votes.g2_rollcalls"])
@@ -110,11 +114,11 @@ for m in M:
     step(f"votes.g2_estimate.{m}", f"python 13_gun_estimate.py --model {m}", V, [f"votes.v4.{m}.guns", f"votes.v4.{m}.swap_guns", "votes.g2_gate", f"votes.v5.{m}"])
     step(f"votes.g2_diagnose.{m}", f"python 14_gun_diagnose.py {m}", V, [f"votes.g2_estimate.{m}"])
 step("votes.g2_error_direction", "python 15_gun_error_direction.py", V, [f"votes.g2_estimate.{m}" for m in M] + ["votes.A13_error_direction"])
-# ---- 8 entropy: W1 uncertainty, error warning and map-vote link (W, L1), Study N ----
-step("uncertainty.prepare", "python code/01_prepare_input.py", "07_vote_uncertainty", V5 + [f"votes.g2_estimate.{m}" for m in M])   # + gun frames (PROTOCOL_GUNSYM)
-step("uncertainty.run", f"{RSCRIPT} --vanilla 07_vote_uncertainty/code/02_fit_entropy.R", ".", ["uncertainty.prepare"])
-step("warning.synthetic", "python error_warning.py --synthetic", "08_error_warning/code")
-step("warning.run", "python error_warning.py", "08_error_warning/code", V5 + ["warning.synthetic", "map.s4"])
+# ---- uncertainty: vote entropy, error warning, named-member questions (Section 7, Appendix E) ----
+step("uncertainty.prepare", "python code/01_prepare_input.py", "14_vote_uncertainty", V5 + [f"votes.g2_estimate.{m}" for m in M])   # + gun frames (PROTOCOL_GUNSYM)
+step("uncertainty.run", f"{RSCRIPT} --vanilla 14_vote_uncertainty/code/02_fit_entropy.R", ".", ["uncertainty.prepare"] + [f"votes.v5c.{m}" for m in M])   # INTERP from W1 competence
+step("warning.synthetic", "python error_warning.py --synthetic", "17_error_warning/code")
+step("warning.run", "python error_warning.py", "17_error_warning/code", V5 + ["warning.synthetic", "map.s4"])
 step("named.R1b", "python 01_check_rows.py", f"{N}/code", ["map.s4"])
 for m in M:
     step(f"named.map.{m}", f"python 02_reproject_map.py --model {m}", f"{N}/code", [f"map.s3.{m}"], gpu=True)
@@ -125,14 +129,13 @@ for m in M:
     step(f"named.prepare_fake.{m}", f"python 05_prepare_rows.py --model {m} --fake", f"{N}/analysis", [f"named.map.{m}", "named.R1b", "gunscale.g0_scale"])
 step("named.run_fake", f"{RSCRIPT} --vanilla {N}/analysis/07_fit_main.R data_fake " + " ".join(M), ".", [f"named.prepare_fake.{m}" for m in M])
 step("named.run", f"{RSCRIPT} --vanilla {N}/analysis/07_fit_main.R data " + " ".join(M), ".", [f"named.prepare.{m}" for m in M] + ["named.run_fake"])
-# ---- 9 history: T0, T2, Nokken-Poole (N1), GMP (N2) ----
+# ---- party history and NOMINATE benchmarks (Section 4, Appendix B, D.8) ----
 step("history.t0_synthetic", "python party_history.py --synthetic", T)
 step("history.t0", "python party_history.py", T, S3 + ["history.t0_synthetic", "fetch"])
-step("history.t2", "python 02_sorting.py", T, S3 + ["gunscale.g0_scale", "scales.issue_scales"])
-step("nominate.n1_synthetic", "python nokken_poole.py --synthetic", "11_nominate_benchmarks/code")
-step("nominate.n1", "python nokken_poole.py", "11_nominate_benchmarks/code", S3 + ["nominate.n1_synthetic", "history.t0"])
-step("nominate.n2", "python 02_gmp_fit.py", "11_nominate_benchmarks/code", V5 + ["votes.g2_estimate.llama", "map.s4"])
-# ---- 10 speech partisanship (S) and state lean (D) ----
+step("nominate.n1_synthetic", "python nokken_poole.py --synthetic", "07_nominate_benchmarks/code")
+step("nominate.n1", "python nokken_poole.py", "07_nominate_benchmarks/code", S3 + ["nominate.n1_synthetic", "history.t0"])
+step("nominate.n2", "python 02_gmp_fit.py", "07_nominate_benchmarks/code", V5 + [f"votes.g2_estimate.{m}" for m in M] + ["map.s4"])
+# ---- speech partisanship and state lean (Appendix D.7, F.2) ----
 SD = "12_speech_and_state/code"
 step("speech.s0", "python 01_build_speech_matrices.py", SD, ["fetch"])
 step("speech.s0_gate", "python 01_build_speech_matrices.py --gate", SD, ["speech.s0"])
@@ -140,30 +143,30 @@ step("speech.s1_synthetic", "python speech_history.py --synthetic", SD)
 step("speech.s1", "python speech_history.py", SD, ["speech.s0_gate", "speech.s1_synthetic", "history.t0"] + S3)
 step("speech.s2", "python 03_member_speech.py", SD, ["speech.s0_gate", "map.s4"] + V5)
 step("speech.d_synthetic", "python state_lean.py --synthetic", SD)
-step("speech.d", "python state_lean.py", SD, ["speech.d_synthetic", "map.s4", "votes.g2_estimate.llama"] + V5)
-# ---- 11 gap fill ----
-GF = "13_coverage_fill/code"
+step("speech.d", "python state_lean.py", SD, ["speech.d_synthetic", "map.s4"] + [f"votes.g2_estimate.{m}" for m in M] + V5)
+# ---- gun versions of the speech, state and NOMINATE checks ----
+GF = "13_gun_checks/code"
 GF_DEPS = ["speech.s1", "speech.s2", "speech.d", "nominate.n1", "nominate.n2", "warning.run", "gunscale.g1"] + [f"votes.g2_estimate.{m}" for m in M]
 step("fill.synthetic", "python 01_fill_gaps.py --synthetic", GF, GF_DEPS)    # the synthetic check plants effects on the real design (gun rows, maps)
 step("fill.run", "python 01_fill_gaps.py", GF, ["fill.synthetic"] + GF_DEPS)
-# ---- 11b guns as the symmetric social benchmark (PROTOCOL_GUNSYM, author 2026-10-24): same scripts, social scale = G0 gun scale ----
-GUNENV = {"ISSUE_SCALES": str(R / "14_gun_symmetry" / "out" / "issue_scales_guns.csv"), "SOCIAL_TAG": "_guns"}
-step("gunsym.scales", "python 01_make_gun_scales.py", "14_gun_symmetry/code", ["gunscale.g0_scale", "scales.issue_scales"])
+# ---- guns as the second social issue: the same scripts with the gun scale as the social scale ----
+GUNENV = {"ISSUE_SCALES": str(R / "03_gun_inputs" / "out" / "issue_scales_guns.csv"), "SOCIAL_TAG": "_guns"}
+step("gunsym.scales", "python 01_make_gun_scales.py", "03_gun_inputs/code", ["gunscale.g0_scale", "scales.issue_scales"])
 step("map.s4_guns", "python 06_vote_vs_map.py --out s4_guns", D, S3 + ["gunsym.scales"], env=GUNENV)
 step("map.s4d_guns", "python 09_within_party_by_era.py --out s4d_guns", D, S3 + ["gunsym.scales"], env=GUNENV)
-step("checks.benchmark_guns", "python 16_supplementary_checks/benchmark/benchmark_recall.py", ".", ["map.s4_guns"], env=GUNENV)
-step("checks.noise_benchmark_guns", "python 16_supplementary_checks/noise_benchmark/noise_benchmark.py", ".", ["checks.benchmark_guns"], env=GUNENV)
-step("checks.members_by_era_guns", "python 16_supplementary_checks/members_by_era/members_by_era.py", ".", ["map.s4_guns", "map.s4c_positions"], env=GUNENV)
+step("checks.benchmark_guns", "python 08_supplementary_checks/benchmark/benchmark_recall.py", ".", ["map.s4_guns"], env=GUNENV)
+step("checks.dw2_orientation", "python 08_supplementary_checks/benchmark/dw2_orientation.py", ".",
+     ["checks.benchmark", "checks.benchmark_guns", "gunsym.scales", "scales.issue_scales"])   # DW dim-2 orientation check
+step("checks.noise_benchmark_guns", "python 08_supplementary_checks/noise_benchmark/noise_benchmark.py", ".", ["checks.benchmark_guns"], env=GUNENV)
+step("checks.members_by_era_guns", "python 08_supplementary_checks/members_by_era/members_by_era.py", ".", ["map.s4_guns", "map.s4c_positions"], env=GUNENV)
 step("named.guns", f"{RSCRIPT} --vanilla {N}/analysis/09_fit_guns.R " + " ".join(M), ".", ["named.run"])
-# ---- 12 Study M (mechanism) ----
-SM = "15_mechanism/code"
+# ---- economic weight within party (Appendix F.1) ----
+SM = "18_economic_weight/code"
 for s, f in (("synth_check", "00a_synth_x1"), ("synth_check_x2", "00b_synth_x2"), ("synth_check_x3", "00c_synth_x3"),
              ("synth_check_x4", "00d_synth_x4"), ("synth_check_x5", "00e_synth_x5")):
     step(f"mechanism.{s}", f"python {f}.py", SM)
 step("mechanism.X1", "python 01_x1_where_misses_go.py", SM, ["mechanism.synth_check", "map.s4", "map.s5_analyze"])
 step("mechanism.X2", "python 02_x2_within_party.py", SM, ["mechanism.synth_check_x2", "map.s4d"])
-step("mechanism.X1_guns", "python 01_x1_where_misses_go.py", SM, ["mechanism.synth_check", "map.s4_guns", "map.s5_analyze"], env=GUNENV)
-step("mechanism.X2_guns", "python 02_x2_within_party.py", SM, ["mechanism.synth_check_x2", "map.s4d_guns"], env=GUNENV)
 step("mechanism.X3", "python 04_x3_strength.py", SM, ["mechanism.synth_check_x3"] + [f"bundles.l2.{m}" for m in M])
 for m in M:
     step(f"mechanism.X4_familiarity.{m}", f"python 05_x4_familiarity.py --model {m}", SM, [f"bundles.l2.{m}"], gpu=True)
@@ -173,6 +176,33 @@ step("mechanism.X4", "python analyze_x4.py", SM, ["mechanism.synth_check_x4"] + 
 step("mechanism.X5A", "python 07_x5_stage_a.py", SM, ["mechanism.synth_check_x5"] + [f"bundles.l2.{m}" for m in M])
 step("mechanism.X5B", "python 10_x5_stage_b.py", SM, [f"mechanism.X5_reproduce.{m}" for m in M])
 step("mechanism.X5_threeway", "python 11_x5_threeway.py", SM, ["mechanism.X5A", "mechanism.X5B"])
+# ---- answer scales (Sections 6-7, Appendix D.10, E) ----
+SC = "16_scale_uncertainty/code"
+for m in M:
+    step(f"scaleH.score.{m}", f"python score_scale.py --model {m}", SC, [f"map.s3.{m}", "scales.issue_scales", "named.R1b", "votes.v3", "votes.g2_prompts"],
+         gpu=True, shards=SH.get("n2_yesno", 1))     # batch-1 scoring like Study N yes/no
+step("scaleH.synthetic", "python analyze.py --synthetic", SC)
+step("scaleH.analyze", "python analyze.py", SC, [f"scaleH.score.{m}" for m in M] + [f"named.prepare.{m}" for m in M] + V5
+     + [f"votes.g2_estimate.{m}" for m in M] + ["scaleH.synthetic"])
+# named-member questions on the vote task's 1-9 scale
+for m in M:
+    step(f"scaleH.score9.{m}", f"python score_scale.py --model {m} --tasks named9", SC, [f"map.s3.{m}", "scales.issue_scales", "named.R1b"],
+         gpu=True, shards=SH.get("n2_yesno", 1))
+step("scaleH.check9", "python check_named9.py", SC, ["scaleH.analyze"])   # analyze_named9 reproduces the sealed 1-7 named rows
+step("scaleH.analyze9", "python analyze_named9.py", SC, [f"scaleH.score9.{m}" for m in M] + [f"named.prepare.{m}" for m in M] + ["scaleH.check9"])
+# vote-prediction accuracy read from the 9-point scale answers
+SQ = "11_vote_prediction_scale/code"
+SQ_DEPS = [f"scaleH.score.{m}" for m in M] + V5 + [f"votes.v5c.{m}" for m in M] + [f"votes.g2_estimate.{m}" for m in M] + [
+    "votes.v0", "votes.A12_loo_cp", "votes.A13_error_direction", "votes.g2_error_direction", "speech.d", "nominate.n2", "checks.cases"]
+step("scaleacc.checks", "python scale_accuracy.py --checks", SQ, V5 + ["votes.A12_loo_cp", "votes.g2_estimate.llama"])   # frames() reads both
+step("scaleacc.run", "python scale_accuracy.py", SQ, SQ_DEPS + ["scaleacc.checks"])
+step("scaleacc.s6", "python section6_scale.py", SQ, SQ_DEPS + ["scaleacc.run"])
+# scale competence and scale error warning
+step("scaleacc.checks2", "python scale_checks.py", SQ, SQ_DEPS + ["scaleacc.run", "warning.run", "named.prepare.qwen", "named.prepare.llama",
+                                                                  "scaleH.score9.qwen", "scaleH.score9.llama"])
+# ---- distance from the medians (Appendix C.7) ----
+VC = "09_distance_from_medians/code"
+step("validity.v2", "python v2_median_distance.py", VC, S3 + ["checks.benchmark", "scales.issue_scales"])
 
 
 def expand():
@@ -213,11 +243,11 @@ def main():
     LOGS.mkdir(parents=True, exist_ok=True)
     rj = LOGS / f"run_path{a.path}.json"
     run = json.load(open(rj)) if rj.exists() else {"path": a.path, "config": CFG, "python": sys.version, "platform": platform.platform(), "steps": {}}
-    if rj.exists() and run.get("config") != CFG:       # done markers carry no configuration (Codex round 3): never resume across a change
+    if rj.exists() and run.get("config") != CFG:       # done markers carry no configuration: never resume across a change
         sys.exit(f"{rj.name} was written under a different config/run.json: run python tools/clear_outputs.py --yes and start again")
     done = lambda n: (LOGS / f"done_{n}").exists()
     if a.path == "A" and ((LOGS / "PATH_B_MARKERS").exists() or (LOGS / "run_pathB.json").exists()):   # Path B marks GPU steps done
-        sys.exit("Path B markers are present: run python tools/clear_outputs.py --yes before a full Path A run")   # (Codex review 2026-10-24)
+        sys.exit("Path B markers are present: run python tools/clear_outputs.py --yes before a full Path A run")
     if a.path == "B":                      # GPU steps (and the CPU steps inside GPU chains) are not run; their shipped outputs are used
         (LOGS / "PATH_B_MARKERS").touch()  # written before any marker, so an interrupted Path B still blocks a later Path A
         for s in steps.values():

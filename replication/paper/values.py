@@ -83,6 +83,9 @@ for s, m in MS.items():
     estci(f"T0_SHARE_D_{s}", ("history", m, "economic", "T0 Democratic share of gap growth (x)"))
     estci(f"T0_SHARE_D_MINUS_DW_{s}", ("history", m, "economic", "T0 Democratic share, model minus DW"))
     estci(f"T0_EARLY_RATIO_{s}", ("history", m, "economic", "T0 early-postwar gap, model / DW"))
+    for k, q in (("DGAP_MINUS_DW", "T0 model minus DW gap growth"), ("SHARE_D", "T0 Democratic share of gap growth"),
+                 ("EARLY_RATIO", "T0 early-postwar gap, model / DW")):   # recognized member-Congresses only
+        estci(f"T0K_{k}_{s}", ("history", m, "economic", f"{q}, recognized"))
     verdict(f"T0_EARLY_READING_{s}", ("history", m, "economic", "T0 early-postwar gap, model / DW"))
     estci(f"T0_EARLY_SEP_MAP_{s}", ("history", m, "economic", "T0 early-postwar party separation, map x"))
     put(f"T0_EARLY_FRAC_{s}", frac_words(float(row(("history", m, "economic", "T0 early-postwar gap, model / DW"))["estimate"])),
@@ -113,6 +116,17 @@ for iss, t in (("abortion", "AB"), ("guns", "GUN")):
     for s, m in MS.items():
         for q in ("EL-SP", "ER-ST", "EL-ST", "ER-SP"):
             est(f"RECALL_{q.replace('-', '')}_{t}_{s}", ("map", m, iss, f"A9 recall {q}"))
+# V2 (pass 20, 2026-11-02): recall by distance from the medians, abortion (09_distance_from_medians)
+for lab, t in (("full", "FULL"), ("near tercile", "NEAR"), ("middle tercile", "MID"), ("far tercile", "FAR"), ("dist >= 0.5 SD", "D05")):
+    for s, m in MS.items():
+        estci(f"V2_{t}_GAP_{s}", ("map", m, "abortion", f"V2 recall gap aligned - cross, {lab}"))
+        est(f"V2_{t}_ALIGNED_{s}", ("map", m, "abortion", f"V2 aligned, {lab}"))
+        est(f"V2_{t}_CROSS_{s}", ("map", m, "abortion", f"V2 cross, {lab}"))
+    for g, gt in (("n_aligned", "N_ALIGNED"), ("n_cross", "N_CROSS")):
+        ks = [("map", m, "abortion", f"V2 {g}, {lab}") for m in MS.values()]
+        assert len({row(k)["estimate"] for k in ks}) == 1, f"V2 {g} differs between models ({lab})"
+        est(f"V2_{t}_{gt}", ks[0])
+for i in (1, 2): est(f"V2_CUT{i}", ("map", "-", "abortion", f"V2 tercile cut {i} (SD)"), 2)
 ns = [float(row(("map", m, "abortion", f"A12 selected {q} (n)"))["estimate"]) for m in MS.values() for q in ("EL-SP", "ER-ST", "EL-ST", "ER-SP")]
 assert len(set(ns)) == 1, "named members per quadrant differ"
 put("NAMED_N", f"{int(ns[0])}", *[("map", m, "abortion", f"A12 selected {q} (n)") for m in MS.values() for q in ("EL-SP", "ER-ST", "EL-ST", "ER-SP")])
@@ -127,10 +141,6 @@ for s, m in MS.items():
     for h, t in (("H3_C2", "H3"), ("H4_C3hit", "H4"), ("H1_C1a", "H1"), ("H2_C4", "H2")):
         estci(f"{t}_{s}", ("profiles", m, "-", f"S5 {h}"))
         verdict(f"{t}_READING_{s}", ("profiles", m, "-", f"S5 {h}"))
-    for iss, t in (("abortion", "AB"), ("guns", "GUN"), ("abortion (gun rows)", "ABGR")):
-        estci(f"T2_{t}_{s}", ("history", m, iss, "T2 over-alignment all (map - vote corr)"))
-        verdict(f"T2_{t}_ALIGNS_MORE_{s}", ("history", m, iss, "T2 map aligns more than votes"))
-        verdict(f"T2_{t}_CP_EARLIER_{s}", ("history", m, iss, "T2 CP more common before sorting"))
 
 # ---- Section 6: roll-call votes (Junsol Kim's design; W1, A12-A14, G2), constituency, NOMINATE ---------------------------------
 for s, m in MS.items():
@@ -160,10 +170,11 @@ for s, m in MS.items():
     estci(f"N2_ACC_AB_{s}", ("nominate", m, "abortion", "N2 vote accuracy ~ CP given GMP"))
     verdict(f"N2_BEYOND_AB_{s}", ("nominate", m, "abortion", "N2 beyond NOMINATE"))
 estci("D3_GUN_L", ("state", "llama", "guns", "D3 vote accuracy ~ constituency CP"))
+estci("N2_ACC_GUN_L", ("nominate", "llama", "guns", "N2 vote accuracy ~ CP given GMP"))   # abortion-defined CP on gun votes (n2.json; audit 11-02 item 2)
 verdict("N2_FITTED_WORSE", ("nominate", "-", "-", "N2 CP fitted worse by NOMINATE"))
 verdict("G2_GATE", ("votes", "-", "guns", "G2 leave-one-out gate"))
 
-# ---- named cases (Sections 5-6; 16_supplementary_checks/cases) -------------------------------------------------------------------
+# ---- named cases (Sections 5-6; 08_supplementary_checks/cases) -------------------------------------------------------------------
 for s, m in MS.items():
     for name, t in (("Olympia Snowe", "SNOWE"), ("Thomas Eagleton", "EAGLETON"), ("Robert Packwood", "PACKWOOD")):
         for iss, it in (("abortion", "AB"), ("economic", "ECON")):
@@ -188,17 +199,51 @@ put("ENT_CELLS", str(len(ENT)), ("count of the entropy cells listed in paper/val
 for s, m in MS.items():
     for iss, t in (("abortion", "AB"), ("economic", "ECON"), ("guns", "GUN"), ("guns_gcp", "GUNCP")):
         estci(f"W1U_{t}_{s}", ("vote uncertainty", m, iss, "CP effect on choice entropy (bits)"))
-        verdict(f"W1U_{t}_READING_{s}", ("vote uncertainty", m, iss, "CP effect on choice entropy (bits)"))
+        # sealed verdict under the superseded 0.05-bit rule; the 10-30 rule readings are in 16_scale_uncertainty/out/rerule_sealed.csv
+        verdict(f"W1U_{t}_READING_OLD_RULE_{s}", ("vote uncertainty", m, iss, "CP effect on choice entropy (bits)"))
     for iss, t in (("abortion", "AB"), ("economic", "ECON"), ("guns", "GUN")):
         for g in ("aligned", "cp"):
             est(f"AUROC_{g.upper()}_{t}_{s}", ("warning", m, iss, f"AUROC within roll call, {g}"))
         estci(f"AUROC_DIFF_{t}_{s}", ("warning", m, iss, "AUROC within roll call, CP - aligned"))
     for q, t in (("Q2", "Q2_AB"), ("Q3", "Q3_AB")):
         estci(f"N_{t}_{s}", ("named entropy", m, "abortion", q))
-        verdict(f"N_{t}_READING_{s}", ("named entropy", m, "abortion", q))
+        verdict(f"N_{t}_READING_OLD_RULE_{s}", ("named entropy", m, "abortion", q))   # superseded 0.05-bit rule (see W1U note)
     ks = [(st, m, i, q) for st, i, q in ENT]
     above = sum(float(row(k)["lower95"]) > 0 for k in ks); below = sum(float(row(k)["upper95"]) < 0 for k in ks)
     put(f"ENT_ABOVE_{s}", str(above), *ks); put(f"ENT_BELOW_{s}", str(below), *ks)
+
+# ---- Sections 6-7 v2 (2026-11-01): scale entropy (stage 17) and scale accuracy (stage 22) -----------------------------
+for s, m in MS.items():
+    estci(f"SH_VOTE_AB_{s}", ("scale entropy", m, "abortion", "votes H9"))
+    # named-member scale: the 1-9 rescoring replaces the 1-7 rows in the paper; 1-7 rows stay sealed
+    estci(f"SH_NAMED_AB_{s}", ("scale entropy", m, "abortion (vote CP)", "named9 H9"))
+    estci(f"SH_NAMED_GUN_{s}", ("scale entropy", m, "guns (gun CP)", "named9 H9"))
+    for iss, t in (("abortion", "AB"), ("economic", "ECON")):
+        estci(f"SA_GAP_{t}_{s}", ("scale accuracy", m, iss, "CP gap, scale"))
+    estci(f"SA_DYF_AB_{s}", ("scale accuracy", m, "abortion", "scale gap minus YEA-first gap"))
+    estci(f"SA_YF_AB_{s}", ("scale accuracy", m, "abortion", "CP gap, two answers, YEA described first"))   # d_yf baseline
+    k = ("scale accuracy", m, "abortion", "scale gap minus two-order gap"); estci(f"SA_DAVG_AB_{s}", k)
+    # SA_DAVG_AB_LO_* removed 2026-11-02: it held the lower bound under a comment about the upper bound, and no text used it
+    # body prints the protocol primary SA_DYF_* since 2026-11-01; SA_DAVG_* kept as the secondary row
+    for g in ("aligned", "cp"):                                # scale error warning (11_vote_prediction_scale scale_checks.json, C3)
+        est(f"SAUROC_{g.upper()}_AB_{s}", ("scale checks", m, "abortion", f"scale AUROC within roll call, {g}"))
+    estci(f"SAUROC_DIFF_AB_{s}", ("scale checks", m, "abortion", "scale AUROC within roll call, CP - aligned"))
+    for p, t in (("Democrat", "DEM"), ("Republican", "REP")):
+        estci(f"SA_PARTY_{t}_{s}", ("scale accuracy", m, "abortion", f"CP gap, scale, {p} only"))
+    estci(f"SA_ERRDIR_AB_{s}", ("scale accuracy", m, "abortion", "CP errors toward party, scale (M1)"))
+    for fmt, t in (("scale", "SCALE"), ("binary", "BIN")):
+        est(f"SA_PREDYEA_{t}_AB_ALIGNED_{s}", ("scale accuracy", m, "abortion", f"share predicted YEA, aligned, {fmt}"), d=2)
+    estci("SA_BRIER_AB_" + s, ("scale accuracy", m, "abortion", "Brier gap, scale"))
+    est("SA_BRIER_BIN_AB_" + s, ("scale accuracy", m, "abortion", "Brier gap, binary"))
+estci("SH_VOTE_GUNCP_L", ("scale entropy", "llama", "guns_gcp", "votes H9"))
+estci("SA_GAP_GUNCP_L", ("scale accuracy", "llama", "guns", "gun CP gap, scale"))
+estci("SA_GAP_GUNABCP_L", ("scale accuracy", "llama", "guns", "abortion CP gap, scale"))
+for s, m in MS.items():   # Table D1
+    for iss, t in (("abortion", "AB"), ("economic", "ECON"), ("guns", "GUN")):
+        for lab, lt in (("aligned", "ALIGNED"), ("cross-pressured", "CROSS")):
+            est(f"SA_ACC_{lt}_{t}_{s}", ("scale accuracy", m, iss, f"accuracy {lab}, scale"))
+    estci(f"SA_LOO_AB_{s}", ("scale accuracy", m, "abortion", "LOO CP gap, scale"))
+    estci(f"SA_D3_AB_{s}", ("scale accuracy", m, "abortion", "state-based CP gap, scale"))
 
 # ---- Section 8: speech, mechanism, bundles (for the one-sentence pointer) ---------------------------------------------------------
 estci("S2A_AB", ("speech", "qwen", "abortion", "S2a partisan speech ~ CP"))

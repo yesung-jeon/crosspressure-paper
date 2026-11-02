@@ -1,7 +1,5 @@
 # 00_shared
 
-Shared code: the model loader (bf16, pinned revisions, deterministic mode) and constants used by several folders (persona wording read from congress_map/03_project_legislators.py, state names, seeds).
+Shared code: the model loader (bf16 at pinned revisions, deterministic mode, GPU memory cap), shared constants, and the median-split rule used for every quadrant (`splits.py`: members tied at the median go to whichever half keeps the split closer to even).
 
-Used in: every model step.
-
-Imported by the analysis steps; it writes no outputs of its own.
+Used in: every analysis.

@@ -5,8 +5,8 @@ member, a record to compare it with, and tests that look at cross-pressure from 
 order.
 
 **Two models.** We study Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct (Llama Team, 2024; Qwen Team, 2025), hereafter Qwen and Llama.
-Our questions concern what happens inside a model, so we use models whose weights are public. We fix the model versions and run all
-computations deterministically, so that every result in the paper can be reproduced exactly.
+Our questions concern what happens inside a model, so we use models whose weights are public. The two come from different developers, so a result that holds in both does not rest on one training pipeline. We fix the model versions and run all
+computations deterministically, so that every result in the paper can be reproduced exactly on the same hardware and software; the replication package runs every step from the raw data and the public models (Appendix G).
 
 **Economic and social directions.** To place members on two dimensions of conflict, we first need to find those
 dimensions inside each model. Following Chen et al. (2025), we prompt each model with pairs of opposing instructions, one pair about
@@ -16,14 +16,14 @@ the model's answers: layer {{LAYER_Q}} in Qwen and layer {{LAYER_L}} in Llama. R
 (Appendix A.4).
 
 **Placing members: the map.** With the two directions in hand, we place members. For each member in each Congress from 1947 to 2024, a
-member-Congress, each model is asked to speak as that member. The prompt gives the member's name, chamber, state and year; as in Kim et al. (2025), it does not give the party. Projecting the model's activation onto the two directions gives the member's economic and social coordinates.
-Together, these coordinates form the map that Sections 4 and 5 examine (Appendix A.5).
+member-Congress with a DW-NOMINATE score (Appendix A.2), each model is asked to speak as that member. The prompt gives the member's name, chamber, state and year; as in Kim et al. (2025), it does not give the party. Projecting the model's activation onto the two directions gives the member's economic and social coordinates.
+Together, these coordinates form the map that Sections 4 and 5 examine (Appendix A.5). The map is the readout under this prompt; it is not a fixed property of the model.
 
 **The roll-call record and cross-pressure.** A map is informative only if it can be checked against what members did. Because economic
 and social ideology are distinct dimensions (Feldman & Johnston, 2014), we measure each member's economic and social positions
 separately, from roll calls in Voteview (Lewis et al., 2026). The economic scale uses roll calls on the economic topics of the Policy
 Agendas Project (Jones et al., 2025). Social positions are measured on abortion, the social issue whose roll calls span the period and
-on which the parties were at first internally divided (Adams, 1997; Layman & Carsey, 2002), and, as a second issue, on gun control (Appendix A.3). Splitting each scale at its median within Congress and chamber places every Democratic and Republican member-Congress with both scales in one of four quadrants.
+on which the parties were at first internally divided (Adams, 1997; Layman & Carsey, 2002), and, as a second issue reported in the appendices, on gun control (Appendix A.3). Splitting each scale at its median within Congress and chamber places every Democratic and Republican member-Congress with both scales in one of four quadrants.
 Cross-pressured members are those whose economic and social scales fall on opposite sides, economically liberal and socially
 conservative or the reverse. All others are aligned members. Section 6 adds two definitions that do not depend on the same votes: a
 leave-one-out definition, which leaves out the roll call being predicted, and state-based cross-pressure, which holds when the member's state leans toward the other party in presidential elections (MIT Election Data and Science Lab, 2017); for House members, the state stands in for the district.
@@ -35,14 +35,14 @@ Congress while holding the roll-call parameters fixed (Nokken & Poole, 2004). Ho
 DW-NOMINATE, each in standard deviations of its own scale. We then split the change into Democratic and Republican movement, and into
 the movement of continuing members and the replacement of members (Section 4). Second, we check whether each member-Congress falls in
 the quadrant of its votes, and whether the models follow cross-pressured profiles when the profile's positions are stated in the prompt
-instead of a name (Section 5). Third, each model predicts members' votes on abortion, economic and gun-control roll calls from the
-member's name, state, chamber and year and a neutral description of what a YEA and a NAY vote would do (Section 6). The descriptions were
+instead of a name (Section 5). Third, each model predicts members' votes on abortion and economic roll calls from the
+member's name, state, chamber and year and a neutral description of what a YEA and a NAY vote would do (Section 6; gun-control votes in Appendix D.5). The descriptions were
 drafted by a language model from Voteview's text, screened by fixed rules for outcome and party cues, checked by a model from another
 family (GPT-4.1-mini), and spot-checked by the authors (Appendix D.1). Accuracy is compared among members of the same party voting on the
 same roll call, with intervals clustered by member and by roll call.
 
 **The models' own uncertainty.** Finally, we ask whether the models register these members as harder (Section 7). We measure
-uncertainty as the entropy, in bits, of a model's next-token probabilities over the answer options. Whether uncertainty points to errors
+uncertainty as the entropy of a model's next-token probabilities over the answer options, divided by its maximum so that two-answer and scale formats share one range from 0 to 1. Whether uncertainty points to errors
 is measured as the probability that, on the same roll call, a wrong prediction has higher entropy than a right one.
 
 **The map tracks roll-call positions.** Before the tests, we check that the map measures what it should. The models' economic

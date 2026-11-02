@@ -15,9 +15,11 @@ Outputs: out/data/pap_ledger.csv, issue_rollcalls.csv, issue_scales.csv, data_re
 import json
 import numpy as np, pandas as pd
 from scale_issues import ISSUES, RC_ONLY, OUT, PAP_CSV, VV_ROLLCALLS, VV_VOTES, VV_MEMBERS, CONGRESSES, cm
-# Tie rule (author decision 2026-10-23, rebuild): scores are rounded to 10 decimals, so identical voting records get identical scores on
+# Tie rule: scores are rounded to 10 decimals, so identical voting records get identical scores on
 # every platform and members tied at the median go to the lower half of the "> median" split (before: ~1e-15 noise decided; 224 abortion
 # member-Congress rows flipped between Windows and Linux). Also in 03_build_gun_scale.py and 08_leave_one_out_cp.py.
+# Author decision 2026-10-30 supersedes "ties go to the lower half": every split now calls 00_shared/splits.py:split_hi, which puts
+# tied members in whichever half keeps the split closer to 50/50 (114 House, 108/109 Senate had over half the members tied at the top).
 TIE_DECIMALS = 10
 
 D = OUT / "data"; D.mkdir(exist_ok=True)

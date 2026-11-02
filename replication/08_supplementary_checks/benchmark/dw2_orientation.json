@@ -1,0 +1,52 @@
+{
+ "abortion": {
+  "cells": 40,
+  "flipped_cells": [],
+  "rows_in_flipped_cells": 0,
+  "gate_vs_sealed": 0.0,
+  "oriented (sealed procedure)": {
+   "EL-SP": 0.5598300684446542,
+   "ER-ST": 0.531929990539262,
+   "EL-ST": 0.7210473313192346,
+   "ER-SP": 0.640973630831643,
+   "aligned_pooled": 0.5458948611931482,
+   "cross_pooled": 0.6811520970186963,
+   "n": 10444
+  },
+  "dimension 2 as published": {
+   "EL-SP": 0.5598300684446542,
+   "ER-ST": 0.531929990539262,
+   "EL-ST": 0.7210473313192346,
+   "ER-SP": 0.640973630831643,
+   "aligned_pooled": 0.5458948611931482,
+   "cross_pooled": 0.6811520970186963,
+   "n": 10444
+  }
+ },
+ "guns": {
+  "cells": 11,
+  "flipped_cells": [
+   "106Senate"
+  ],
+  "rows_in_flipped_cells": 100,
+  "gate_vs_sealed": 0.0,
+  "oriented (sealed procedure)": {
+   "EL-SP": 0.5755743651753326,
+   "ER-ST": 0.5182232346241458,
+   "EL-ST": 0.8019323671497585,
+   "ER-SP": 0.7236842105263158,
+   "aligned_pooled": 0.546041055718475,
+   "cross_pooled": 0.7688022284122563,
+   "n": 2064
+  },
+  "dimension 2 as published": {
+   "EL-SP": 0.5707376058041113,
+   "ER-ST": 0.5239179954441914,
+   "EL-ST": 0.7922705314009661,
+   "ER-SP": 0.756578947368421,
+   "aligned_pooled": 0.5466275659824047,
+   "cross_pooled": 0.7771587743732591,
+   "n": 2064
+  }
+ }
+}

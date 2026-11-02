@@ -50,1297 +50,1345 @@
  "AP_GUN_CANDIDATES": {
   "value": "234",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_INCLUDED": {
   "value": "128",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_AUTHOR": {
   "value": "88",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_AGREED": {
   "value": "146",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_CELLS": {
   "value": "20",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_CELLS_PASSED": {
   "value": "13",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_CP_SHARE": {
-  "value": "0.193",
+  "value": "0.188",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_CORR_AB": {
   "value": "0.650",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_GUN_SAME_LABEL": {
-  "value": "0.737",
+  "value": "0.769",
   "source": [
-   "05_gun_scale/out/g0/report.json"
+   "02_gun_scale/out/g0/report.json"
   ]
  },
  "AP_N_MC": {
   "value": "21,288",
   "source": [
-   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+   "05_directions_and_map/out/qwen/s3/temporal_member_scores.csv"
   ]
  },
  "AP_N_HOUSE": {
   "value": "17,318",
   "source": [
-   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+   "05_directions_and_map/out/qwen/s3/temporal_member_scores.csv"
   ]
  },
  "AP_N_SENATE": {
   "value": "3,970",
   "source": [
-   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+   "05_directions_and_map/out/qwen/s3/temporal_member_scores.csv"
   ]
  },
  "AP_N_MEMBERS": {
   "value": "3,637",
   "source": [
-   "02_ideology_map/out/qwen/s3/temporal_member_scores.csv"
+   "05_directions_and_map/out/qwen/s3/temporal_member_scores.csv"
   ]
  },
  "AP_RECOG_Q": {
   "value": "0.811",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_R_X_DW1_80_Q": {
   "value": "0.315",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_R_X_DW1_118_Q": {
   "value": "0.792",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_BEST_ECON_Q": {
   "value": "19",
   "source": [
-   "02_ideology_map/out/qwen/rule.json"
+   "05_directions_and_map/out/qwen/rule.json"
   ]
  },
  "AP_BEST_SOC_Q": {
   "value": "16",
   "source": [
-   "02_ideology_map/out/qwen/rule.json"
+   "05_directions_and_map/out/qwen/rule.json"
   ]
  },
  "AP_J1_ECON_Q": {
   "value": "0.977",
   "source": [
-   "02_ideology_map/out/qwen/s2/J1_economic.json"
+   "05_directions_and_map/out/qwen/s2/J1_economic.json"
   ]
  },
  "AP_J1_SOC_Q": {
   "value": "0.909",
   "source": [
-   "02_ideology_map/out/qwen/s2/J1_social.json"
+   "05_directions_and_map/out/qwen/s2/J1_social.json"
   ]
  },
  "AP_RECOG_L": {
   "value": "0.921",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_R_X_DW1_80_L": {
   "value": "0.511",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_R_X_DW1_118_L": {
   "value": "0.963",
   "source": [
-   "02_ideology_map/out/s4/anchors.json"
+   "05_directions_and_map/out/s4/anchors.json"
   ]
  },
  "AP_BEST_ECON_L": {
   "value": "16",
   "source": [
-   "02_ideology_map/out/llama/rule.json"
+   "05_directions_and_map/out/llama/rule.json"
   ]
  },
  "AP_BEST_SOC_L": {
   "value": "15",
   "source": [
-   "02_ideology_map/out/llama/rule.json"
+   "05_directions_and_map/out/llama/rule.json"
   ]
  },
  "AP_J1_ECON_L": {
   "value": "0.971",
   "source": [
-   "02_ideology_map/out/llama/s2/J1_economic.json"
+   "05_directions_and_map/out/llama/s2/J1_economic.json"
   ]
  },
  "AP_J1_SOC_L": {
   "value": "0.975",
   "source": [
-   "02_ideology_map/out/llama/s2/J1_social.json"
+   "05_directions_and_map/out/llama/s2/J1_social.json"
   ]
  },
  "AP_QN_AB": {
   "value": "10,444",
   "source": [
-   "02_ideology_map/out/s4/vote_vs_map.json"
+   "05_directions_and_map/out/s4/vote_vs_map.json"
   ]
  },
  "AP_QN_ELSP_AB": {
-  "value": "4,321",
+  "value": "4,237",
   "source": [
-   "02_ideology_map/out/s4/vote_vs_map.json"
+   "05_directions_and_map/out/s4/vote_vs_map.json"
   ]
  },
  "AP_QN_ELST_AB": {
-  "value": "909",
+  "value": "993",
   "source": [
-   "02_ideology_map/out/s4/vote_vs_map.json"
+   "05_directions_and_map/out/s4/vote_vs_map.json"
   ]
  },
  "AP_QN_ERSP_AB": {
-  "value": "1,340",
+  "value": "986",
   "source": [
-   "02_ideology_map/out/s4/vote_vs_map.json"
+   "05_directions_and_map/out/s4/vote_vs_map.json"
   ]
  },
  "AP_QN_ERST_AB": {
-  "value": "3,874",
+  "value": "4,228",
   "source": [
-   "02_ideology_map/out/s4/vote_vs_map.json"
+   "05_directions_and_map/out/s4/vote_vs_map.json"
   ]
  },
  "AP_QN_GUN": {
   "value": "2,064",
   "source": [
-   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+   "05_directions_and_map/out/s4_guns/vote_vs_map.json"
   ]
  },
  "AP_QN_ELSP_GUN": {
-  "value": "895",
+  "value": "827",
   "source": [
-   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+   "05_directions_and_map/out/s4_guns/vote_vs_map.json"
   ]
  },
  "AP_QN_ELST_GUN": {
-  "value": "139",
+  "value": "207",
   "source": [
-   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+   "05_directions_and_map/out/s4_guns/vote_vs_map.json"
   ]
  },
  "AP_QN_ERSP_GUN": {
-  "value": "231",
+  "value": "152",
   "source": [
-   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+   "05_directions_and_map/out/s4_guns/vote_vs_map.json"
   ]
  },
  "AP_QN_ERST_GUN": {
-  "value": "799",
+  "value": "878",
   "source": [
-   "02_ideology_map/out/s4_guns/vote_vs_map.json"
+   "05_directions_and_map/out/s4_guns/vote_vs_map.json"
   ]
  },
  "AP_DW_DGAP": {
   "value": "0.903",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_DW_DGAP_CI": {
   "value": "[0.799, 1.016]",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_DW_CHANGE_D": {
   "value": "−0.322",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_DW_CHANGE_D_CI": {
   "value": "[−0.400, −0.247]",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_DW_CHANGE_R": {
   "value": "0.581",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_DW_CHANGE_R_CI": {
   "value": "[0.506, 0.660]",
   "source": [
-   "10_polarization_history/out/t0/contrasts.json"
+   "06_party_history/out/t0/contrasts.json"
   ]
  },
  "AP_CH_HOUSE_DIFF_Q": {
   "value": "1.378",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_DIFF_Q_CI": {
   "value": "[1.222, 1.540]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_SHARE_D_Q": {
   "value": "0.582",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_SHARE_D_DW": {
   "value": "0.355",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_EARLY_Q": {
   "value": "−0.040",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_EARLY_Q_CI": {
   "value": "[−0.132, 0.057]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_DIFF_Q": {
   "value": "1.063",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_DIFF_Q_CI": {
   "value": "[0.768, 1.360]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_SHARE_D_Q": {
   "value": "0.764",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_SHARE_D_DW": {
   "value": "0.359",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_EARLY_Q": {
   "value": "0.364",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_EARLY_Q_CI": {
   "value": "[0.165, 0.538]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_DIFF_L": {
   "value": "1.520",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_DIFF_L_CI": {
   "value": "[1.432, 1.612]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_SHARE_D_L": {
   "value": "0.719",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_EARLY_L": {
   "value": "0.479",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_HOUSE_EARLY_L_CI": {
   "value": "[0.411, 0.543]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_DIFF_L": {
   "value": "0.973",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_DIFF_L_CI": {
   "value": "[0.784, 1.166]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_SHARE_D_L": {
   "value": "0.744",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_EARLY_L": {
   "value": "0.739",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_CH_SENATE_EARLY_L_CI": {
   "value": "[0.625, 0.832]",
   "source": [
-   "10_polarization_history/out/t0/subgroups.csv"
+   "06_party_history/out/t0/subgroups.csv"
   ]
  },
  "AP_N1_DEMOCRAT_86_113_Q": {
   "value": "−0.294",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_DEMOCRAT_86_113_Q_CI": {
   "value": "[−0.394, −0.180]",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_REPUBLICAN_86_113_Q": {
   "value": "0.071",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_REPUBLICAN_86_113_Q_CI": {
   "value": "[−0.065, 0.200]",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_DEMOCRAT_86_113_L": {
   "value": "−0.786",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_DEMOCRAT_86_113_L_CI": {
   "value": "[−0.887, −0.686]",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_REPUBLICAN_86_113_L": {
   "value": "−0.099",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_REPUBLICAN_86_113_L_CI": {
   "value": "[−0.237, 0.044]",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_N1_ROWS": {
   "value": "21,204",
   "source": [
-   "11_nominate_benchmarks/out/n1.json"
+   "07_nominate_benchmarks/out/n1.json"
   ]
  },
  "AP_ERA_AB_1970_ALIGNED_Q": {
   "value": "0.495",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1970_CROSS_Q": {
-  "value": "0.184",
+  "value": "0.190",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1970_NCROSS": {
-  "value": "657",
+  "value": "646",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1980_ALIGNED_Q": {
-  "value": "0.577",
+  "value": "0.583",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1980_CROSS_Q": {
-  "value": "0.226",
+  "value": "0.237",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1980_NCROSS": {
-  "value": "567",
+  "value": "574",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1990_ALIGNED_Q": {
   "value": "0.683",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1990_CROSS_Q": {
   "value": "0.239",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1990_NCROSS": {
   "value": "452",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2000_ALIGNED_Q": {
-  "value": "0.762",
+  "value": "0.764",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2000_CROSS_Q": {
-  "value": "0.163",
+  "value": "0.189",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2000_NCROSS": {
-  "value": "270",
+  "value": "185",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2010_ALIGNED_Q": {
-  "value": "0.825",
+  "value": "0.827",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2010_CROSS_Q": {
-  "value": "0.096",
+  "value": "0.082",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2010_NCROSS": {
-  "value": "303",
+  "value": "122",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1970_ALIGNED_L": {
   "value": "0.793",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1970_CROSS_L": {
-  "value": "0.110",
+  "value": "0.113",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1980_ALIGNED_L": {
-  "value": "0.843",
+  "value": "0.840",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1980_CROSS_L": {
-  "value": "0.171",
+  "value": "0.159",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1990_ALIGNED_L": {
   "value": "0.902",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_1990_CROSS_L": {
   "value": "0.230",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2000_ALIGNED_L": {
-  "value": "0.930",
+  "value": "0.932",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2000_CROSS_L": {
-  "value": "0.200",
+  "value": "0.276",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2010_ALIGNED_L": {
-  "value": "0.914",
+  "value": "0.915",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_AB_2010_CROSS_L": {
-  "value": "0.109",
+  "value": "0.205",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era.json"
+   "08_supplementary_checks/members_by_era/members_by_era.json"
   ]
  },
  "AP_ERA_GUN_1980_ALIGNED_Q": {
-  "value": "0.583",
+  "value": "0.591",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1980_CROSS_Q": {
-  "value": "0.171",
+  "value": "0.212",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1980_NCROSS": {
-  "value": "193",
+  "value": "170",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1990_ALIGNED_Q": {
-  "value": "0.696",
+  "value": "0.694",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1990_CROSS_Q": {
-  "value": "0.210",
+  "value": "0.202",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1990_NCROSS": {
   "value": "124",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2000_ALIGNED_Q": {
-  "value": "0.824",
+  "value": "0.828",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2000_CROSS_Q": {
-  "value": "0.083",
+  "value": "0.104",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2000_NCROSS": {
-  "value": "36",
+  "value": "48",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2010_ALIGNED_Q": {
   "value": "0.821",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2010_CROSS_Q": {
   "value": "0.118",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2010_NCROSS": {
   "value": "17",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1980_ALIGNED_L": {
-  "value": "0.844",
+  "value": "0.855",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1980_CROSS_L": {
-  "value": "0.119",
+  "value": "0.141",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1990_ALIGNED_L": {
   "value": "0.895",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_1990_CROSS_L": {
   "value": "0.145",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2000_ALIGNED_L": {
-  "value": "0.938",
+  "value": "0.934",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2000_CROSS_L": {
-  "value": "0.139",
+  "value": "0.104",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2010_ALIGNED_L": {
   "value": "0.972",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_ERA_GUN_2010_CROSS_L": {
   "value": "0.118",
   "source": [
-   "16_supplementary_checks/members_by_era/members_by_era_guns.json"
+   "08_supplementary_checks/members_by_era/members_by_era_guns.json"
   ]
  },
  "AP_NOISE_AB_CROSS_OBS_Q": {
-  "value": "0.191",
+  "value": "0.208",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_Q": {
-  "value": "0.419",
+  "value": "0.448",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_Q_CI": {
-  "value": "[0.402, 0.438]",
+  "value": "[0.428, 0.470]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_MATCHED_Q": {
-  "value": "0.349",
+  "value": "0.379",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_MATCHED_Q_CI": {
-  "value": "[0.330, 0.368]",
+  "value": "[0.359, 0.401]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_OBS_Q": {
-  "value": "0.673",
+  "value": "0.679",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_Q": {
-  "value": "0.564",
+  "value": "0.565",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_Q_CI": {
-  "value": "[0.554, 0.574]",
+  "value": "[0.556, 0.575]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_MATCHED_Q": {
-  "value": "0.635",
+  "value": "0.636",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_MATCHED_Q_CI": {
-  "value": "[0.624, 0.645]",
+  "value": "[0.626, 0.646]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_OBS_Q": {
-  "value": "0.622",
+  "value": "0.572",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_Q": {
-  "value": "0.489",
+  "value": "0.437",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_Q_CI": {
-  "value": "[0.465, 0.515]",
+  "value": "[0.407, 0.463]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_MATCHED_Q": {
-  "value": "0.545",
+  "value": "0.500",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_MATCHED_Q_CI": {
-  "value": "[0.520, 0.570]",
+  "value": "[0.474, 0.528]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_OBS_L": {
-  "value": "0.160",
+  "value": "0.174",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_L": {
-  "value": "0.540",
+  "value": "0.594",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_L_CI": {
-  "value": "[0.522, 0.558]",
+  "value": "[0.574, 0.613]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_MATCHED_L": {
-  "value": "0.494",
+  "value": "0.552",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_CROSS_MATCHED_L_CI": {
-  "value": "[0.478, 0.510]",
+  "value": "[0.533, 0.570]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_OBS_L": {
-  "value": "0.880",
+  "value": "0.881",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_L": {
-  "value": "0.768",
+  "value": "0.770",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_L_CI": {
-  "value": "[0.760, 0.776]",
+  "value": "[0.761, 0.778]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_MATCHED_L": {
-  "value": "0.808",
+  "value": "0.811",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_ALIGNED_MATCHED_L_CI": {
-  "value": "[0.801, 0.816]",
+  "value": "[0.803, 0.819]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_OBS_L": {
-  "value": "0.776",
+  "value": "0.746",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_L": {
-  "value": "0.645",
+  "value": "0.555",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_L_CI": {
-  "value": "[0.622, 0.668]",
+  "value": "[0.522, 0.584]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_MATCHED_L": {
-  "value": "0.676",
+  "value": "0.597",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_AB_DEST_MATCHED_L_CI": {
-  "value": "[0.657, 0.698]",
+  "value": "[0.569, 0.625]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_DRAWS": {
   "value": "500",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_OBS_Q": {
-  "value": "0.173",
+  "value": "0.189",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_Q": {
-  "value": "0.451",
+  "value": "0.485",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_Q_CI": {
-  "value": "[0.403, 0.497]",
+  "value": "[0.436, 0.538]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_MATCHED_Q": {
-  "value": "0.382",
+  "value": "0.417",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_MATCHED_Q_CI": {
-  "value": "[0.335, 0.426]",
+  "value": "[0.372, 0.464]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_OBS_Q": {
   "value": "0.724",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_Q": {
-  "value": "0.601",
+  "value": "0.607",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_Q_CI": {
-  "value": "[0.578, 0.622]",
+  "value": "[0.583, 0.628]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_MATCHED_Q": {
-  "value": "0.666",
+  "value": "0.673",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_MATCHED_Q_CI": {
-  "value": "[0.643, 0.688]",
+  "value": "[0.650, 0.695]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_OBS_Q": {
-  "value": "0.565",
+  "value": "0.570",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_Q": {
-  "value": "0.502",
+  "value": "0.455",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_Q_CI": {
-  "value": "[0.440, 0.570]",
+  "value": "[0.386, 0.523]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_MATCHED_Q": {
-  "value": "0.555",
+  "value": "0.515",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_MATCHED_Q_CI": {
-  "value": "[0.505, 0.610]",
+  "value": "[0.454, 0.582]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_OBS_L": {
-  "value": "0.130",
+  "value": "0.136",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_L": {
-  "value": "0.572",
+  "value": "0.625",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_L_CI": {
-  "value": "[0.527, 0.618]",
+  "value": "[0.579, 0.674]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_MATCHED_L": {
-  "value": "0.537",
+  "value": "0.592",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_CROSS_MATCHED_L_CI": {
-  "value": "[0.495, 0.576]",
+  "value": "[0.549, 0.635]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_OBS_L": {
-  "value": "0.912",
+  "value": "0.913",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_L": {
-  "value": "0.786",
+  "value": "0.796",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_L_CI": {
-  "value": "[0.769, 0.804]",
+  "value": "[0.778, 0.814]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_MATCHED_L": {
-  "value": "0.817",
+  "value": "0.827",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_ALIGNED_MATCHED_L_CI": {
-  "value": "[0.800, 0.834]",
+  "value": "[0.811, 0.844]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_OBS_L": {
-  "value": "0.730",
+  "value": "0.719",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_L": {
-  "value": "0.636",
+  "value": "0.560",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_L_CI": {
-  "value": "[0.568, 0.703]",
+  "value": "[0.489, 0.636]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_MATCHED_L": {
-  "value": "0.667",
+  "value": "0.600",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_NOISE_GUN_DEST_MATCHED_L_CI": {
-  "value": "[0.610, 0.722]",
+  "value": "[0.529, 0.667]",
   "source": [
-   "16_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
+   "08_supplementary_checks/noise_benchmark/noise_benchmark_guns.json"
   ]
  },
  "AP_RECOG_ALIGNED_AB_Q": {
-  "value": "0.866",
+  "value": "0.869",
   "source": [
-   "16_supplementary_checks/benchmark/benchmark_recall.json"
+   "08_supplementary_checks/benchmark/benchmark_recall.json"
   ]
  },
  "AP_RECOG_CROSS_AB_Q": {
-  "value": "0.772",
+  "value": "0.750",
   "source": [
-   "16_supplementary_checks/benchmark/benchmark_recall.json"
+   "08_supplementary_checks/benchmark/benchmark_recall.json"
   ]
  },
  "AP_RECOG_ALIGNED_AB_L": {
-  "value": "0.939",
+  "value": "0.940",
   "source": [
-   "16_supplementary_checks/benchmark/benchmark_recall.json"
+   "08_supplementary_checks/benchmark/benchmark_recall.json"
   ]
  },
  "AP_RECOG_CROSS_AB_L": {
-  "value": "0.916",
+  "value": "0.908",
   "source": [
-   "16_supplementary_checks/benchmark/benchmark_recall.json"
+   "08_supplementary_checks/benchmark/benchmark_recall.json"
   ]
  },
  "AP_NOPERSONA_Q": {
   "value": "0.127",
   "source": [
-   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+   "08_supplementary_checks/no_persona/no_persona_package_effect.json"
   ]
  },
  "AP_NOPERSONA_Q_CI": {
   "value": "[−0.017, 0.272]",
   "source": [
-   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+   "08_supplementary_checks/no_persona/no_persona_package_effect.json"
   ]
  },
  "AP_NOPERSONA_L": {
   "value": "−0.029",
   "source": [
-   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+   "08_supplementary_checks/no_persona/no_persona_package_effect.json"
   ]
  },
  "AP_NOPERSONA_L_CI": {
   "value": "[−0.125, 0.061]",
   "source": [
-   "16_supplementary_checks/no_persona/no_persona_package_effect.json"
+   "08_supplementary_checks/no_persona/no_persona_package_effect.json"
   ]
  },
  "AP_BUNDLE_MASS_Q": {
   "value": "1.000",
   "source": [
-   "04_bundled_choices/out/qwen/RESULTS.json"
+   "19_bundled_choices/out/qwen/RESULTS.json"
   ]
  },
  "AP_STEER_P1_Q": {
   "value": "0.076",
   "source": [
-   "04_bundled_choices/out/qwen/RESULTS.json"
+   "19_bundled_choices/out/qwen/RESULTS.json"
   ]
  },
  "AP_STEER_P1_Q_CI": {
   "value": "[−0.032, 0.182]",
   "source": [
-   "04_bundled_choices/out/qwen/RESULTS.json"
+   "19_bundled_choices/out/qwen/RESULTS.json"
   ]
  },
  "AP_BUNDLE_MASS_L": {
   "value": "0.816",
   "source": [
-   "04_bundled_choices/out/llama/RESULTS.json"
+   "19_bundled_choices/out/llama/RESULTS.json"
   ]
  },
  "AP_STEER_P1_L": {
   "value": "0.362",
   "source": [
-   "04_bundled_choices/out/llama/RESULTS.json"
+   "19_bundled_choices/out/llama/RESULTS.json"
   ]
  },
  "AP_STEER_P1_L_CI": {
   "value": "[0.266, 0.457]",
   "source": [
-   "04_bundled_choices/out/llama/RESULTS.json"
+   "19_bundled_choices/out/llama/RESULTS.json"
+  ]
+ },
+ "AP_DW2U_RECALL_ALIGNED_AB": {
+  "value": "0.546",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2U_RECALL_CROSS_AB": {
+  "value": "0.681",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2_FLIPPED_AB": {
+  "value": "0",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2_CELLS_AB": {
+  "value": "40",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2U_RECALL_ALIGNED_GUN": {
+  "value": "0.547",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2U_RECALL_CROSS_GUN": {
+  "value": "0.777",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2_FLIPPED_GUN": {
+  "value": "1",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
+  ]
+ },
+ "AP_DW2_CELLS_GUN": {
+  "value": "11",
+  "source": [
+   "08_supplementary_checks/benchmark/dw2_orientation.json"
   ]
  },
  "AP_GUN_ORDER_CORR_Q": {
   "value": "0.212",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_GUN_ACC_ALIGNED_Q_CI": {
-  "value": "[0.429, 0.526]",
+  "value": "[0.435, 0.531]",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_GUN_PRED_YEA_Q": {
-  "value": "0.287",
+  "value": "0.283",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_GUN_PRED_RC": {
   "value": "52",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_GUN_PRED_RC_SCALE": {
   "value": "36",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_GUN_PRED_RC_OUTSIDE": {
   "value": "16",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json (rollcalls minus gun_cp_loo.rollcalls)"
+   "10_vote_prediction/out/g2/estimates_qwen.json (rollcalls minus gun_cp_loo.rollcalls)"
   ]
  },
  "AP_LOO_CHANGED_Q": {
-  "value": "0.041",
+  "value": "0.011",
   "source": [
-   "06_vote_prediction/out/v6/loo_cp_qwen.json"
+   "10_vote_prediction/out/v6/loo_cp_qwen.json"
   ]
  },
  "AP_ERRDIR_CP_AB_Q": {
-  "value": "0.572",
+  "value": "0.634",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_qwen.json"
+   "10_vote_prediction/out/v6/error_direction_qwen.json"
   ]
  },
  "AP_ERRDIR_CP_AB_Q_CI": {
-  "value": "[0.541, 0.601]",
+  "value": "[0.602, 0.662]",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_qwen.json"
+   "10_vote_prediction/out/v6/error_direction_qwen.json"
   ]
  },
  "AP_ERRDIR_ALIGNED_AB_Q": {
-  "value": "0.138",
+  "value": "0.131",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_qwen.json"
+   "10_vote_prediction/out/v6/error_direction_qwen.json"
   ]
  },
  "AP_ERRDIR_ALIGNED_AB_Q_CI": {
-  "value": "[0.127, 0.151]",
+  "value": "[0.119, 0.143]",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_qwen.json"
+   "10_vote_prediction/out/v6/error_direction_qwen.json"
   ]
  },
  "AP_GUN_ORDER_CORR_L": {
   "value": "0.853",
   "source": [
-   "06_vote_prediction/out/g2/estimates_llama.json"
+   "10_vote_prediction/out/g2/estimates_llama.json"
   ]
  },
  "AP_GUN_ACC_ALIGNED_L_CI": {
-  "value": "[0.540, 0.695]",
+  "value": "[0.545, 0.692]",
   "source": [
-   "06_vote_prediction/out/g2/estimates_llama.json"
+   "10_vote_prediction/out/g2/estimates_llama.json"
   ]
  },
  "AP_GUN_PRED_YEA_L": {
-  "value": "0.484",
+  "value": "0.480",
   "source": [
-   "06_vote_prediction/out/g2/estimates_llama.json"
+   "10_vote_prediction/out/g2/estimates_llama.json"
   ]
  },
  "AP_LOO_CHANGED_L": {
-  "value": "0.041",
+  "value": "0.011",
   "source": [
-   "06_vote_prediction/out/v6/loo_cp_llama.json"
+   "10_vote_prediction/out/v6/loo_cp_llama.json"
   ]
  },
  "AP_ERRDIR_CP_AB_L": {
-  "value": "0.702",
+  "value": "0.714",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_llama.json"
+   "10_vote_prediction/out/v6/error_direction_llama.json"
   ]
  },
  "AP_ERRDIR_CP_AB_L_CI": {
-  "value": "[0.671, 0.731]",
+  "value": "[0.679, 0.742]",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_llama.json"
+   "10_vote_prediction/out/v6/error_direction_llama.json"
   ]
  },
  "AP_ERRDIR_ALIGNED_AB_L": {
-  "value": "0.180",
+  "value": "0.176",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_llama.json"
+   "10_vote_prediction/out/v6/error_direction_llama.json"
   ]
  },
  "AP_ERRDIR_ALIGNED_AB_L_CI": {
-  "value": "[0.164, 0.198]",
+  "value": "[0.159, 0.194]",
   "source": [
-   "06_vote_prediction/out/v6/error_direction_llama.json"
+   "10_vote_prediction/out/v6/error_direction_llama.json"
   ]
  },
  "AP_GUN_ACTUAL_YEA": {
-  "value": "0.531",
+  "value": "0.529",
   "source": [
-   "06_vote_prediction/out/g2/estimates_qwen.json"
+   "10_vote_prediction/out/g2/estimates_qwen.json"
   ]
  },
  "AP_AUTHOR_READ_AB_ECON": {
   "value": "20",
   "source": [
-   "06_vote_prediction/out/v1/AUTHOR_CHECK.md"
+   "10_vote_prediction/out/v1/AUTHOR_CHECK.md"
   ]
  },
  "AP_AUTHOR_READ_GUN": {
   "value": "20",
   "source": [
-   "06_vote_prediction/out/g2/AUTHOR_DESC_CHECK.csv"
+   "10_vote_prediction/out/g2/AUTHOR_DESC_CHECK.csv"
   ]
  },
  "AP_D3_SENATE_Q": {
@@ -1440,13 +1488,13 @@
   ]
  },
  "AP_D1_B": {
-  "value": "0.030",
+  "value": "0.039",
   "source": [
    "12_speech_and_state/out/d/d.json"
   ]
  },
  "AP_D1_B_CI": {
-  "value": "[0.019, 0.042]",
+  "value": "[0.027, 0.051]",
   "source": [
    "12_speech_and_state/out/d/d.json"
   ]
@@ -1458,13 +1506,13 @@
   ]
  },
  "AP_D1_CP": {
-  "value": "1,902",
+  "value": "1,643",
   "source": [
    "12_speech_and_state/out/d/d.json (crosstab cp1_ccp0 + cp1_ccp1)"
   ]
  },
  "AP_D1_OVERLAP": {
-  "value": "876",
+  "value": "824",
   "source": [
    "12_speech_and_state/out/d/d.json"
   ]
@@ -1476,61 +1524,61 @@
   ]
  },
  "AP_GMP_CP": {
-  "value": "−0.040",
+  "value": "−0.043",
   "source": [
-   "11_nominate_benchmarks/out/n2.json"
+   "07_nominate_benchmarks/out/n2.json"
   ]
  },
  "AP_GMP_CP_CI": {
-  "value": "[−0.045, −0.035]",
+  "value": "[−0.049, −0.038]",
   "source": [
-   "11_nominate_benchmarks/out/n2.json"
+   "07_nominate_benchmarks/out/n2.json"
   ]
  },
  "AP_NAMED_GUN_Q": {
-  "value": "0.008",
-  "source": [
-   "validation/headline_values.csv"
-  ]
- },
- "AP_NAMED_GUN_Q_CI": {
-  "value": "[−0.000, 0.015]",
-  "source": [
-   "validation/headline_values.csv"
-  ]
- },
- "AP_NAMED_GUN_ABDEF_Q": {
   "value": "0.011",
   "source": [
    "validation/headline_values.csv"
   ]
  },
+ "AP_NAMED_GUN_Q_CI": {
+  "value": "[0.003, 0.019]",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
+ "AP_NAMED_GUN_ABDEF_Q": {
+  "value": "0.009",
+  "source": [
+   "validation/headline_values.csv"
+  ]
+ },
  "AP_NAMED_GUN_ABDEF_Q_CI": {
-  "value": "[0.002, 0.019]",
+  "value": "[0.000, 0.018]",
   "source": [
    "validation/headline_values.csv"
   ]
  },
  "AP_NAMED_GUN_L": {
-  "value": "0.044",
+  "value": "0.054",
   "source": [
    "validation/headline_values.csv"
   ]
  },
  "AP_NAMED_GUN_L_CI": {
-  "value": "[0.030, 0.057]",
+  "value": "[0.040, 0.069]",
   "source": [
    "validation/headline_values.csv"
   ]
  },
  "AP_NAMED_GUN_ABDEF_L": {
-  "value": "0.062",
+  "value": "0.069",
   "source": [
    "validation/headline_values.csv"
   ]
  },
  "AP_NAMED_GUN_ABDEF_L_CI": {
-  "value": "[0.048, 0.076]",
+  "value": "[0.054, 0.083]",
   "source": [
    "validation/headline_values.csv"
   ]
@@ -1538,13 +1586,13 @@
  "AP_NAMED_FAIL_Q": {
   "value": "0.020",
   "source": [
-   "09_named_member_entropy/analysis/data/rows_qwen.parquet (mean of fail_share)"
+   "15_named_member_uncertainty/analysis/data/rows_qwen.parquet (mean of fail_share)"
   ]
  },
  "AP_NAMED_FAIL_L": {
   "value": "0.041",
   "source": [
-   "09_named_member_entropy/analysis/data/rows_llama.parquet (mean of fail_share)"
+   "15_named_member_uncertainty/analysis/data/rows_llama.parquet (mean of fail_share)"
   ]
  },
  "AP_S1_SPEECH": {
@@ -1578,105 +1626,105 @@
   ]
  },
  "AP_X1_D_Q": {
-  "value": "0.482",
+  "value": "0.522",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_D_Q_CI": {
-  "value": "[0.386, 0.574]",
+  "value": "[0.424, 0.615]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_ECON_PULL_Q": {
-  "value": "0.143",
+  "value": "0.102",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_ECON_PULL_Q_CI": {
-  "value": "[0.094, 0.195]",
+  "value": "[0.049, 0.157]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_PARTY_PULL_Q": {
-  "value": "0.126",
+  "value": "0.124",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_PARTY_PULL_Q_CI": {
-  "value": "[0.071, 0.178]",
+  "value": "[0.067, 0.179]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X3_B_Q": {
   "value": "0.040",
   "source": [
-   "15_mechanism/out/x3/RESULTS.json"
+   "18_economic_weight/out/x3/RESULTS.json"
   ]
  },
  "AP_X3_B_Q_CI": {
   "value": "[−0.061, 0.153]",
   "source": [
-   "15_mechanism/out/x3/RESULTS.json"
+   "18_economic_weight/out/x3/RESULTS.json"
   ]
  },
  "AP_X4_B_Q": {
   "value": "0.046",
   "source": [
-   "15_mechanism/out/x4/RESULTS.json"
+   "18_economic_weight/out/x4/RESULTS.json"
   ]
  },
  "AP_X4_B_Q_CI": {
   "value": "[−0.052, 0.175]",
   "source": [
-   "15_mechanism/out/x4/RESULTS.json"
+   "18_economic_weight/out/x4/RESULTS.json"
   ]
  },
  "AP_X4_PAIRS": {
   "value": "54",
   "source": [
-   "15_mechanism/out/x4/RESULTS.json"
+   "18_economic_weight/out/x4/RESULTS.json"
   ]
  },
  "AP_X5_DEMOCRAT_Q": {
   "value": "0.667",
   "source": [
-   "15_mechanism/out/x5/RESULTS_stageA.json"
+   "18_economic_weight/out/x5/RESULTS_stageA.json"
   ]
  },
  "AP_X5_DEMOCRAT_Q_CI": {
   "value": "[0.401, 1.061]",
   "source": [
-   "15_mechanism/out/x5/RESULTS_stageA.json"
+   "18_economic_weight/out/x5/RESULTS_stageA.json"
   ]
  },
  "AP_X5_3W_DEMOCRAT_Q": {
   "value": "0.667",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_DEMOCRAT_Q_CI": {
   "value": "[0.397, 1.071]",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_REPUBLICAN_Q": {
   "value": "0.358",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_REPUBLICAN_Q_CI": {
   "value": "[0.176, 0.661]",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_S1_X_Q": {
@@ -1692,123 +1740,123 @@
   ]
  },
  "AP_S2B_Q": {
-  "value": "0.016",
+  "value": "0.010",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2B_Q_CI": {
-  "value": "[−0.015, 0.046]",
+  "value": "[−0.026, 0.045]",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2C_Q": {
-  "value": "0.027",
+  "value": "0.021",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2C_Q_CI": {
-  "value": "[0.004, 0.049]",
+  "value": "[−0.004, 0.046]",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_X1_D_L": {
-  "value": "0.473",
+  "value": "0.495",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_D_L_CI": {
-  "value": "[0.385, 0.562]",
+  "value": "[0.407, 0.582]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_ECON_PULL_L": {
-  "value": "0.199",
+  "value": "0.176",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_ECON_PULL_L_CI": {
-  "value": "[0.153, 0.245]",
+  "value": "[0.130, 0.224]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_PARTY_PULL_L": {
-  "value": "0.172",
+  "value": "0.171",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X1_PARTY_PULL_L_CI": {
-  "value": "[0.125, 0.220]",
+  "value": "[0.123, 0.218]",
   "source": [
-   "15_mechanism/out/x1/RESULTS.json"
+   "18_economic_weight/out/x1/RESULTS.json"
   ]
  },
  "AP_X3_B_L": {
   "value": "0.117",
   "source": [
-   "15_mechanism/out/x3/RESULTS.json"
+   "18_economic_weight/out/x3/RESULTS.json"
   ]
  },
  "AP_X3_B_L_CI": {
   "value": "[−0.193, 0.574]",
   "source": [
-   "15_mechanism/out/x3/RESULTS.json"
+   "18_economic_weight/out/x3/RESULTS.json"
   ]
  },
  "AP_X4_B_L": {
   "value": "0.034",
   "source": [
-   "15_mechanism/out/x4/RESULTS.json"
+   "18_economic_weight/out/x4/RESULTS.json"
   ]
  },
  "AP_X4_B_L_CI": {
   "value": "[−0.062, 0.119]",
   "source": [
-   "15_mechanism/out/x4/RESULTS.json"
+   "18_economic_weight/out/x4/RESULTS.json"
   ]
  },
  "AP_X5_DEMOCRAT_L": {
   "value": "0.872",
   "source": [
-   "15_mechanism/out/x5/RESULTS_stageA.json"
+   "18_economic_weight/out/x5/RESULTS_stageA.json"
   ]
  },
  "AP_X5_DEMOCRAT_L_CI": {
   "value": "[0.492, 1.582]",
   "source": [
-   "15_mechanism/out/x5/RESULTS_stageA.json"
+   "18_economic_weight/out/x5/RESULTS_stageA.json"
   ]
  },
  "AP_X5_3W_DEMOCRAT_L": {
   "value": "0.872",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_DEMOCRAT_L_CI": {
   "value": "[0.493, 1.569]",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_REPUBLICAN_L": {
   "value": "0.440",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_X5_3W_REPUBLICAN_L_CI": {
   "value": "[0.154, 0.993]",
   "source": [
-   "15_mechanism/out/x5/SENS_threeway.json"
+   "18_economic_weight/out/x5/SENS_threeway.json"
   ]
  },
  "AP_S1_X_L": {
@@ -1824,25 +1872,25 @@
   ]
  },
  "AP_S2B_L": {
-  "value": "−0.005",
+  "value": "−0.008",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2B_L_CI": {
-  "value": "[−0.038, 0.028]",
+  "value": "[−0.046, 0.031]",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2C_L": {
-  "value": "0.025",
+  "value": "0.026",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]
  },
  "AP_S2C_L_CI": {
-  "value": "[0.005, 0.045]",
+  "value": "[0.006, 0.046]",
   "source": [
    "12_speech_and_state/out/s2/s2.json"
   ]

@@ -1,28 +1,39 @@
 # Verification
 
-## Fresh-copy test of this repository (2026-10-25)
+What was checked for this release, how, and what was not checked.
 
-- **Source:** the exact file set a commit of this repository holds (`git ls-files -co --exclude-standard`), copied to a new directory.
-- **Raw data:** the exact copies the analyses used; `data/fetch_data.py` checked each file's sha256 before the run (all matched).
-- **Environment:** Python 3.12.3 with `environment/requirements-cpu.txt`; R 4.5.3 (`environment/environment-r.yml`, micromamba);
-  `RSCRIPT="micromamba run -n r Rscript"`; a new figure environment built from `environment/requirements-paper.txt` (its `pip freeze`
-  equal to the file).
-- **Path B:** `python run_pipeline.py --path B`: all 196 steps done (GPU steps use the shipped model outputs), 21:44 to 23:10 on an
-  NVIDIA H200 VDI with 8 CPU cores. The longest steps were the Congressional Record matrices and the speech history.
-- **Validation:** `python tools/validate.py`: 1,616 output files identical to `validation/SEAL.json`, 0 differ, 0 missing, 0 not
-  sealed; 482 headline rows, 0 problems. PASS.
-- **Manuscript build:** `python paper/build.py`: number check 0 missing for the manuscript and the appendix; abstract 195 words; 34
-  figure files identical to `paper/figures/FIGURES_SHA256.ref.json`; `paper/manuscript.md` and `paper/appendix.md` byte-identical to
-  the files in this repository.
+## The short path from a fresh copy (2026-11-02)
 
-## Full rerun from the models (Path A)
+- A fresh copy held exactly the files a clone of this repository holds (`git ls-files`, respecting `.gitignore`). The raw data were the
+  exact copies the analyses used; `data/fetch_data.py` confirmed each sha256.
+- `python run_pipeline.py --path B` ran every CPU step. `python tools/validate.py` then reported:
+  - 3,434 of 3,434 sealed output files identical to `validation/SEAL.json`, none missing;
+  - 1,094 code, configuration and frozen-input files matching `MANIFEST.json`;
+  - the paper value files and tables identical to `validation/PAPER_SEAL.json`;
+  - 582 headline rows, 0 problems.
+- `python paper/build.py` then rebuilt the manuscript and appendix. The number check found no printed number without a source, and the
+  36 figure files matched `paper/figures/FIGURES_SHA256.ref.json`. `paper/manuscript.md`, `paper/appendix.md`, both tables and the figure
+  checksums were byte-identical to the versions in this repository.
+- The speech matrices (`12_speech_and_state/out/s0/`, not shipped) were deleted and rebuilt from the raw Congressional Record files;
+  every sealed output still validated.
 
-Path A was last run end to end from a fresh clone of the package these files were taken from (2026-10-24/25, both models, one NVIDIA
-H200): every output was bit-identical to the seal. Since then, steps whose results the paper does not report were removed; no kept
-step's computation, input or output changed (comments were edited in two scripts). Path A was not rerun for this repository.
+## Relation to the authors' working repository
 
-## Determinism
+This package was assembled from the authors' working repository, keeping the analyses the paper reports and their inputs. Folders were
+renamed in the order of the paper. Every sealed output of the working repository that this package keeps was compared file by file:
+all are byte-identical, or differ only in folder names stored as text, in wall-clock run times, in gzip header times, or in descriptive
+note strings. The built manuscript, appendix, tables and figures are byte-identical to the working repository's.
 
-On the same hardware and software, reruns give identical output files (deterministic algorithms, fixed batch sizes and seeds; see
-`README.md`). On other hardware, the last digits of some model outputs can differ; `tools/validate.py` then lists the files that
-differ, and its headline-value check shows whether any reported value changes.
+## The full path
+
+- The full path (raw data and the two models, GPU) was rerun from a fresh copy of the working package on 2026-10-24, on one NVIDIA H200,
+  and reproduced its outputs exactly.
+- GPU steps added or changed after that rerun (the answer-scale scoring, the 1-9 named-member scoring, and reruns of the stated-profile
+  scoring and its named-member check after a change in the median-split rule) were run once on the same machine; their outputs ship with the package.
+- The full path was not rerun for this release.
+
+## Not checked
+
+- An installation on a machine other than the authors' (environment files are pinned in `environment/`).
+- The three steps that called external language models (gun-roll-call labels; writing and checking roll-call descriptions) are not
+  rerun; their outputs ship as fixed inputs.

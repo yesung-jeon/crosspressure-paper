@@ -1,7 +1,7 @@
 # Appendix C. Placing Members
 
-This appendix reports the placement results of Section 5 in full and describes the two tasks that state positions in the prompt: stated
-profiles and choices between policy packages.
+This appendix reports the placement results of Section 5 in full and describes the task that states positions in the prompt: stated
+profiles.
 
 ## C.1 Placement by Quadrant
 
@@ -15,7 +15,7 @@ Congress and chamber in the same way as the roll-call scales. All Democratic and
 **The two-dimensional DW-NOMINATE benchmark.** For the comparison in Section 5, the second dimension of DW-NOMINATE is oriented within
 each Congress and chamber so that it correlates positively with the social scale, and both dimensions are split at their medians. This
 placement puts cross-pressured member-Congresses in their quadrant more often than aligned ones: {{DW2_RECALL_CROSS_AB}} against
-{{DW2_RECALL_ALIGNED_AB}} on abortion, and {{DW2_RECALL_CROSS_GUN}} against {{DW2_RECALL_ALIGNED_GUN}} on guns.
+{{DW2_RECALL_ALIGNED_AB}} on abortion, and {{DW2_RECALL_CROSS_GUN}} against {{DW2_RECALL_ALIGNED_GUN}} on guns. Because dimension 2 is oriented by the social scale it is then compared with, we also checked the comparison without that step. On abortion the orientation changes nothing: dimension 2 already points the same way in all {{AP_DW2_CELLS_AB}} Congress-chamber cells. On guns it reverses one of the {{AP_DW2_CELLS_GUN}} cells from 1973 on (two of the {{AP_GUN_CELLS_PASSED}} gun-scale cells of Appendix A.3 are earlier, and the placement comparisons start in 1973); with dimension 2 as published, the shares are {{AP_DW2U_RECALL_CROSS_GUN}} against {{AP_DW2U_RECALL_ALIGNED_GUN}}. On guns, Qwen places {{RECALL_ALIGNED_GUN_Q}} of aligned and {{RECALL_CROSS_GUN_Q}} of cross-pressured member-Congresses in their own quadrant, and Llama places {{RECALL_ALIGNED_GUN_L}} and {{RECALL_CROSS_GUN_L}}; the social coordinate correlates with the gun-control roll-call scale at {{R_Y_GUN_Q}} in Qwen and {{R_Y_GUN_L}} in Llama.
 
 **By decade.** The gap between aligned and cross-pressured members is present in every decade (Figure C2). The share
 of aligned member-Congresses placed in their quadrant rises over time in both models, while the share of cross-pressured ones stays
@@ -51,7 +51,7 @@ conservative and socially liberal placed as conservative on both.
 
 ![Figure C3](figures/appendix/C3_destinations_members.png)
 
-**Figure C3. Misplaced cross-pressured members mostly land in the aligned quadrant that shares their economic side, and the pattern holds among members selected by their votes.** Left: share of misplaced cross-pressured member-Congresses placed in the aligned quadrant with the same economic side (lib.-cons.: economically liberal and socially conservative; cons.-lib.: the reverse). Right: number of the selected members in each quadrant whom the map places in the quadrant of their votes; the dotted line is the number selected.
+**Figure C3. Misplaced cross-pressured members mostly land in the aligned quadrant that shares their economic side, and cross-pressured members are also placed in their own quadrant less often among members selected by their votes.** Left: share of misplaced cross-pressured member-Congresses placed in the aligned quadrant with the same economic side (lib.-cons.: economically liberal and socially conservative; cons.-lib.: the reverse). Right: number of the selected members in each quadrant whom the map places in the quadrant of their votes; the dotted line is the number selected.
 
 ## C.4 Members Selected by Their Votes
 
@@ -63,16 +63,7 @@ output is used in the selection. A member is placed in the quadrant given by the
 
 Figure C3 (right) shows the result.
 
-## C.5 Two Senators
-
-Eagleton and Packwood, the senators of Section 5, are among the {{NAMED_TOTAL}} members: Eagleton was selected as one of the members
-furthest from both medians among those economically liberal and socially conservative, and Packwood was drawn at random among those
-economically conservative and socially liberal. Both models place Eagleton as liberal on both dimensions. Qwen places Packwood as
-conservative on both, and Llama places him in the quadrant of his votes. The two senators were chosen for the text because
-they are well-known cases on opposite sides of the same vote, not because of how the models placed or predicted them. Their predicted
-votes are reported in Appendix D.9.
-
-## C.6 Stated Profiles
+## C.5 Stated Profiles
 
 **Design.** Each of the four profiles (one for each quadrant) combines one economic and one social position (Appendix A.6). A
 profile is given to the model in five ways: in an anonymous member's system prompt (for ten states and three years), in the user turn,
@@ -82,59 +73,17 @@ aligned profiles, with fixed effects for the way the profile was given and inter
 
 - consistency: the probability the model gives to the profile's answer on single-issue items;
 - quadrant reached: whether the profile's coordinates on the two directions, relative to the no-prompt baseline and the centre of the
-  four profiles, lies on the stated side of both directions;
+  four profiles, lie on the stated side of both directions;
 - choice entropy, in bits, on single-issue items;
 - generation entropy, in nats, averaged over the first tokens of a free answer.
 
-The cross-pressured items in Table A1 may also be less familiar policy questions than the aligned items, and the comparison does not hold item familiarity constant. Figure C4 shows the four comparisons.
+The model also answers the two-issue items of Table A1, but they do not enter these four measures. Cross-pressured profiles may be less familiar combinations of positions than aligned ones, and the comparison does not hold that familiarity constant. Figure C4 shows the four comparisons.
 
 ![Figure C4](figures/appendix/C4_profiles.png)
 
-**Figure C4. Stated cross-pressured profiles are followed less faithfully.** Cross-pressured minus aligned profiles, with fixed effects for the way the profile is given. Lines are 95% intervals.
+**Figure C4. Stated cross-pressured profiles are followed less faithfully, and the models are slightly less certain about them.** Cross-pressured minus aligned profiles, with fixed effects for the way the profile is given: consistency with the stated positions, reaching the stated quadrant, choice entropy (bits) and generation entropy (nats). Lines are 95% intervals.
 
-## C.7 Llama Places the Two Coordinates Closer Together Than the Votes
-
-In each Congress and chamber with enough member-Congresses, we compare the correlation between a member's economic and social
-coordinates on the map with the correlation between the economic and social roll-call scales, and average the difference over cells.
-A positive difference means that the map ties the two positions together more closely than the votes do. Intervals resample cells. The coordinates are those after the two directions are made orthogonal (Appendix A.4). The third comparison repeats the abortion comparison in the Congress-chamber cells that have a gun scale.
-
-![Figure C5](figures/appendix/C5_overalignment.png)
-
-**Figure C5. Llama ties members' economic and social coordinates together more closely than their votes; Qwen shows the reverse.** Correlation of the two map coordinates minus correlation of the two roll-call scales, averaged over Congress-chamber cells. Lines are 95% intervals from resampling cells.
-
-Llama ties the two coordinates together more closely than the votes do on both issues. Qwen shows the reverse: its coordinates are tied together less closely than the votes in all three comparisons (Figure C5).
-
-## C.8 Choices Between Policy Packages
-
-**Design.** A policy package joins one economic and one social position, for example a position on the minimum wage and one on abortion.
-Six economic and nine social topics give fifty-four combinations (Table A2). Each combination is offered in two versions: a party-like version,
-in which each package pairs positions that one party holds together, and a crossed version, in which each package pairs an economic
-position of one party with a social position of the other. The model chooses between the two packages, in both orders, as one of ten
-Democratic and ten Republican House-member personas whose party is stated (Appendix A.6), or with no persona. The outcome is the entropy
-of the final choice in bits. The comparison of crossed with party-like versions uses persona and topic fixed effects, with intervals
-clustered by persona.
-
-**Results.** Figure C6 shows the estimates. Qwen finds crossed packages harder than party-like ones: its entropy is higher by {{BUNDLE_DEMOCRAT_Q}}
-{{BUNDLE_DEMOCRAT_Q_CI}} as Democrats and {{BUNDLE_REPUBLICAN_Q}} {{BUNDLE_REPUBLICAN_Q_CI}} as Republicans. Llama shows the reverse
-({{BUNDLE_DEMOCRAT_L}} {{BUNDLE_DEMOCRAT_L_CI}} and {{BUNDLE_REPUBLICAN_L}} {{BUNDLE_REPUBLICAN_L_CI}}). Llama often answers the package
-question with neither letter: its average probability on the two answers is {{AP_BUNDLE_MASS_L}}, against {{AP_BUNDLE_MASS_Q}} for Qwen.
-Without a persona, the crossed-minus-party-like difference is {{AP_NOPERSONA_Q}} {{AP_NOPERSONA_Q_CI}} in Qwen and {{AP_NOPERSONA_L}}
-{{AP_NOPERSONA_L_CI}} in Llama. When a crossed choice is decided, the model picks the package whose economic position matches the
-persona's party in a share of {{B5_ECON_SHARE_DEMOCRAT_Q}} (Democrats) and {{B5_ECON_SHARE_REPUBLICAN_Q}} (Republicans) of the choices
-in Qwen, and {{B5_ECON_SHARE_DEMOCRAT_L}} and {{B5_ECON_SHARE_REPUBLICAN_L}} in Llama.
-
-**Steering.** The same task was used to push the model's activation along the economic and social directions at the chosen layer, and
-along random directions of the same size as placebos. Pushing along a direction changes the chosen party-like package more often than
-the placebos by {{AP_STEER_P1_Q}} {{AP_STEER_P1_Q_CI}} in Qwen and {{AP_STEER_P1_L}} {{AP_STEER_P1_L_CI}} in Llama. In Llama,
-pushing toward the package the persona would otherwise reject produced no switches at all, so that contrast cannot be estimated. Other steering contrasts, and their dependence on the layer, are reported in the replication package.
-
-![Figure C6](figures/appendix/C6_packages.png)
-
-**Figure C6. Qwen finds crossed packages harder than party-like ones; Llama does not.** Left: entropy of the package choice, crossed
-minus party-like packages, by persona (bits). Right: how much more often a push along a direction changes the chosen party-like
-package than a push along random placebo directions. Lines are 95% intervals.
-
-## C.9 Measurement Error
+## C.6 Measurement Error
 
 A map measures members' votes with error, and error alone would misplace some members. To see how many, a noise-only map is simulated
 on the same member-Congresses. Within each Congress and chamber, the economic and social roll-call scales are standardized, and each is
@@ -146,7 +95,7 @@ before; intervals cover the middle 95 percent of the draws.
 On abortion, the noise-only map places {{AP_NOISE_AB_CROSS_Q}} {{AP_NOISE_AB_CROSS_Q_CI}} of cross-pressured member-Congresses in
 their quadrant for Qwen and {{AP_NOISE_AB_CROSS_L}} {{AP_NOISE_AB_CROSS_L_CI}} for Llama, against {{AP_NOISE_AB_CROSS_OBS_Q}} and
 {{AP_NOISE_AB_CROSS_OBS_L}} on the models' maps; the correlated version places {{AP_NOISE_AB_CROSS_MATCHED_Q}} and
-{{AP_NOISE_AB_CROSS_MATCHED_L}}. It places aligned member-Congresses less often than the models do ({{AP_NOISE_AB_ALIGNED_Q}} and
+{{AP_NOISE_AB_CROSS_MATCHED_L}}. The main version places aligned member-Congresses less often than the models do ({{AP_NOISE_AB_ALIGNED_Q}} and
 {{AP_NOISE_AB_ALIGNED_L}}, against {{AP_NOISE_AB_ALIGNED_OBS_Q}} and {{AP_NOISE_AB_ALIGNED_OBS_L}}). On guns the pattern is the same:
 the noise-only map places {{AP_NOISE_GUN_CROSS_Q}} and {{AP_NOISE_GUN_CROSS_L}} of cross-pressured member-Congresses in their quadrant,
 against {{AP_NOISE_GUN_CROSS_OBS_Q}} and {{AP_NOISE_GUN_CROSS_OBS_L}}.
@@ -156,6 +105,12 @@ tracks its scale less closely than the economic coordinate does. Under noise alo
 {{AP_NOISE_AB_DEST_Q_CI}} in Qwen and {{AP_NOISE_AB_DEST_L}} {{AP_NOISE_AB_DEST_L_CI}} in Llama on abortion, against
 {{AP_NOISE_AB_DEST_OBS_Q}} and {{AP_NOISE_AB_DEST_OBS_L}} on the models' maps. On guns it is {{AP_NOISE_GUN_DEST_Q}}
 {{AP_NOISE_GUN_DEST_Q_CI}} and {{AP_NOISE_GUN_DEST_L}} {{AP_NOISE_GUN_DEST_L_CI}}, against {{AP_NOISE_GUN_DEST_OBS_Q}} and
-{{AP_NOISE_GUN_DEST_OBS_L}}; for Qwen on guns the models' share lies inside the noise interval. For Llama, the correlated version cannot
+{{AP_NOISE_GUN_DEST_OBS_L}}. For Llama, the correlated version cannot
 reach Llama's own correlation between the two coordinates (the noise correlation reaches its limit first), so it understates that
-correlation. The simulation and its inputs are in the replication package (16_supplementary_checks/noise_benchmark).
+correlation. The simulation and its inputs are in the replication package.
+
+## C.7 Distance from the Medians
+
+Cross-pressure is defined by two median splits, so a member just across either median counts as cross-pressured. To check whether such members produce the gap in Section 5, we measure each member-Congress's distance to the nearer of its two cut lines. Within each Congress and chamber, the economic and the abortion roll-call scales are each centred on their median and divided by their standard deviation; the distance is the smaller of the two absolute values. The rows are those of Section 5 (abortion), split into thirds of this distance, with cut points at {{V2_CUT1}} and {{V2_CUT2}} standard deviations, common to both models. Cross-pressured member-Congresses are concentrated near a median: {{V2_NEAR_N_CROSS}} fall in the nearest third, {{V2_MID_N_CROSS}} in the middle third and {{V2_FAR_N_CROSS}} in the furthest third, against {{V2_NEAR_N_ALIGNED}}, {{V2_MID_N_ALIGNED}} and {{V2_FAR_N_ALIGNED}} aligned ones.
+
+The difference between the shares of aligned and cross-pressured member-Congresses placed in their own quadrant is {{V2_NEAR_GAP_Q}} {{V2_NEAR_GAP_Q_CI}} in Qwen and {{V2_NEAR_GAP_L}} {{V2_NEAR_GAP_L_CI}} in Llama in the nearest third, {{V2_MID_GAP_Q}} {{V2_MID_GAP_Q_CI}} and {{V2_MID_GAP_L}} {{V2_MID_GAP_L_CI}} in the middle third, and {{V2_FAR_GAP_Q}} {{V2_FAR_GAP_Q_CI}} and {{V2_FAR_GAP_L}} {{V2_FAR_GAP_L_CI}} in the furthest third. Among all member-Congresses it is {{V2_FULL_GAP_Q}} {{V2_FULL_GAP_Q_CI}} and {{V2_FULL_GAP_L}} {{V2_FULL_GAP_L_CI}}, and among those at least half a standard deviation from both medians {{V2_D05_GAP_Q}} {{V2_D05_GAP_Q_CI}} and {{V2_D05_GAP_L}} {{V2_D05_GAP_L_CI}}. In the furthest third, the models place {{V2_FAR_CROSS_Q}} (Qwen) and {{V2_FAR_CROSS_L}} (Llama) of cross-pressured member-Congresses in their own quadrant, close to their shares among all cross-pressured member-Congresses ({{V2_FULL_CROSS_Q}} and {{V2_FULL_CROSS_L}}), and {{V2_FAR_ALIGNED_Q}} and {{V2_FAR_ALIGNED_L}} of aligned ones. The gap therefore does not come from members near a median. Intervals resample members (2,000 draws). The check was specified in writing before it was run; its code is in the replication package.

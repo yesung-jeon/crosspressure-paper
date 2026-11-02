@@ -5,8 +5,8 @@ from pathlib import Path
 import numpy as np, pandas as pd
 from scipy.stats import norm
 
-KIM = Path(__file__).resolve().parents[2]                       # replication/ (rebuild); cluster_fit.py is the package copy
-sys.path.insert(0, str(KIM / "06_vote_prediction" / "code"))
+KIM = Path(__file__).resolve().parents[2]                       # replication/; cluster_fit.py is the package copy
+sys.path.insert(0, str(KIM / "10_vote_prediction" / "code"))
 from cluster_fit import cr1_cov  # noqa: E402
 import estimate_votes as v5  # noqa: E402
 
@@ -30,8 +30,8 @@ def fe_ols(d, y, xs, fe, cl):
 
 def check():
     """single-regressor equality with the Study N oneway (entropy_warning grid_other.py)"""
-    sys.path.insert(0, str(KIM / "08_error_warning" / "code"))
-    import fe_estimators; ns = vars(fe_estimators)                    # rebuild: the grid_other.py preamble as a module
+    sys.path.insert(0, str(KIM / "17_error_warning" / "code"))
+    import fe_estimators; ns = vars(fe_estimators)                    # the grid_other.py preamble as a module
     rng = np.random.default_rng(3); n = 3000
     d = pd.DataFrame(dict(fe=rng.integers(0, 40, n).astype(str), cl=rng.integers(0, 300, n), x=rng.normal(size=n)))
     d["y"] = 0.3 * d.x + rng.normal(size=n) + d.fe.astype(int) * 0.01

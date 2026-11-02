@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """Numeric gate: every number in the prose must exist in generated analysis output.
-Shipped with the package (2026-10-25) so that paper/build.py can check every printed number; the helper strip_markup is included
-in this file.
-
-Modeled on Inbok Rhee's numeric gate ("prose numbers checked: 147, not found in generated
-output: 0"). Catches numbers typed by hand, stale numbers after re-estimation, and numbers an
-AI invented while polishing prose.
+Used by paper/build.py to check every printed number; the helper strip_markup is included in this file.
+Catches numbers typed by hand and stale numbers after re-estimation.
 
 Usage:
   python numeric_gate.py PROSE_FILE --outputs DIR_OR_FILE [DIR_OR_FILE ...] [--keep-years] [--min 11]
@@ -29,7 +25,7 @@ def strip_markup(text, suffix):
         text = re.sub(r"\\[a-zA-Z]+\*?(?:\[[^\]]*\])?\{([^}]*)\}", r"\1", text)
         text = re.sub(r"\\[a-zA-Z]+", "", text)
     text = re.sub(r"\[@[^\]]+\]|@[A-Za-z][\w:-]+", "", text)              # pandoc citations
-    text = re.sub(r"^\s*\|.*\|\s*$", "", text, flags=re.M)               # markdown tables
+    # markdown tables are no longer stripped: table cells are checked like prose
     return text
 
 NUM = re.compile(r"(?<![\w.])[-−]?\d{1,3}(?:,\d{3})+(?:\.\d+)?|(?<![\w.])[-−]?\d*\.?\d+")
@@ -37,7 +33,8 @@ EXT = {".csv", ".tsv", ".md", ".txt", ".json", ".log", ".tex", ".html"}
 
 
 def canon(tok):
-    t = tok.replace("−", "-").replace(",", "").lstrip("-")
+    t = tok.replace("−", "-").replace(",", "")          # sign kept: -0.079 must not match 0.079
+    neg = t.startswith("-"); t = t.lstrip("-")
     if t.startswith("."):
         t = "0" + t
     try:
@@ -46,7 +43,7 @@ def canon(tok):
         return None
     if "." in t:
         t = t.rstrip("0").rstrip(".") if not t.endswith(".") else t[:-1]
-    return t
+    return ("-" + t) if neg and t.strip("0.") else t
 
 
 def corpus(paths):
@@ -95,7 +92,7 @@ def main():
             continue
         if "." not in c:
             n = int(c)
-            if n < min_int or (not keep_years and 1900 <= n <= 2100):
+            if abs(n) < min_int or (not keep_years and 1900 <= abs(n) <= 2100):   # abs: negative integers are checked (audit 11-01b C5-3)
                 continue
         checked += 1
         if c not in vals:

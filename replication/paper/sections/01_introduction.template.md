@@ -34,8 +34,7 @@ Across members, the models place most aligned members where their votes put them
 {{RECALL_CROSS_AB_Q}} (Qwen) and {{RECALL_CROSS_AB_L}} (Llama) of cross-pressured member-Congresses (one member in one Congress) in the quadrant of their own
 votes, whereas a two-dimensional DW-NOMINATE placement of the same member-Congresses places {{DW2_RECALL_CROSS_AB}}. Most of the members the models misplace are moved into the aligned quadrant that shares their economic position, which for most of them is also their party's. When a cross-pressured profile's positions are stated in the prompt, the models follow it less faithfully. When the models predict the members' votes, they are less accurate on abortion but not on economic votes. As the work on synthetic respondents would lead one to expect, the models flatten differences within each party, and they also flatten the differences between the early parties.
 
-Across tasks, the models are slightly more uncertain about cross-pressured members, most clearly in
-Llama, but the added uncertainty is smallest when they predict votes and does not mark the votes they get wrong.
+The models are also slightly more uncertain about cross-pressured members: in both models when they answer on a scale or are asked about the member, and in Llama when they answer YEA or NAY. The models' probabilities thus carry the uncertainty that studies of voting attach to cross-pressure, but that uncertainty does not flag the votes they get wrong.
 
 The paper makes two contributions. First, it extends the linear representation of political perspective in language models from one
 dimension to two for simulated members of Congress. Earlier work used one dimension (Kim et al., 2025) or separate economic and social directions for the model's own stance (Nadeem et al., 2025), and found that a single direction transfers poorly to simulated votes (Zhang, 2025). We validate every

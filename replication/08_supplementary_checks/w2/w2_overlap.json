@@ -1,0 +1,12 @@
+{
+ "qwen": {
+  "common_layer": 16,
+  "cos_raw_at_rule_layer": 0.4421440362930298,
+  "r_x_y_within_cc": 0.6890529049257368
+ },
+ "llama": {
+  "common_layer": 15,
+  "cos_raw_at_rule_layer": 0.514159083366394,
+  "r_x_y_within_cc": 0.9032401105429195
+ }
+}

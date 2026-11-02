@@ -36,7 +36,7 @@ Outside Congress, the same combinations remain common. On a single liberal–con
 and conservative on the other look like moderates (Fowler et al., 2023; Treier & Hillygus, 2009). In the American National Election
 Studies of 1984–2004, about two in five respondents were what Baldassarri and Goldberg (2014, p. 45) call "alternatives," who are "morally conservative but economically liberal, or vice versa." Whether such citizens hold a belief system of their own, or the dominant one held more
 loosely, is disputed (Boutyline & Vaisey, 2017). Sections 5 and 6 ask how the models place and predict the members of Congress who held
-such combinations.
+such combinations, and Section 7 whether the models' own probabilities show the uncertainty that this literature attaches to cross-pressure.
 
 ## 2.3 Language Models as Simulated Political Actors
 

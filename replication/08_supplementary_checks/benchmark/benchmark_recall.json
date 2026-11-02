@@ -1,0 +1,73 @@
+{
+ "note": "descriptive benchmark checks added after the main results; no tests",
+ "N1_dwnominate": {
+  "recall": {
+   "EL-SP": 0.5598300684446542,
+   "ER-ST": 0.531929990539262,
+   "EL-ST": 0.7210473313192346,
+   "ER-SP": 0.640973630831643,
+   "aligned_pooled": 0.5458948611931482,
+   "cross_pooled": 0.6811520970186963,
+   "n": 10444
+  },
+  "dim2_sign_flipped_cells": 0,
+  "cells": 40,
+  "r_dim1_economic_within_cc": 0.9380860271063531,
+  "r_dim1_dim2_within_cc": -0.022912516357309027,
+  "r_dim2_abortion_within_cc": 0.23741598072824865
+ },
+ "N2_recognized": {
+  "qwen": {
+   "all_rows": {
+    "EL-SP": 0.6823223979230588,
+    "ER-ST": 0.6757332071901608,
+    "EL-ST": 0.2366565961732125,
+    "ER-SP": 0.1795131845841785,
+    "aligned_pooled": 0.6790313053750738,
+    "cross_pooled": 0.20818595250126326,
+    "n": 10444
+   },
+   "recognized_rows": {
+    "EL-SP": 0.7221789883268482,
+    "ER-ST": 0.7426365456105233,
+    "EL-ST": 0.22114216281895505,
+    "ER-SP": 0.16187594553706505,
+    "aligned_pooled": 0.7319096844396082,
+    "cross_pooled": 0.19474393530997305,
+    "n": 8836
+   },
+   "recognition_rate": {
+    "aligned": 0.8685174246898996,
+    "cross_pressured": 0.7498736735725113
+   }
+  },
+  "llama": {
+   "all_rows": {
+    "EL-SP": 0.8864762803870663,
+    "ER-ST": 0.8753547776726585,
+    "EL-ST": 0.162134944612286,
+    "ER-SP": 0.18559837728194725,
+    "aligned_pooled": 0.8809214412285883,
+    "cross_pooled": 0.17382516422435573,
+    "n": 10444
+   },
+   "recognized_rows": {
+    "EL-SP": 0.9148344705585039,
+    "ER-ST": 0.8837209302325582,
+    "EL-ST": 0.155902004454343,
+    "ER-SP": 0.20155902004454343,
+    "aligned_pooled": 0.8991955756661639,
+    "cross_pooled": 0.1787305122494432,
+    "n": 9752
+   },
+   "recognition_rate": {
+    "aligned": 0.9398700531600709,
+    "cross_pressured": 0.9075290550783224
+   }
+  }
+ },
+ "r_x_y_within_cc": {
+  "qwen": 0.6890529049257368,
+  "llama": 0.9032401105429195
+ }
+}

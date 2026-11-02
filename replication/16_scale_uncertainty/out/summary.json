@@ -1,0 +1,26 @@
+{
+ "qwen": {
+  "named": {
+   "rows": 10444,
+   "cell_fail_share": 0.0,
+   "median_mass": 0.9999998412715425
+  },
+  "votes": {
+   "rows": 120272,
+   "cell_fail_share": 0.0,
+   "median_mass": 0.9999999933911567
+  }
+ },
+ "llama": {
+  "named": {
+   "rows": 10444,
+   "cell_fail_share": 0.0,
+   "median_mass": 0.9815549686318263
+  },
+  "votes": {
+   "rows": 120271,
+   "cell_fail_share": 0.0,
+   "median_mass": 0.9682962005026639
+  }
+ }
+}
